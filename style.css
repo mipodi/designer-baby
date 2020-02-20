@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap');');
 
 
 
@@ -49,4 +49,36 @@ section {
     min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
+}
+
+.section-disease {
+    background-color: #F0F4F8;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.disease {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    color: #243B53;
+    max-width: 175px;
+    height: 40px;
+    /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.disease p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* p:active, h1:active, a:active {
+  background-color: yellow;
+} */
+
+.selected {
+    border: solid 2px;
+    border-color: #BCCCDC;
 }
