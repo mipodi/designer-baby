@@ -73,6 +73,8 @@
 
             </section>
 
+
+<form>
             <section class="section-disease">
 
                 <div>
@@ -85,7 +87,9 @@
                             defects, and we pride ourselves in being able to
                             test for the highest number of any commercial
                             provider.
+                        </p>
 
+                        <p>
                             The following common conditions are caused by single
                             mutations within genes. They are easy and risk-free
                             to eliminate from your baby. Would you like to
@@ -94,73 +98,93 @@
                             the conditions to remove them.
                         </p>
 
-                        <div class="disease">
-                            <p>Familial hypercholesterolemia</p>
-                        </div>
+                        <p>
+                            Deselect all.
+                        </p>
 
-                        <div class="disease">
+                    <!-- <fieldset> -->
+                    <!-- <div class="checkbox">
+                        <input type="checkbox" id="checkbox_1">
+                        <label for="checkbox_1">Pure CSS Checkbox</label>
+                    </div>
+
+                    <div class="disease-checkbox">
+                        <input type="checkbox"  name="disease" value="hyperchol">
+                        <label for="hyperchol">Familial hypercholesterolemia</label>
+                    </div> -->
+
+
+
+                    <input id="hyperchol" type="checkbox"  name="disease" value="hyperchol">
+                    <label for="hyperchol">Familial hypercholesterolemia</label>
+
+                    <p></p>
+
+                        <div class="disease" tabindex="0">
                             <p>Polycystic kidney disease</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Neurofibromatosis type I</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Hereditary spherocytosis</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Marfan syndrome</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Huntington's disease</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Sickle cell anaemia</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Cystic fibrosis</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Tay-Sachs disease</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Phenylketonuria</p>
                         </div>
 
-                        <div class="disease">
-                            <p>Mucopolysaccharidoses</p>
+                        <div class="disease" tabindex="0">
+                            <p>Mucopolysacchari- doses</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Lysosomal acid lipase deficiency</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Glycogen storage diseases</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Galactosemia</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Duchenne muscular dystrophy</p>
                         </div>
 
-                        <div class="disease">
+                        <div class="disease" tabindex="0">
                             <p>Hemophilia</p>
                         </div>
 
+                    <a href="https://icons8.com/icons/set/shutdown">Continue</a>
+                    <a href="https://icons8.com/icons/set/shutdown">Skip</a>
 
-                        <button> Continue </button>
-                        <button> Skip </button>
+                    <!-- </fieldset> -->
+
 
                     </div>
 
@@ -168,51 +192,13 @@
 
             </section>
 
+      <input type="submit" value="Submit">
 
+</form>
 
-icon-security-check
+<input type=range step=5 min=0 max=100 name=range1>
 
-
-
-```html
-<a href="#">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-mail">
-    <path class="primary" d="M22 8.62V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.62l9.55 4.77a1 1 0 0 0 .9 0L22 8.62z"/>
-    <path class="secondary" d="M12 11.38l-10-5V6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.38l-10 5z"/>
-  </svg>
-
-  Contact Us
-</a>
-```
-
-To change the color of an icon, provide your own CSS for the the `.primary` and `.secondary` classes, setting the `fill` attribute to your desired color:
-
-```css
-.primary {
-  fill: #ffbbca;
-}
-
-.secondary {
-  fill: #6f213f;
-}
-```
-
-Since the icons are designed to be used as inline SVGs, you can easily customize these class names if needed by simply replacing the classes on the child elements of the parent `svg` element:
-
-```diff
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-mail">
--   <path class="primary"
-+   <path class="rfui-icon-primary"
-      d="M22 8.62V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.62l9.55 4.77a1 1 0 0 0 .9 0L22 8.62z"
-    />
--   <path class="secondary"
-+   <path class="rfui-icon-secondary"
-      d="M12 11.38l-10-5V6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.38l-10 5z"
-    />
-  </svg>
-```
-
-See the provided `demo.html` file for more examples of using the icons.
+<progress value=50 max=100>50</progress>
 
 
 
@@ -264,3 +250,106 @@ See the provided `demo.html` file for more examples of using the icons.
 </body>
 
 </html>
+
+
+
+
+<!--
+
+<form>
+            <section class="section-disease">
+
+                <div>
+                    <div>
+
+                        <h2>Diseases</h2>
+
+                        <p>
+                            Over 6000 human diseases are caused by single-gene
+                            defects, and we pride ourselves in being able to
+                            test for the highest number of any commercial
+                            provider.
+                        </p>
+
+                        <p>
+                            The following common conditions are caused by single
+                            mutations within genes. They are easy and risk-free
+                            to eliminate from your baby. Would you like to
+                            screen for prevalence in your family? We are happy
+                            to provide a test before final decision. Click on
+                            the conditions to remove them.
+                        </p>
+
+                        <p>
+                            Deselect all.
+                        </p>
+
+                    <fieldset>
+                        <div class="disease" tabindex="0">
+                            <p>Familial hypercholesterolemia</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Polycystic kidney disease</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Neurofibromatosis type I</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Hereditary spherocytosis</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Marfan syndrome</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Huntington's disease</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Sickle cell anaemia</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Cystic fibrosis</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Tay-Sachs disease</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Phenylketonuria</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Mucopolysacchari- doses</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Lysosomal acid lipase deficiency</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Glycogen storage diseases</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Galactosemia</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Duchenne muscular dystrophy</p>
+                        </div>
+
+                        <div class="disease" tabindex="0">
+                            <p>Hemophilia</p>
+                        </div>
+
+                    <a href="https://icons8.com/icons/set/shutdown">Continue</a>
+                    <a href="https://icons8.com/icons/set/shutdown">Skip</a>
+
+                    </fieldset> -->
