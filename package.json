@@ -1,0 +1,25 @@
+{
+  "name": "designer-baby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass base.scss style.min.css",
+    "style-min": "sass base.scss style.min.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mipodi/designer-baby.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mipodi/designer-baby/issues"
+  },
+  "homepage": "https://github.com/mipodi/designer-baby#readme",
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
+}
