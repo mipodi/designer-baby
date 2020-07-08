@@ -146,6 +146,8 @@ section {
 
 // style changes inside the svg when the checkbox is checked
 .c-custom-checkbox input[type="checkbox"]:checked + svg {
+    // overflow: overlay;
+
   .cb-bg {
     // fill: var(--checked-state-bg-color);
     // stroke: var(--checked-state-bg-color);
