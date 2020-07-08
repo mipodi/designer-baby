@@ -85,9 +85,6 @@ section {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: white;
   color: #243B53;
   max-width: 175px;
   height: 40px;
@@ -98,6 +95,7 @@ section {
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
   --outline-offset: 2px;
+  --outline-radius: 5px;
 }
 
 .c-custom-checkbox input[type=checkbox] {
@@ -112,8 +110,12 @@ section {
 
 .c-custom-checkbox svg {
   /* set SVG dimensions in ems; i.e. relative to the font size so that it scales with the size of the font. */
-  width: 1em;
-  height: 1em;
+  width: 175px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  color: #243B53;
   margin-right: 0.5em;
   margin-top: 0.1em;
   /* apply a transition to the elements inside the svg */
@@ -122,17 +124,20 @@ section {
   transition: all 0.1s linear;
 }
 
-.c-custom-checkbox input[type=checkbox]:checked + svg .cb-bg {
-  fill: var(--checked-state-bg-color);
-  stroke: var(--checked-state-bg-color);
+.c-custom-checkbox input[type=checkbox]:checked + svg .primary {
+  fill: #6f213f;
 }
-.c-custom-checkbox input[type=checkbox]:checked + svg .cb-cm {
-  stroke: var(--checked-state-check-color);
+.c-custom-checkbox input[type=checkbox]:checked + svg .secondary {
+  fill: #ffbbca;
 }
 
 .c-custom-checkbox input[type=checkbox]:focus + svg {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
+}
+
+.checkbox_word {
+  fill: #243B53;
 }
 
 .c-custom-checkbox input[type=checkbox]:focus:not(:focus-visible) + svg {
