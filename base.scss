@@ -95,13 +95,13 @@ section {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
-  // border-radius: 5px;
-  // padding: 10px;
-  // background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
   color: #243B53;
   max-width: 175px;
   height: 40px;
-  /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-bottom: 20px;
   text-transform: uppercase;
 
@@ -132,11 +132,16 @@ section {
   height: 40px;
   border-radius: 5px;
   padding: 10px;
-  background-color: white;
+  // background-color: white;
   color: #243B53;
+  overflow: initial;
+  position: relative;
+  top: -10px;
+  left: -118px;
+  background-color: transparent;
 
-  margin-right: 0.5em;
-  margin-top: .1em;
+  // margin-right: 0.5em;
+  // margin-top: .1em;
 
   /* apply a transition to the elements inside the svg */
   * {
@@ -166,6 +171,8 @@ section {
   }
 
 }
+
+
 
 .c-custom-checkbox input[type="checkbox"]:focus + svg {
   outline: 3px solid var(--outline-color);
@@ -208,7 +215,8 @@ section {
 }
 
 .secondary {
-  fill: #6f213f;
+  // fill: #6f213f;
+  fill: #ffbbca;
 }
 
 
