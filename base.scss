@@ -162,6 +162,11 @@ section {
     // stroke: var(--checked-state-check-color);
   }
 
+body > div > main > form > section > div > div > label > svg > svg {
+    padding: 40px;
+    background-color: #000;
+}
+
   .primary {
     fill: #6f213f;
   }

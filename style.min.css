@@ -129,6 +129,10 @@ section {
   transition: all 0.1s linear;
 }
 
+.c-custom-checkbox input[type=checkbox]:checked + svg body > div > main > form > section > div > div > label > svg > svg {
+  padding: 40px;
+  background-color: #000;
+}
 .c-custom-checkbox input[type=checkbox]:checked + svg .primary {
   fill: #6f213f;
 }
