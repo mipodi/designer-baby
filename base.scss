@@ -436,6 +436,12 @@ section {
         color: #000;
     }
 
+
+body > div > main > form > section > div > div > label:nth-child(10) > span {
+    color: #000;
+    position: absolute;
+}
+
     // style changes inside the svg when the checkbox is checked
     .basic-checkbox input[type="checkbox"]:checked + svg {
       .basic-checkbox-bg {
