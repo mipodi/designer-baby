@@ -59,307 +59,6 @@ section {
     padding-right: 400px;
 }
 
-// .disease {
-//     border-radius: 5px;
-//     padding: 10px;
-//     background-color: white;
-//     color: #243B53;
-//     max-width: 175px;
-//     height: 40px;
-//     /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
-//     margin-bottom: 20px;
-//     text-transform: uppercase;
-// }
-
-// .disease p {
-//     font-size: 0.8rem;
-//     font-weight: 600;
-// }
-
-/* p:active, h1:active, a:active {
-  background-color: yellow;
-} */
-
-// .selected {
-//     border: solid 2px;
-//     border-color: #BCCCDC;
-// }
-
-
-.c-custom-checkbox {
-    cursor: pointer;
-
-  display: flex;
-  align-items: start;
-
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: white;
-  color: #243B53;
-  max-width: 175px;
-  height: 40px;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-
-  --checked-state-bg-color: hsl(350, 95%, 58%);
-  --checked-state-check-color: #fff;
-  --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 2px;
-  --outline-radius: 5px;
-}
-
-// hide the checkbox accessibly
-.c-custom-checkbox input[type="checkbox"] {
-  /* remove the checkbox from the page flow, positioning it on top of the SVG */
-  position: absolute;
-  /* set same dimensions as the SVG */
-  width: 1em;
-  height: 1em;
-  /* hide it */
-  opacity: 0;
-}
-
-// basic styles for the svg
-.c-custom-checkbox svg {
-  /* set SVG dimensions in ems; i.e. relative to the font size so that it scales with the size of the font. */
-  // width: 1em;
-  // height: 1em;
-  width: 175px;
-  height: 40px;
-  border-radius: 5px;
-  padding: 10px;
-  // background-color: white;
-  color: #243B53;
-  overflow: initial;
-  position: relative;
-  top: -10px;
-  left: -118px;
-  background-color: transparent;
-
-  // margin-right: 0.5em;
-  // margin-top: .1em;
-
-  /* apply a transition to the elements inside the svg */
-  * {
-    transition: all 0.1s linear;
-  }
-}
-
-// style changes inside the svg when the checkbox is checked
-.c-custom-checkbox input[type="checkbox"]:checked + svg {
-    // overflow: overlay;
-
-  .cb-bg {
-    // fill: var(--checked-state-bg-color);
-    // stroke: var(--checked-state-bg-color);
-  }
-
-  .cb-cm {
-    // stroke: var(--checked-state-check-color);
-  }
-
-// body > div > main > form > section > div > div > label > svg > svg {
-//     padding: 40px;
-//     background-color: #000;
-// }
-
-  .primary {
-    fill: #6f213f;
-  }
-
-  .secondary {
-    fill: #ffbbca;
-  }
-
-}
-
-
-
-.c-custom-checkbox input[type="checkbox"]:focus + svg {
-  outline: 3px solid var(--outline-color);
-  outline-offset: var(--outline-offset);
-}
-
-.checkbox_word {
-    fill: #243B53;
-    // word-break: break-all;
-}
-
-.c-custom-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
-  outline: none;
-}
-
-/* WHCM styles */
-.c-custom-checkbox svg {
-  @media screen and (-ms-high-contrast: active) {
-    rect {
-      stroke: windowText;
-    }
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .c-custom-checkbox input[type="checkbox"]:checked ~ svg {
-    rect {
-      fill: windowText;
-    }
-
-    polyline {
-      stroke: highlight;
-    }
-  }
-}
-
-
-//
-// .security-icon-new {
-//     // overflow: hidden;
-// }
-
-.primary {
-  fill: #ffbbca;
-}
-
-.secondary {
-  // fill: #6f213f;
-  fill: #ffbbca;
-}
-
-
-
-    // body {
-    // 	padding: 10vw;
-    // 	font-size: 3rem;
-    // 	line-height: 1.2;
-    // 	font-family: 'Fira Sans', sans-serif;
-    // 	background: hsl(31, 28%, 94%);
-    // 	color: hsl(195, 11%, 23%);
-    // }
-
-
-
-    // input[type="checkbox"] {
-    //     position: absolute;
-    //     width: 1em;
-    //     height: 1em;
-    //     opacity: 0;
-    // }
-    //
-    // .c-custom-checkbox {
-    //     /* create a postioning context for the checkbox within the label */
-    //     position: relative;
-    //
-    //     /* other label styles here */
-    //     cursor: pointer;
-    //
-    //     display: flex;
-    //     align-items: start;
-    //
-    //     --checked-state-bg-color: hsl(350, 95%, 58%);
-    //     --checked-state-check-color: #fff;
-    //     --outline-color: var(--checked-state-bg-color);
-    //     --outline-offset: 2px;
-    // }
-    //
-    // .c-custom-checkbox input[type="checkbox"] {
-    //     /* remove the checkbox from flow */
-    //     position: absolute;
-    //
-    //     /* hide it visually */
-    //     opacity: 0;
-    //
-    //     /* tweak size and position if needed */
-    //     width: 1em;
-    //     height: 1em;
-    //
-    //     /* position it within the label, on top of the SVG */
-    //     // top: ...;
-    //     // left: ...;
-    //
-    //     /* sometimes you may need to add z-index */
-    //     // z-index: ...;
-    // }
-    //
-    // /* visually show focus outline when the SVG receives focus */
-    // .c-custom-checkbox input[type="checkbox"]:focus + svg {
-    //     outline: 3px solid var(--outline-color);
-    //     outline-offset: var(--outline-offset);
-    // }
-    //
-    // /* hide the focus styles for mouse users */
-    // .c-custom-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
-    //     outline: none;
-    // }
-    //
-    // /* basic styles for the svg */
-    // .c-custom-checkbox svg {
-    //     /* set SVG dimensions in ems; i.e. relative to the font size so that it scales with the size of the text in the label */
-    //     width: 1em;
-    //     height: 1em;
-    //
-    //     margin-right: 0.5em;
-    //     margin-top: .1em;
-    //     /* ... */
-    //
-    //     /* apply a transition to the elements inside the svg */
-    //     * {
-    //         transition: all 0.1s linear;
-    //     }
-    // }
-    //
-    // /* style changes inside the svg when the checkbox is checked */
-    // .c-custom-checkbox input[type="checkbox"]:checked + svg {
-    //     .checkbox__bg {
-    //       fill: var(--checked-state-bg-color);
-    //       stroke: var(--checked-state-bg-color);
-    //     }
-    //
-    //     .checkbox__checkmark {
-    //         stroke: var(--checked-state-checkmark-color);
-    //     }
-    // }
-    //
-    // /* WHCM styles */
-    // .c-custom-checkbox svg {
-    //   @media screen and (-ms-high-contrast: active) {
-    //     .checkbox__bg {
-    //       stroke: windowText;
-    //     }
-    //   }
-    // }
-
-    // @media screen and (-ms-high-contrast: active) {
-    //   .c-custom-checkbox input[type="checkbox"]:checked + svg {
-    //     .checkbox__bg {
-    //       fill: windowText;
-    //     }
-    //
-    //     .checkbox__checkmark {
-    //       stroke: highlight;
-    //     }
-    //   }
-    // }
-
-    // @media screen and (-ms-high-contrast: active) {
-    //   .c-custom-checkbox input[type="checkbox"]:checked ~ svg {
-    //     rect {
-    //       fill: windowText;
-    //     }
-    //
-    //     polyline {
-    //       stroke: highlight;
-    //     }
-    //   }
-    // }
-    //
-    //
-
-
-
 
 
 
@@ -386,7 +85,7 @@ section {
   --checked-state-bg-color: hsl(350, 95%, 58%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 2px;
+  --outline-offset: 10px;
   --outline-radius: 5px;
 }
 
@@ -394,7 +93,7 @@ section {
     .basic-checkbox input[type="checkbox"] {
       /* remove the checkbox from the page flow, positioning it on top of the SVG */
       position: absolute;
-      /* set same dimensions as the SVG */
+      /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
       width: 1em;
       height: 1em;
       /* hide it */
@@ -409,9 +108,9 @@ section {
         height: 40px;
         border-radius: 5px;
         // padding: 10px;
-        padding: 0px;
+        // padding: 0px;
 
-        // background-color: white;
+
         color: #243B53;
         overflow: initial;
         position: relative;
@@ -432,36 +131,64 @@ section {
         }
     }
 
-    .basic-checkbox label + span {
-        color: #000;
+    .primary {
+      fill: #ffbbca;
+    }
+
+    .secondary {
+      // fill: #6f213f;
+      fill: #ffbbca;
     }
 
 
-body > div > main > form > section > div > div > label:nth-child(10) > span {
-    color: #000;
+.basic-checkbox span {
+    // color: #000;
     position: absolute;
+    max-width: inherit;
 }
+
 
     // style changes inside the svg when the checkbox is checked
     .basic-checkbox input[type="checkbox"]:checked + svg {
+
+
       .basic-checkbox-bg {
-        fill: var(--checked-state-bg-color);
-        stroke: var(--checked-state-bg-color);
+        // fill: var(--checked-state-bg-color);
+        // stroke: var(--checked-state-bg-color);
       }
 
       .basic-checkbox-cm {
-        stroke: var(--checked-state-check-color);
+        // stroke: var(--checked-state-check-color);
       }
-    }
+
+      .primary {
+        fill: #6f213f;
+      }
+
+      .secondary {
+        fill: #ffbbca;
+      }
+
+
+}
 
     .basic-checkbox input[type="checkbox"]:focus + svg {
       outline: 3px solid var(--outline-color);
       outline-offset: var(--outline-offset);
     }
+    //
+    // .basic-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
+    //   outline: none;
+    // }
 
-    .basic-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
-      outline: none;
-    }
+
+
+
+
+
+
+
+
 
     /* WHCM styles */
     .basic-checkbox svg {
