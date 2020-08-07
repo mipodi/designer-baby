@@ -151,16 +151,6 @@ section {
     // style changes inside the svg when the checkbox is checked
     .basic-checkbox input[type="checkbox"]:checked + svg {
 
-
-      .basic-checkbox-bg {
-        // fill: var(--checked-state-bg-color);
-        // stroke: var(--checked-state-bg-color);
-      }
-
-      .basic-checkbox-cm {
-        // stroke: var(--checked-state-check-color);
-      }
-
       .primary {
         fill: #6f213f;
       }
