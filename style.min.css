@@ -112,7 +112,7 @@ section {
 
 .basic-checkbox span {
   position: absolute;
-  max-width: inherit;
+  max-width: 140px;
 }
 
 .basic-checkbox input[type=checkbox]:checked + svg .primary {
