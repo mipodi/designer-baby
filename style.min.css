@@ -47,16 +47,50 @@ section {
   margin-left: auto;
 }
 
-.section-disease {
-  background-color: #F0F4F8;
+.section-intro {
+  background-color: #EFFCF6;
   padding-left: 400px;
   padding-right: 400px;
 }
 
+.section-sex {
+  background-color: #FFF;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+.section-disease {
+  background-color: #EFFCF6;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+.section-unwanted-features {
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove internal value;
+  display: flex;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 0px;
+}
+
 .basic-checkbox {
   cursor: pointer;
-  display: flex;
-  align-items: start;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
