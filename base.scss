@@ -14,6 +14,7 @@ body {
 
 main {
     // padding: 1.4rem 0.6rem;
+    // max-width: 1000px;
 }
 
 h1,
@@ -26,26 +27,32 @@ h4 {
 
 h1 {
     // font-size: 2.4rem;
-    // margin-bottom: 2.8rem;
+    margin-bottom: 2.8rem;
 }
 
 h2 {
     // font-size: 2rem;
-    // margin-bottom: 1.4rem;
+    margin-bottom: 1.4rem;
 }
 
 h4 {
     // font-size: 1.4rem;
-    // margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 p {
     // margin-top: 0;
     // font-family: 'Source Sans Pro', sans-serif;
-    // margin-bottom: 1.4rem;
+    margin-bottom: 1.4rem;
     // font-size: 1rem;
 }
 
+
+details,
+button,
+a {
+    margin-bottom: 2.4rem;
+}
 // a {
 //     font-family: 'Source Sans Pro', sans-serif;
 // }
@@ -71,6 +78,7 @@ section {
     min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
+    padding: 48px;
 }
 
 .section-intro {
@@ -107,10 +115,7 @@ fieldset {
   display: flex;
   margin-left: 2px;
   margin-right: 2px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+  padding: 0px;
   border: 0px;
 
 }
@@ -128,11 +133,13 @@ fieldset {
   padding: 10px;
   background-color: white;
   color: #243B53;
-  max-width: 175px;
-  height: 40px;
+  // max-width: 175px;
+  max-width: 128px;
+  // height: 40px;
+  height: 32px;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-bottom: 20px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(350, 95%, 58%);
   --checked-state-check-color: #fff;
@@ -156,8 +163,8 @@ fieldset {
 
     // basic styles for the svg
     .basic-checkbox svg {
-        width: 175px;
-        height: 40px;
+        width: 128px;
+        height: 32px;
         border-radius: 5px;
         // padding: 10px;
         // padding: 0px;
@@ -196,7 +203,7 @@ fieldset {
 .basic-checkbox span {
     // color: #000;
     position: absolute;
-    max-width: 140px;
+    max-width: 96px;
 }
 
 
@@ -248,4 +255,11 @@ fieldset {
           stroke: highlight;
         }
       }
+    }
+
+
+    @media (max-width: 400px) {
+        section {
+            padding: 48px;
+        }
     }

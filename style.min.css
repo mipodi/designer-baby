@@ -13,10 +13,33 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+h1 {
+  margin-bottom: 2.8rem;
+}
+
+h2 {
+  margin-bottom: 1.4rem;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 1.4rem;
+}
+
+details,
+button,
+a {
+  margin-bottom: 2.4rem;
+}
+
 section {
   min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
+  padding: 48px;
 }
 
 .section-intro {
@@ -47,10 +70,7 @@ fieldset {
   display: flex;
   margin-left: 2px;
   margin-right: 2px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+  padding: 0px;
   border: 0px;
 }
 
@@ -63,11 +83,10 @@ fieldset {
   padding: 10px;
   background-color: white;
   color: #243B53;
-  max-width: 175px;
-  height: 40px;
+  max-width: 128px;
+  height: 32px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
-  text-transform: uppercase;
   --checked-state-bg-color: hsl(350, 95%, 58%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
@@ -86,8 +105,8 @@ fieldset {
 }
 
 .basic-checkbox svg {
-  width: 175px;
-  height: 40px;
+  width: 128px;
+  height: 32px;
   border-radius: 5px;
   color: #243B53;
   overflow: initial;
@@ -111,7 +130,7 @@ fieldset {
 
 .basic-checkbox span {
   position: absolute;
-  max-width: 140px;
+  max-width: 96px;
 }
 
 .basic-checkbox input[type=checkbox]:checked + svg .primary {
@@ -139,6 +158,11 @@ fieldset {
   }
   .basic-checkbox input[type=checkbox]:checked ~ svg polyline {
     stroke: highlight;
+  }
+}
+@media (max-width: 400px) {
+  section {
+    padding: 48px;
   }
 }
 
