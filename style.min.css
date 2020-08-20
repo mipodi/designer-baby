@@ -77,6 +77,15 @@ a:visited {
   background-color: #f1f5f8;
 }
 
+.section-container {
+  display: flex;
+}
+
+.paragraph-disease {
+  flex-basis: 70%;
+  margin-right: 64px;
+}
+
 fieldset {
   display: block;
   margin-left: 2px;
@@ -95,6 +104,7 @@ fieldset {
 .control {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 256px;
 }
 
 .basic-checkbox {

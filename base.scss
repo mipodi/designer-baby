@@ -135,8 +135,14 @@ a:visited {
 }
 
 .section-container {
-    // display: flex;
+    display: flex;
 }
+
+.paragraph-disease {
+    flex-basis: 70%;
+    margin-right: 64px;
+}
+
 
 fieldset {
   display: block;
@@ -158,6 +164,7 @@ fieldset {
 .control {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 256px;
 }
 
 .basic-checkbox {
