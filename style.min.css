@@ -87,10 +87,14 @@ fieldset {
   padding-right: 0.75em;
   border: 2px groove internal value;
   display: flex;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin: 0px;
   padding: 0px;
   border: 0px;
+}
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .basic-checkbox {
@@ -105,7 +109,8 @@ fieldset {
   max-width: 128px;
   height: 32px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin-right: 16px;
+  margin-bottom: 16px;
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
@@ -183,6 +188,27 @@ fieldset {
   section {
     padding: 48px;
   }
+}
+.flexBox {
+  display: flex;
+}
+
+.box1 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.box2 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.box3 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
