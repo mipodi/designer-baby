@@ -48,6 +48,7 @@ p {
     margin-bottom: 1.4rem;
     max-width: 20em;
     // font-size: 1rem;
+    color: #334E68;
 }
 
 
@@ -96,6 +97,7 @@ section {
 
 a {
   color: hsl(209, 61%, 16%);
+  font-weight: 600;
   // font-family: helvetica;
   // text-decoration: none;
   // text-transform: uppercase;
@@ -110,7 +112,8 @@ a:active {
 }
 
 a:visited {
-  color: hsl(209, 28%, 39%);
+  // color: hsl(209, 28%, 39%);
+  color: hsl(209, 61%, 16%);
 }
 
 .section-intro {

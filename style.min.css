@@ -30,6 +30,7 @@ h4 {
 p {
   margin-bottom: 1.4rem;
   max-width: 20em;
+  color: #334E68;
 }
 
 details,
@@ -55,6 +56,7 @@ section {
 
 a {
   color: #102a42;
+  font-weight: 600;
 }
 
 a:active {
@@ -62,7 +64,7 @@ a:active {
 }
 
 a:visited {
-  color: #48647f;
+  color: #102a42;
 }
 
 .section-sex {
