@@ -3,6 +3,7 @@
 html {
   font-size: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  color: #243a52;
 }
 
 h1,
@@ -19,6 +20,7 @@ h1 {
 
 h2 {
   margin-bottom: 1.4rem;
+  font-weight: 400;
 }
 
 h4 {
@@ -27,12 +29,21 @@ h4 {
 
 p {
   margin-bottom: 1.4rem;
+  max-width: 20em;
 }
 
 details,
 button,
 a {
   margin-bottom: 2.4rem;
+}
+
+summary {
+  color: #617d98;
+}
+
+details {
+  color: #617d98;
 }
 
 section {
@@ -42,12 +53,20 @@ section {
   padding: 48px;
 }
 
-.section-intro {
-  background-color: #EFFCF6;
+a {
+  color: #102a42;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: #48647f;
 }
 
 .section-sex {
-  background-color: #FFF;
+  background-color: #f1f5f8;
 }
 
 .section-eggs {
@@ -55,7 +74,7 @@ section {
 }
 
 .section-disease {
-  background-color: #EFFCF6;
+  background-color: #f1f5f8;
 }
 
 fieldset {
@@ -82,12 +101,12 @@ fieldset {
   border-radius: 5px;
   padding: 10px;
   background-color: white;
-  color: #243B53;
+  color: #243a52;
   max-width: 128px;
   height: 32px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
-  --checked-state-bg-color: hsl(350, 95%, 58%);
+  --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
   --outline-offset: 10px;
@@ -121,11 +140,11 @@ fieldset {
 }
 
 .primary {
-  fill: #ffbbca;
+  fill: #829ab0;
 }
 
 .secondary {
-  fill: #ffbbca;
+  fill: #829ab0;
 }
 
 .basic-checkbox span {
@@ -134,10 +153,10 @@ fieldset {
 }
 
 .basic-checkbox input[type=checkbox]:checked + svg .primary {
-  fill: #6f213f;
+  fill: #324d67;
 }
 .basic-checkbox input[type=checkbox]:checked + svg .secondary {
-  fill: #ffbbca;
+  fill: #f1f5f8;
 }
 
 .basic-checkbox input[type=checkbox]:focus + svg {
