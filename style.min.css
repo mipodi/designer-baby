@@ -1,44 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 @import "normalize.min.css";
 html {
   font-size: 100%;
-}
-
-body {
-  line-height: 1.4;
-}
-
-main {
-  padding: 1.4rem 0.6rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h1,
 h2,
+h3,
 h4 {
   margin-top: 0;
   font-family: "Source Sans Pro", sans-serif;
-}
-
-h1 {
-  font-size: 2.4rem;
-  margin-bottom: 2.8rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1.4rem;
-}
-
-h4 {
-  font-size: 1.4rem;
-  margin-bottom: 0;
-}
-
-p {
-  margin-top: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  margin-bottom: 1.4rem;
-  font-size: 1rem;
 }
 
 section {
@@ -49,31 +21,18 @@ section {
 
 .section-intro {
   background-color: #EFFCF6;
-  padding-left: 400px;
-  padding-right: 400px;
 }
 
 .section-sex {
   background-color: #FFF;
-  padding-left: 400px;
-  padding-right: 400px;
 }
 
 .section-eggs {
   background-color: #FFF;
-  padding-left: 400px;
-  padding-right: 400px;
 }
 
 .section-disease {
   background-color: #EFFCF6;
-  padding-left: 400px;
-  padding-right: 400px;
-}
-
-.section-unwanted-features {
-  padding-left: 400px;
-  padding-right: 400px;
 }
 
 fieldset {
