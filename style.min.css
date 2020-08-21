@@ -290,6 +290,128 @@ fieldset {
     stroke: highlight;
   }
 }
+.egg-package-radio-button {
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: white;
+  color: #243a52;
+  height: 384px;
+  width: 256px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 10px;
+  --outline-radius: 5px;
+}
+
+.egg-package-radio-button input[type=radio] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
+
+.egg-package-radio-button svg {
+  height: 384px;
+  width: 256px;
+  border-radius: 4px;
+  color: #243B53;
+  overflow: initial;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  /* apply a transition to the elements inside the svg */
+}
+.egg-package-radio-button svg * {
+  transition: all 0.1s linear;
+}
+
+.primary {
+  fill: #829ab0;
+}
+
+.secondary {
+  fill: #829ab0;
+}
+
+.egg-package-radio-button span {
+  position: absolute;
+  display: block;
+  width: 250px;
+}
+
+.egg-package-radio-button span.info {
+  color: #324d67;
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+.egg-package-radio-button span.egg {
+  padding-top: 16px;
+}
+
+.egg-package-radio-button span.eggs-fluid {
+  padding-top: 48px;
+}
+
+.egg-package-radio-button span.eggs-short-expl {
+  padding-top: 64px;
+}
+
+.egg-package-radio-button span.eggs-why {
+  padding-top: 128px;
+}
+
+.egg-package-radio-button span.eggs-bullet-1 {
+  padding-top: 200px;
+}
+
+.egg-package-radio-button span.eggs-bullet-2 {
+  padding-top: 220px;
+}
+
+.egg-package-radio-button span.eggs-bullet-3 {
+  padding-top: 250px;
+}
+
+.egg-package-radio-button input[type=radio]:checked + svg .primary {
+  fill: #324d67;
+}
+.egg-package-radio-button input[type=radio]:checked + svg .secondary {
+  fill: #f1f5f8;
+}
+
+.egg-package-radio-button input[type=radio]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+
+/* WHCM styles */
+@media screen and (-ms-high-contrast: active) {
+  .egg-package-radio-button svg rect {
+    stroke: windowText;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .egg-package-radio-button input[type=radio]:checked ~ svg rect {
+    fill: windowText;
+  }
+  .egg-package-radio-button input[type=radio]:checked ~ svg polyline {
+    stroke: highlight;
+  }
+}
 @media (max-width: 400px) {
   section {
     padding: 48px;
