@@ -37,6 +37,7 @@ details,
 button,
 a {
   margin-bottom: 2.4rem;
+  max-width: 20em;
 }
 
 summary {
