@@ -315,7 +315,7 @@ fieldset {
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 10px;
+  --outline-offset: 32px;
   --outline-radius: 5px;
 }
 
