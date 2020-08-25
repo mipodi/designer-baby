@@ -204,100 +204,6 @@ fieldset {
     stroke: highlight;
   }
 }
-.extra-options-checkbox {
-  cursor: pointer;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  border-radius: 4px;
-  padding: 12px;
-  background-color: white;
-  color: #243a52;
-  max-width: 128px;
-  height: 96px;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-  margin-right: 16px;
-  margin-bottom: 16px;
-  --checked-state-bg-color: hsl(209, 28%, 39%);
-  --checked-state-check-color: #fff;
-  --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 10px;
-  --outline-radius: 5px;
-}
-
-.extra-options-checkbox input[type=checkbox] {
-  /* remove the checkbox from the page flow, positioning it on top of the SVG */
-  position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
-  /* hide it */
-  opacity: 0;
-}
-
-.extra-options-checkbox svg {
-  width: 128px;
-  height: 96px;
-  border-radius: 4px;
-  color: #243B53;
-  overflow: initial;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  background-color: transparent;
-  /* apply a transition to the elements inside the svg */
-}
-.extra-options-checkbox svg * {
-  transition: all 0.1s linear;
-}
-
-.primary {
-  fill: #829ab0;
-}
-
-.secondary {
-  fill: #829ab0;
-}
-
-.extra-options-checkbox span {
-  position: absolute;
-  max-width: 112px;
-  display: block;
-}
-
-.extra-options-checkbox span.info {
-  color: #324d67;
-  font-weight: 400;
-  padding-top: 4px;
-}
-
-.extra-options-checkbox input[type=checkbox]:checked + svg .primary {
-  fill: #324d67;
-}
-.extra-options-checkbox input[type=checkbox]:checked + svg .secondary {
-  fill: #f1f5f8;
-}
-
-.extra-options-checkbox input[type=checkbox]:focus + svg {
-  outline: 3px solid var(--outline-color);
-  outline-offset: var(--outline-offset);
-}
-
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .extra-options-checkbox svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .extra-options-checkbox input[type=checkbox]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .extra-options-checkbox input[type=checkbox]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 .sex-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -562,31 +468,104 @@ fieldset {
     stroke: highlight;
   }
 }
+.extra-options-checkbox {
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: white;
+  color: #243a52;
+  max-width: 128px;
+  height: 96px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 10px;
+  --outline-radius: 5px;
+}
+
+.extra-options-checkbox input[type=checkbox] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
+
+.extra-options-checkbox svg {
+  width: 128px;
+  height: 96px;
+  border-radius: 4px;
+  color: #243B53;
+  overflow: initial;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  /* apply a transition to the elements inside the svg */
+}
+.extra-options-checkbox svg * {
+  transition: all 0.1s linear;
+}
+
+.primary {
+  fill: #829ab0;
+}
+
+.secondary {
+  fill: #829ab0;
+}
+
+.extra-options-checkbox span {
+  position: absolute;
+  max-width: 112px;
+  display: block;
+}
+
+.extra-options-checkbox span.info {
+  color: #324d67;
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+.extra-options-checkbox input[type=checkbox]:checked + svg .primary {
+  fill: #324d67;
+}
+.extra-options-checkbox input[type=checkbox]:checked + svg .secondary {
+  fill: #f1f5f8;
+}
+
+.extra-options-checkbox input[type=checkbox]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+
+/* WHCM styles */
+@media screen and (-ms-high-contrast: active) {
+  .extra-options-checkbox svg rect {
+    stroke: windowText;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .extra-options-checkbox input[type=checkbox]:checked ~ svg rect {
+    fill: windowText;
+  }
+  .extra-options-checkbox input[type=checkbox]:checked ~ svg polyline {
+    stroke: highlight;
+  }
+}
 @media (max-width: 400px) {
   section {
     padding: 48px;
   }
-}
-.flexBox {
-  display: flex;
-}
-
-.box1 {
-  background-color: red;
-  height: 100px;
-  width: 100px;
-}
-
-.box2 {
-  background-color: red;
-  height: 100px;
-  width: 100px;
-}
-
-.box3 {
-  background-color: red;
-  height: 100px;
-  width: 100px;
 }
 
 /*# sourceMappingURL=style.min.css.map */
