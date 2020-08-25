@@ -341,19 +341,18 @@ fieldset {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
-  border-radius: 4px;
-  padding: 16px;
+  border-radius: 50%;
   background-color: white;
   color: #243a52;
-  max-width: 128px;
-  height: 96px;
+  max-width: 48px;
+  height: 48px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 16px;
+  --outline-offset: 0px;
   --outline-radius: 5px;
 }
 
@@ -371,6 +370,9 @@ fieldset {
   width: 128px;
   height: 96px;
   border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
   color: #243B53;
   overflow: initial;
   position: relative;
@@ -383,18 +385,27 @@ fieldset {
   transition: all 0.1s linear;
 }
 
-.primary {
-  fill: #829ab0;
+.eyball {
+  fill: #fff;
 }
 
-.secondary {
-  fill: #829ab0;
+.iris-green,
+.iris-blue,
+.iris-other,
+.iris-dark-brown,
+.iris-light-brown {
+  fill: #cad1d8;
+}
+
+.pupil {
+  fill: #000;
 }
 
 .eye-colour-radio-button span {
   position: absolute;
   display: block;
   width: 250px;
+  opacity: 0;
 }
 
 .eye-colour-radio-button span.info {
@@ -446,6 +457,24 @@ fieldset {
 }
 .eye-colour-radio-button input[type=radio]:checked + svg .secondary {
   fill: #f1f5f8;
+}
+.eye-colour-radio-button input[type=radio]:checked + svg .iris {
+  fill: #8A6748;
+}
+.eye-colour-radio-button input[type=radio]:checked + svg .iris-dark-brown {
+  fill: #8A6748;
+}
+.eye-colour-radio-button input[type=radio]:checked + svg .iris-light-brown {
+  fill: #AD6A2D;
+}
+.eye-colour-radio-button input[type=radio]:checked + svg .iris-green {
+  fill: #27aa83;
+}
+.eye-colour-radio-button input[type=radio]:checked + svg .iris-blue {
+  fill: #3424e5;
+}
+.eye-colour-radio-button input[type=radio]:checked + svg .iris-other {
+  fill: #fff;
 }
 
 .eye-colour-radio-button input[type=radio]:focus + svg {
@@ -729,6 +758,138 @@ fieldset {
     fill: windowText;
   }
   .hair-feature-radio-button input[type=radio]:checked ~ svg polyline {
+    stroke: highlight;
+  }
+}
+.gestation-radio-button {
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: white;
+  color: #243a52;
+  max-width: 128px;
+  height: 96px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 16px;
+  --outline-radius: 5px;
+}
+
+.gestation-radio-button input[type=radio] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
+
+.gestation-radio-button svg {
+  width: 128px;
+  height: 96px;
+  border-radius: 4px;
+  color: #243B53;
+  overflow: initial;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  /* apply a transition to the elements inside the svg */
+}
+.gestation-radio-button svg * {
+  transition: all 0.1s linear;
+}
+
+.primary {
+  fill: #829ab0;
+}
+
+.secondary {
+  fill: #829ab0;
+}
+
+.gestation-radio-button span {
+  position: absolute;
+  display: block;
+  width: 250px;
+}
+
+.gestation-radio-button span.info {
+  color: #324d67;
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+.gestation-radio-button span.egg {
+  padding-top: 16px;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.gestation-radio-button span.eggs-fluid {
+  padding-top: 80px;
+  color: #617d98;
+}
+
+.gestation-radio-button span.eggs-short-expl {
+  padding-top: 112px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.gestation-radio-button span.eggs-why {
+  padding-top: 176px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.gestation-radio-button span.eggs-bullet-1 {
+  padding-top: 304px;
+  color: #617d98;
+}
+
+.gestation-radio-button span.eggs-bullet-2 {
+  padding-top: 320px;
+  color: #617d98;
+}
+
+.gestation-radio-button span.eggs-bullet-3 {
+  padding-top: 336px;
+  color: #617d98;
+}
+
+.gestation-radio-button input[type=radio]:checked + svg .primary {
+  fill: #324d67;
+}
+.gestation-radio-button input[type=radio]:checked + svg .secondary {
+  fill: #f1f5f8;
+}
+
+.gestation-radio-button input[type=radio]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+
+/* WHCM styles */
+@media screen and (-ms-high-contrast: active) {
+  .gestation-radio-button svg rect {
+    stroke: windowText;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .gestation-radio-button input[type=radio]:checked ~ svg rect {
+    fill: windowText;
+  }
+  .gestation-radio-button input[type=radio]:checked ~ svg polyline {
     stroke: highlight;
   }
 }
