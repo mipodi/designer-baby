@@ -273,8 +273,10 @@ fieldset {
 
 .sex-radio-button span.egg {
   padding-top: 16px;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 400;
+  color: #617d98;
+  letter-spacing: 0.05em;
 }
 
 .sex-radio-button span.eggs-fluid {
@@ -974,7 +976,7 @@ fieldset {
 .egg-package-radio-button span.eggs-short-expl {
   padding-top: 112px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .egg-package-radio-button span.eggs-why {
