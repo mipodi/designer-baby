@@ -504,11 +504,8 @@ fieldset {
   height: 256px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-
-div .control .shade-box {
-  width: 384px;
-  height: 384px;
+  padding: 16px;
+  justify-content: space-evenly;
 }
 
 .skin-colour-radio-button {
@@ -521,8 +518,7 @@ div .control .shade-box {
   color: #243a52;
   max-width: 48px;
   height: 48px;
-  margin-right: 16px;
-  margin-bottom: 16px;
+  margin: 16px;
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
@@ -592,22 +588,11 @@ div .control .shade-box {
   fill: #dbb288;
 }
 
-.iris-green,
-.iris-blue,
-.iris-other,
-.iris-dark-brown,
-.iris-light-brown {
-  fill: #cad1d8;
-}
-
-.pupil {
-  fill: #000;
-}
-
 .skin-colour-radio-button span {
   position: absolute;
   display: block;
   width: 250px;
+  padding-top: 48px;
 }
 
 .skin-colour-radio-button span.info {
@@ -655,28 +640,10 @@ div .control .shade-box {
 }
 
 .skin-colour-radio-button input[type=radio]:checked + svg .primary {
-  fill: #324d67;
+  stroke: #324d67;
 }
 .skin-colour-radio-button input[type=radio]:checked + svg .secondary {
   fill: #f1f5f8;
-}
-.skin-colour-radio-button input[type=radio]:checked + svg .iris {
-  fill: #8A6748;
-}
-.skin-colour-radio-button input[type=radio]:checked + svg .iris-dark-brown {
-  fill: #8A6748;
-}
-.skin-colour-radio-button input[type=radio]:checked + svg .iris-light-brown {
-  fill: #AD6A2D;
-}
-.skin-colour-radio-button input[type=radio]:checked + svg .iris-green {
-  fill: #27aa83;
-}
-.skin-colour-radio-button input[type=radio]:checked + svg .iris-blue {
-  fill: #3424e5;
-}
-.skin-colour-radio-button input[type=radio]:checked + svg .iris-other {
-  fill: #fff;
 }
 
 .skin-colour-radio-button input[type=radio]:focus + svg {

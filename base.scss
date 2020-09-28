@@ -729,13 +729,15 @@ fieldset {
     height: 256px;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     border-radius: 4px;
+    padding: 16px;
+    justify-content: space-evenly;
 }
 
 
-div .control .shade-box {
-    width: 384px;
-    height: 384px;
-}
+// div .control .shade-box {
+//     width: 384px;
+//     height: 384px;
+// }
 
 
 
@@ -755,9 +757,10 @@ div .control .shade-box {
                   max-width: 48px;
                   height: 48px;
 
+                  margin: 16px;
                   // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-                  margin-right: 16px;
-                  margin-bottom: 16px;
+                  // margin-right: 16px;
+                  // margin-bottom: 16px;
                   // text-transform: uppercase;
 
                   --checked-state-bg-color: hsl(209, 28%, 39%);
@@ -851,22 +854,6 @@ div .control .shade-box {
                     }
 
 
-                    .iris-green,
-                    .iris-blue,
-                    .iris-other,
-                    .iris-dark-brown,
-                    .iris-light-brown
-                     {
-                      // fill: #6f213f;
-                      fill: hsl(210, 16%, 82%)
-                    }
-
-                    .pupil {
-                      // fill: #6f213f;
-                      // fill: hsl(209, 23%, 60%);
-                      fill: #000;
-                    }
-
 
                 .skin-colour-radio-button span {
                     // color: #000;
@@ -875,6 +862,7 @@ div .control .shade-box {
                     display: block;
                     width: 250px;
                     // opacity: 0;
+                    padding-top: 48px;
                 }
 
 
@@ -919,38 +907,14 @@ div .control .shade-box {
 
                     // style changes inside the svg when the checkbox is checked
                     .skin-colour-radio-button input[type="radio"]:checked + svg {
+                        // border: 10px black;
 
                       .primary {
-                        fill: hsl(209, 34%, 30%);
+                        stroke: hsl(209, 34%, 30%);
                       }
 
                       .secondary {
                         fill: hsl(210, 36%, 96%);
-                      }
-
-                      .iris {
-                          fill: #8A6748;
-                      }
-
-                      .iris-dark-brown {
-                          fill: #8A6748;
-                          // fill: #611A02 ;
-                      }
-
-                      .iris-light-brown {
-                          fill: #AD6A2D;
-                      }
-
-                      .iris-green {
-                          fill: hsl(162, 63%, 41%);
-                      }
-
-                      .iris-blue {
-                          fill: hsl(245, 79%, 52%);
-                      }
-
-                      .iris-other {
-                          fill: #fff;
                       }
 
 
