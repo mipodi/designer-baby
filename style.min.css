@@ -391,12 +391,28 @@ fieldset {
   fill: #fff;
 }
 
-.iris-green,
-.iris-blue,
-.iris-other,
-.iris-dark-brown,
+.iris {
+  fill: #8A6748;
+}
+
+.iris-dark-brown {
+  fill: #553117;
+}
+
 .iris-light-brown {
-  fill: #cad1d8;
+  fill: #dc8d54;
+}
+
+.iris-green {
+  fill: #8EEDC7;
+}
+
+.iris-blue {
+  fill: #A2A5FC;
+}
+
+.iris-other {
+  fill: #fff;
 }
 
 .pupil {

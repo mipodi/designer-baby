@@ -583,16 +583,48 @@ fieldset {
                           fill: #fff;
                           // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
                         }
+                        //
+                        // .iris-green,
+                        // .iris-blue,
+                        // .iris-other,
+                        // .iris-dark-brown,
+                        // .iris-light-brown
+                        //  {
+                        //   // fill: #6f213f;
+                        //   fill: hsl(210, 16%, 82%)
+                        // }
 
-                        .iris-green,
-                        .iris-blue,
-                        .iris-other,
-                        .iris-dark-brown,
-                        .iris-light-brown
-                         {
-                          // fill: #6f213f;
-                          fill: hsl(210, 16%, 82%)
-                        }
+
+
+                                                  .iris {
+                                                      fill: #8A6748;
+                                                  }
+
+                                                  .iris-dark-brown {
+                                                      fill: #553117;
+                                                      // fill: #8A6748;
+                                                      // fill: #611A02 ;
+                                                  }
+
+                                                  .iris-light-brown {
+                                                      // fill: #AD6A2D;
+                                                      fill: #dc8d54;
+                                                  }
+
+                                                  .iris-green {
+                                                      // fill: hsl(162, 63%, 41%);
+                                                      fill: #8EEDC7;
+                                                  }
+
+                                                  .iris-blue {
+                                                      // fill: hsl(245, 79%, 52%);
+                                                      fill: #A2A5FC;
+                                                  }
+
+                                                  .iris-other {
+                                                      fill: #fff;
+                                                  }
+
 
                         .pupil {
                           // fill: #6f213f;
