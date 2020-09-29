@@ -401,16 +401,14 @@ fieldset {
   transition: all 0.1s linear;
 }
 
-.eyball {
+.eyeball {
   fill: #fff;
-}
-
-.iris {
-  fill: #8A6748;
+  stroke: #fff;
+  stroke-width: 8px;
 }
 
 .iris-dark-brown {
-  fill: #553117;
+  fill: #8A6748;
 }
 
 .iris-light-brown {
@@ -485,14 +483,15 @@ fieldset {
   color: #617d98;
 }
 
+.eye-colour-radio-button input[type=radio]:checked + svg .eyeball {
+  stroke: #324d67;
+  stroke-width: 8px;
+}
 .eye-colour-radio-button input[type=radio]:checked + svg .primary {
   fill: #324d67;
 }
 .eye-colour-radio-button input[type=radio]:checked + svg .secondary {
   fill: #f1f5f8;
-}
-.eye-colour-radio-button input[type=radio]:checked + svg .iris {
-  fill: #8A6748;
 }
 .eye-colour-radio-button input[type=radio]:checked + svg .iris-dark-brown {
   fill: #8A6748;
@@ -699,88 +698,16 @@ fieldset {
     stroke: highlight;
   }
 }
-.range {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 336px;
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  background: linear-gradient(to right, #17121C, #ffeed3);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#17121C", endColorstr="#ffeed3", GradientType=1 );
-  height: 60px;
-  border-radius: 35px;
+#section-physical-features > div > div > div:nth-child(9) {
+  width: 384px;
+  height: 192px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  background: linear-gradient(to right, #FFE682, #FF9E00);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FFE682", endColorstr="#FF9E00", GradientType=1 );
-  height: 60px;
-  border-radius: 35px;
-}
-
-input[type=range]::-moz-range-track {
-  -webkit-appearance: none;
-  background: linear-gradient(to right, #17121C, #291003, #362923, #553117, #874c2b, #ae5a18, #dc8d54, #bf8d50, #dbb288, #ffeed3);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#17121C", endColorstr="#ffeed3", GradientType=1 );
-  height: 60px;
-  border-radius: 35px;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-}
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  height: 64px;
-  width: 64px;
-  max-width: 80px;
-  position: relative;
-  top: -2px;
-  box-shadow: inset 0px 0px 2px 2px rgba(51, 51, 51, 0.1);
-  /*   background: radial-gradient(transparent 28px, green 2px); */
-  cursor: -webkit-grab;
-  -webkit-transition: border 1000ms ease;
-  transition: border 1000ms ease;
-}
-
-input[type=range]::-moz-range-thumb {
-  -webkit-appearance: none;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  height: 64px;
-  width: 64px;
-  max-width: 80px;
-  position: relative;
-  top: -2px;
-  box-shadow: inset 0px 0px 2px 2px rgba(51, 51, 51, 0.1);
-  /*   background: radial-gradient(transparent 28px, green 2px); */
-  cursor: -webkit-grab;
-  -webkit-transition: border 1000ms ease;
-  transition: border 1000ms ease;
-}
-
-input[type=range]::-webkit-slider-thumb:active {
-  cursor: -webkit-grabbing;
-}
-
-input[type=range]::-moz-range-thumb:active {
-  cursor: -moz-grabbing;
-}
-
-input[type=range]:focus {
-  outline: none;
-}
-
-input[type=range]:focus::-webkit-slider-thumb {
-  box-shadow: 0px 0px 7px 3px #0065c4;
-}
-
-input[type=range]:focus::-moz-range-thumb {
-  box-shadow: 0px 0px 7px 3px #0065c4;
+  border-radius: 4px;
+  padding: 16px;
+  padding-bottom: 192px;
+  justify-content: space-evenly;
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 .hair-colour-radio-button {
@@ -789,14 +716,11 @@ input[type=range]:focus::-moz-range-thumb {
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 4px;
-  padding: 16px;
   background-color: white;
   color: #243a52;
-  max-width: 128px;
-  height: 96px;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-  margin-right: 16px;
-  margin-bottom: 16px;
+  max-width: 48px;
+  height: 48px;
+  margin: 16px;
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
@@ -815,8 +739,8 @@ input[type=range]:focus::-moz-range-thumb {
 }
 
 .hair-colour-radio-button svg {
-  width: 128px;
-  height: 96px;
+  max-width: 48px;
+  height: 48px;
   border-radius: 4px;
   color: #243B53;
   overflow: initial;
@@ -830,18 +754,35 @@ input[type=range]:focus::-moz-range-thumb {
   transition: all 0.1s linear;
 }
 
-.primary {
-  fill: #829ab0;
+.dark-brown-hair-colour {
+  fill: #8A6748;
 }
 
-.secondary {
-  fill: #829ab0;
+.light-brown-hair-colour {
+  fill: #dc8d54;
+}
+
+.chestnut-hair-colour {
+  fill: #954535;
+}
+
+.red-hair-colour {
+  fill: #9E311E;
+}
+
+.dark-blonde-hair-colour {
+  fill: #bf9f6a;
+}
+
+.light-blonde-hair-colour {
+  fill: #faf0be;
 }
 
 .hair-colour-radio-button span {
   position: absolute;
   display: block;
-  width: 250px;
+  width: 48px;
+  padding-top: 48px;
 }
 
 .hair-colour-radio-button span.info {

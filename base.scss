@@ -595,29 +595,23 @@ fieldset {
                             }
                         }
 
-                        .eyball {
-                          fill: #fff;
-                          // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-                        }
-                        //
-                        // .iris-green,
-                        // .iris-blue,
-                        // .iris-other,
-                        // .iris-dark-brown,
-                        // .iris-light-brown
-                        //  {
-                        //   // fill: #6f213f;
-                        //   fill: hsl(210, 16%, 82%)
+                        // .eyball {
+                        //   fill: #fff;
+                        //   // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
                         // }
+                        .eyeball {
+                            fill: #fff;
+                            stroke: #fff;
+                            stroke-width: 8px;
+                        }
 
-
-
-                                                  .iris {
-                                                      fill: #8A6748;
-                                                  }
+                                                  // .iris {
+                                                  //     fill: #8A6748;
+                                                  // }
 
                                                   .iris-dark-brown {
-                                                      fill: #553117;
+                                                      fill: #8A6748;
+
                                                       // fill: #8A6748;
                                                       // fill: #611A02 ;
                                                   }
@@ -704,7 +698,10 @@ fieldset {
 
                         // style changes inside the svg when the checkbox is checked
                         .eye-colour-radio-button input[type="radio"]:checked + svg {
-
+                            .eyeball {
+                                stroke: hsl(209, 34%, 30%);
+                                stroke-width: 8px;
+                            }
                           .primary {
                             fill: hsl(209, 34%, 30%);
                           }
@@ -713,13 +710,15 @@ fieldset {
                             fill: hsl(210, 36%, 96%);
                           }
 
-                          .iris {
-                              fill: #8A6748;
-                          }
+                          // .iris {
+                          //     fill: #8A6748;
+                          // }
 
                           .iris-dark-brown {
-                              fill: #8A6748;
+                              // fill: #8A6748;
                               // fill: #611A02 ;
+                              // fill: #553117;
+                              fill: #8A6748;
                           }
 
                           .iris-light-brown {
@@ -1014,128 +1013,17 @@ fieldset {
 
 
 
-
-                        // cancelling appearance
-                        .range {
-                          -webkit-appearance: none;
-                          -moz-appearance: none;
-                          // position: absolute;
-                          // left: 50%;
-                          // top: 50%;
-                          width: 336px;
-                          // transform: translate(-50%, -50%);
-                        }
-
-
-                        input[type=range]::-webkit-slider-runnable-track {
-                          -webkit-appearance: none;
-                          background: linear-gradient(to right,
-                                        #17121C,
-                                        #ffeed3
-                                    );
-                          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17121C', endColorstr='#ffeed3', GradientType=1 );
-                          height: 60px;
-                          border-radius: 35px;
-                          box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-                        }
-
-
-                        input[type=range]::-webkit-slider-runnable-track {
-                              -webkit-appearance: none;
-                              background: linear-gradient(to right, #FFE682, #FF9E00);
-                              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE682', endColorstr='#FF9E00', GradientType=1 );
-                              height: 60px;
-                              border-radius: 35px
-                            }
-
-
-                        input[type=range]::-moz-range-track {
-                          -webkit-appearance: none;
-                          background: linear-gradient(to right,
-                          #17121C,
-                          #291003,
-                          #362923,
-                          #553117,
-                          #874c2b,
-                          #ae5a18,
-                          #dc8d54,
-                          #bf8d50,
-                          #dbb288,
-                          #ffeed3
-                                );
-                          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17121C', endColorstr='#ffeed3', GradientType=1 );
-                          height: 60px;
-                          border-radius: 35px;
-                          box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-                        }
-
-
-
-                        input[type=range]::-webkit-slider-thumb {
-                          -webkit-appearance: none;
-                          border: 2px solid #fff;
-                          border-radius: 50%;
-                          height: 64px;
-                          width: 64px;
-                          max-width: 80px;
-                          position: relative;
-                          top: -2px;
-                          box-shadow: inset 0px 0px 2px 2px rgba(51,51,51,0.1);
-                        /*   background: radial-gradient(transparent 28px, green 2px); */
-                          cursor: -webkit-grab;
-
-                          -webkit-transition: border 1000ms ease;
-                          transition: border 1000ms ease;
-                        }
-
-                        input[type=range]::-moz-range-thumb {
-                          -webkit-appearance: none;
-                          border: 2px solid #fff;
-                          border-radius: 50%;
-                          height: 64px;
-                          width: 64px;
-                          max-width: 80px;
-                          position: relative;
-                          top: -2px;
-                          box-shadow: inset 0px 0px 2px 2px rgba(51,51,51,0.1);
-                        /*   background: radial-gradient(transparent 28px, green 2px); */
-                          cursor: -webkit-grab;
-
-                          -webkit-transition: border 1000ms ease;
-                          transition: border 1000ms ease;
-                        }
-
-
-
-                        input[type=range]::-webkit-slider-thumb:active {
-                          cursor: -webkit-grabbing;
-                        }
-
-                        input[type=range]::-moz-range-thumb:active {
-                          cursor: -moz-grabbing;
-                        }
-
-
-
-                        // focus state
-                        input[type=range]:focus {
-                          outline: none;
-                        }
-
-                        input[type='range']:focus::-webkit-slider-thumb {
-                            box-shadow: 0px 0px 7px 3px #0065c4;
-                        }
-
-                        input[type='range']:focus::-moz-range-thumb {
-                          box-shadow: 0px 0px 7px 3px #0065c4;
-                        }
-
-
-
-
-
-
-
+#section-physical-features > div > div > div:nth-child(9) {
+    width: 384px;
+    height: 192px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 4px;
+    padding: 16px;
+    padding-bottom: 192px;
+    justify-content: space-evenly;
+    margin-bottom: 48px;
+    text-align: center;
+}
 
 
 
@@ -1150,15 +1038,17 @@ fieldset {
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 4px;
-  padding: 16px;
+  // padding: 16px;
   background-color: white;
   color: hsl(211, 39%, 23%);
-  max-width: 128px;
-  height: 96px;
-
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-  margin-right: 16px;
-  margin-bottom: 16px;
+  // max-width: 128px;
+  // height: 96px;
+  max-width: 48px;
+      height: 48px;
+      margin: 16px;
+  // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  // margin-right: 16px;
+  // margin-bottom: 16px;
   // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
@@ -1183,8 +1073,10 @@ fieldset {
 
     // basic styles for the svg
     .hair-colour-radio-button svg {
-        width: 128px;
-        height: 96px;
+        // width: 128px;
+        // height: 96px;
+        max-width: 48px;
+            height: 48px;
         border-radius: 4px;
 
 
@@ -1209,22 +1101,39 @@ fieldset {
         }
     }
 
-    .primary {
-      fill: hsl(209, 23%, 60%);
-    }
 
-    .secondary {
-      // fill: #6f213f;
-      fill: hsl(209, 23%, 60%);
-    }
+.dark-brown-hair-colour {
+    fill: #8A6748;
+}
+
+.light-brown-hair-colour {
+    fill: #dc8d54;
+}
+
+.chestnut-hair-colour {
+    fill: #954535;
+}
+
+.red-hair-colour {
+    fill: #9E311E;
+}
+
+.dark-blonde-hair-colour {
+    fill: #bf9f6a;
+}
+
+.light-blonde-hair-colour {
+    fill: #faf0be;
+}
+
 
 
 .hair-colour-radio-button span {
     // color: #000;
     position: absolute;
-    // max-width: 112px;
     display: block;
-    width: 250px;
+    width: 48px;
+    padding-top: 48px;
 }
 
 
