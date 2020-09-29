@@ -6,6 +6,10 @@ html {
   color: #243a52;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .header-title-nav-wrapper {
   padding: 48px;
 }
@@ -522,6 +526,7 @@ fieldset {
   border-radius: 4px;
   padding: 16px;
   justify-content: space-evenly;
+  margin-bottom: 48px;
 }
 
 .skin-colour-radio-button {
