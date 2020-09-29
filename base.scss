@@ -1054,7 +1054,7 @@ fieldset {
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 16px;
+  --outline-offset: 0px;
   --outline-radius: 5px;
 }
 
@@ -1247,8 +1247,8 @@ fieldset {
       padding: 16px;
       background-color: white;
       color: hsl(211, 39%, 23%);
-      max-width: 128px;
-      height: 96px;
+      max-width: 96px;
+      height: 48px;
 
       box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
       margin-right: 16px;
@@ -1258,7 +1258,7 @@ fieldset {
       --checked-state-bg-color: hsl(209, 28%, 39%);
       --checked-state-check-color: #fff;
       --outline-color: var(--checked-state-bg-color);
-      --outline-offset: 16px;
+      --outline-offset: 0px;
       --outline-radius: 5px;
     }
 
@@ -1277,8 +1277,10 @@ fieldset {
 
         // basic styles for the svg
         .hair-feature-radio-button svg {
-            width: 128px;
-            height: 96px;
+            // width: 128px;
+            // height: 96px;
+            width: 96px;
+            height: 48px;
             border-radius: 4px;
 
 
