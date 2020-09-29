@@ -127,18 +127,18 @@ fieldset {
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 4px;
-  padding: 12px;
+  padding: 16px;
   background-color: white;
   color: #243a52;
-  max-width: 128px;
-  height: 32px;
+  max-width: 192px;
+  height: 64px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 10px;
+  --outline-offset: 16px;
   --outline-radius: 5px;
 }
 
@@ -217,8 +217,8 @@ fieldset {
   padding: 16px;
   background-color: white;
   color: #243a52;
-  max-width: 128px;
-  height: 96px;
+  max-width: 192px;
+  height: 128px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
@@ -1176,8 +1176,8 @@ input[type=range]:focus::-moz-range-thumb {
   padding: 32px;
   background-color: white;
   color: #243a52;
-  height: 384px;
-  width: 256px;
+  height: 448px;
+  width: 320px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
