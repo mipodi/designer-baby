@@ -1261,8 +1261,8 @@ fieldset {
   padding: 12px;
   background-color: white;
   color: #243a52;
-  max-width: 128px;
-  height: 96px;
+  width: 192px;
+  height: 128px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
