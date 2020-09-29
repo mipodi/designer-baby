@@ -510,7 +510,17 @@ fieldset {
 
 
 
-
+#section-physical-features > div > div > div:nth-child(4) {
+    width: 384px;
+    height: 96px;
+    // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 4px;
+    padding: 16px;
+    // padding-bottom: 192px;
+    justify-content: space-evenly;
+    margin-bottom: 48px;
+    text-align: center;
+}
 
 
                     .eye-colour-radio-button {
@@ -644,8 +654,12 @@ fieldset {
                         position: absolute;
                         // max-width: 112px;
                         display: block;
-                        width: 250px;
-                        opacity: 0;
+                        // width: 250px;
+                        // opacity: 0;
+                        padding-top: 64px;
+                        // padding-top: 64px;
+                        width: 48px;
+                        max-width: 48px;
                     }
 
 
@@ -763,11 +777,12 @@ fieldset {
                           }
                         }
 #section-physical-features > div > div > div:nth-child(6) {
-    width: 256px;
-    height: 256px;
+    width: 384px;
+    height: 192px;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     border-radius: 4px;
     padding: 16px;
+    padding-bottom: 192px;
     justify-content: space-evenly;
     margin-bottom: 48px;
 }
@@ -899,7 +914,7 @@ fieldset {
                     position: absolute;
                     // max-width: 112px;
                     display: block;
-                    width: 250px;
+                    width: 48px;
                     // opacity: 0;
                     padding-top: 48px;
                 }
