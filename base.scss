@@ -13,6 +13,13 @@ body {
     // line-height: 1.4;
 }
 
+header {
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+text-align: center;
+}
+
 main {
     // padding: 1.4rem 0.6rem;
     // max-width: 1000px;
@@ -90,7 +97,11 @@ a {
 //     font-family: 'Source Sans Pro', sans-serif;
 // }
 
-
+.details-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 summary {
     color: hsl(210, 22%, 49%);
@@ -99,6 +110,8 @@ summary {
 details {
     color: hsl(210, 22%, 49%);
 }
+
+
 
 section {
     min-height: 100vh;
@@ -127,6 +140,18 @@ a:active {
 a:visited {
   // color: hsl(209, 28%, 39%);
   color: hsl(209, 61%, 16%);
+}
+
+.continue-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section-intro {
@@ -180,6 +205,7 @@ fieldset {
 .control {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     // padding-top: 256px;
 }
 
