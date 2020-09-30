@@ -1258,7 +1258,7 @@ fieldset {
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 4px;
-  padding: 12px;
+  padding: 16px;
   background-color: white;
   color: #243a52;
   width: 192px;
@@ -1269,7 +1269,7 @@ fieldset {
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 10px;
+  --outline-offset: 0px;
   --outline-radius: 5px;
 }
 
@@ -1284,14 +1284,16 @@ fieldset {
 }
 
 .extra-options-checkbox svg {
-  width: 128px;
-  height: 96px;
+  width: 192px;
+  height: 128px;
   border-radius: 4px;
   color: #243B53;
   overflow: initial;
   position: relative;
   top: 0px;
   left: 0px;
+  top: -16px;
+  left: -16px;
   background-color: transparent;
   /* apply a transition to the elements inside the svg */
 }
