@@ -360,7 +360,7 @@ fieldset {
   border-radius: 50%;
   background-color: white;
   color: #243a52;
-  max-width: 48px;
+  width: 48px;
   height: 48px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
@@ -368,7 +368,7 @@ fieldset {
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 0px;
+  --outline-offset: 2px;
   --outline-radius: 5px;
 }
 
@@ -383,8 +383,6 @@ fieldset {
 }
 
 .eye-colour-radio-button svg {
-  width: 128px;
-  height: 96px;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -873,7 +871,7 @@ fieldset {
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 0px;
+  --outline-offset: 16px;
   --outline-radius: 5px;
 }
 
@@ -888,8 +886,8 @@ fieldset {
 }
 
 .hair-feature-radio-button svg {
-  width: 96px;
-  height: 48px;
+  width: 64px;
+  height: 16px;
   border-radius: 4px;
   color: #243B53;
   overflow: initial;
@@ -914,7 +912,6 @@ fieldset {
 .hair-feature-radio-button span {
   position: absolute;
   display: block;
-  width: 250px;
 }
 
 .hair-feature-radio-button span.info {
@@ -1269,7 +1266,7 @@ fieldset {
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 0px;
+  --outline-offset: 16px;
   --outline-radius: 5px;
 }
 
@@ -1284,16 +1281,14 @@ fieldset {
 }
 
 .extra-options-checkbox svg {
-  width: 192px;
-  height: 128px;
+  width: 160px;
+  height: 96px;
   border-radius: 4px;
   color: #243B53;
   overflow: initial;
   position: relative;
   top: 0px;
   left: 0px;
-  top: -16px;
-  left: -16px;
   background-color: transparent;
   /* apply a transition to the elements inside the svg */
 }
