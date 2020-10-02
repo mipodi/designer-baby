@@ -15,10 +15,10 @@ body {
 }
 
 header {
-    display: flex;
-flex-wrap: wrap;
-justify-content: center;
-text-align: center;
+//     display: flex;
+// flex-wrap: wrap;
+// justify-content: center;
+// text-align: center;
 }
 
 main {
@@ -32,6 +32,8 @@ main {
 
 .header-title-nav-wrapper {
     padding: 48px;
+    display: flex;
+    flex-direction: row;
 }
 
 .inner-wrap-footer {
@@ -155,13 +157,38 @@ a:visited {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
 }
+
+
+/* jonathan-borba-V3huxxhsztI-unsplash copy 1 */
+
 
 .section-intro {
     // background-color: #FFF;
+}
+
+
+
+.top-background {
+    height: 1024px;
+    max-width: 1440px;
+    // left: 0px;
+    // top: 0px;
+    border-radius: 0px;
+    background: url(jonathan-borba-V3huxxhsztI-unsplash.jpg);
+        background-position: center;
+        // color: #000;
+}
+
+
+.paragraph-section-intro {
+    // position: relative;
+    color: #fff;
+    text-shadow: 0 0 50px hsla(0, 0%, 0%, .4);
+    // z-index: 3;
 }
 
 .section-sex {
