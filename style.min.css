@@ -90,7 +90,7 @@ a {
 .details-summary {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 summary {
@@ -125,6 +125,7 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding-right: 16px;
 }
 
 /* jonathan-borba-V3huxxhsztI-unsplash copy 1 */
@@ -218,6 +219,22 @@ a:visited {
 
 .section-sex {
   background-color: #f1f5f8;
+}
+
+.section-sex-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sex-info-area {
+  display: flex;
+  flex-direction: column;
+  padding-right: 96px;
+}
+
+.sex-choice-area {
+  padding-top: 256px;
 }
 
 .section-eggs {
