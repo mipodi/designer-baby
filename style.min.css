@@ -14,6 +14,7 @@ html {
   padding: 48px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .header-title {
@@ -21,6 +22,10 @@ html {
   font-size: 24px;
   line-height: 30px;
   color: #102A43;
+}
+
+.header-nav-list {
+  color: #fff;
 }
 
 .inner-wrap-footer {
