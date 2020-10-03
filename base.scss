@@ -11,10 +11,16 @@ $primary-dark-accent-color: hsl(168, 80%, 23%); /* #0C6B58 */
 
 // Greyscale
 
-
-
-
-
+$blue-grey01: hsl(209, 61%, 16%); /* #102A43 */
+$blue-grey02: hsl(211, 39%, 23%); /* #243B53 */
+$blue-grey03: hsl(209, 34%, 30%); /* #334E68 */
+$blue-grey04: hsl(209, 28%, 39%); /* #486581 */
+$blue-grey05: hsl(210, 22%, 49%); /* #627D98 */
+$blue-grey06: hsl(209, 23%, 60%); /* #829AB1 */
+$blue-grey07: hsl(211, 27%, 70%); /* #9FB3C8 */
+$blue-grey08: hsl(210, 31%, 80%); /* #BCCCDC */
+$blue-grey09: hsl(212, 33%, 89%); /* #D9E2EC */
+$blue-grey10: hsl(210, 36%, 96%); /* #F0F4F8 */
 
 
 html {
@@ -427,7 +433,7 @@ font-size: 12px;
 // body > div.top-background > section > div > div > details
 
 .section-sex {
-    background-color: hsl(210, 36%, 96%);
+    background-color: $blue-grey10;
 }
 
 .section-sex-area {
@@ -449,7 +455,7 @@ font-size: 12px;
 }
 
 .section-eggs {
-    background-color: #C6F7E2;
+    background-color: $primary-light-background-color;
 }
 
 .section-disease {
@@ -558,7 +564,7 @@ fieldset {
   border-radius: 4px;
   padding: 16px;
   background-color: white;
-  color: hsl(211, 39%, 23%);
+  color: $blue-grey02;
   // max-width: 175px;
   // max-width: 128px;
   max-width: 192px;
@@ -621,6 +627,7 @@ fieldset {
 
     .primary {
       fill: hsl(209, 23%, 60%);
+      fill: $blue-grey10;
     }
 
     .secondary {
@@ -640,11 +647,13 @@ fieldset {
     .basic-checkbox input[type="checkbox"]:checked + svg {
 
       .primary {
-        fill: hsl(209, 34%, 30%);
+        // fill: hsl(209, 34%, 30%);
+        fill: $primary-light-accent-color;
       }
 
       .secondary {
-        fill: hsl(210, 36%, 96%);
+        // fill: hsl(210, 36%, 96%);
+        fill: $primary-dark-accent-color;
       }
 
 
@@ -703,7 +712,7 @@ fieldset {
           border-radius: 4px;
           padding: 16px;
           background-color: white;
-          color: hsl(211, 39%, 23%);
+          color: $blue-grey02;
           max-width: 192px;
           height: 128px;
 
@@ -761,12 +770,14 @@ fieldset {
             }
 
             .primary {
-              fill: hsl(209, 23%, 60%);
+              // fill: hsl(209, 23%, 60%);
+              fill: $blue-grey10;
             }
 
             .secondary {
               // fill: #6f213f;
-              fill: hsl(209, 23%, 60%);
+              // fill: hsl(209, 23%, 60%);
+              fill: $blue-grey10;
             }
 
 
@@ -823,13 +834,15 @@ fieldset {
             // style changes inside the svg when the checkbox is checked
             .sex-radio-button input[type="radio"]:checked + svg {
 
-              .primary {
-                fill: hsl(209, 34%, 30%);
-              }
+                .primary {
+                  // fill: hsl(209, 34%, 30%);
+                  fill: $primary-light-accent-color;
+                }
 
-              .secondary {
-                fill: hsl(210, 36%, 96%);
-              }
+                .secondary {
+                  // fill: hsl(210, 36%, 96%);
+                  fill: $primary-dark-accent-color;
+                }
 
 
         }
@@ -898,7 +911,7 @@ fieldset {
                       border-radius: 50%;
                       // padding: 16px;
                       background-color: white;
-                      color: hsl(211, 39%, 23%);
+                      color: $blue-grey02;
                       width: 48px;
                       height: 48px;
 
@@ -1169,7 +1182,7 @@ fieldset {
                   border-radius: 50%;
                   // padding: 16px;
                   background-color: white;
-                  color: hsl(211, 39%, 23%);
+                  color: $blue-grey02;
                   max-width: 48px;
                   height: 48px;
 
@@ -1403,7 +1416,7 @@ fieldset {
   border-radius: 4px;
   // padding: 16px;
   background-color: white;
-  color: hsl(211, 39%, 23%);
+  color: $blue-grey02;
   // max-width: 128px;
   // height: 96px;
   max-width: 48px;
@@ -1609,7 +1622,7 @@ fieldset {
       border-radius: 4px;
       padding: 16px;
       background-color: white;
-      color: hsl(211, 39%, 23%);
+      color: $blue-grey02;
       max-width: 96px;
       height: 48px;
 
@@ -1795,7 +1808,7 @@ fieldset {
               border-radius: 4px;
               padding: 16px;
               background-color: white;
-              color: hsl(211, 39%, 23%);
+              color: $blue-grey02;
               max-width: 192px;
               height: 128px;
 
@@ -1913,13 +1926,15 @@ fieldset {
                 // style changes inside the svg when the checkbox is checked
                 .gestation-radio-button input[type="radio"]:checked + svg {
 
-                  .primary {
-                    fill: hsl(209, 34%, 30%);
-                  }
+                    .primary {
+                      // fill: hsl(209, 34%, 30%);
+                      fill: $primary-light-accent-color;
+                    }
 
-                  .secondary {
-                    fill: hsl(210, 36%, 96%);
-                  }
+                    .secondary {
+                      // fill: hsl(210, 36%, 96%);
+                      fill: $primary-dark-accent-color;
+                    }
 
 
             }
@@ -1977,7 +1992,7 @@ fieldset {
               border-radius: 4px;
               padding: 32px;
               background-color: white;
-              color: hsl(211, 39%, 23%);
+              color: $blue-grey02;
               // max-width: 175px;
               // max-width: 512px;
               // height: 40px;
@@ -2103,15 +2118,15 @@ fieldset {
                 // style changes inside the svg when the checkbox is checked
                 .egg-package-radio-button input[type="radio"]:checked + svg {
 
-                  .primary {
-                    fill: hsl(209, 34%, 30%);
-                    fill: #7069FA;
-                  }
+                    .primary {
+                      // fill: hsl(209, 34%, 30%);
+                      fill: $primary-light-accent-color;
+                    }
 
-                  .secondary {
-                    fill: hsl(210, 36%, 96%);
-                  }
-
+                    .secondary {
+                      // fill: hsl(210, 36%, 96%);
+                      fill: $primary-dark-accent-color;
+                    }
 
             }
 
@@ -2167,7 +2182,7 @@ fieldset {
                       border-radius: 4px;
                       padding: 16px;
                       background-color: white;
-                      color: hsl(211, 39%, 23%);
+                      color: $blue-grey02;
                       // max-width: 175px;
                       // max-width: 128px;
                       // height: 40px;
@@ -2260,14 +2275,15 @@ fieldset {
                         // style changes inside the svg when the checkbox is checked
                         .extra-options-checkbox input[type="checkbox"]:checked + svg {
 
-                          .primary {
-                            fill: hsl(209, 34%, 30%);
-                          }
+                            .primary {
+                              // fill: hsl(209, 34%, 30%);
+                              fill: $primary-light-accent-color;
+                            }
 
-                          .secondary {
-                            fill: hsl(210, 36%, 96%);
-                          }
-
+                            .secondary {
+                              // fill: hsl(210, 36%, 96%);
+                              fill: $primary-dark-accent-color;
+                            }
 
                     }
 

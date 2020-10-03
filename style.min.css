@@ -3,6 +3,16 @@
 /* #EFFCF6 */
 /* #8EEDC7 */
 /* #0C6B58 */
+/* #102A43 */
+/* #243B53 */
+/* #334E68 */
+/* #486581 */
+/* #627D98 */
+/* #829AB1 */
+/* #9FB3C8 */
+/* #BCCCDC */
+/* #D9E2EC */
+/* #F0F4F8 */
 html {
   font-size: 100%;
   font-family: "Source Sans Pro", sans-serif;
@@ -271,7 +281,7 @@ body > div.top-background > section > div > div > div > p {
 }
 
 .section-eggs {
-  background-color: #C6F7E2;
+  background-color: #eefcf5;
 }
 
 .section-disease {
@@ -395,6 +405,7 @@ fieldset {
 
 .primary {
   fill: #829ab0;
+  fill: #f1f5f8;
 }
 
 .secondary {
@@ -407,10 +418,10 @@ fieldset {
 }
 
 .basic-checkbox input[type=checkbox]:checked + svg .primary {
-  fill: #324d67;
+  fill: #8cedc6;
 }
 .basic-checkbox input[type=checkbox]:checked + svg .secondary {
-  fill: #f1f5f8;
+  fill: #0c6a57;
 }
 
 .basic-checkbox input[type=checkbox]:focus + svg {
@@ -481,11 +492,11 @@ fieldset {
 }
 
 .primary {
-  fill: #829ab0;
+  fill: #f1f5f8;
 }
 
 .secondary {
-  fill: #829ab0;
+  fill: #f1f5f8;
 }
 
 .sex-radio-button span {
@@ -541,10 +552,10 @@ fieldset {
 }
 
 .sex-radio-button input[type=radio]:checked + svg .primary {
-  fill: #324d67;
+  fill: #8cedc6;
 }
 .sex-radio-button input[type=radio]:checked + svg .secondary {
-  fill: #f1f5f8;
+  fill: #0c6a57;
 }
 
 .sex-radio-button input[type=radio]:focus + svg {
@@ -1283,10 +1294,10 @@ fieldset {
 }
 
 .gestation-radio-button input[type=radio]:checked + svg .primary {
-  fill: #324d67;
+  fill: #8cedc6;
 }
 .gestation-radio-button input[type=radio]:checked + svg .secondary {
-  fill: #f1f5f8;
+  fill: #0c6a57;
 }
 
 .gestation-radio-button input[type=radio]:focus + svg {
@@ -1415,11 +1426,10 @@ fieldset {
 }
 
 .egg-package-radio-button input[type=radio]:checked + svg .primary {
-  fill: #324d67;
-  fill: #7069FA;
+  fill: #8cedc6;
 }
 .egg-package-radio-button input[type=radio]:checked + svg .secondary {
-  fill: #f1f5f8;
+  fill: #0c6a57;
 }
 
 .egg-package-radio-button input[type=radio]:focus + svg {
@@ -1510,10 +1520,10 @@ fieldset {
 }
 
 .extra-options-checkbox input[type=checkbox]:checked + svg .primary {
-  fill: #324d67;
+  fill: #8cedc6;
 }
 .extra-options-checkbox input[type=checkbox]:checked + svg .secondary {
-  fill: #f1f5f8;
+  fill: #0c6a57;
 }
 
 .extra-options-checkbox input[type=checkbox]:focus + svg {
