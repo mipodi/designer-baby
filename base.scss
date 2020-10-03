@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import "normalize.min.css";
 
 
@@ -861,6 +862,7 @@ fieldset {
             font-weight: 400;
             color: hsl(210, 22%, 49%);
             letter-spacing: 0.05em;
+            font-family: 'Varela Round', sans-serif;
         }
 
         .sex-radio-button span.eggs-fluid {
@@ -1950,9 +1952,15 @@ fieldset {
             }
 
             .gestation-radio-button span.egg {
+                // padding-top: 16px;
+                // font-size: 48px;
+                // font-weight: 400;
                 padding-top: 16px;
-                font-size: 48px;
+                font-size: 64px;
                 font-weight: 400;
+                color: hsl(210, 22%, 49%);
+                letter-spacing: 0.05em;
+                font-family: 'Varela Round', sans-serif;
             }
 
             .gestation-radio-button span.eggs-fluid {
@@ -2145,6 +2153,8 @@ fieldset {
                 padding-top: 16px;
                 font-size: 48px;
                 font-weight: 400;
+                // font-family: 'Varela Round', sans-serif;
+                color: $blue-grey05;
             }
 
             .egg-package-radio-button span.eggs-fluid {
