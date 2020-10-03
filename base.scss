@@ -2,7 +2,20 @@
 @import "normalize.min.css";
 
 
-// $accent-colour:
+
+// Main colors
+$primary-light-background-color: hsl(152, 68%, 96%); /* #EFFCF6 */
+$primary-light-accent-color: hsl(156, 73%, 74%); /* #8EEDC7 */
+$primary-dark-accent-color: hsl(168, 80%, 23%); /* #0C6B58 */
+
+
+// Greyscale
+
+
+
+
+
+
 
 html {
     font-size: 100%;
@@ -32,6 +45,7 @@ main {
 
 .header-title-nav-wrapper {
     padding: 48px;
+    padding-top: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,12 +60,17 @@ text-shadow: 0 0 50px hsla(0, 0%, 0%, .4);
 // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.header-nav-list {
+    display: inline-block;
+}
+
 .header-nav-list a {
     color: #fff;
     text-decoration: none;
     text-shadow: 0 0 50px hsla(0, 0%, 0%, .4);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 400;
+    margin-left: 32px;
 }
 
 .header-nav-list a:visited {
@@ -210,7 +229,7 @@ height: 32px;
 // top: 0px;
 display: flex;
 justify-content: center;
-background: #FFFFFF;
+background: $primary-light-background-color;
 max-width: 100%
 }
 
@@ -254,15 +273,21 @@ color: #102A43;
  // background-size: cover;
 }
 
-
-
-
-.heading-section-intro {
+.section-intro-area {
     position: absolute;
 width: 389px;
 height: 48px;
 left: 812px;
-top: 533px;
+top: 362px;
+}
+
+
+.heading-section-intro {
+    // position: absolute;
+// width: 389px;
+// height: 48px;
+// left: 812px;
+// top: 533px;
 
 font-family: Source Sans Pro;
 font-style: normal;
@@ -284,11 +309,11 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     // z-index: 3;
 
-    position: absolute;
-width: 348px;
-height: 197px;
-left: 812px;
-top: 650px;
+//     position: absolute;
+// width: 348px;
+// height: 197px;
+// left: 812px;
+// top: 650px;
 
 font-family: Source Sans Pro;
 font-style: normal;
@@ -298,20 +323,45 @@ line-height: 20px;
 }
 
 .cta-section-intro {
-    position: absolute;
-width: 302px;
-height: 24px;
-left: 812px;
-top: 876px;
+//     position: absolute;
+// width: 302px;
+// height: 24px;
+// left: 812px;
+// top: 876px;
 
 font-family: Source Sans Pro;
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
 line-height: 20px;
-text-decoration-line: underline;
-
+text-decoration: none;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 color: #FFFFFF;
+}
+
+
+.section-intro-area p a:visited{
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.cta-section-intro p a {
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+// body > div.top-background > section > div > div > p:nth-child(3) > a
+.cta-section-intro p a:visited {
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.cta-section-intro a:visited {
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .details-section-intro {
