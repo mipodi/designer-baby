@@ -203,41 +203,31 @@ a:visited {
 .cta-section-intro {
   font-family: Source Sans Pro;
   font-style: normal;
-  font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
   text-decoration: none;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #FFFFFF;
 }
 
-.section-intro-area p a:visited {
+.section-intro-area-cta {
+  background-color: #eefcf5;
+  max-width: 192px;
+  /* padding: 1px; */
+  padding-left: 16px;
+}
+
+.section-intro-area details {
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.cta-section-intro p a {
+.section-intro-area details p {
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.cta-section-intro p a:visited {
+.section-intro-area summary {
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.cta-section-intro a:visited {
-  color: #fff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.details-section-intro {
-  position: absolute;
-  width: 302px;
-  height: 29px;
-  left: 812px;
-  top: 906px;
-  color: #fff;
+  font-size: 12px;
 }
 
 .section-sex {

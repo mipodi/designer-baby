@@ -331,48 +331,82 @@ line-height: 20px;
 
 font-family: Source Sans Pro;
 font-style: normal;
-font-weight: 600;
+// font-weight: 600;
 font-size: 16px;
-line-height: 20px;
+// line-height: 20px;
 text-decoration: none;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-color: #FFFFFF;
+// text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// color: #FFFFFF;
 }
 
 
+
+.section-intro-area-cta {
+    background-color: $primary-light-background-color;
+    // max-width: 256px;
+    max-width: 192px;
+    /* padding: 1px; */
+    padding-left: 16px;
+}
+
 .section-intro-area p a:visited{
-    color: #fff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // color: #fff;
+    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
 .cta-section-intro p a {
-    color: #fff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // color: #fff;
+    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
 // body > div.top-background > section > div > div > p:nth-child(3) > a
 .cta-section-intro p a:visited {
-    color: #fff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // color: #fff;
+    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
 .cta-section-intro a:visited {
-    color: #fff;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // color: #fff;
+    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.details-section-intro {
-    position: absolute;
-width: 302px;
-height: 29px;
-left: 812px;
-top: 906px;
+.section-intro-area details {
+//     position: absolute;
+// width: 302px;
+// height: 29px;
+// left: 812px;
+// top: 906px;
 color: #fff;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.section-intro-area details p {
+//     position: absolute;
+// width: 302px;
+// height: 29px;
+// left: 812px;
+// top: 906px;
+color: #fff;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.section-intro-area summary {
+//     position: absolute;
+// width: 302px;
+// height: 29px;
+// left: 812px;
+// top: 906px;
+color: #fff;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-size: 12px;
+}
+
+
+// body > div.top-background > section > div > div > details
 
 .section-sex {
     background-color: hsl(210, 36%, 96%);
