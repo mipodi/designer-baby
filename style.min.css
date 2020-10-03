@@ -265,24 +265,32 @@ body > div.top-background > section > div > div > div > p {
   background-color: #f1f5f8;
 }
 
-.section-sex-area {
+.section-area {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.sex-info-area {
+.section-area-info {
   display: flex;
   flex-direction: column;
   padding-right: 96px;
 }
 
-.sex-choice-area {
+.section-area-choice-sex {
   padding-top: 256px;
 }
 
 .section-eggs {
   background-color: #eefcf5;
+}
+
+#section-eggs > div.section-area > div.section-area-info > h2 .section-eggs-heading {
+  max-width: 192px;
+}
+
+h2 .section-eggs-heading {
+  max-width: 192px;
 }
 
 .section-disease {

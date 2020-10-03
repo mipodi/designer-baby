@@ -437,19 +437,26 @@ font-size: 12px;
     background-color: $blue-grey10;
 }
 
-.section-sex-area {
+.section-area {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.sex-info-area {
+.section-area-info {
     display: flex;
     flex-direction: column;
     padding-right: 96px;
 }
 
-.sex-choice-area {
+.section-area-choice {
+    // display: flex;
+    // flex-direction: column;
+    // padding-right: 96px;
+}
+
+
+.section-area-choice-sex {
     // display: flex;
     // flex-direction: column;
     padding-top: 256px;
@@ -458,6 +465,31 @@ font-size: 12px;
 .section-eggs {
     background-color: $primary-light-background-color;
 }
+
+// #section-eggs > div.section-area > div.section-area-info > h2
+
+// .section-area-info h2 {
+//     max-width: 192px;
+// }
+//
+// #section-eggs > div.section-area > div.section-area-info > h2 {
+//     max-width: 192px;
+// }
+
+// #section-eggs > div.section-area > div.section-area-info > h2 .section-eggs-heading {
+//     max-width: 192px;
+// }
+//
+//
+// h2 .section-eggs-heading {
+//     max-width: 192px;
+// }
+
+// .section-area-info h2 .section-eggs-heading {
+//     max-width: 192px;
+//
+// }
+
 
 .section-disease {
     background-color: hsl(210, 36%, 96%);
