@@ -341,7 +341,6 @@ body > div.top-background > section > div > div > div > p {
 .hair-colour-area {
   display: flex;
   flex-direction: column;
-  margin-right: 64px;
   max-width: 384px;
 }
 
