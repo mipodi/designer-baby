@@ -212,6 +212,10 @@ a:visited {
     padding-right: 16px;
 }
 
+.continue-field-diseases {
+    padding-right: 96px;
+}
+
 .container {
     // display: flex;
     // flex-wrap: wrap;
@@ -440,18 +444,26 @@ font-size: 12px;
 .section-area {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 }
 
 .section-area-info {
     display: flex;
     flex-direction: column;
     padding-right: 96px;
+    // width: 320px;
+    // flex: 320px;
+    display: inline-flex;
+}
+
+#section-disease > div.section-area > div.section-area-info > p:nth-child(2) {
+    width: 384px;
 }
 
 .section-area-choice {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     // padding-right: 96px;
 }
 
@@ -580,9 +592,14 @@ fieldset {
 .control {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
     // max-width: 768px;
     // padding-top: 256px;
+    max-width: 768px;
+}
+
+.control-choice {
+    max-width: 600px;
 }
 
 .basic-checkbox {

@@ -147,6 +147,10 @@ a:visited {
   padding-right: 16px;
 }
 
+.continue-field-diseases {
+  padding-right: 96px;
+}
+
 /* jonathan-borba-V3huxxhsztI-unsplash copy 1 */
 .top-info-banner {
   max-width: 100%;
@@ -268,13 +272,23 @@ body > div.top-background > section > div > div > div > p {
 .section-area {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .section-area-info {
   display: flex;
   flex-direction: column;
   padding-right: 96px;
+  display: inline-flex;
+}
+
+#section-disease > div.section-area > div.section-area-info > p:nth-child(2) {
+  width: 384px;
+}
+
+.section-area-choice {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .section-area-choice-sex {
@@ -283,14 +297,6 @@ body > div.top-background > section > div > div > div > p {
 
 .section-eggs {
   background-color: #eefcf5;
-}
-
-#section-eggs > div.section-area > div.section-area-info > h2 .section-eggs-heading {
-  max-width: 192px;
-}
-
-h2 .section-eggs-heading {
-  max-width: 192px;
 }
 
 .section-disease {
@@ -362,7 +368,11 @@ fieldset {
 .control {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  max-width: 768px;
+}
+
+.control-choice {
+  max-width: 600px;
 }
 
 .basic-checkbox {
