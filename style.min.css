@@ -124,7 +124,7 @@ section {
   min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
-  padding: 48px;
+  padding: 64px;
 }
 
 a {
@@ -314,10 +314,6 @@ body > div.top-background > section > div > div > div > p {
 .paragraph-disease {
   flex-basis: 70%;
   margin-right: 64px;
-}
-
-.physical-features-area {
-  padding-left: 256px;
 }
 
 .eyes-skin-area {
