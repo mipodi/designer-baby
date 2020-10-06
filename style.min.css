@@ -96,6 +96,12 @@ p {
   color: #324d67;
 }
 
+ul {
+  margin-bottom: 1.4rem;
+  max-width: 20em;
+  color: #324d67;
+}
+
 details,
 button,
 a {
