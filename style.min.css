@@ -194,7 +194,6 @@ a:visited {
 
 .top-background {
   height: 1024px;
-  max-width: 1440px;
   border-radius: 0px;
   background: url(jonathan-borba-V3huxxhsztI-unsplash.jpg);
   background-position: center;
@@ -318,6 +317,15 @@ body > div.top-background > section > div > div > div > p {
   background-color: #f1f5f8;
 }
 
+.section-unwanted-features {
+  background: url(section-features.jpg);
+  background-position: center;
+}
+
+.section-physical-features {
+  background-color: #eefcf5;
+}
+
 .section-container {
   display: flex;
 }
@@ -358,6 +366,10 @@ body > div.top-background > section > div > div > div > p {
 .hair-feature-area {
   display: flex;
   flex-direction: column;
+}
+
+.section-extra-options {
+  background-color: #f1f5f8;
 }
 
 fieldset {

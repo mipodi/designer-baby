@@ -291,7 +291,7 @@ color: #102A43;
 
 .top-background {
     height: 1024px;
-    max-width: 1440px;
+    // max-width: 1440px;
     // left: 0px;
     // top: 0px;
     border-radius: 0px;
@@ -529,6 +529,12 @@ font-size: 12px;
 
 .section-unwanted-features {
     // background-color: #EFFCF6;
+    background: url(section-features.jpg);
+        background-position: center;
+}
+
+.section-physical-features {
+    background-color: $primary-light-background-color;
 }
 
 .section-container {
@@ -589,7 +595,9 @@ font-size: 12px;
 }
 
 
-
+.section-extra-options {
+    background-color: $blue-grey10;
+}
 
 fieldset {
   display: block;
