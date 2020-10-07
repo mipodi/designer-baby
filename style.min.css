@@ -363,6 +363,10 @@ body > div.top-background > section > div > div > div > p {
   margin-bottom: 65px;
 }
 
+div.control.hair-feature-area-inner {
+  max-width: 300px;
+}
+
 .hair-colour-area {
   display: flex;
   flex-direction: column;
