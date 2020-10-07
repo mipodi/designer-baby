@@ -846,7 +846,8 @@ fieldset {
   color: #243a52;
   max-width: 48px;
   height: 48px;
-  margin: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
@@ -1004,7 +1005,8 @@ fieldset {
   color: #243a52;
   max-width: 48px;
   height: 48px;
-  margin: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
