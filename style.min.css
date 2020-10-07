@@ -40,6 +40,12 @@ html {
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
+.header-title p {
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
 .header-nav-list {
   display: inline-block;
 }
