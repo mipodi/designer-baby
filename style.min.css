@@ -378,6 +378,36 @@ body > div.top-background > section > div > div > div > p {
   background-color: #f1f5f8;
 }
 
+.section-request-quote {
+  background: url(section-request.jpg);
+  background-position: center;
+}
+
+.section-outro {
+  background: url(section-outro.jpg);
+  background-position: center;
+}
+
+.section-outro h2 {
+  max-width: 20rem;
+  font-weight: 600;
+}
+
+.section-outro p {
+  font-weight: 600;
+  color: #102a42;
+}
+
+.about-page {
+  background: url(about.jpg);
+  background-position: center;
+}
+
+.about-page p {
+  font-weight: 600;
+  color: #102a42;
+}
+
 fieldset {
   display: block;
   margin-left: 2px;

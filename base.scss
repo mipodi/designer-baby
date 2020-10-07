@@ -605,6 +605,38 @@ font-size: 12px;
     background-color: $blue-grey10;
 }
 
+.section-request-quote {
+    // background-color: #EFFCF6;
+    background: url(section-request.jpg);
+        background-position: center;
+}
+
+.section-outro {
+    background: url(section-outro.jpg);
+        background-position: center;
+}
+
+.section-outro h2 {
+    max-width: 20rem;
+    font-weight: 600;
+}
+
+.section-outro p {
+    font-weight: 600;
+    color: $blue-grey01;
+}
+
+
+.about-page {
+    background: url(about.jpg);
+        background-position: center;
+}
+
+.about-page p {
+    font-weight: 600;
+    color: $blue-grey01;
+}
+
 fieldset {
   display: block;
   margin-left: 2px;
