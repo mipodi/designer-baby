@@ -59,6 +59,14 @@ html {
   margin-left: 32px;
 }
 
+.header-nav-list ul {
+  list-style: none;
+}
+
+.header-nav-list li {
+  display: inline;
+}
+
 .header-nav-list a:visited {
   color: #fff;
   text-decoration: none;

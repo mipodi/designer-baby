@@ -86,6 +86,14 @@ text-shadow: 0 0 50px hsla(0, 0%, 0%, .4);
     margin-left: 32px;
 }
 
+.header-nav-list ul {
+    list-style:none;
+}
+
+.header-nav-list li {
+	display:inline;
+}
+
 .header-nav-list a:visited {
     color: #fff;
     text-decoration: none;
