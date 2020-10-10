@@ -358,6 +358,7 @@ body > div.top-background > section > div > div > div > p {
   display: flex;
   flex-direction: column;
   margin-right: 64px;
+  width: 20rem;
 }
 
 .skin-area {
@@ -366,13 +367,27 @@ body > div.top-background > section > div > div > div > p {
   max-width: 384px;
 }
 
+div.control.skin-area-inner {
+  max-width: 256px;
+}
+
 .hair-area {
   display: flex;
   margin-bottom: 65px;
 }
 
+.hair-colour-area {
+  margin-right: 64px;
+  width: 20rem;
+}
+
+div.control.hair-colour-area-inner {
+  max-width: 256px;
+}
+
 div.control.hair-feature-area-inner {
   max-width: 300px;
+  margin-bottom: 96px;
 }
 
 .hair-colour-area {
