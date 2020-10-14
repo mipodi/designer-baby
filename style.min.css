@@ -205,7 +205,7 @@ a:visited {
 }
 
 .top-info-banner p {
-  max-width: 100%;
+  max-width: 80%;
   margin: 10px;
   letter-spacing: 0.03rem;
 }
@@ -1706,6 +1706,11 @@ fieldset {
     width: 300px;
     --outline-offset: 23px;
     margin-right: 0px;
+  }
+}
+@media screen and (max-width: 462px) {
+  .top-info-banner {
+    height: 48px;
   }
 }
 

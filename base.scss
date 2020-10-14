@@ -404,7 +404,7 @@ max-width: 100%
 
 
 .top-info-banner p {
-    max-width: 100%;
+    max-width: 80%;
         margin: 10px;
         letter-spacing: 0.03rem;
 }
@@ -2688,5 +2688,13 @@ fieldset {
         --outline-offset: 23px;
         margin-right: 0px;
 
+    }
+}
+
+
+
+@media screen and (max-width: 462px) {
+    .top-info-banner {
+    height: 48px;
     }
 }
