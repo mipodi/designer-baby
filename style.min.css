@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import "normalize.min.css";
+* {
+  outline: 1px solid red;
+}
+
 /* #EFFCF6 */
 /* #8EEDC7 */
 /* #0C6B58 */
@@ -18,6 +22,22 @@ html {
   font-size: 100%;
   font-family: "Source Sans Pro", sans-serif;
   color: #243a52;
+  background-color: #eefcf5;
+}
+
+body {
+  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+html,
+body {
+  width: 100%;
 }
 
 *, *::before, *::after {
@@ -25,7 +45,7 @@ html {
 }
 
 .header-title-nav-wrapper {
-  padding: 48px;
+  padding: 24px;
   padding-top: 24px;
   display: flex;
   flex-direction: row;
@@ -154,7 +174,6 @@ input[type=checkbox]:checked ~ #overlay-button span:after {
   background: #ec6451;
   z-index: 2;
   visibility: hidden;
-  position: fixed;
 }
 #overlay.active {
   visibility: visible;
@@ -251,7 +270,7 @@ section {
   min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
-  padding: 64px;
+  padding: 24px;
 }
 
 a {
@@ -320,11 +339,8 @@ a:visited {
 }
 
 .section-intro-area {
-  position: absolute;
-  width: 389px;
+  max-width: 389px;
   height: 48px;
-  left: 812px;
-  top: 362px;
 }
 
 .heading-section-intro {
@@ -405,7 +421,7 @@ body > div.top-background > section > div > div > div > p {
 
 .section-area {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .section-area-info {
@@ -415,10 +431,6 @@ body > div.top-background > section > div > div > div > p {
   display: inline-flex;
 }
 
-#section-disease > div.section-area > div.section-area-info > p:nth-child(2) {
-  width: 384px;
-}
-
 .section-area-choice {
   display: flex;
   flex-direction: column;
@@ -426,7 +438,7 @@ body > div.top-background > section > div > div > div > p {
 }
 
 .section-area-choice-sex {
-  padding-top: 256px;
+  padding-top: 48px;
 }
 
 .section-eggs {
@@ -1764,9 +1776,47 @@ fieldset {
     stroke: highlight;
   }
 }
-@media (max-width: 400px) {
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 1205px) {
+  .section-intro-area {
+    position: absolute;
+    left: 812px;
+    top: 362px;
+  }
+}
+@media screen and (min-width: 909px) {
+  .section-area {
+    flex-direction: row;
+  }
+
+  .section-area-choice-sex {
+    padding-top: 256px;
+  }
+
   section {
+    padding: 64px;
+  }
+
+  .header-title-nav-wrapper {
     padding: 48px;
+  }
+}
+@media screen and (max-width: 340px) {
+  #section-eggs {
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+
+  .section-area-info {
+    padding-right: 0px;
+  }
+
+  .egg-package-radio-button {
+    padding: 22px;
+    height: 428px;
+    width: 300px;
+    --outline-offset: 23px;
+    margin-right: 0px;
   }
 }
 

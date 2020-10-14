@@ -3,6 +3,12 @@
 @import "normalize.min.css";
 
 
+// Troubleshoot
+
+* {
+    outline: 1px solid red;
+}
+
 
 // Main colors
 $primary-light-background-color: hsl(152, 68%, 96%); /* #EFFCF6 */
@@ -28,10 +34,27 @@ html {
     font-size: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     color: hsl(211, 39%, 23%);
+    background-color: $primary-light-background-color;
 }
 
 body {
+    // overflow-x: hidden;
+    // overflow: hidden;
+    // overflow-x: hidden;
     // line-height: 1.4;
+    margin: 0;
+// font-family: arial;
+width: 100vw;
+height: 100vh;
+animation: bugfix infinite 1s;
+-webkit-animation: bugfix infinite 1s;
+}
+
+
+html,
+body{
+width:100%;
+// overflow-x:hidden;
 }
 
 header {
@@ -51,7 +74,7 @@ main {
 }
 
 .header-title-nav-wrapper {
-    padding: 48px;
+    padding: 24px;
     padding-top: 24px;
     display: flex;
     flex-direction: row;
@@ -172,7 +195,7 @@ input[type=checkbox]:checked ~ #overlay-button {
   background: #ec6451;
   z-index: 2;
   visibility: hidden;
-  position: fixed;
+  // position: fixed;
   &.active {
     visibility: visible;
   }
@@ -306,7 +329,8 @@ section {
     min-height: 100vh;
     margin-right: auto;
     margin-left: auto;
-    padding: 64px;
+    // padding: 64px;
+    padding: 24px;
 }
 
 
@@ -419,12 +443,15 @@ color: #102A43;
  // background-size: cover;
 }
 
+
+
+
 .section-intro-area {
-    position: absolute;
-width: 389px;
+    // position: absolute;
+max-width: 389px;
 height: 48px;
-left: 812px;
-top: 362px;
+// left: 812px;
+// top: 362px;
 }
 
 
@@ -578,7 +605,7 @@ font-size: 12px;
 
 .section-area {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     // flex-wrap: wrap;
 }
 
@@ -591,9 +618,9 @@ font-size: 12px;
     display: inline-flex;
 }
 
-#section-disease > div.section-area > div.section-area-info > p:nth-child(2) {
-    width: 384px;
-}
+// #section-disease > div.section-area > div.section-area-info > p:nth-child(2) {
+//     width: 384px;
+// }
 
 .section-area-choice {
     display: flex;
@@ -606,7 +633,7 @@ font-size: 12px;
 .section-area-choice-sex {
     // display: flex;
     // flex-direction: column;
-    padding-top: 256px;
+    padding-top: 48px;
 }
 
 .section-eggs {
@@ -2594,9 +2621,72 @@ fieldset {
 
 
 
+    //
+    // @media (max-width: 400px) {
+    //     section {
+    //         padding: 48px;
+    //     }
+    // }
 
-    @media (max-width: 400px) {
-        section {
-            padding: 48px;
-        }
+
+
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 1205px) {
+  .section-intro-area {
+      position: absolute;
+  // width: 389px;
+  // height: 48px;
+  left: 812px;
+  top: 362px;
+  }
+}
+
+
+@media screen and (min-width: 909px) {
+    .section-area {
+        flex-direction: row;
     }
+
+    .section-area-choice-sex {
+    padding-top: 256px;
+    }
+
+    section {
+        padding: 64px;
+    }
+
+.header-title-nav-wrapper {
+    padding: 48px;
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+    #section-eggs {
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+    .section-area-info {
+        padding-right: 0px;
+    }
+
+    // .section-area-info h2 {
+    //     padding-left: 24px;
+    //     padding-right: 24px;
+    // }
+
+    // .section-area-choice {
+    //     padding-left: 10px;
+    //     padding-right: 10px;
+    // }
+    .egg-package-radio-button {
+        padding: 22px;
+        height: 428px;
+        width: 300px;
+        --outline-offset: 23px;
+        margin-right: 0px;
+
+    }
+}
