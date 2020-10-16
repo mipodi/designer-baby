@@ -32,6 +32,7 @@ body {
 html,
 body {
   width: 100%;
+  height: 100%;
 }
 
 *, *::before, *::after {
@@ -221,10 +222,10 @@ a:visited {
 }
 
 .top-background {
-  height: 1024px;
   border-radius: 0px;
   background: url(jonathan-borba-V3huxxhsztI-unsplash.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .section-intro-area {
@@ -341,6 +342,7 @@ body > div.top-background > section > div > div > div > p {
 .section-unwanted-features {
   background: url(section-features.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .section-physical-features {
@@ -420,6 +422,10 @@ div.control.hair-feature-area-inner {
 .section-outro {
   background: url(section-outro.jpg);
   background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-outro h2 {
@@ -435,6 +441,7 @@ div.control.hair-feature-area-inner {
 .about-page {
   background: url(about.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .about-page p {
