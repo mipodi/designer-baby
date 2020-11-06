@@ -51,7 +51,7 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
-  color: #102A43;
+  color: #243a52;
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
@@ -66,10 +66,8 @@ body {
 }
 
 .header-nav-list a {
-  color: #fff;
   text-decoration: none;
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 400;
   margin-left: 32px;
 }
@@ -83,10 +81,8 @@ body {
 }
 
 .header-nav-list a:visited {
-  color: #fff;
   text-decoration: none;
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: 400;
 }
 
@@ -120,7 +116,6 @@ h4 {
 }
 
 p {
-  margin-bottom: 1.4rem;
   max-width: 20em;
   color: #324d67;
 }
@@ -174,6 +169,7 @@ a:active {
 
 a:visited {
   color: #102a42;
+  color: #243a52;
 }
 
 .continue-field {
@@ -238,7 +234,7 @@ a:visited {
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
-  line-height: 48px;
+  line-height: 1;
   /* identical to box height, or 100% */
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -345,6 +341,11 @@ body > div.top-background > section > div > div > div > p {
   background-size: cover;
 }
 
+#section-unwanted-features > div.section-area > div.section-area-info > p:nth-child(2) {
+  color: #102a42;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
 .section-physical-features {
   background-color: #eefcf5;
 }
@@ -419,7 +420,12 @@ div.control.hair-feature-area-inner {
   background-position: center;
 }
 
-.section-outro {
+#section-request-quote > div > div.section-area-info > p:nth-child(2) {
+  color: #102a42;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.img-outro {
   background: url(section-outro.jpg);
   background-position: center;
   background-size: cover;
@@ -434,19 +440,25 @@ div.control.hair-feature-area-inner {
 }
 
 .section-outro p {
-  font-weight: 600;
   color: #102a42;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
-.about-page {
+.image-about-page {
   background: url(about.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.about-page h1 {
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .about-page p {
-  font-weight: 600;
   color: #102a42;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 fieldset {
@@ -1677,7 +1689,6 @@ fieldset {
   .section-intro-area {
     position: absolute;
     left: 812px;
-    top: 362px;
   }
 }
 @media screen and (min-width: 909px) {
@@ -1718,6 +1729,43 @@ fieldset {
 @media screen and (max-width: 462px) {
   .top-info-banner {
     height: 48px;
+  }
+}
+@media screen and (max-width: 1206px) {
+  .heading-section-intro {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #243a52;
+    max-width: 325px;
+  }
+
+  .paragraph-section-intro {
+    font-size: 16px;
+    color: #102a42;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  }
+}
+@media screen and (max-width: 400px) {
+  .heading-section-intro {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #243a52;
+  }
+
+  .paragraph-section-intro {
+    font-size: 16px;
+    color: #102a42;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  }
+
+  .section-intro-area-cta {
+    max-width: 256px;
+    padding-top: 12px;
+    padding-bottom: 16px;
   }
 }
 
