@@ -1415,6 +1415,12 @@ fieldset {
                         // padding-top: 64px;
                         width: 48px;
                         max-width: 48px;
+
+                        position: absolute;
+                        display: block;
+                        width: 48px;
+                        text-align: center;
+                        padding-top: 56px;
                     }
 
 
@@ -2848,5 +2854,28 @@ fieldset {
     max-width: 256px;
     padding-top: 12px;
     padding-bottom: 16px;
+    }
+}
+
+
+@media screen and (max-width: 574px) {
+    .eyes-skin-area {
+        flex-direction: column;
+    }
+
+    .hair-area {
+        flex-direction: column;
+    }
+
+    .eyes-area {
+        margin-bottom: 64px;
+    }
+
+    .section-area-info.physical-features {
+        margin-bottom: 48px;
+    }
+
+    .hair-colour-area {
+        margin-bottom: 64px;
     }
 }
