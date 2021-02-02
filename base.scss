@@ -1094,7 +1094,7 @@ fieldset {
           font-weight: 600;
           border-radius: 4px;
           padding: 16px;
-          padding-right: 0px;
+          // padding-right: 0px;
           background-color: white;
           color: $blue-grey02;
           max-width: 192px;
@@ -1134,7 +1134,7 @@ fieldset {
 
                 color: #243B53;
                 overflow: initial;
-                // overflow: visible;
+                overflow: visible;
                 position: relative;
                 // top: -10px;
                 top: 0px;
@@ -1224,7 +1224,7 @@ fieldset {
                 .primary {
                   // fill: hsl(209, 34%, 30%);
                   fill: $primary-light-accent-color;
-                  // overflow: visible;
+                  overflow: visible;
                 }
 
                 .secondary {
