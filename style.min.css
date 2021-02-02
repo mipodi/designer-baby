@@ -581,6 +581,7 @@ fieldset {
   font-weight: 600;
   border-radius: 4px;
   padding: 16px;
+  padding-right: 0px;
   background-color: white;
   color: #243a52;
   max-width: 192px;
@@ -648,39 +649,6 @@ fieldset {
   color: #617d98;
   letter-spacing: 0.05em;
   font-family: "Varela Round", sans-serif;
-}
-
-.sex-radio-button span.eggs-fluid {
-  padding-top: 80px;
-  color: #617d98;
-}
-
-.sex-radio-button span.eggs-short-expl {
-  padding-top: 112px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.sex-radio-button span.eggs-why {
-  padding-top: 176px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #48647f;
-}
-
-.sex-radio-button span.eggs-bullet-1 {
-  padding-top: 304px;
-  color: #617d98;
-}
-
-.sex-radio-button span.eggs-bullet-2 {
-  padding-top: 320px;
-  color: #617d98;
-}
-
-.sex-radio-button span.eggs-bullet-3 {
-  padding-top: 336px;
-  color: #617d98;
 }
 
 .sex-radio-button input[type=radio]:checked + svg .primary {
