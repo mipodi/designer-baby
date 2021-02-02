@@ -1222,6 +1222,7 @@ fieldset {
                 .primary {
                   // fill: hsl(209, 34%, 30%);
                   fill: $primary-light-accent-color;
+                  overflow: visible;
                 }
 
                 .secondary {
