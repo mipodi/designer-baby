@@ -574,6 +574,27 @@ fieldset {
     stroke: highlight;
   }
 }
+.sex-choice-radio-button {
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: white;
+  color: #243a52;
+  max-width: 192px;
+  height: 128px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 16px;
+  --outline-radius: 5px;
+}
+
 .sex-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -605,13 +626,17 @@ fieldset {
   opacity: 0;
 }
 
+.parent-checkbox svg {
+  display: flex;
+  flex-direction: row;
+}
+
 .sex-radio-button svg {
   width: 128px;
   height: 96px;
   border-radius: 4px;
   color: #243B53;
   overflow: initial;
-  overflow: visible;
   position: relative;
   top: 0px;
   left: 0px;
@@ -651,9 +676,11 @@ fieldset {
   font-family: "Varela Round", sans-serif;
 }
 
+.sex-radio-button input[type=radio]:checked + svg {
+  align-self: flex-end;
+}
 .sex-radio-button input[type=radio]:checked + svg .primary {
   fill: #8cedc6;
-  overflow: visible;
 }
 .sex-radio-button input[type=radio]:checked + svg .secondary {
   fill: #0c6a57;
