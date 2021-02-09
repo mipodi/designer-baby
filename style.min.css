@@ -583,7 +583,7 @@ fieldset {
   padding: 16px;
   background-color: white;
   color: #243a52;
-  max-width: 192px;
+  width: 160px;
   height: 128px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
@@ -593,6 +593,66 @@ fieldset {
   --outline-color: var(--checked-state-bg-color);
   --outline-offset: 16px;
   --outline-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sex-choice-radio-button svg {
+  width: 128px;
+  height: 96px;
+  border-radius: 4px;
+  color: #243B53;
+  overflow: initial;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  /* apply a transition to the elements inside the svg */
+}
+.sex-choice-radio-button svg * {
+  transition: all 0.1s linear;
+}
+
+.primary {
+  fill: #f1f5f8;
+}
+
+.secondary {
+  fill: #f1f5f8;
+}
+
+.sex-choice-radio-button input[type=radio] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
+
+.text-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.sex-choice-radio-button span.chromosome {
+  padding-top: 16px;
+  font-size: 64px;
+  font-weight: 400;
+  color: #617d98;
+  letter-spacing: 0.05em;
+  font-family: "Varela Round", sans-serif;
+}
+
+.sex-choice-radio-button input[type=radio]:checked + svg {
+  align-self: flex-end;
+}
+.sex-choice-radio-button input[type=radio]:checked + svg .primary {
+  fill: #8cedc6;
+}
+.sex-choice-radio-button input[type=radio]:checked + svg .secondary {
+  fill: #0c6a57;
 }
 
 .sex-radio-button {
