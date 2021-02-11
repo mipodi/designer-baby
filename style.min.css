@@ -520,7 +520,7 @@ fieldset {
 .basic-checkbox svg {
   width: 128px;
   height: 32px;
-  border-radius: 4px;
+  border-radius: 0;
   color: #243B53;
   overflow: initial;
   position: relative;
@@ -574,6 +574,13 @@ fieldset {
     stroke: highlight;
   }
 }
+.container-checkbox {
+  width: 160px;
+  height: 128px;
+  border-radius: 4px;
+  background-color: blue;
+}
+
 .sex-choice-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -611,6 +618,14 @@ fieldset {
 }
 .sex-choice-radio-button svg * {
   transition: all 0.1s linear;
+}
+
+.parent-checkbox {
+  background-color: blue;
+  width: 128px;
+  height: 96px;
+  display: flex;
+  flex-direction: row;
 }
 
 .primary {
@@ -684,11 +699,6 @@ fieldset {
   height: 1em;
   /* hide it */
   opacity: 0;
-}
-
-.parent-checkbox svg {
-  display: flex;
-  flex-direction: row;
 }
 
 .sex-radio-button svg {
