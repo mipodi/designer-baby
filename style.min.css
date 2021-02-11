@@ -574,13 +574,6 @@ fieldset {
     stroke: highlight;
   }
 }
-.container-checkbox {
-  width: 160px;
-  height: 128px;
-  border-radius: 4px;
-  background-color: blue;
-}
-
 .sex-choice-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -590,7 +583,7 @@ fieldset {
   padding: 16px;
   background-color: white;
   color: #243a52;
-  width: 160px;
+  max-width: 192px;
   height: 128px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
@@ -600,40 +593,6 @@ fieldset {
   --outline-color: var(--checked-state-bg-color);
   --outline-offset: 16px;
   --outline-radius: 5px;
-  display: flex;
-  flex-direction: row;
-}
-
-.sex-choice-radio-button svg {
-  width: 128px;
-  height: 96px;
-  border-radius: 4px;
-  color: #243B53;
-  overflow: initial;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  background-color: transparent;
-  /* apply a transition to the elements inside the svg */
-}
-.sex-choice-radio-button svg * {
-  transition: all 0.1s linear;
-}
-
-.parent-checkbox {
-  background-color: blue;
-  width: 128px;
-  height: 96px;
-  display: flex;
-  flex-direction: row;
-}
-
-.primary {
-  fill: #f1f5f8;
-}
-
-.secondary {
-  fill: #f1f5f8;
 }
 
 .sex-choice-radio-button input[type=radio] {
@@ -646,9 +605,34 @@ fieldset {
   opacity: 0;
 }
 
-.text-checkbox {
-  display: flex;
-  flex-direction: column;
+.sex-choice-radio-button svg {
+  width: 128px;
+  height: 96px;
+  border-radius: 0;
+  color: #243B53;
+  overflow: initial;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  /* apply a transition to the elements inside the svg */
+}
+.sex-choice-radio-button svg * {
+  transition: all 0.1s linear;
+}
+
+.primary {
+  fill: #f1f5f8;
+}
+
+.secondary {
+  fill: #f1f5f8;
+}
+
+.sex-choice-radio-button span {
+  position: absolute;
+  display: block;
+  width: 250px;
 }
 
 .sex-choice-radio-button span.chromosome {
@@ -670,109 +654,23 @@ fieldset {
   fill: #0c6a57;
 }
 
-.sex-radio-button {
-  cursor: pointer;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  border-radius: 4px;
-  padding: 16px;
-  background-color: white;
-  color: #243a52;
-  max-width: 192px;
-  height: 128px;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-  margin-right: 16px;
-  margin-bottom: 16px;
-  --checked-state-bg-color: hsl(209, 28%, 39%);
-  --checked-state-check-color: #fff;
-  --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 16px;
-  --outline-radius: 5px;
-}
-
-.sex-radio-button input[type=radio] {
-  /* remove the checkbox from the page flow, positioning it on top of the SVG */
-  position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
-  /* hide it */
-  opacity: 0;
-}
-
-.sex-radio-button svg {
-  width: 128px;
-  height: 96px;
-  border-radius: 4px;
-  color: #243B53;
-  overflow: initial;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  background-color: transparent;
-  /* apply a transition to the elements inside the svg */
-}
-.sex-radio-button svg * {
-  transition: all 0.1s linear;
-}
-
-.primary {
-  fill: #f1f5f8;
-}
-
-.secondary {
-  fill: #f1f5f8;
-}
-
-.sex-radio-button span {
-  position: absolute;
-  display: block;
-  width: 250px;
-}
-
-.sex-radio-button span.info {
-  color: #324d67;
-  font-weight: 400;
-  padding-top: 4px;
-}
-
-.sex-radio-button span.egg {
-  padding-top: 16px;
-  font-size: 64px;
-  font-weight: 400;
-  color: #617d98;
-  letter-spacing: 0.05em;
-  font-family: "Varela Round", sans-serif;
-}
-
-.sex-radio-button input[type=radio]:checked + svg {
-  align-self: flex-end;
-}
-.sex-radio-button input[type=radio]:checked + svg .primary {
-  fill: #8cedc6;
-}
-.sex-radio-button input[type=radio]:checked + svg .secondary {
-  fill: #0c6a57;
-}
-
-.sex-radio-button input[type=radio]:focus + svg {
+.sex-choice-radio-button input[type=radio]:focus + svg {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
 }
 
 /* WHCM styles */
 @media screen and (-ms-high-contrast: active) {
-  .sex-radio-button svg rect {
+  .sex-choice-radio-button svg rect {
     stroke: windowText;
   }
 }
 
 @media screen and (-ms-high-contrast: active) {
-  .sex-radio-button input[type=radio]:checked ~ svg rect {
+  .sex-choice-radio-button input[type=radio]:checked ~ svg rect {
     fill: windowText;
   }
-  .sex-radio-button input[type=radio]:checked ~ svg polyline {
+  .sex-choice-radio-button input[type=radio]:checked ~ svg polyline {
     stroke: highlight;
   }
 }
