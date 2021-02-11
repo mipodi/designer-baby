@@ -1355,6 +1355,11 @@ fieldset {
   padding-top: 4px;
 }
 
+.gestation-icon {
+  position: absolute;
+  height: 96px;
+}
+
 .gestation-radio-button span.egg {
   padding-top: 16px;
   font-size: 64px;
@@ -1365,8 +1370,11 @@ fieldset {
 }
 
 .gestation-radio-button span.eggs-fluid {
-  padding-top: 80px;
   color: #617d98;
+  padding-top: 54px;
+  padding-left: 78px;
+  color: #617d98;
+  max-width: 120px;
 }
 
 .gestation-radio-button span.eggs-short-expl {
