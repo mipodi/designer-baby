@@ -520,7 +520,6 @@ fieldset {
 .basic-checkbox svg {
   width: 128px;
   height: 32px;
-  border-radius: 0;
   color: #243B53;
   overflow: initial;
   position: relative;
@@ -608,7 +607,6 @@ fieldset {
 .sex-choice-radio-button svg {
   width: 128px;
   height: 96px;
-  border-radius: 0;
   color: #243B53;
   overflow: initial;
   position: relative;
@@ -1325,7 +1323,6 @@ fieldset {
 .gestation-radio-button svg {
   width: 128px;
   height: 96px;
-  border-radius: 4px;
   color: #243B53;
   overflow: initial;
   position: relative;
@@ -1460,7 +1457,6 @@ fieldset {
 .egg-package-radio-button svg {
   height: 384px;
   width: 256px;
-  border-radius: 0;
   color: #243B53;
   overflow: initial;
   position: relative;
@@ -1593,7 +1589,6 @@ fieldset {
 .extra-options-checkbox svg {
   width: 160px;
   height: 96px;
-  border-radius: 4px;
   color: #243B53;
   overflow: initial;
   position: relative;
