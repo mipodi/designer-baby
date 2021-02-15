@@ -858,6 +858,10 @@ div.control.hair-feature-area-inner {
         background-position: center;
 }
 
+
+
+
+
 #section-request-quote > div > div.section-area-info > p:nth-child(2) {
     color: #102a42;
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
@@ -2866,5 +2870,40 @@ fieldset {
 
     .hair-colour-area {
         margin-bottom: 64px;
+    }
+}
+
+
+
+@media screen and (max-width: 618px) {
+    .top-background {
+        background: url(img/optimized/baby-top-background.jpg);
+    }
+
+    .section-unwanted-features {
+        background: url(img/optimized/section-features.jpg);
+    }
+
+    .section-request-quote {
+        background: url(img/optimized/section-request.jpg);
+    }
+
+    .img-outro {
+        background: url(img/optimized/section-outro.jpg);
+        background-position: center;
+        background-size: cover;
+
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+    }
+
+    .image-about-page {
+        background: url(img/optimized/about.jpg);
+        background-position: center;
+        background-size: cover;
+
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 }
