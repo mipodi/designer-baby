@@ -19,6 +19,7 @@ html {
   font-family: "Source Sans Pro", sans-serif;
   color: #243a52;
   background-color: #eefcf5;
+  overflow-x: hidden;
 }
 
 body {
