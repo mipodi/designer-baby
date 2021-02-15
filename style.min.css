@@ -1702,7 +1702,7 @@ fieldset {
 }
 @media screen and (max-width: 462px) {
   .top-info-banner {
-    height: 48px;
+    height: 76px;
   }
 }
 @media screen and (max-width: 1206px) {
