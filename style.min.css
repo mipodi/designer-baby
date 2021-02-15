@@ -157,6 +157,7 @@ section {
   margin-right: auto;
   margin-left: auto;
   padding: 24px;
+  overflow-x: hidden;
 }
 
 a {
