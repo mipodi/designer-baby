@@ -1723,7 +1723,8 @@ fieldset {
                     // style changes inside the svg when the checkbox is checked
                     .skin-colour-radio-button input[type="radio"]:checked + svg {
                         // border: 10px black;
-
+                        stroke: #324d67;
+                        stroke-width: 10px;
                       .primary {
                         stroke: hsl(209, 34%, 30%);
                       }
@@ -1846,7 +1847,7 @@ fieldset {
 
 
         color: #243B53;
-        overflow: initial;
+        // overflow: initial; //remved this for rectangle to work
         position: relative;
         // top: -10px;
         top: 0px;
@@ -1945,7 +1946,8 @@ fieldset {
 
     // style changes inside the svg when the checkbox is checked
     .hair-colour-radio-button input[type="radio"]:checked + svg {
-
+        stroke: #324d67;
+        stroke-width: 8px;
       .primary {
         fill: hsl(209, 34%, 30%);
       }

@@ -904,6 +904,10 @@ fieldset {
   text-align: center;
 }
 
+.skin-colour-radio-button input[type=radio]:checked + svg {
+  stroke: #324d67;
+  stroke-width: 10px;
+}
 .skin-colour-radio-button input[type=radio]:checked + svg .primary {
   stroke: #324d67;
 }
@@ -965,7 +969,6 @@ fieldset {
   height: 48px;
   border-radius: 4px;
   color: #243B53;
-  overflow: initial;
   position: relative;
   top: 0px;
   left: 0px;
@@ -1008,6 +1011,10 @@ fieldset {
   text-align: center;
 }
 
+.hair-colour-radio-button input[type=radio]:checked + svg {
+  stroke: #324d67;
+  stroke-width: 8px;
+}
 .hair-colour-radio-button input[type=radio]:checked + svg .primary {
   fill: #324d67;
 }
