@@ -771,7 +771,8 @@ fieldset {
 
 .eye-colour-radio-button input[type=radio]:checked + svg .eyeball {
   stroke: #324d67;
-  stroke-width: 8px;
+  stroke: #8cedc6;
+  stroke-width: 16px;
 }
 .eye-colour-radio-button input[type=radio]:checked + svg .primary {
   fill: #324d67;
@@ -823,7 +824,7 @@ fieldset {
   border-radius: 50%;
   background-color: white;
   color: #243a52;
-  max-width: 48px;
+  width: 48px;
   height: 48px;
   margin-right: 16px;
   margin-bottom: 48px;
@@ -831,7 +832,7 @@ fieldset {
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
   --outline-offset: 0px;
-  --outline-radius: 5px;
+  --outline-radius: 8px;
 }
 
 .skin-colour-radio-button input[type=radio] {
@@ -906,7 +907,8 @@ fieldset {
 
 .skin-colour-radio-button input[type=radio]:checked + svg {
   stroke: #324d67;
-  stroke-width: 10px;
+  stroke: #8cedc6;
+  stroke-width: 16px;
 }
 .skin-colour-radio-button input[type=radio]:checked + svg .primary {
   stroke: #324d67;
@@ -1013,7 +1015,8 @@ fieldset {
 
 .hair-colour-radio-button input[type=radio]:checked + svg {
   stroke: #324d67;
-  stroke-width: 8px;
+  stroke: #8cedc6;
+  stroke-width: 14px;
 }
 .hair-colour-radio-button input[type=radio]:checked + svg .primary {
   fill: #324d67;
@@ -1108,44 +1111,10 @@ fieldset {
   padding-top: 4px;
 }
 
-.hair-feature-radio-button span.egg {
-  padding-top: 16px;
-  font-size: 48px;
-  font-weight: 400;
+.hair-feature-radio-button input[type=radio]:checked + svg {
+  stroke: #8cedc6;
+  stroke-width: 14px;
 }
-
-.hair-feature-radio-button span.eggs-fluid {
-  padding-top: 80px;
-  color: #617d98;
-}
-
-.hair-feature-radio-button span.eggs-short-expl {
-  padding-top: 112px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.hair-feature-radio-button span.eggs-why {
-  padding-top: 176px;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.hair-feature-radio-button span.eggs-bullet-1 {
-  padding-top: 304px;
-  color: #617d98;
-}
-
-.hair-feature-radio-button span.eggs-bullet-2 {
-  padding-top: 320px;
-  color: #617d98;
-}
-
-.hair-feature-radio-button span.eggs-bullet-3 {
-  padding-top: 336px;
-  color: #617d98;
-}
-
 .hair-feature-radio-button input[type=radio]:checked + svg .primary {
   fill: #324d67;
 }

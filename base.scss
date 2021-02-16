@@ -1457,7 +1457,8 @@ fieldset {
                         .eye-colour-radio-button input[type="radio"]:checked + svg {
                             .eyeball {
                                 stroke: hsl(209, 34%, 30%);
-                                stroke-width: 8px;
+                                stroke: $primary-light-accent-color;
+                                stroke-width: 16px;
                             }
                           .primary {
                             fill: hsl(209, 34%, 30%);
@@ -1564,7 +1565,8 @@ fieldset {
                   // padding: 16px;
                   background-color: white;
                   color: $blue-grey02;
-                  max-width: 48px;
+
+                  width: 48px;
                   height: 48px;
 
                   margin-right: 16px;
@@ -1580,7 +1582,7 @@ fieldset {
                   --checked-state-check-color: #fff;
                   --outline-color: var(--checked-state-bg-color);
                   --outline-offset: 0px;
-                  --outline-radius: 5px;
+                  --outline-radius: 8px;
                 }
 
                     // hide the checkbox accessibly
@@ -1681,50 +1683,12 @@ fieldset {
                 }
 
 
-                // .skin-colour-radio-button span.info {
-                //     color: hsl(209, 34%, 30%);
-                //     font-weight: 400;
-                //     padding-top: 4px;
-                // }
-                //
-                // .skin-colour-radio-button span.egg {
-                //     padding-top: 16px;
-                //     font-size: 48px;
-                //     font-weight: 400;
-                // }
-                //
-                // .skin-colour-radio-button span.eggs-fluid {
-                //     padding-top: 80px;
-                //     color: hsl(210, 22%, 49%);
-                // }
-                // .skin-colour-radio-button span.eggs-short-expl {
-                //     padding-top: 112px;
-                //     font-size: 16px;
-                //     font-weight: 400;
-                // }
-                // .skin-colour-radio-button span.eggs-why {
-                //     padding-top: 176px;
-                //     font-weight: 400;
-                //     font-size: 16px;
-                // }
-                // .skin-colour-radio-button span.eggs-bullet-1 {
-                //     padding-top: 304px;
-                //     color: hsl(210, 22%, 49%);
-                // }
-                // .skin-colour-radio-button span.eggs-bullet-2 {
-                //     padding-top: 320px;
-                //     color: hsl(210, 22%, 49%);
-                // }
-                // .skin-colour-radio-button span.eggs-bullet-3 {
-                //     padding-top: 336px;
-                //     color: hsl(210, 22%, 49%);
-                // }
-
                     // style changes inside the svg when the checkbox is checked
                     .skin-colour-radio-button input[type="radio"]:checked + svg {
                         // border: 10px black;
                         stroke: #324d67;
-                        stroke-width: 10px;
+                        stroke: $primary-light-accent-color;
+                        stroke-width: 16px;
                       .primary {
                         stroke: hsl(209, 34%, 30%);
                       }
@@ -1739,6 +1703,9 @@ fieldset {
                     .skin-colour-radio-button input[type="radio"]:focus + svg {
                       outline: 3px solid var(--outline-color);
                       outline-offset: var(--outline-offset);
+                      // outline-offset: 4px;
+                      // outline-style: inset;
+                      // outline-style: ridge;
                     }
                     //
                     // .skin-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
@@ -1904,50 +1871,11 @@ fieldset {
     text-align: center;
 }
 
-//
-// .hair-colour-radio-button span.info {
-//     color: hsl(209, 34%, 30%);
-//     font-weight: 400;
-//     padding-top: 4px;
-// }
-//
-// .hair-colour-radio-button span.egg {
-//     padding-top: 16px;
-//     font-size: 48px;
-//     font-weight: 400;
-// }
-//
-// .hair-colour-radio-button span.eggs-fluid {
-//     padding-top: 80px;
-//     color: hsl(210, 22%, 49%);
-// }
-// .hair-colour-radio-button span.eggs-short-expl {
-//     padding-top: 112px;
-//     font-size: 16px;
-//     font-weight: 400;
-// }
-// .hair-colour-radio-button span.eggs-why {
-//     padding-top: 176px;
-//     font-weight: 400;
-//     font-size: 16px;
-// }
-// .hair-colour-radio-button span.eggs-bullet-1 {
-//     padding-top: 304px;
-//     color: hsl(210, 22%, 49%);
-// }
-// .hair-colour-radio-button span.eggs-bullet-2 {
-//     padding-top: 320px;
-//     color: hsl(210, 22%, 49%);
-// }
-// .hair-colour-radio-button span.eggs-bullet-3 {
-//     padding-top: 336px;
-//     color: hsl(210, 22%, 49%);
-// }
-
     // style changes inside the svg when the checkbox is checked
     .hair-colour-radio-button input[type="radio"]:checked + svg {
         stroke: #324d67;
-        stroke-width: 8px;
+        stroke: $primary-light-accent-color;
+        stroke-width: 14px;
       .primary {
         fill: hsl(209, 34%, 30%);
       }
@@ -2042,7 +1970,10 @@ fieldset {
           opacity: 0;
         }
 
-
+        // .hair-feature-radio-button input[type="radio"]:checked {
+        //
+        // stroke-width: 14px;
+        // }
 
         // basic styles for the svg
         .hair-feature-radio-button svg {
@@ -2101,41 +2032,11 @@ fieldset {
         padding-top: 4px;
     }
 
-    .hair-feature-radio-button span.egg {
-        padding-top: 16px;
-        font-size: 48px;
-        font-weight: 400;
-    }
-
-    .hair-feature-radio-button span.eggs-fluid {
-        padding-top: 80px;
-        color: hsl(210, 22%, 49%);
-    }
-    .hair-feature-radio-button span.eggs-short-expl {
-        padding-top: 112px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .hair-feature-radio-button span.eggs-why {
-        padding-top: 176px;
-        font-weight: 400;
-        font-size: 16px;
-    }
-    .hair-feature-radio-button span.eggs-bullet-1 {
-        padding-top: 304px;
-        color: hsl(210, 22%, 49%);
-    }
-    .hair-feature-radio-button span.eggs-bullet-2 {
-        padding-top: 320px;
-        color: hsl(210, 22%, 49%);
-    }
-    .hair-feature-radio-button span.eggs-bullet-3 {
-        padding-top: 336px;
-        color: hsl(210, 22%, 49%);
-    }
 
         // style changes inside the svg when the checkbox is checked
         .hair-feature-radio-button input[type="radio"]:checked + svg {
+            stroke: $primary-light-accent-color;
+            stroke-width: 14px;
 
           .primary {
             fill: hsl(209, 34%, 30%);
