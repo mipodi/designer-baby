@@ -36,7 +36,9 @@ body {
   height: 100%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -216,7 +218,7 @@ a:visited {
   font-weight: 600;
   font-size: 12px;
   text-align: center;
-  color: #102A43;
+  color: #102a43;
 }
 
 .top-background {
@@ -238,7 +240,7 @@ a:visited {
   font-size: 48px;
   line-height: 1;
   /* identical to box height, or 100% */
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -527,7 +529,7 @@ fieldset {
 .basic-checkbox svg {
   width: 128px;
   height: 32px;
-  color: #243B53;
+  color: #243b53;
   overflow: initial;
   position: relative;
   top: 0px;
@@ -614,7 +616,7 @@ fieldset {
 .sex-choice-radio-button svg {
   width: 128px;
   height: 96px;
-  color: #243B53;
+  color: #243b53;
   overflow: initial;
   position: relative;
   top: 0px;
@@ -714,7 +716,7 @@ fieldset {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  color: #243B53;
+  color: #243b53;
   overflow: initial;
   position: relative;
   top: 0px;
@@ -733,7 +735,7 @@ fieldset {
 }
 
 .iris-dark-brown {
-  fill: #8A6748;
+  fill: #8a6748;
 }
 
 .iris-light-brown {
@@ -741,11 +743,11 @@ fieldset {
 }
 
 .iris-green {
-  fill: #8EEDC7;
+  fill: #8eedc7;
 }
 
 .iris-blue {
-  fill: #A2A5FC;
+  fill: #a2a5fc;
 }
 
 .iris-other {
@@ -781,10 +783,10 @@ fieldset {
   fill: #f1f5f8;
 }
 .eye-colour-radio-button input[type=radio]:checked + svg .iris-dark-brown {
-  fill: #8A6748;
+  fill: #8a6748;
 }
 .eye-colour-radio-button input[type=radio]:checked + svg .iris-light-brown {
-  fill: #AD6A2D;
+  fill: #ad6a2d;
 }
 .eye-colour-radio-button input[type=radio]:checked + svg .iris-green {
   fill: #27aa83;
@@ -852,7 +854,7 @@ fieldset {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  color: #243B53;
+  color: #243b53;
   overflow: initial;
   position: relative;
   top: 0px;
@@ -970,7 +972,7 @@ fieldset {
   max-width: 48px;
   height: 48px;
   border-radius: 4px;
-  color: #243B53;
+  color: #243b53;
   position: relative;
   top: 0px;
   left: 0px;
@@ -982,7 +984,7 @@ fieldset {
 }
 
 .dark-brown-hair-colour {
-  fill: #8A6748;
+  fill: #8a6748;
 }
 
 .light-brown-hair-colour {
@@ -994,7 +996,7 @@ fieldset {
 }
 
 .red-hair-colour {
-  fill: #9E311E;
+  fill: #9e311e;
 }
 
 .dark-blonde-hair-colour {
@@ -1080,7 +1082,7 @@ fieldset {
   width: 64px;
   height: 16px;
   border-radius: 4px;
-  color: #243B53;
+  color: #243b53;
   overflow: initial;
   position: relative;
   top: 0px;
@@ -1176,7 +1178,7 @@ fieldset {
 .gestation-radio-button svg {
   width: 128px;
   height: 96px;
-  color: #243B53;
+  color: #243b53;
   overflow: initial;
   position: relative;
   top: 0px;
@@ -1318,7 +1320,7 @@ fieldset {
 .egg-package-radio-button svg {
   height: 384px;
   width: 256px;
-  color: #243B53;
+  color: #243b53;
   overflow: initial;
   position: relative;
   top: 0px;
@@ -1450,7 +1452,7 @@ fieldset {
 .extra-options-checkbox svg {
   width: 160px;
   height: 96px;
-  color: #243B53;
+  color: #243b53;
   overflow: initial;
   position: relative;
   top: 0px;

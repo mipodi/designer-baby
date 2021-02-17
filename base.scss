@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import "normalize.min.css";
-
 
 // Troubleshoot
 
@@ -9,12 +8,10 @@
 //     outline: 1px solid red;
 // }
 
-
 // Main colors
 $primary-light-background-color: hsl(152, 68%, 96%); /* #EFFCF6 */
 $primary-light-accent-color: hsl(156, 73%, 74%); /* #8EEDC7 */
 $primary-dark-accent-color: hsl(168, 80%, 23%); /* #0C6B58 */
-
 
 // Greyscale
 
@@ -29,325 +26,194 @@ $blue-grey08: hsl(210, 31%, 80%); /* #BCCCDC */
 $blue-grey09: hsl(212, 33%, 89%); /* #D9E2EC */
 $blue-grey10: hsl(210, 36%, 96%); /* #F0F4F8 */
 
-
 html {
-    font-size: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: hsl(211, 39%, 23%);
-    background-color: $primary-light-background-color;
-    overflow-x: hidden;
+  font-size: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: hsl(211, 39%, 23%);
+  background-color: $primary-light-background-color;
+  overflow-x: hidden;
 }
 
 body {
-    // overflow-x: hidden;
-    // overflow: hidden;
-    // overflow-x: hidden;
-    // line-height: 1.4;
-    margin: 0;
-// font-family: arial;
-width: 100vw;
-height: 100vh;
+  // overflow-x: hidden;
+  // overflow: hidden;
+  // overflow-x: hidden;
+  // line-height: 1.4;
+  margin: 0;
+  // font-family: arial;
+  width: 100vw;
+  height: 100vh;
 
-
-
-animation: bugfix infinite 1s;
--webkit-animation: bugfix infinite 1s;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
 }
 
-
 html,
-body{
-width:100%;
-height: 100%;
-// overflow-x:hidden;
+body {
+  width: 100%;
+  height: 100%;
+  // overflow-x:hidden;
 }
 
 header {
-//     display: flex;
-// flex-wrap: wrap;
-// justify-content: center;
-// text-align: center;
+  //     display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // text-align: center;
 }
 
 main {
-    // padding: 1.4rem 0.6rem;
-    // max-width: 1000px;
+  // padding: 1.4rem 0.6rem;
+  // max-width: 1000px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 .header-title-nav-wrapper {
-    padding: 24px;
-    padding-top: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  padding: 24px;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header-title {
-    font-weight: 600;
-font-size: 24px;
-line-height: 30px;
-color: $blue-grey02;
-text-shadow: 0 0 50px hsla(0, 0%, 0%, .4);
-// text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: $blue-grey02;
+  text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-title p {
-    margin-top: 0px;
-    font-weight: 400;
-    font-size: 1rem;
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .header-nav-list {
-    display: inline-block;
+  display: inline-block;
 }
 
 .header-nav-list a {
-    // color: #fff;
-    text-decoration: none;
-    text-shadow: 0 0 50px hsla(0, 0%, 0%, .4);
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 400;
-    margin-left: 32px;
+  // color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  margin-left: 32px;
 }
 
 .header-nav-list ul {
-    list-style:none;
+  list-style: none;
 }
 
 .header-nav-list li {
-	display:inline;
+  display: inline;
 }
 
 .header-nav-list a:visited {
-    // color: #fff;
-    text-decoration: none;
-    text-shadow: 0 0 50px hsla(0, 0%, 0%, .4);
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 400;
+  // color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
 }
-
-// @keyframes bugfix { from {padding:0;} to {padding:0;}}
-// @-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
-//
-// #overlay-button {
-//   position: absolute;
-//   right: 2em;
-//   top: 3em;
-//   padding: 26px 11px;
-//   z-index: 5;
-//   cursor: pointer;
-//   user-select: none;
-//   span {
-//       height: 4px;
-//       width: 35px;
-//       border-radius: 2px;
-//       background-color: white;
-//       position: relative;
-//       display: block;
-//       transition: all .2s ease-in-out;
-//       &:before {
-//         top: -10px;
-//         visibility: visible;
-//       }
-//       &:after {
-//         top: 10px;
-//       }
-//       &:before, &:after {
-//           height: 4px;
-//           width: 35px;
-//           border-radius: 2px;
-//           background-color: white;
-//           position: absolute;
-//           content: "";
-//           transition: all .2s ease-in-out;
-//       }
-//     }
-//     &:hover span, &:hover span:before, &:hover span:after {
-//       background: #333332;
-//     }
-// }
-//
-// input[type=checkbox] {
-//   display: none;
-// }
-//
-// input[type=checkbox]:checked ~ #overlay {
-//   visibility: visible;
-// }
-//
-// input[type=checkbox]:checked ~ #overlay-button {
-//   &:hover span, span{
-//     background: transparent;
-//   }
-//   span {
-//     &:before {
-//       transform: rotate(45deg) translate(7px, 7px);
-//       opacity: 1;
-//     }
-//     &:after {
-//       transform: rotate(-45deg) translate(7px, -7px);
-//     }
-//   }
-// }
-//
-// #overlay {
-//   height: 100vh;
-//   width: 100vw;
-//   background: #ec6451;
-//   z-index: 2;
-//   visibility: hidden;
-//   // position: fixed;
-//   &.active {
-//     visibility: visible;
-//   }
-//   ul {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//     text-align: center;
-//     height: 100vh;
-//     padding-left: 0;
-//     list-style-type: none;
-//     li {
-//       padding: 1em;
-//       a {
-//         color: white;
-//         text-decoration: none;
-//         font-size: 1.5em;
-//         &:hover {
-//           color: #333332;
-//         }
-//       }
-//     }
-//   }
-// }
-
-
-
-
-
-
 .inner-wrap-footer {
-    padding: 48px;
+  padding: 48px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    margin-top: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
+  margin-top: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
-    // font-size: 2.4rem;
-    margin-bottom: 2.8rem;
-    margin-bottom: 1.4rem;
-    font-weight: 400;
-    font-size: 1.5em;
+  // font-size: 2.4rem;
+  margin-bottom: 2.8rem;
+  margin-bottom: 1.4rem;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 h2 {
-    // font-size: 2rem;
-    margin-bottom: 1.4rem;
-    // margin-bottom: 2.8rem;
-    font-weight: 400;
+  // font-size: 2rem;
+  margin-bottom: 1.4rem;
+  // margin-bottom: 2.8rem;
+  font-weight: 400;
 }
 
 h4 {
-    // font-size: 1.4rem;
-    margin-bottom: 0;
+  // font-size: 1.4rem;
+  margin-bottom: 0;
 }
 
 p {
-    // margin-top: 0;
-    // font-family: 'Source Sans Pro', sans-serif;
-    // margin-bottom: 1.4rem;
-    max-width: 20em;
-    // font-size: 1rem;
-    color: hsl(209, 34%, 30%);
+  // margin-top: 0;
+  // font-family: 'Source Sans Pro', sans-serif;
+  // margin-bottom: 1.4rem;
+  max-width: 20em;
+  // font-size: 1rem;
+  color: hsl(209, 34%, 30%);
 }
 
 ul {
-    // margin-top: 0;
-    // font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 1.4rem;
-    max-width: 20em;
-    // font-size: 1rem;
-    color: hsl(209, 34%, 30%);
+  // margin-top: 0;
+  // font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 1.4rem;
+  max-width: 20em;
+  // font-size: 1rem;
+  color: hsl(209, 34%, 30%);
 }
-
 
 details,
 button,
 a {
-    margin-bottom: 2.4rem;
-    max-width: 20em;
+  margin-bottom: 2.4rem;
+  max-width: 20em;
 }
 
 #site-title {
-    text-decoration: none;
+  text-decoration: none;
 }
-// a {
-//     font-family: 'Source Sans Pro', sans-serif;
-// }
-//
-// button {
-//     font-family: 'Source Sans Pro', sans-serif;
-// }
-//
-// summary {
-//     font-family: 'Source Sans Pro', sans-serif;
-// }
-//
-// details {
-//     font-family: 'Source Sans Pro', sans-serif;
-// }
-//
-// input {
-//     font-family: 'Source Sans Pro', sans-serif;
-// }
 
 .details-summary {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 summary {
-    color: hsl(210, 22%, 49%);
+  color: hsl(210, 22%, 49%);
 }
 
 details {
-    color: hsl(210, 22%, 49%);
+  color: hsl(210, 22%, 49%);
 }
-
-
 
 section {
-    min-height: 100vh;
-    margin-right: auto;
-    margin-left: auto;
-    // padding: 64px;
-    padding: 24px;
-    overflow-x: hidden;
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  // padding: 64px;
+  padding: 24px;
+  overflow-x: hidden;
 }
-
 
 // Links
 
 a {
   color: hsl(209, 61%, 16%);
   font-weight: 600;
-  // font-family: helvetica;
-  // text-decoration: none;
-  // text-transform: uppercase;
 }
 
 a:hover {
@@ -359,33 +225,22 @@ a:active {
 }
 
 a:visited {
-  // color: hsl(209, 28%, 39%);
   color: hsl(209, 61%, 16%);
   color: $blue-grey02;
 }
 
-
-
 @mixin text-underline-crop($background) {
-  text-shadow:  .03em 0 $background,
-                  -.03em 0 $background,
-                  0 .03em $background,
-                  0 -.03em $background,
-                  .06em 0 $background,
-                  -.06em 0 $background,
-                  .09em 0 $background,
-                  -.09em 0 $background,
-                  .12em 0 $background,
-                  -.12em 0 $background,
-                  .15em 0 $background,
-                  -.15em 0 $background;
+  text-shadow: 0.03em 0 $background, -0.03em 0 $background, 0 0.03em $background,
+    0 -0.03em $background, 0.06em 0 $background, -0.06em 0 $background,
+    0.09em 0 $background, -0.09em 0 $background, 0.12em 0 $background,
+    -0.12em 0 $background, 0.15em 0 $background, -0.15em 0 $background;
 }
 
 @mixin text-background($color-bg, $color-text) {
   background-image: linear-gradient($color-text, $color-text);
   background-size: 1px 1px;
   background-repeat: repeat-x;
-  background-position:  0% 95%;
+  background-position: 0% 95%;
 }
 
 @mixin text-selection($selection) {
@@ -395,12 +250,12 @@ a:visited {
   }
 
   &::-moz-selection {
-  @include text-underline-crop($selection);
-  background: $selection;
+    @include text-underline-crop($selection);
+    background: $selection;
   }
 }
 
-@mixin link-underline($background, $text, $selection){
+@mixin link-underline($background, $text, $selection) {
   @include text-underline-crop($background);
   @include text-background($background, $text);
   @include text-selection($selection);
@@ -426,278 +281,255 @@ a:visited {
 //   @include link-underline(#fff, #333, #0BF);
 // }
 
-
-
-
-
 .continue-field {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-right: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 16px;
 }
 
 .continue-field-diseases {
-    padding-right: 96px;
+  padding-right: 96px;
 }
 
-
 .continue-field-unwanted-features {
-    padding-right: 96px;
+  padding-right: 96px;
 }
 
 .continue-field-extra-options {
-    padding-right: 96px;
+  padding-right: 96px;
 }
 
 .container {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
 }
 
 // .continue-field a {
 //     @include link-underline(#fff, #333, #0BF);
 // }
 
-
 /* jonathan-borba-V3huxxhsztI-unsplash copy 1 */
 
-
 .section-intro {
-    // background-color: #FFF;
+  // background-color: #FFF;
 }
 
 .top-info-banner {
-    // position: absolute;
-// width: 1440px;
-max-width: 100%;
-height: 32px;
-// left: 0px;
-// top: 0px;
-display: flex;
-justify-content: center;
-background: $primary-light-background-color;
-max-width: 100%
+  // position: absolute;
+  // width: 1440px;
+  max-width: 100%;
+  height: 32px;
+  // left: 0px;
+  // top: 0px;
+  display: flex;
+  justify-content: center;
+  background: $primary-light-background-color;
+  max-width: 100%;
 }
 
-
 .top-info-banner p {
-    max-width: 80%;
-        margin: 10px;
-        letter-spacing: 0.03rem;
+  max-width: 80%;
+  margin: 10px;
+  letter-spacing: 0.03rem;
 }
 
 .top-info-banner-text {
-    position: absolute;
-// width: 1440px;
-// height: 16px;
-// left: 0px;
-// top: 8px;
+  position: absolute;
+  // width: 1440px;
+  // height: 16px;
+  // left: 0px;
+  // top: 8px;
 
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  // line-height: 15px;
+  text-align: center;
 
-
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-// line-height: 15px;
-text-align: center;
-
-color: #102A43;
-
+  color: #102a43;
 }
 
 .top-background {
-    // height: 1024px;
-    // max-width: 1440px;
-    // left: 0px;
-    // top: 0px;
-    border-radius: 0px;
-    background: url(img/baby-top-background.jpg);
-        background-position: center;
-        background-size: cover;
-        // color: #000;
- //        background-position: center;
- // background-repeat: no-repeat;
- // background-size: cover;
+  // height: 1024px;
+  // max-width: 1440px;
+  // left: 0px;
+  // top: 0px;
+  border-radius: 0px;
+  background: url(img/baby-top-background.jpg);
+  background-position: center;
+  background-size: cover;
+  // color: #000;
+  //        background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
-    // min-height: 840px;
+  // min-height: 840px;
 }
-
-
-
 
 .section-intro-area {
-    // position: absolute;
-max-width: 389px;
-height: 48px;
-// left: 812px;
-// top: 362px;
+  // position: absolute;
+  max-width: 389px;
+  height: 48px;
+  // left: 812px;
+  // top: 362px;
 }
 
-
 .heading-section-intro {
-    // position: absolute;
-// width: 389px;
-// height: 48px;
-// left: 812px;
-// top: 533px;
+  // position: absolute;
+  // width: 389px;
+  // height: 48px;
+  // left: 812px;
+  // top: 533px;
 
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 1;
-/* identical to box height, or 100% */
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 1;
+  /* identical to box height, or 100% */
 
+  color: #ffffff;
 
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .paragraph-section-intro {
-    // position: relative;
-    color: #fff;
-    text-shadow: 0 0 50px hsla(0, 0%, 0%, .4);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    // z-index: 3;
+  // position: relative;
+  color: #fff;
+  text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // z-index: 3;
 
-//     position: absolute;
-// width: 348px;
-// height: 197px;
-// left: 812px;
-// top: 650px;
+  //     position: absolute;
+  // width: 348px;
+  // height: 197px;
+  // left: 812px;
+  // top: 650px;
 
-font-family: Source Sans Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .cta-section-intro {
-//     position: absolute;
-// width: 302px;
-// height: 24px;
-// left: 812px;
-// top: 876px;
+  //     position: absolute;
+  // width: 302px;
+  // height: 24px;
+  // left: 812px;
+  // top: 876px;
 
-font-family: Source Sans Pro;
-font-style: normal;
-// font-weight: 600;
-font-size: 16px;
-// line-height: 20px;
-text-decoration: none;
-// text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-// color: #FFFFFF;
-font-weight: 400;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  // font-weight: 600;
+  font-size: 16px;
+  // line-height: 20px;
+  text-decoration: none;
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // color: #FFFFFF;
+  font-weight: 400;
 }
 
-
-
 .section-intro-area-cta {
-    background-color: $primary-light-background-color;
-    // max-width: 256px;
-    max-width: 192px;
-    /* padding: 1px; */
-    padding-left: 16px;
-    margin: 0;
+  background-color: $primary-light-background-color;
+  // max-width: 256px;
+  max-width: 192px;
+  /* padding: 1px; */
+  padding-left: 16px;
+  margin: 0;
 
-max-width: 192px;
-padding: 4px;
-padding-top: 6px;
-padding-bottom: 8px;
-/* padding-left: 16px; */
-margin: 0;
-margin-top: 8px;
-margin-bottom: 16px;
-text-align: center;
-border-radius: 4px;
+  max-width: 192px;
+  padding: 4px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  /* padding-left: 16px; */
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 body > div.top-background > section > div > div > div > p {
-    margin: 0px;
+  margin: 0px;
 }
 
-.section-intro-area p a:visited{
-    // color: #fff;
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.section-intro-area p a:visited {
+  // color: #fff;
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 .cta-section-intro p {
-    // color: #fff;
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0;
+  // color: #fff;
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
 }
-
 
 // body > div.top-background > section > div > div > p:nth-child(3) > a
 .cta-section-intro p a:visited {
-    // color: #fff;
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // color: #fff;
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
 .cta-section-intro a:visited {
-    // color: #fff;
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // color: #fff;
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section-intro-area details {
-//     position: absolute;
-// width: 302px;
-// height: 29px;
-// left: 812px;
-// top: 906px;
-color: #fff;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  //     position: absolute;
+  // width: 302px;
+  // height: 29px;
+  // left: 812px;
+  // top: 906px;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section-intro-area details p {
-//     position: absolute;
-// width: 302px;
-// height: 29px;
-// left: 812px;
-// top: 906px;
-color: #fff;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  //     position: absolute;
+  // width: 302px;
+  // height: 29px;
+  // left: 812px;
+  // top: 906px;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 .section-intro-area summary {
-//     position: absolute;
-// width: 302px;
-// height: 29px;
-// left: 812px;
-// top: 906px;
-color: #fff;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-font-size: 12px;
+  //     position: absolute;
+  // width: 302px;
+  // height: 29px;
+  // left: 812px;
+  // top: 906px;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 12px;
 }
-
 
 // body > div.top-background > section > div > div > details
 
 .section-sex {
-    background-color: $blue-grey10;
+  background-color: $blue-grey10;
 }
 
 .section-area {
-    display: flex;
-    flex-direction: column;
-    // flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
 }
 
 .section-area-info {
-    display: flex;
-    flex-direction: column;
-    padding-right: 96px;
-    // width: 320px;
-    // flex: 320px;
-    display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  padding-right: 96px;
+  // width: 320px;
+  // flex: 320px;
+  display: inline-flex;
 }
 
 // #section-disease > div.section-area > div.section-area-info > p:nth-child(2) {
@@ -705,21 +537,20 @@ font-size: 12px;
 // }
 
 .section-area-choice {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    // padding-right: 96px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // padding-right: 96px;
 }
 
-
 .section-area-choice-sex {
-    // display: flex;
-    // flex-direction: column;
-    padding-top: 48px;
+  // display: flex;
+  // flex-direction: column;
+  padding-top: 48px;
 }
 
 .section-eggs {
-    background-color: $primary-light-background-color;
+  background-color: $primary-light-background-color;
 }
 
 // #section-eggs > div.section-area > div.section-area-info > h2
@@ -746,173 +577,167 @@ font-size: 12px;
 //
 // }
 
-
 .section-disease {
-    background-color: hsl(210, 36%, 96%);
+  background-color: hsl(210, 36%, 96%);
 }
-
 
 .section-unwanted-features {
-    // background-color: #EFFCF6;
-    background: url(img/section-features.jpg);
-        background-position: center;
-        background-size: cover;
+  // background-color: #EFFCF6;
+  background: url(img/section-features.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-#section-unwanted-features > div.section-area > div.section-area-info > p:nth-child(2) {
-    color: $blue-grey01;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+#section-unwanted-features
+  > div.section-area
+  > div.section-area-info
+  > p:nth-child(2) {
+  color: $blue-grey01;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .section-physical-features {
-    background-color: $primary-light-background-color;
+  background-color: $primary-light-background-color;
 }
 
 .section-physical-features h3 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .section-container {
-    display: flex;
+  display: flex;
 }
 
 .paragraph-disease {
-    flex-basis: 70%;
-    margin-right: 64px;
+  flex-basis: 70%;
+  margin-right: 64px;
 }
 
 .physical-features-area {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // margin-bottom: 65px;
-    // padding-left: 256px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // margin-bottom: 65px;
+  // padding-left: 256px;
 }
 
 .eyes-skin-area {
-    display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    margin-bottom: 65px;
+  display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  margin-bottom: 65px;
 }
 
 .eyes-area {
-    display: flex;
-    flex-direction: column;
-    margin-right: 64px;
-    width: 20rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+  width: 20rem;
 }
 
 div.control.eyes-area-inner {
-    // width: 20rem;
+  // width: 20rem;
 }
 
 .skin-area {
-    display: flex;
-    flex-direction: column;
-    max-width: 384px;
+  display: flex;
+  flex-direction: column;
+  max-width: 384px;
 }
 
 div.control.skin-area-inner {
-    // width: 20rem;
-    max-width: 256px;
+  // width: 20rem;
+  max-width: 256px;
 }
 
 .hair-area {
-    display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    margin-bottom: 65px;
+  display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  margin-bottom: 65px;
 }
 
 .hair-colour-area {
-    margin-right: 64px;
-    width: 20rem;
-
+  margin-right: 64px;
+  width: 20rem;
 }
 
 div.control.hair-colour-area-inner {
-    max-width: 256px;
+  max-width: 256px;
 }
 
 div.control.hair-feature-area-inner {
-    max-width: 300px;
-    margin-bottom: 96px;
+  max-width: 300px;
+  margin-bottom: 96px;
 }
 
 .hair-colour-area {
-    display: flex;
-    flex-direction: column;
-    // margin-right: 64px;
-    max-width: 384px;
+  display: flex;
+  flex-direction: column;
+  // margin-right: 64px;
+  max-width: 384px;
 }
 
 .hair-feature-area {
-    display: flex;
-    flex-direction: column;
-    // max-width: 256px;
+  display: flex;
+  flex-direction: column;
+  // max-width: 256px;
 }
 
-
 .section-extra-options {
-    background-color: $blue-grey10;
+  background-color: $blue-grey10;
 }
 
 .section-request-quote {
-    // background-color: #EFFCF6;
-    background: url(img/section-request.jpg);
-        background-position: center;
+  // background-color: #EFFCF6;
+  background: url(img/section-request.jpg);
+  background-position: center;
 }
 
-
-
-
-
 #section-request-quote > div > div.section-area-info > p:nth-child(2) {
-    color: #102a42;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  color: #102a42;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .img-outro {
-    background: url(img/section-outro.jpg);
-        background-position: center;
-        background-size: cover;
+  background: url(img/section-outro.jpg);
+  background-position: center;
+  background-size: cover;
 
-        background-attachment: fixed;
- background-repeat: no-repeat;
- background-size: cover;
- // background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: center center;
 }
 
 .section-outro h2 {
-    max-width: 20rem;
-    font-weight: 600;
+  max-width: 20rem;
+  font-weight: 600;
 }
 
 .section-outro p {
-    // font-weight: 600;
-    color: $blue-grey01;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-
+  // font-weight: 600;
+  color: $blue-grey01;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .image-about-page {
-    background: url(img/about.jpg);
-        background-position: center;
-        background-size: cover;
+  background: url(img/about.jpg);
+  background-position: center;
+  background-size: cover;
 
-        background-attachment: fixed;
- background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .about-page h1 {
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .about-page p {
-    // font-weight: 600;
-    color: $blue-grey01;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  // font-weight: 600;
+  color: $blue-grey01;
+  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 fieldset {
@@ -929,30 +754,28 @@ fieldset {
   margin: 0px;
   padding: 0px;
   border: 0px;
-
 }
-
 .control {
-    display: flex;
-    flex-wrap: wrap;
-    // justify-content: center;
-    // max-width: 768px;
-    // padding-top: 256px;
-    max-width: 768px;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  // max-width: 768px;
+  // padding-top: 256px;
+  max-width: 768px;
+  margin-bottom: 2rem;
 }
 
 .control-choice {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .basic-checkbox {
-	cursor: pointer;
+  cursor: pointer;
 
   // display: flex;
   // align-items: start;
 
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 4px;
@@ -977,794 +800,637 @@ fieldset {
   --outline-radius: 5px;
 }
 
-    // hide the checkbox accessibly
-    .basic-checkbox input[type="checkbox"] {
-      /* remove the checkbox from the page flow, positioning it on top of the SVG */
-      position: absolute;
-      /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-      width: 1em;
-      height: 1em;
-      /* hide it */
-      opacity: 0;
-    }
+// hide the checkbox accessibly
+.basic-checkbox input[type="checkbox"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
 
+// basic styles for the svg
+.basic-checkbox svg {
+  width: 128px;
+  height: 32px;
+  // border-radius: 0;
+  // padding: 10px;
+  // padding: 0px;
 
+  color: #243b53;
+  overflow: initial;
+  position: relative;
+  // top: -10px;
+  top: 0px;
 
-    // basic styles for the svg
-    .basic-checkbox svg {
-        width: 128px;
-        height: 32px;
-        // border-radius: 0;
-        // padding: 10px;
-        // padding: 0px;
+  // left: -118px;
+  left: 0px;
 
+  background-color: transparent;
 
-        color: #243B53;
-        overflow: initial;
-        position: relative;
-        // top: -10px;
-        top: 0px;
+  // margin-right: 0.5em;
+  // margin-top: .1em;
 
-        // left: -118px;
-        left: 0px;
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
 
-        background-color: transparent;
+.primary {
+  fill: hsl(209, 23%, 60%);
+  fill: $blue-grey10;
+}
 
-        // margin-right: 0.5em;
-        // margin-top: .1em;
-
-        /* apply a transition to the elements inside the svg */
-        * {
-          transition: all 0.1s linear;
-        }
-    }
-
-    .primary {
-      fill: hsl(209, 23%, 60%);
-      fill: $blue-grey10;
-    }
-
-    .secondary {
-      // fill: #6f213f;
-      fill: hsl(209, 23%, 60%);
-    }
-
+.secondary {
+  // fill: #6f213f;
+  fill: hsl(209, 23%, 60%);
+}
 
 .basic-checkbox span {
-    // color: #000;
-    position: absolute;
-    max-width: 96px;
+  // color: #000;
+  position: absolute;
+  max-width: 96px;
 }
 
+// style changes inside the svg when the checkbox is checked
+.basic-checkbox input[type="checkbox"]:checked + svg {
+  .primary {
+    // fill: hsl(209, 34%, 30%);
+    fill: $primary-light-accent-color;
+  }
 
-    // style changes inside the svg when the checkbox is checked
-    .basic-checkbox input[type="checkbox"]:checked + svg {
-
-      .primary {
-        // fill: hsl(209, 34%, 30%);
-        fill: $primary-light-accent-color;
-      }
-
-      .secondary {
-        // fill: hsl(210, 36%, 96%);
-        fill: $primary-dark-accent-color;
-      }
-
-
+  .secondary {
+    // fill: hsl(210, 36%, 96%);
+    fill: $primary-dark-accent-color;
+  }
 }
 
-    .basic-checkbox input[type="checkbox"]:focus + svg {
-      outline: 3px solid var(--outline-color);
-      outline-offset: var(--outline-offset);
-    }
-    //
-    // .basic-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
-    //   outline: none;
-    // }
-
-
-
-
-
-
-
-    /* WHCM styles */
-    .basic-checkbox svg {
-      @media screen and (-ms-high-contrast: active) {
-        rect {
-          stroke: windowText;
-        }
-      }
-    }
-
-    @media screen and (-ms-high-contrast: active) {
-      .basic-checkbox input[type="checkbox"]:checked ~ svg {
-        rect {
-          fill: windowText;
-        }
-
-        polyline {
-          stroke: highlight;
-        }
-      }
-    }
-
-
-
-
-
-
-
-
-
-
-
-        .sex-choice-radio-button {
-            cursor: pointer;
-
-          // display: flex;
-          // align-items: start;
-
-          font-family: 'Source Sans Pro', sans-serif;
-          font-size: 0.8rem;
-          font-weight: 600;
-          border-radius: 4px;
-          padding: 16px;
-          // padding-right: 0px;
-          background-color: white;
-          color: $blue-grey02;
-          max-width: 192px;
-          height: 128px;
-
-          box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-          margin-right: 16px;
-          margin-bottom: 16px;
-          // text-transform: uppercase;
-
-          --checked-state-bg-color: hsl(209, 28%, 39%);
-          --checked-state-check-color: #fff;
-          --outline-color: var(--checked-state-bg-color);
-          --outline-offset: 16px;
-          --outline-radius: 5px;
-        }
-
-            // hide the checkbox accessibly
-            .sex-choice-radio-button input[type="radio"] {
-              /* remove the checkbox from the page flow, positioning it on top of the SVG */
-              position: absolute;
-              /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-              width: 1em;
-              height: 1em;
-              /* hide it */
-              opacity: 0;
-            }
-
-
-
-
-
-            // basic styles for the svg
-            .sex-choice-radio-button svg {
-                width: 128px;
-                height: 96px;
-                // border-radius: 0;
-
-
-                color: #243B53;
-                overflow: initial;
-                // overflow: visible;
-                position: relative;
-                // top: -10px;
-                top: 0px;
-
-                // left: -118px;
-                left: 0px;
-
-                background-color: transparent;
-
-                // margin-right: 0.5em;
-                // margin-top: .1em;
-
-                // display: none; // REMOVE THIS LATER
-                /* apply a transition to the elements inside the svg */
-                * {
-                  transition: all 0.1s linear;
-                }
-
-            }
-
-            .primary {
-              // fill: hsl(209, 23%, 60%);
-              fill: $blue-grey10;
-            }
-
-            .secondary {
-              // fill: #6f213f;
-              // fill: hsl(209, 23%, 60%);
-              fill: $blue-grey10;
-            }
-
-
-        .sex-choice-radio-button span {
-            // color: #000;
-            position: absolute;
-            // max-width: 112px;
-            display: block;
-            width: 250px;
-        }
-
-
-        .sex-choice-radio-button span.chromosome {
-            padding-top: 16px;
-            font-size: 64px;
-            font-weight: 400;
-            color: hsl(210, 22%, 49%);
-            letter-spacing: 0.05em;
-            font-family: 'Varela Round', sans-serif;
-        }
-
-            // style changes inside the svg when the checkbox is checked
-            .sex-choice-radio-button input[type="radio"]:checked + svg {
-
-                align-self: flex-end;
-
-                .primary {
-                  // fill: hsl(209, 34%, 30%);
-                  fill: $primary-light-accent-color;
-                  // overflow: visible;
-                }
-
-                .secondary {
-                  // fill: hsl(210, 36%, 96%);
-                  fill: $primary-dark-accent-color;
-                }
-
-
-        }
-
-            .sex-choice-radio-button input[type="radio"]:focus + svg {
-              outline: 3px solid var(--outline-color);
-              outline-offset: var(--outline-offset);
-            }
-            //
-            // .sex-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-            //   outline: none;
-            // }
-
-
-
-
-
-
-
-            /* WHCM styles */
-            .sex-choice-radio-button svg {
-              @media screen and (-ms-high-contrast: active) {
-                rect {
-                  stroke: windowText;
-                }
-              }
-            }
-
-            @media screen and (-ms-high-contrast: active) {
-              .sex-choice-radio-button input[type="radio"]:checked ~ svg {
-                rect {
-                  fill: windowText;
-                }
-
-                polyline {
-                  stroke: highlight;
-                }
-              }
-            }
-
-
-
-
-#section-physical-features > div > div > div:nth-child(4) {
-    // width: 384px;
-    // height: 96px;
-    // // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    // border-radius: 4px;
-    // padding: 16px;
-    // // padding-bottom: 192px;
-    // justify-content: space-evenly;
-    // margin-bottom: 48px;
-    // text-align: center;
+.basic-checkbox input[type="checkbox"]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
 }
-
-
-                    .eye-colour-radio-button {
-                        cursor: pointer;
-
-                      // display: flex;
-                      // align-items: start;
-
-                      font-family: 'Source Sans Pro', sans-serif;
-                      font-size: 0.8rem;
-                      font-weight: 600;
-                      border-radius: 50%;
-                      // padding: 16px;
-                      background-color: white;
-                      color: $blue-grey02;
-                      width: 48px;
-                      height: 48px;
-
-                      box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-                      margin-right: 16px;
-                      margin-bottom: 16px;
-                      // text-transform: uppercase;
-
-                      --checked-state-bg-color: hsl(209, 28%, 39%);
-                      --checked-state-check-color: #fff;
-                      --outline-color: var(--checked-state-bg-color);
-                      --outline-offset: 2px;
-                      --outline-radius: 5px;
-                    }
-
-                        // hide the checkbox accessibly
-                        .eye-colour-radio-button input[type="radio"] {
-                          /* remove the checkbox from the page flow, positioning it on top of the SVG */
-                          position: absolute;
-                          /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-                          width: 1em;
-                          height: 1em;
-                          /* hide it */
-                          opacity: 0;
-                        }
-
-
-
-                        // basic styles for the svg
-                        .eye-colour-radio-button svg {
-                            // width: 128px;
-                            // height: 96px;
-                            border-radius: 4px;
-                            width: 48px;
-                            height: 48px;
-                            border-radius: 50%;
-
-
-                            color: #243B53;
-                            overflow: initial;
-                            position: relative;
-                            // top: -10px;
-                            top: 0px;
-
-                            // left: -118px;
-                            left: 0px;
-
-                            background-color: transparent;
-
-                            // margin-right: 0.5em;
-                            // margin-top: .1em;
-
-                            // display: none; // REMOVE THIS LATER
-                            /* apply a transition to the elements inside the svg */
-                            * {
-                              transition: all 0.1s linear;
-                            }
-                        }
-
-                        // .eyball {
-                        //   fill: #fff;
-                        //   // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-                        // }
-                        .eyeball {
-                            fill: #fff;
-                            stroke: #fff;
-                            stroke-width: 8px;
-                        }
-
-                                                  // .iris {
-                                                  //     fill: #8A6748;
-                                                  // }
-
-                                                  .iris-dark-brown {
-                                                      fill: #8A6748;
-
-                                                      // fill: #8A6748;
-                                                      // fill: #611A02 ;
-                                                  }
-
-                                                  .iris-light-brown {
-                                                      // fill: #AD6A2D;
-                                                      fill: #dc8d54;
-                                                  }
-
-                                                  .iris-green {
-                                                      // fill: hsl(162, 63%, 41%);
-                                                      fill: #8EEDC7;
-                                                  }
-
-                                                  .iris-blue {
-                                                      // fill: hsl(245, 79%, 52%);
-                                                      fill: #A2A5FC;
-                                                  }
-
-                                                  .iris-other {
-                                                      fill: #fff;
-                                                  }
-
-
-                        .pupil {
-                          // fill: #6f213f;
-                          // fill: hsl(209, 23%, 60%);
-                          fill: #000;
-                        }
-
-
-                    .eye-colour-radio-button span {
-                        // color: #000;
-                        position: absolute;
-                        // max-width: 112px;
-                        display: block;
-                        // width: 250px;
-                        // opacity: 0;
-                        padding-top: 64px;
-                        // padding-top: 64px;
-                        width: 48px;
-                        max-width: 48px;
-
-                        position: absolute;
-                        display: block;
-                        width: 48px;
-                        text-align: center;
-                        padding-top: 56px;
-                    }
-
-
-                    // .eye-colour-radio-button span.info {
-                    //     color: hsl(209, 34%, 30%);
-                    //     font-weight: 400;
-                    //     padding-top: 4px;
-                    // }
-                    //
-                    // .eye-colour-radio-button span.egg {
-                    //     padding-top: 16px;
-                    //     font-size: 48px;
-                    //     font-weight: 400;
-                    // }
-                    //
-                    // .eye-colour-radio-button span.eggs-fluid {
-                    //     padding-top: 80px;
-                    //     color: hsl(210, 22%, 49%);
-                    // }
-                    // .eye-colour-radio-button span.eggs-short-expl {
-                    //     padding-top: 112px;
-                    //     font-size: 16px;
-                    //     font-weight: 400;
-                    // }
-                    // .eye-colour-radio-button span.eggs-why {
-                    //     padding-top: 176px;
-                    //     font-weight: 400;
-                    //     font-size: 16px;
-                    // }
-                    // .eye-colour-radio-button span.eggs-bullet-1 {
-                    //     padding-top: 304px;
-                    //     color: hsl(210, 22%, 49%);
-                    // }
-                    // .eye-colour-radio-button span.eggs-bullet-2 {
-                    //     padding-top: 320px;
-                    //     color: hsl(210, 22%, 49%);
-                    // }
-                    // .eye-colour-radio-button span.eggs-bullet-3 {
-                    //     padding-top: 336px;
-                    //     color: hsl(210, 22%, 49%);
-                    // }
-
-                        // style changes inside the svg when the checkbox is checked
-                        .eye-colour-radio-button input[type="radio"]:checked + svg {
-                            .eyeball {
-                                stroke: hsl(209, 34%, 30%);
-                                stroke: $primary-light-accent-color;
-                                stroke-width: 16px;
-                            }
-                          .primary {
-                            fill: hsl(209, 34%, 30%);
-                          }
-
-                          .secondary {
-                            fill: hsl(210, 36%, 96%);
-                          }
-
-                          // .iris {
-                          //     fill: #8A6748;
-                          // }
-
-                          .iris-dark-brown {
-                              // fill: #8A6748;
-                              // fill: #611A02 ;
-                              // fill: #553117;
-                              fill: #8A6748;
-                          }
-
-                          .iris-light-brown {
-                              fill: #AD6A2D;
-                          }
-
-                          .iris-green {
-                              fill: hsl(162, 63%, 41%);
-                          }
-
-                          .iris-blue {
-                              fill: hsl(245, 79%, 52%);
-                          }
-
-                          .iris-other {
-                              fill: #fff;
-                          }
-
-
-                    }
-
-                        .eye-colour-radio-button input[type="radio"]:focus + svg {
-                          outline: 3px solid var(--outline-color);
-                          outline-offset: var(--outline-offset);
-                        }
-                        //
-                        // .eye-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-                        //   outline: none;
-                        // }
-
-
-
-
-
-
-
-                        /* WHCM styles */
-                        .eye-colour-radio-button svg {
-                          @media screen and (-ms-high-contrast: active) {
-                            rect {
-                              stroke: windowText;
-                            }
-                          }
-                        }
-
-                        @media screen and (-ms-high-contrast: active) {
-                          .eye-colour-radio-button input[type="radio"]:checked ~ svg {
-                            rect {
-                              fill: windowText;
-                            }
-
-                            polyline {
-                              stroke: highlight;
-                            }
-                          }
-                        }
-#section-physical-features > div > div > div:nth-child(6) {
-    // width: 384px;
-    // height: 192px;
-    // // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    // border-radius: 4px;
-    // padding: 16px;
-    // padding-bottom: 192px;
-    // justify-content: space-evenly;
-    // margin-bottom: 48px;
-}
-
-
-// div .control .shade-box {
-//     width: 384px;
-//     height: 384px;
+//
+// .basic-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
+//   outline: none;
 // }
 
-
-
-                .skin-colour-radio-button {
-                    cursor: pointer;
-
-                  // display: flex;
-                  // align-items: start;
-
-                  font-family: 'Source Sans Pro', sans-serif;
-                  font-size: 0.8rem;
-                  font-weight: 600;
-                  border-radius: 50%;
-                  // padding: 16px;
-                  background-color: white;
-                  color: $blue-grey02;
-
-                  width: 48px;
-                  height: 48px;
-
-                  margin-right: 16px;
-                  // margin-bottom: 32px;
-                  margin-bottom: 48px;
-
-                  // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-                  // margin-right: 16px;
-                  // margin-bottom: 16px;
-                  // text-transform: uppercase;
-
-                  --checked-state-bg-color: hsl(209, 28%, 39%);
-                  --checked-state-check-color: #fff;
-                  --outline-color: var(--checked-state-bg-color);
-                  --outline-offset: 0px;
-                  --outline-radius: 8px;
-                }
-
-                    // hide the checkbox accessibly
-                    .skin-colour-radio-button input[type="radio"] {
-                      /* remove the checkbox from the page flow, positioning it on top of the SVG */
-                      position: absolute;
-                      /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-                      width: 1em;
-                      height: 1em;
-                      /* hide it */
-                      opacity: 0;
-                    }
-
-
-
-                    // basic styles for the svg
-                    .skin-colour-radio-button svg {
-                        width: 128px;
-                        height: 96px;
-                        border-radius: 4px;
-                        width: 48px;
-                        height: 48px;
-                        border-radius: 50%;
-
-
-                        color: #243B53;
-                        overflow: initial;
-                        position: relative;
-                        // top: -10px;
-                        top: 0px;
-
-                        // left: -118px;
-                        left: 0px;
-                        background-color: transparent;
-
-                        // background-color: brown;
-                        box-shadow: inset 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-
-
-                        // margin-right: 0.5em;
-                        // margin-top: .1em;
-
-                        // display: none; // REMOVE THIS LATER
-                        /* apply a transition to the elements inside the svg */
-                        * {
-                          transition: all 0.1s linear;
-                        }
-                    }
-
-                    // #291003 {
-                    //     background-color: #291003;
-                    // }
-
-                    .hex-291003 {
-                      fill: #291003;
-                    }
-
-                    .hex-362923 {
-                      fill: #362923;
-                    }
-
-                    .hex-553117 {
-                      fill: #553117;
-                    }
-
-                    .hex-874c2b {
-                      fill: #874c2b;
-                    }
-
-                    .hex-ae5a18 {
-                      fill: #ae5a18;
-                    }
-
-                    .hex-dc8d54 {
-                      fill: #dc8d54;
-                    }
-
-                    .hex-bf8d50 {
-                      fill: #bf8d50;
-                    }
-
-                    .hex-dbb288 {
-                      fill: #dbb288;
-                    }
-
-
-
-                .skin-colour-radio-button span {
-                    // color: #000;
-                    position: absolute;
-                    // max-width: 112px;
-                    display: block;
-                    width: 48px;
-                    // opacity: 0;
-                    // padding-top: 48px;
-                    padding-top: 54px;
-                    text-align: center;
-                }
-
-
-                    // style changes inside the svg when the checkbox is checked
-                    .skin-colour-radio-button input[type="radio"]:checked + svg {
-                        // border: 10px black;
-                        stroke: #324d67;
-                        stroke: $primary-light-accent-color;
-                        stroke-width: 16px;
-                      .primary {
-                        stroke: hsl(209, 34%, 30%);
-                      }
-
-                      .secondary {
-                        fill: hsl(210, 36%, 96%);
-                      }
-
-
-                }
-
-                    .skin-colour-radio-button input[type="radio"]:focus + svg {
-                      outline: 3px solid var(--outline-color);
-                      outline-offset: var(--outline-offset);
-                      // outline-offset: 4px;
-                      // outline-style: inset;
-                      // outline-style: ridge;
-                    }
-                    //
-                    // .skin-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-                    //   outline: none;
-                    // }
-
-
-
-
-
-
-
-                    /* WHCM styles */
-                    .skin-colour-radio-button svg {
-                      @media screen and (-ms-high-contrast: active) {
-                        rect {
-                          stroke: windowText;
-                        }
-                      }
-                    }
-
-                    @media screen and (-ms-high-contrast: active) {
-                      .skin-colour-radio-button input[type="radio"]:checked ~ svg {
-                        rect {
-                          fill: windowText;
-                        }
-
-                        polyline {
-                          stroke: highlight;
-                        }
-                      }
-                    }
-
-
-
-
-
-#section-physical-features > div > div > div:nth-child(9) {
-    // width: 384px;
-    // height: 192px;
-    // // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    // border-radius: 4px;
-    // padding: 16px;
-    // padding-bottom: 192px;
-    // justify-content: space-evenly;
-    // margin-bottom: 48px;
-    // text-align: center;
+/* WHCM styles */
+.basic-checkbox svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
+    }
+  }
 }
 
+@media screen and (-ms-high-contrast: active) {
+  .basic-checkbox input[type="checkbox"]:checked ~ svg {
+    rect {
+      fill: windowText;
+    }
 
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
 
-
-.hair-colour-radio-button {
-    cursor: pointer;
+.sex-choice-radio-button {
+  cursor: pointer;
 
   // display: flex;
   // align-items: start;
 
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 16px;
+  // padding-right: 0px;
+  background-color: white;
+  color: $blue-grey02;
+  max-width: 192px;
+  height: 128px;
+
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  // text-transform: uppercase;
+
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 16px;
+  --outline-radius: 5px;
+}
+
+// hide the checkbox accessibly
+.sex-choice-radio-button input[type="radio"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
+
+// basic styles for the svg
+.sex-choice-radio-button svg {
+  width: 128px;
+  height: 96px;
+  // border-radius: 0;
+
+  color: #243b53;
+  overflow: initial;
+  // overflow: visible;
+  position: relative;
+  // top: -10px;
+  top: 0px;
+
+  // left: -118px;
+  left: 0px;
+
+  background-color: transparent;
+
+  // margin-right: 0.5em;
+  // margin-top: .1em;
+
+  // display: none; // REMOVE THIS LATER
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
+
+.primary {
+  // fill: hsl(209, 23%, 60%);
+  fill: $blue-grey10;
+}
+
+.secondary {
+  // fill: #6f213f;
+  // fill: hsl(209, 23%, 60%);
+  fill: $blue-grey10;
+}
+
+.sex-choice-radio-button span {
+  // color: #000;
+  position: absolute;
+  // max-width: 112px;
+  display: block;
+  width: 250px;
+}
+
+.sex-choice-radio-button span.chromosome {
+  padding-top: 16px;
+  font-size: 64px;
+  font-weight: 400;
+  color: hsl(210, 22%, 49%);
+  letter-spacing: 0.05em;
+  font-family: "Varela Round", sans-serif;
+}
+
+// style changes inside the svg when the checkbox is checked
+.sex-choice-radio-button input[type="radio"]:checked + svg {
+  align-self: flex-end;
+
+  .primary {
+    // fill: hsl(209, 34%, 30%);
+    fill: $primary-light-accent-color;
+    // overflow: visible;
+  }
+
+  .secondary {
+    // fill: hsl(210, 36%, 96%);
+    fill: $primary-dark-accent-color;
+  }
+}
+
+.sex-choice-radio-button input[type="radio"]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+//
+// .sex-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
+//   outline: none;
+// }
+
+/* WHCM styles */
+.sex-choice-radio-button svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .sex-choice-radio-button input[type="radio"]:checked ~ svg {
+    rect {
+      fill: windowText;
+    }
+
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
+
+#section-physical-features > div > div > div:nth-child(4) {
+  // width: 384px;
+  // height: 96px;
+  // // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  // border-radius: 4px;
+  // padding: 16px;
+  // // padding-bottom: 192px;
+  // justify-content: space-evenly;
+  // margin-bottom: 48px;
+  // text-align: center;
+}
+
+.eye-colour-radio-button {
+  cursor: pointer;
+
+  // display: flex;
+  // align-items: start;
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 50%;
+  // padding: 16px;
+  background-color: white;
+  color: $blue-grey02;
+  width: 48px;
+  height: 48px;
+
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  // text-transform: uppercase;
+
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 2px;
+  --outline-radius: 5px;
+}
+
+// hide the checkbox accessibly
+.eye-colour-radio-button input[type="radio"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
+
+// basic styles for the svg
+.eye-colour-radio-button svg {
+  // width: 128px;
+  // height: 96px;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  color: #243b53;
+  overflow: initial;
+  position: relative;
+  // top: -10px;
+  top: 0px;
+
+  // left: -118px;
+  left: 0px;
+
+  background-color: transparent;
+
+  // margin-right: 0.5em;
+  // margin-top: .1em;
+
+  // display: none; // REMOVE THIS LATER
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
+
+.eyeball {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 8px;
+}
+
+// .iris {
+//     fill: #8A6748;
+// }
+
+.iris-dark-brown {
+  fill: #8a6748;
+
+  // fill: #8A6748;
+  // fill: #611A02 ;
+}
+
+.iris-light-brown {
+  // fill: #AD6A2D;
+  fill: #dc8d54;
+}
+
+.iris-green {
+  // fill: hsl(162, 63%, 41%);
+  fill: #8eedc7;
+}
+
+.iris-blue {
+  // fill: hsl(245, 79%, 52%);
+  fill: #a2a5fc;
+}
+
+.iris-other {
+  fill: #fff;
+}
+
+.pupil {
+  // fill: #6f213f;
+  // fill: hsl(209, 23%, 60%);
+  fill: #000;
+}
+
+.eye-colour-radio-button span {
+  // color: #000;
+  position: absolute;
+  // max-width: 112px;
+  display: block;
+  // width: 250px;
+  // opacity: 0;
+  padding-top: 64px;
+  // padding-top: 64px;
+  width: 48px;
+  max-width: 48px;
+
+  position: absolute;
+  display: block;
+  width: 48px;
+  text-align: center;
+  padding-top: 56px;
+}
+// style changes inside the svg when the checkbox is checked
+.eye-colour-radio-button input[type="radio"]:checked + svg {
+  .eyeball {
+    stroke: hsl(209, 34%, 30%);
+    stroke: $primary-light-accent-color;
+    stroke-width: 16px;
+  }
+  .primary {
+    fill: hsl(209, 34%, 30%);
+  }
+
+  .secondary {
+    fill: hsl(210, 36%, 96%);
+  }
+
+  // .iris {
+  //     fill: #8A6748;
+  // }
+
+  .iris-dark-brown {
+    // fill: #8A6748;
+    // fill: #611A02 ;
+    // fill: #553117;
+    fill: #8a6748;
+  }
+
+  .iris-light-brown {
+    fill: #ad6a2d;
+  }
+
+  .iris-green {
+    fill: hsl(162, 63%, 41%);
+  }
+
+  .iris-blue {
+    fill: hsl(245, 79%, 52%);
+  }
+
+  .iris-other {
+    fill: #fff;
+  }
+}
+
+.eye-colour-radio-button input[type="radio"]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+//
+// .eye-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
+//   outline: none;
+// }
+
+/* WHCM styles */
+.eye-colour-radio-button svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .eye-colour-radio-button input[type="radio"]:checked ~ svg {
+    rect {
+      fill: windowText;
+    }
+
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
+.skin-colour-radio-button {
+  cursor: pointer;
+
+  // display: flex;
+  // align-items: start;
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 50%;
+  // padding: 16px;
+  background-color: white;
+  color: $blue-grey02;
+
+  width: 48px;
+  height: 48px;
+
+  margin-right: 16px;
+  // margin-bottom: 32px;
+  margin-bottom: 48px;
+
+  // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  // margin-right: 16px;
+  // margin-bottom: 16px;
+  // text-transform: uppercase;
+
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 0px;
+  --outline-radius: 8px;
+}
+
+// hide the checkbox accessibly
+.skin-colour-radio-button input[type="radio"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
+
+// basic styles for the svg
+.skin-colour-radio-button svg {
+  width: 128px;
+  height: 96px;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  color: #243b53;
+  overflow: initial;
+  position: relative;
+  // top: -10px;
+  top: 0px;
+
+  // left: -118px;
+  left: 0px;
+  background-color: transparent;
+
+  // background-color: brown;
+  box-shadow: inset 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+
+  // margin-right: 0.5em;
+  // margin-top: .1em;
+
+  // display: none; // REMOVE THIS LATER
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
+
+// #291003 {
+//     background-color: #291003;
+// }
+
+.hex-291003 {
+  fill: #291003;
+}
+
+.hex-362923 {
+  fill: #362923;
+}
+
+.hex-553117 {
+  fill: #553117;
+}
+
+.hex-874c2b {
+  fill: #874c2b;
+}
+
+.hex-ae5a18 {
+  fill: #ae5a18;
+}
+
+.hex-dc8d54 {
+  fill: #dc8d54;
+}
+
+.hex-bf8d50 {
+  fill: #bf8d50;
+}
+
+.hex-dbb288 {
+  fill: #dbb288;
+}
+
+.skin-colour-radio-button span {
+  // color: #000;
+  position: absolute;
+  // max-width: 112px;
+  display: block;
+  width: 48px;
+  // opacity: 0;
+  // padding-top: 48px;
+  padding-top: 54px;
+  text-align: center;
+}
+// style changes inside the svg when the checkbox is checked
+.skin-colour-radio-button input[type="radio"]:checked + svg {
+  // border: 10px black;
+  stroke: #324d67;
+  stroke: $primary-light-accent-color;
+  stroke-width: 16px;
+  .primary {
+    stroke: hsl(209, 34%, 30%);
+  }
+
+  .secondary {
+    fill: hsl(210, 36%, 96%);
+  }
+}
+
+.skin-colour-radio-button input[type="radio"]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+  // outline-offset: 4px;
+  // outline-style: inset;
+  // outline-style: ridge;
+}
+//
+// .skin-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
+//   outline: none;
+// }
+
+/* WHCM styles */
+.skin-colour-radio-button svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .skin-colour-radio-button input[type="radio"]:checked ~ svg {
+    rect {
+      fill: windowText;
+    }
+
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
+
+.hair-colour-radio-button {
+  cursor: pointer;
+
+  // display: flex;
+  // align-items: start;
+
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 4px;
@@ -1774,8 +1440,8 @@ fieldset {
   // max-width: 128px;
   // height: 96px;
   max-width: 48px;
-      height: 48px;
-      // margin: 16px;
+  height: 48px;
+  // margin: 16px;
   // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   // margin-right: 16px;
   // margin-bottom: 16px;
@@ -1791,940 +1457,828 @@ fieldset {
   --outline-radius: 5px;
 }
 
-    // hide the checkbox accessibly
-    .hair-colour-radio-button input[type="radio"] {
-      /* remove the checkbox from the page flow, positioning it on top of the SVG */
-      position: absolute;
-      /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-      width: 1em;
-      height: 1em;
-      /* hide it */
-      opacity: 0;
-    }
+// hide the checkbox accessibly
+.hair-colour-radio-button input[type="radio"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
 
+// basic styles for the svg
+.hair-colour-radio-button svg {
+  // width: 128px;
+  // height: 96px;
+  max-width: 48px;
+  height: 48px;
+  border-radius: 4px;
 
+  color: #243b53;
+  // overflow: initial; //remved this for rectangle to work
+  position: relative;
+  // top: -10px;
+  top: 0px;
 
-    // basic styles for the svg
-    .hair-colour-radio-button svg {
-        // width: 128px;
-        // height: 96px;
-        max-width: 48px;
-            height: 48px;
-        border-radius: 4px;
+  // left: -118px;
+  left: 0px;
 
+  background-color: transparent;
 
-        color: #243B53;
-        // overflow: initial; //remved this for rectangle to work
-        position: relative;
-        // top: -10px;
-        top: 0px;
+  // margin-right: 0.5em;
+  // margin-top: .1em;
 
-        // left: -118px;
-        left: 0px;
-
-        background-color: transparent;
-
-        // margin-right: 0.5em;
-        // margin-top: .1em;
-
-        // display: none; // REMOVE THIS LATER
-        /* apply a transition to the elements inside the svg */
-        * {
-          transition: all 0.1s linear;
-        }
-    }
-
+  // display: none; // REMOVE THIS LATER
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
 
 .dark-brown-hair-colour {
-    fill: #8A6748;
+  fill: #8a6748;
 }
 
 .light-brown-hair-colour {
-    fill: #dc8d54;
+  fill: #dc8d54;
 }
 
 .chestnut-hair-colour {
-    fill: #954535;
+  fill: #954535;
 }
 
 .red-hair-colour {
-    fill: #9E311E;
+  fill: #9e311e;
 }
 
 .dark-blonde-hair-colour {
-    fill: #bf9f6a;
+  fill: #bf9f6a;
 }
 
 .light-blonde-hair-colour {
-    fill: #faf0be;
+  fill: #faf0be;
 }
-
-
 
 .hair-colour-radio-button span {
-    // color: #000;
-    position: absolute;
-    display: block;
-    width: 48px;
-    // padding-top: 48px;
-    padding-top: 54px;
-    text-align: center;
+  // color: #000;
+  position: absolute;
+  display: block;
+  width: 48px;
+  // padding-top: 48px;
+  padding-top: 54px;
+  text-align: center;
 }
 
-    // style changes inside the svg when the checkbox is checked
-    .hair-colour-radio-button input[type="radio"]:checked + svg {
-        stroke: #324d67;
-        stroke: $primary-light-accent-color;
-        stroke-width: 14px;
-      .primary {
-        fill: hsl(209, 34%, 30%);
-      }
+// style changes inside the svg when the checkbox is checked
+.hair-colour-radio-button input[type="radio"]:checked + svg {
+  stroke: #324d67;
+  stroke: $primary-light-accent-color;
+  stroke-width: 14px;
+  .primary {
+    fill: hsl(209, 34%, 30%);
+  }
 
-      .secondary {
-        fill: hsl(210, 36%, 96%);
-      }
-
-
+  .secondary {
+    fill: hsl(210, 36%, 96%);
+  }
 }
 
-    .hair-colour-radio-button input[type="radio"]:focus + svg {
-      outline: 3px solid var(--outline-color);
-      outline-offset: var(--outline-offset);
+.hair-colour-radio-button input[type="radio"]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+//
+// .hair-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
+//   outline: none;
+// }
+
+/* WHCM styles */
+.hair-colour-radio-button svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
     }
-    //
-    // .hair-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-    //   outline: none;
-    // }
+  }
+}
 
-
-
-
-
-
-
-    /* WHCM styles */
-    .hair-colour-radio-button svg {
-      @media screen and (-ms-high-contrast: active) {
-        rect {
-          stroke: windowText;
-        }
-      }
-    }
-
-    @media screen and (-ms-high-contrast: active) {
-      .hair-colour-radio-button input[type="radio"]:checked ~ svg {
-        rect {
-          fill: windowText;
-        }
-
-        polyline {
-          stroke: highlight;
-        }
-      }
+@media screen and (-ms-high-contrast: active) {
+  .hair-colour-radio-button input[type="radio"]:checked ~ svg {
+    rect {
+      fill: windowText;
     }
 
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
 
+.hair-feature-radio-button {
+  cursor: pointer;
 
+  // display: flex;
+  // align-items: start;
 
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: white;
+  color: $blue-grey02;
+  max-width: 96px;
+  height: 48px;
 
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  // text-transform: uppercase;
 
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 16px;
+  --outline-radius: 5px;
+}
 
+// hide the checkbox accessibly
+.hair-feature-radio-button input[type="radio"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
 
+// .hair-feature-radio-button input[type="radio"]:checked {
+//
+// stroke-width: 14px;
+// }
 
-    .hair-feature-radio-button {
-        cursor: pointer;
+// basic styles for the svg
+.hair-feature-radio-button svg {
+  // width: 128px;
+  // height: 96px;
+  // width: 96px;
+  // height: 48px;
+  width: 64px;
+  height: 16px;
+  border-radius: 4px;
 
-      // display: flex;
-      // align-items: start;
+  color: #243b53;
+  overflow: initial;
+  position: relative;
+  // top: -10px;
+  top: 0px;
 
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 0.8rem;
-      font-weight: 600;
-      border-radius: 4px;
-      padding: 16px;
-      background-color: white;
-      color: $blue-grey02;
-      max-width: 96px;
-      height: 48px;
+  // left: -118px;
+  left: 0px;
 
-      box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-      margin-right: 16px;
-      margin-bottom: 16px;
-      // text-transform: uppercase;
+  background-color: transparent;
 
-      --checked-state-bg-color: hsl(209, 28%, 39%);
-      --checked-state-check-color: #fff;
-      --outline-color: var(--checked-state-bg-color);
-      --outline-offset: 16px;
-      --outline-radius: 5px;
+  // margin-right: 0.5em;
+  // margin-top: .1em;
+
+  // display: none; // REMOVE THIS LATER
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
+
+.primary {
+  fill: hsl(209, 23%, 60%);
+}
+
+.secondary {
+  // fill: #6f213f;
+  fill: hsl(209, 23%, 60%);
+}
+
+.hair-feature-radio-button span {
+  // color: #000;
+  position: absolute;
+  // max-width: 112px;
+  display: block;
+  // width: 250px;
+}
+
+.hair-feature-radio-button span.info {
+  color: hsl(209, 34%, 30%);
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+// style changes inside the svg when the checkbox is checked
+.hair-feature-radio-button input[type="radio"]:checked + svg {
+  stroke: $primary-light-accent-color;
+  stroke-width: 14px;
+
+  .primary {
+    fill: hsl(209, 34%, 30%);
+  }
+
+  .secondary {
+    fill: hsl(210, 36%, 96%);
+  }
+}
+
+.hair-feature-radio-button input[type="radio"]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+//
+// .hair-feature-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
+//   outline: none;
+// }
+
+/* WHCM styles */
+.hair-feature-radio-button svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .hair-feature-radio-button input[type="radio"]:checked ~ svg {
+    rect {
+      fill: windowText;
     }
 
-        // hide the checkbox accessibly
-        .hair-feature-radio-button input[type="radio"] {
-          /* remove the checkbox from the page flow, positioning it on top of the SVG */
-          position: absolute;
-          /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-          width: 1em;
-          height: 1em;
-          /* hide it */
-          opacity: 0;
-        }
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
 
-        // .hair-feature-radio-button input[type="radio"]:checked {
-        //
-        // stroke-width: 14px;
-        // }
+.gestation-radio-button {
+  cursor: pointer;
 
-        // basic styles for the svg
-        .hair-feature-radio-button svg {
-            // width: 128px;
-            // height: 96px;
-            // width: 96px;
-            // height: 48px;
-            width: 64px;
-            height: 16px;
-            border-radius: 4px;
+  // display: flex;
+  // align-items: start;
 
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: white;
+  color: $blue-grey02;
+  max-width: 192px;
+  height: 128px;
 
-            color: #243B53;
-            overflow: initial;
-            position: relative;
-            // top: -10px;
-            top: 0px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  // text-transform: uppercase;
 
-            // left: -118px;
-            left: 0px;
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 16px;
+  --outline-radius: 5px;
+}
 
-            background-color: transparent;
+// hide the checkbox accessibly
+.gestation-radio-button input[type="radio"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
 
-            // margin-right: 0.5em;
-            // margin-top: .1em;
+// basic styles for the svg
+.gestation-radio-button svg {
+  width: 128px;
+  height: 96px;
+  // border-radius: 4px;
 
-            // display: none; // REMOVE THIS LATER
-            /* apply a transition to the elements inside the svg */
-            * {
-              transition: all 0.1s linear;
-            }
-        }
+  color: #243b53;
+  overflow: initial;
+  position: relative;
+  // top: -10px;
+  top: 0px;
 
-        .primary {
-          fill: hsl(209, 23%, 60%);
-        }
+  // left: -118px;
+  left: 0px;
 
-        .secondary {
-          // fill: #6f213f;
-          fill: hsl(209, 23%, 60%);
-        }
+  background-color: transparent;
 
+  // margin-right: 0.5em;
+  // margin-top: .1em;
 
-    .hair-feature-radio-button span {
-        // color: #000;
-        position: absolute;
-        // max-width: 112px;
-        display: block;
-        // width: 250px;
+  // display: none; // REMOVE THIS LATER
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
+
+.primary {
+  fill: hsl(209, 23%, 60%);
+}
+
+.secondary {
+  // fill: #6f213f;
+  fill: hsl(209, 23%, 60%);
+}
+
+.gestation-radio-button span {
+  // color: #000;
+  position: absolute;
+  // max-width: 112px;
+  display: block;
+  width: 250px;
+}
+
+.gestation-radio-button span.info {
+  color: hsl(209, 34%, 30%);
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+.gestation-icon {
+  position: absolute;
+  height: 96px;
+  // width: 128px;
+}
+
+.gestation-radio-button span.egg {
+  // padding-top: 16px;
+  // font-size: 48px;
+  // font-weight: 400;
+  padding-top: 16px;
+  font-size: 64px;
+  font-weight: 400;
+  color: hsl(210, 22%, 49%);
+  letter-spacing: 0.05em;
+  font-family: "Varela Round", sans-serif;
+}
+
+.gestation-radio-button span.eggs-fluid {
+  color: hsl(210, 22%, 49%);
+  padding-top: 54px;
+  padding-left: 78px;
+  color: #617d98;
+  max-width: 120px;
+}
+
+.gestation-radio-button span.eggs-short-expl {
+  padding-top: 112px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.gestation-radio-button span.eggs-why {
+  padding-top: 176px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.gestation-radio-button span.eggs-bullet-1 {
+  padding-top: 304px;
+  color: hsl(210, 22%, 49%);
+}
+.gestation-radio-button span.eggs-bullet-2 {
+  padding-top: 320px;
+  color: hsl(210, 22%, 49%);
+}
+.gestation-radio-button span.eggs-bullet-3 {
+  padding-top: 336px;
+  color: hsl(210, 22%, 49%);
+}
+
+// style changes inside the svg when the checkbox is checked
+.gestation-radio-button input[type="radio"]:checked + svg {
+  .primary {
+    // fill: hsl(209, 34%, 30%);
+    fill: $primary-light-accent-color;
+  }
+
+  .secondary {
+    // fill: hsl(210, 36%, 96%);
+    fill: $primary-dark-accent-color;
+  }
+}
+
+.gestation-radio-button input[type="radio"]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+//
+// .gestation-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
+//   outline: none;
+// }
+
+/* WHCM styles */
+.gestation-radio-button svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .gestation-radio-button input[type="radio"]:checked ~ svg {
+    rect {
+      fill: windowText;
     }
 
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
 
-    .hair-feature-radio-button span.info {
-        color: hsl(209, 34%, 30%);
-        font-weight: 400;
-        padding-top: 4px;
+.egg-package-radio-button {
+  cursor: pointer;
+
+  // display: flex;
+  // align-items: start;
+
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 32px;
+  background-color: white;
+  color: $blue-grey02;
+  // max-width: 175px;
+  // max-width: 512px;
+  // height: 40px;
+  // height: 256px;
+  height: 448px;
+  width: 320px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  // text-transform: uppercase;
+
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 32px;
+  --outline-radius: 5px;
+}
+
+// hide the checkbox accessibly
+.egg-package-radio-button input[type="radio"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
+
+// basic styles for the svg
+.egg-package-radio-button svg {
+  // width: 128px;
+  // height: 96px;
+  height: 384px;
+  width: 256px;
+  // border-radius: 0;
+  // padding: 10px;
+  // padding: 0px;
+  // padding: 32px;
+
+  color: #243b53;
+  overflow: initial;
+  position: relative;
+  // top: -10px;
+  top: 0px;
+
+  // left: -118px;
+  left: 0px;
+
+  background-color: transparent;
+
+  // margin-right: 0.5em;
+  // margin-top: .1em;
+
+  // display: none; // REMOVE THIS LATER
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
+
+.primary {
+  fill: hsl(209, 23%, 60%);
+}
+
+.secondary {
+  // fill: #6f213f;
+  fill: hsl(209, 23%, 60%);
+}
+
+.egg-package-radio-button span {
+  // color: #000;
+  position: absolute;
+  // max-width: 112px;
+  display: block;
+  width: 250px;
+}
+
+.egg-package-radio-button span.info {
+  color: hsl(209, 34%, 30%);
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+.egg-package-radio-button span.egg {
+  padding-top: 16px;
+  font-size: 48px;
+  font-weight: 400;
+  // font-family: 'Varela Round', sans-serif;
+  color: $blue-grey05;
+}
+
+.egg-package-radio-button span.eggs-fluid {
+  padding-top: 80px;
+  color: hsl(210, 22%, 49%);
+}
+.egg-package-radio-button span.eggs-short-expl {
+  padding-top: 112px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.egg-package-radio-button span.eggs-why {
+  padding-top: 176px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.egg-package-radio-button span.eggs-bullet-1 {
+  padding-top: 304px;
+  color: hsl(210, 22%, 49%);
+}
+.egg-package-radio-button span.eggs-bullet-2 {
+  padding-top: 320px;
+  color: hsl(210, 22%, 49%);
+}
+.egg-package-radio-button span.eggs-bullet-3 {
+  padding-top: 336px;
+  color: hsl(210, 22%, 49%);
+}
+
+// style changes inside the svg when the checkbox is checked
+.egg-package-radio-button input[type="radio"]:checked + svg {
+  .primary {
+    // fill: hsl(209, 34%, 30%);
+    fill: $primary-light-accent-color;
+  }
+
+  .secondary {
+    // fill: hsl(210, 36%, 96%);
+    fill: $primary-dark-accent-color;
+  }
+}
+
+.egg-package-radio-button input[type="radio"]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+//
+// .egg-package-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
+//   outline: none;
+// }
+
+/* WHCM styles */
+.egg-package-radio-button svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .egg-package-radio-button input[type="radio"]:checked ~ svg {
+    rect {
+      fill: windowText;
     }
 
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
 
-        // style changes inside the svg when the checkbox is checked
-        .hair-feature-radio-button input[type="radio"]:checked + svg {
-            stroke: $primary-light-accent-color;
-            stroke-width: 14px;
+.extra-options-checkbox {
+  cursor: pointer;
 
-          .primary {
-            fill: hsl(209, 34%, 30%);
-          }
+  // display: flex;
+  // align-items: start;
 
-          .secondary {
-            fill: hsl(210, 36%, 96%);
-          }
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: white;
+  color: $blue-grey02;
+  // max-width: 175px;
+  // max-width: 128px;
+  // height: 40px;
+  // height: 96px;
+  width: 192px;
+  height: 128px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  // text-transform: uppercase;
 
+  --checked-state-bg-color: hsl(209, 28%, 39%);
+  --checked-state-check-color: #fff;
+  --outline-color: var(--checked-state-bg-color);
+  --outline-offset: 16px;
+  --outline-radius: 5px;
+}
 
+// hide the checkbox accessibly
+.extra-options-checkbox input[type="checkbox"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0;
+}
+
+// basic styles for the svg
+.extra-options-checkbox svg {
+  width: 160px;
+  height: 96px;
+  // border-radius: 0;
+  // padding: 10px;
+  // padding: 0px;
+
+  color: #243b53;
+  overflow: initial;
+  position: relative;
+  // top: -10px;
+  top: 0px;
+
+  // left: -118px;
+  left: 0px;
+
+  // top: -16px;
+  // left: -16px;
+
+  background-color: transparent;
+
+  // margin-right: 0.5em;
+  // margin-top: .1em;
+
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
+
+.primary {
+  fill: hsl(209, 23%, 60%);
+}
+
+.secondary {
+  // fill: #6f213f;
+  fill: hsl(209, 23%, 60%);
+}
+
+.extra-options-checkbox span {
+  // color: #000;
+  position: absolute;
+  max-width: 112px;
+  display: block;
+}
+
+.extra-options-checkbox span.info {
+  color: hsl(209, 34%, 30%);
+  // position: absolute;
+  // max-width: 112px;
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+// style changes inside the svg when the checkbox is checked
+.extra-options-checkbox input[type="checkbox"]:checked + svg {
+  .primary {
+    // fill: hsl(209, 34%, 30%);
+    fill: $primary-light-accent-color;
+  }
+
+  .secondary {
+    // fill: hsl(210, 36%, 96%);
+    fill: $primary-dark-accent-color;
+  }
+}
+
+.extra-options-checkbox input[type="checkbox"]:focus + svg {
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+//
+// .extra-options-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
+//   outline: none;
+// }
+
+/* WHCM styles */
+.extra-options-checkbox svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .extra-options-checkbox input[type="checkbox"]:checked ~ svg {
+    rect {
+      fill: windowText;
     }
 
-        .hair-feature-radio-button input[type="radio"]:focus + svg {
-          outline: 3px solid var(--outline-color);
-          outline-offset: var(--outline-offset);
-        }
-        //
-        // .hair-feature-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-        //   outline: none;
-        // }
-
-
-
-
-
-
-
-        /* WHCM styles */
-        .hair-feature-radio-button svg {
-          @media screen and (-ms-high-contrast: active) {
-            rect {
-              stroke: windowText;
-            }
-          }
-        }
-
-        @media screen and (-ms-high-contrast: active) {
-          .hair-feature-radio-button input[type="radio"]:checked ~ svg {
-            rect {
-              fill: windowText;
-            }
-
-            polyline {
-              stroke: highlight;
-            }
-          }
-        }
-
-
-
-
-
-
-            .gestation-radio-button {
-                cursor: pointer;
-
-              // display: flex;
-              // align-items: start;
-
-              font-family: 'Source Sans Pro', sans-serif;
-              font-size: 0.8rem;
-              font-weight: 600;
-              border-radius: 4px;
-              padding: 16px;
-              background-color: white;
-              color: $blue-grey02;
-              max-width: 192px;
-              height: 128px;
-
-              box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-              margin-right: 16px;
-              margin-bottom: 16px;
-              // text-transform: uppercase;
-
-              --checked-state-bg-color: hsl(209, 28%, 39%);
-              --checked-state-check-color: #fff;
-              --outline-color: var(--checked-state-bg-color);
-              --outline-offset: 16px;
-              --outline-radius: 5px;
-            }
-
-                // hide the checkbox accessibly
-                .gestation-radio-button input[type="radio"] {
-                  /* remove the checkbox from the page flow, positioning it on top of the SVG */
-                  position: absolute;
-                  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-                  width: 1em;
-                  height: 1em;
-                  /* hide it */
-                  opacity: 0;
-                }
-
-
-
-                // basic styles for the svg
-                .gestation-radio-button svg {
-                    width: 128px;
-                    height: 96px;
-                    // border-radius: 4px;
-
-
-                    color: #243B53;
-                    overflow: initial;
-                    position: relative;
-                    // top: -10px;
-                    top: 0px;
-
-                    // left: -118px;
-                    left: 0px;
-
-                    background-color: transparent;
-
-                    // margin-right: 0.5em;
-                    // margin-top: .1em;
-
-                    // display: none; // REMOVE THIS LATER
-                    /* apply a transition to the elements inside the svg */
-                    * {
-                      transition: all 0.1s linear;
-                    }
-                }
-
-                .primary {
-                  fill: hsl(209, 23%, 60%);
-                }
-
-                .secondary {
-                  // fill: #6f213f;
-                  fill: hsl(209, 23%, 60%);
-                }
-
-
-            .gestation-radio-button span {
-                // color: #000;
-                position: absolute;
-                // max-width: 112px;
-                display: block;
-                width: 250px;
-            }
-
-
-            .gestation-radio-button span.info {
-                color: hsl(209, 34%, 30%);
-                font-weight: 400;
-                padding-top: 4px;
-            }
-
-            .gestation-icon {
-                position: absolute;
-                height: 96px;
-                // width: 128px;
-            }
-
-            .gestation-radio-button span.egg {
-                // padding-top: 16px;
-                // font-size: 48px;
-                // font-weight: 400;
-                padding-top: 16px;
-                font-size: 64px;
-                font-weight: 400;
-                color: hsl(210, 22%, 49%);
-                letter-spacing: 0.05em;
-                font-family: 'Varela Round', sans-serif;
-            }
-
-            .gestation-radio-button span.eggs-fluid {
-                color: hsl(210, 22%, 49%);
-                padding-top: 54px;
-                padding-left: 78px;
-                color: #617d98;
-                max-width: 120px;
-            }
-
-            .gestation-radio-button span.eggs-short-expl {
-                padding-top: 112px;
-                font-size: 16px;
-                font-weight: 400;
-            }
-            .gestation-radio-button span.eggs-why {
-                padding-top: 176px;
-                font-weight: 400;
-                font-size: 16px;
-            }
-            .gestation-radio-button span.eggs-bullet-1 {
-                padding-top: 304px;
-                color: hsl(210, 22%, 49%);
-            }
-            .gestation-radio-button span.eggs-bullet-2 {
-                padding-top: 320px;
-                color: hsl(210, 22%, 49%);
-            }
-            .gestation-radio-button span.eggs-bullet-3 {
-                padding-top: 336px;
-                color: hsl(210, 22%, 49%);
-            }
-
-                // style changes inside the svg when the checkbox is checked
-                .gestation-radio-button input[type="radio"]:checked + svg {
-
-                    .primary {
-                      // fill: hsl(209, 34%, 30%);
-                      fill: $primary-light-accent-color;
-                    }
-
-                    .secondary {
-                      // fill: hsl(210, 36%, 96%);
-                      fill: $primary-dark-accent-color;
-                    }
-
-
-            }
-
-                .gestation-radio-button input[type="radio"]:focus + svg {
-                  outline: 3px solid var(--outline-color);
-                  outline-offset: var(--outline-offset);
-                }
-                //
-                // .gestation-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-                //   outline: none;
-                // }
-
-
-
-
-
-
-
-                /* WHCM styles */
-                .gestation-radio-button svg {
-                  @media screen and (-ms-high-contrast: active) {
-                    rect {
-                      stroke: windowText;
-                    }
-                  }
-                }
-
-                @media screen and (-ms-high-contrast: active) {
-                  .gestation-radio-button input[type="radio"]:checked ~ svg {
-                    rect {
-                      fill: windowText;
-                    }
-
-                    polyline {
-                      stroke: highlight;
-                    }
-                  }
-                }
-
-
-
-
-
-
-            .egg-package-radio-button {
-            	cursor: pointer;
-
-              // display: flex;
-              // align-items: start;
-
-              font-family: 'Source Sans Pro', sans-serif;
-              font-size: 0.8rem;
-              font-weight: 600;
-              border-radius: 4px;
-              padding: 32px;
-              background-color: white;
-              color: $blue-grey02;
-              // max-width: 175px;
-              // max-width: 512px;
-              // height: 40px;
-              // height: 256px;
-              height: 448px;
-              width: 320px;
-              box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-              margin-right: 16px;
-              margin-bottom: 16px;
-              // text-transform: uppercase;
-
-              --checked-state-bg-color: hsl(209, 28%, 39%);
-              --checked-state-check-color: #fff;
-              --outline-color: var(--checked-state-bg-color);
-              --outline-offset: 32px;
-              --outline-radius: 5px;
-            }
-
-                // hide the checkbox accessibly
-                .egg-package-radio-button input[type="radio"] {
-                  /* remove the checkbox from the page flow, positioning it on top of the SVG */
-                  position: absolute;
-                  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-                  width: 1em;
-                  height: 1em;
-                  /* hide it */
-                  opacity: 0;
-                }
-
-
-
-                // basic styles for the svg
-                .egg-package-radio-button svg {
-                    // width: 128px;
-                    // height: 96px;
-                    height: 384px;
-                    width: 256px;
-                    // border-radius: 0;
-                    // padding: 10px;
-                    // padding: 0px;
-                    // padding: 32px;
-
-
-                    color: #243B53;
-                    overflow: initial;
-                    position: relative;
-                    // top: -10px;
-                    top: 0px;
-
-                    // left: -118px;
-                    left: 0px;
-
-                    background-color: transparent;
-
-                    // margin-right: 0.5em;
-                    // margin-top: .1em;
-
-                    // display: none; // REMOVE THIS LATER
-                    /* apply a transition to the elements inside the svg */
-                    * {
-                      transition: all 0.1s linear;
-                    }
-                }
-
-                .primary {
-                  fill: hsl(209, 23%, 60%);
-                }
-
-                .secondary {
-                  // fill: #6f213f;
-                  fill: hsl(209, 23%, 60%);
-                }
-
-
-            .egg-package-radio-button span {
-                // color: #000;
-                position: absolute;
-                // max-width: 112px;
-                display: block;
-                width: 250px;
-            }
-
-
-            .egg-package-radio-button span.info {
-                color: hsl(209, 34%, 30%);
-                font-weight: 400;
-                padding-top: 4px;
-            }
-
-            .egg-package-radio-button span.egg {
-                padding-top: 16px;
-                font-size: 48px;
-                font-weight: 400;
-                // font-family: 'Varela Round', sans-serif;
-                color: $blue-grey05;
-            }
-
-            .egg-package-radio-button span.eggs-fluid {
-                padding-top: 80px;
-                color: hsl(210, 22%, 49%);
-            }
-            .egg-package-radio-button span.eggs-short-expl {
-                padding-top: 112px;
-                font-size: 16px;
-                font-weight: 600;
-            }
-            .egg-package-radio-button span.eggs-why {
-                padding-top: 176px;
-                font-weight: 400;
-                font-size: 16px;
-            }
-            .egg-package-radio-button span.eggs-bullet-1 {
-                padding-top: 304px;
-                color: hsl(210, 22%, 49%);
-            }
-            .egg-package-radio-button span.eggs-bullet-2 {
-                padding-top: 320px;
-                color: hsl(210, 22%, 49%);
-            }
-            .egg-package-radio-button span.eggs-bullet-3 {
-                padding-top: 336px;
-                color: hsl(210, 22%, 49%);
-            }
-
-                // style changes inside the svg when the checkbox is checked
-                .egg-package-radio-button input[type="radio"]:checked + svg {
-
-                    .primary {
-                      // fill: hsl(209, 34%, 30%);
-                      fill: $primary-light-accent-color;
-                    }
-
-                    .secondary {
-                      // fill: hsl(210, 36%, 96%);
-                      fill: $primary-dark-accent-color;
-                    }
-
-            }
-
-                .egg-package-radio-button input[type="radio"]:focus + svg {
-                  outline: 3px solid var(--outline-color);
-                  outline-offset: var(--outline-offset);
-                }
-                //
-                // .egg-package-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-                //   outline: none;
-                // }
-
-
-
-
-
-
-
-                /* WHCM styles */
-                .egg-package-radio-button svg {
-                  @media screen and (-ms-high-contrast: active) {
-                    rect {
-                      stroke: windowText;
-                    }
-                  }
-                }
-
-                @media screen and (-ms-high-contrast: active) {
-                  .egg-package-radio-button input[type="radio"]:checked ~ svg {
-                    rect {
-                      fill: windowText;
-                    }
-
-                    polyline {
-                      stroke: highlight;
-                    }
-                  }
-                }
-
-
-
-
-
-                    .extra-options-checkbox {
-                    	cursor: pointer;
-
-                      // display: flex;
-                      // align-items: start;
-
-                      font-family: 'Source Sans Pro', sans-serif;
-                      font-size: 0.8rem;
-                      font-weight: 600;
-                      border-radius: 4px;
-                      padding: 16px;
-                      background-color: white;
-                      color: $blue-grey02;
-                      // max-width: 175px;
-                      // max-width: 128px;
-                      // height: 40px;
-                      // height: 96px;
-                      width: 192px;
-                      height: 128px;
-                      box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-                      margin-right: 16px;
-                      margin-bottom: 16px;
-                      // text-transform: uppercase;
-
-                      --checked-state-bg-color: hsl(209, 28%, 39%);
-                      --checked-state-check-color: #fff;
-                      --outline-color: var(--checked-state-bg-color);
-                      --outline-offset: 16px;
-                      --outline-radius: 5px;
-                    }
-
-                        // hide the checkbox accessibly
-                        .extra-options-checkbox input[type="checkbox"] {
-                          /* remove the checkbox from the page flow, positioning it on top of the SVG */
-                          position: absolute;
-                          /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-                          width: 1em;
-                          height: 1em;
-                          /* hide it */
-                          opacity: 0;
-                        }
-
-
-
-                        // basic styles for the svg
-                        .extra-options-checkbox svg {
-                            width: 160px;
-                            height: 96px;
-                            // border-radius: 0;
-                            // padding: 10px;
-                            // padding: 0px;
-
-
-                            color: #243B53;
-                            overflow: initial;
-                            position: relative;
-                            // top: -10px;
-                            top: 0px;
-
-                            // left: -118px;
-                            left: 0px;
-
-                            // top: -16px;
-                            // left: -16px;
-
-                            background-color: transparent;
-
-                            // margin-right: 0.5em;
-                            // margin-top: .1em;
-
-                            /* apply a transition to the elements inside the svg */
-                            * {
-                              transition: all 0.1s linear;
-                            }
-                        }
-
-                        .primary {
-                          fill: hsl(209, 23%, 60%);
-                        }
-
-                        .secondary {
-                          // fill: #6f213f;
-                          fill: hsl(209, 23%, 60%);
-                        }
-
-
-                    .extra-options-checkbox span {
-                        // color: #000;
-                        position: absolute;
-                        max-width: 112px;
-                        display: block;
-                    }
-
-
-                    .extra-options-checkbox span.info {
-                        color: hsl(209, 34%, 30%);
-                        // position: absolute;
-                        // max-width: 112px;
-                        font-weight: 400;
-                        padding-top: 4px;
-                    }
-
-                        // style changes inside the svg when the checkbox is checked
-                        .extra-options-checkbox input[type="checkbox"]:checked + svg {
-
-                            .primary {
-                              // fill: hsl(209, 34%, 30%);
-                              fill: $primary-light-accent-color;
-                            }
-
-                            .secondary {
-                              // fill: hsl(210, 36%, 96%);
-                              fill: $primary-dark-accent-color;
-                            }
-
-                    }
-
-                        .extra-options-checkbox input[type="checkbox"]:focus + svg {
-                          outline: 3px solid var(--outline-color);
-                          outline-offset: var(--outline-offset);
-                        }
-                        //
-                        // .extra-options-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
-                        //   outline: none;
-                        // }
-
-
-
-
-
-
-
-                        /* WHCM styles */
-                        .extra-options-checkbox svg {
-                          @media screen and (-ms-high-contrast: active) {
-                            rect {
-                              stroke: windowText;
-                            }
-                          }
-                        }
-
-                        @media screen and (-ms-high-contrast: active) {
-                          .extra-options-checkbox input[type="checkbox"]:checked ~ svg {
-                            rect {
-                              fill: windowText;
-                            }
-
-                            polyline {
-                              stroke: highlight;
-                            }
-                          }
-                        }
-
-
-
-
-
-
-
-
-
-    //
-    // @media (max-width: 400px) {
-    //     section {
-    //         padding: 48px;
-    //     }
-    // }
-
-
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
 
 /* When the browser is at least 600px and above */
 @media screen and (min-width: 1205px) {
   .section-intro-area {
-      position: absolute;
-  // width: 389px;
-  // height: 48px;
-  left: 812px;
-  // top: 362px;
+    position: absolute;
+    // width: 389px;
+    // height: 48px;
+    left: 812px;
+    // top: 362px;
   }
 }
 
-
 @media screen and (min-width: 909px) {
-    .section-area {
-        flex-direction: row;
-    }
+  .section-area {
+    flex-direction: row;
+  }
 
-    .section-area-choice-sex {
+  .section-area-choice-sex {
     padding-top: 256px;
-    }
+  }
 
-    section {
-        padding: 64px;
-    }
+  section {
+    padding: 64px;
+  }
 
-.header-title-nav-wrapper {
+  .header-title-nav-wrapper {
     padding: 48px;
-    }
-
+  }
 }
-
 
 @media screen and (max-width: 340px) {
-    #section-eggs {
-        padding-left: 10px;
-        padding-right: 0px;
-    }
+  #section-eggs {
+    padding-left: 10px;
+    padding-right: 0px;
+  }
 
-    .section-area-info {
-        padding-right: 0px;
-    }
+  .section-area-info {
+    padding-right: 0px;
+  }
 
-    // .section-area-info h2 {
-    //     padding-left: 24px;
-    //     padding-right: 24px;
-    // }
+  // .section-area-info h2 {
+  //     padding-left: 24px;
+  //     padding-right: 24px;
+  // }
 
-    // .section-area-choice {
-    //     padding-left: 10px;
-    //     padding-right: 10px;
-    // }
-    .egg-package-radio-button {
-        padding: 22px;
-        height: 428px;
-        width: 300px;
-        --outline-offset: 23px;
-        margin-right: 0px;
-
-    }
+  // .section-area-choice {
+  //     padding-left: 10px;
+  //     padding-right: 10px;
+  // }
+  .egg-package-radio-button {
+    padding: 22px;
+    height: 428px;
+    width: 300px;
+    --outline-offset: 23px;
+    margin-right: 0px;
+  }
 }
-
-
 
 @media screen and (max-width: 462px) {
-    .top-info-banner {
+  .top-info-banner {
     // height: 48px;
     height: 76px;
-    }
+  }
 }
 
-
 @media screen and (max-width: 1206px) {
-    .heading-section-intro {
+  .heading-section-intro {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
@@ -2732,95 +2286,90 @@ fieldset {
     color: $blue-grey02;
     max-width: 325px;
     // line-height: 36px;
-}
+  }
 
-    .paragraph-section-intro {
+  .paragraph-section-intro {
     font-size: 16px;
     color: $blue-grey01;
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
     // line-height: 1.5rem;
-    }
+  }
 }
 
-
 @media screen and (max-width: 400px) {
-    .heading-section-intro {
+  .heading-section-intro {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     color: $blue-grey02;
     // line-height: 36px;
-}
+  }
 
-    .paragraph-section-intro {
+  .paragraph-section-intro {
     font-size: 16px;
     color: $blue-grey01;
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
     // line-height: 1.5rem;
-    }
+  }
 
-    .section-intro-area-cta {
+  .section-intro-area-cta {
     max-width: 256px;
     padding-top: 12px;
     padding-bottom: 16px;
-    }
+  }
 }
-
 
 @media screen and (max-width: 574px) {
-    .eyes-skin-area {
-        flex-direction: column;
-    }
+  .eyes-skin-area {
+    flex-direction: column;
+  }
 
-    .hair-area {
-        flex-direction: column;
-    }
+  .hair-area {
+    flex-direction: column;
+  }
 
-    .eyes-area {
-        margin-bottom: 64px;
-    }
+  .eyes-area {
+    margin-bottom: 64px;
+  }
 
-    .section-area-info.physical-features {
-        margin-bottom: 48px;
-    }
+  .section-area-info.physical-features {
+    margin-bottom: 48px;
+  }
 
-    .hair-colour-area {
-        margin-bottom: 64px;
-    }
+  .hair-colour-area {
+    margin-bottom: 64px;
+  }
 }
 
-
-
 @media screen and (max-width: 618px) {
-    .top-background {
-        background: url(img/optimized/baby-top-background.jpg);
-    }
+  .top-background {
+    background: url(img/optimized/baby-top-background.jpg);
+  }
 
-    .section-unwanted-features {
-        background: url(img/optimized/section-features.jpg);
-    }
+  .section-unwanted-features {
+    background: url(img/optimized/section-features.jpg);
+  }
 
-    .section-request-quote {
-        background: url(img/optimized/section-request.jpg);
-    }
+  .section-request-quote {
+    background: url(img/optimized/section-request.jpg);
+  }
 
-    .img-outro {
-        background: url(img/optimized/section-outro.jpg);
-        background-position: center;
-        background-size: cover;
+  .img-outro {
+    background: url(img/optimized/section-outro.jpg);
+    background-position: center;
+    background-size: cover;
 
-        background-attachment: fixed;
-        background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
 
-    }
+  .image-about-page {
+    background: url(img/optimized/about.jpg);
+    background-position: center;
+    background-size: cover;
 
-    .image-about-page {
-        background: url(img/optimized/about.jpg);
-        background-position: center;
-        background-size: cover;
-
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
 }
