@@ -120,13 +120,14 @@ h4 {
 
 p {
   max-width: 20em;
-  color: #324d67;
+  color: #243a52;
 }
 
 ul {
   margin-bottom: 1.4rem;
   max-width: 20em;
   color: #324d67;
+  color: #243a52;
 }
 
 details,
@@ -260,7 +261,7 @@ a:visited {
   font-style: normal;
   font-size: 16px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .section-intro-area-cta {
@@ -426,6 +427,7 @@ div.control.hair-feature-area-inner {
 .section-final-step {
   background: url(../images/section-request.jpg);
   background-position: center;
+  color: #243a52;
 }
 
 .section-final-step-cta {
@@ -444,6 +446,8 @@ div.control.hair-feature-area-inner {
   margin-bottom: 16px;
   text-align: center;
   border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 #section-request-quote > div > div.section-area-info > p:nth-child(2) {
