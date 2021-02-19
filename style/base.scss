@@ -358,7 +358,7 @@ a:visited {
   // left: 0px;
   // top: 0px;
   border-radius: 0px;
-  background: url(img/baby-top-background.jpg);
+  background: url(../images/baby-top-background.jpg);
   background-position: center;
   background-size: cover;
   // color: #000;
@@ -583,7 +583,7 @@ body > div.top-background > section > div > div > div > p {
 
 .section-unwanted-features {
   // background-color: #EFFCF6;
-  background: url(img/section-features.jpg);
+  background: url(../images/section-features.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -690,7 +690,7 @@ div.control.hair-feature-area-inner {
 
 .section-request-quote {
   // background-color: #EFFCF6;
-  background: url(img/section-request.jpg);
+  background: url(../images/section-request.jpg);
   background-position: center;
 }
 
@@ -700,7 +700,7 @@ div.control.hair-feature-area-inner {
 }
 
 .img-outro {
-  background: url(img/section-outro.jpg);
+  background: url(../images/section-outro.jpg);
   background-position: center;
   background-size: cover;
 
@@ -722,7 +722,7 @@ div.control.hair-feature-area-inner {
 }
 
 .image-about-page {
-  background: url(img/about.jpg);
+  background: url(../images/about.jpg);
   background-position: center;
   background-size: cover;
 
@@ -2351,19 +2351,19 @@ fieldset {
 
 @media screen and (max-width: 618px) {
   .top-background {
-    background: url(img/optimized/baby-top-background.jpg);
+    background: url(../images/optimized/baby-top-background.jpg);
   }
 
   .section-unwanted-features {
-    background: url(img/optimized/section-features.jpg);
+    background: url(../images/optimized/section-features.jpg);
   }
 
   .section-request-quote {
-    background: url(img/optimized/section-request.jpg);
+    background: url(../images/optimized/section-request.jpg);
   }
 
   .img-outro {
-    background: url(img/optimized/section-outro.jpg);
+    background: url(../images/optimized/section-outro.jpg);
     background-position: center;
     background-size: cover;
 
@@ -2372,7 +2372,7 @@ fieldset {
   }
 
   .image-about-page {
-    background: url(img/optimized/about.jpg);
+    background: url(../images/optimized/about.jpg);
     background-position: center;
     background-size: cover;
 
