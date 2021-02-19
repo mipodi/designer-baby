@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass base.scss --watch style.min.css",
-    "style-min": "sass base.scss style.min.css --style compressed",
+    "style": "sass style/base.scss --watch style.min.css",
+    "style-min": "sass style/base.scss www/style.min.css --style compressed",
     "start": "webpack -d",
     "watch": "webpack -d --watch"
   },
