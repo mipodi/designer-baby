@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "html-minify": "html-minifier --input-dir www --output-dir www --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true",
     "lint": "stylelint \"**/*.scss\"",
     "style": "sass style/base.scss --watch style/style.min.css",
     "style-min": "sass style/base.scss www/style/style.min.css --style compressed",
@@ -27,6 +28,7 @@
     "stylelint-config-sass-guidelines": "^8.0.0"
   },
   "devDependencies": {
+    "html-minifier": "^4.0.0",
     "prettier": "2.2.1",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
