@@ -688,10 +688,28 @@ div.control.hair-feature-area-inner {
   background-color: $blue-grey10;
 }
 
-.section-request-quote {
+.section-final-step {
   // background-color: #EFFCF6;
   background: url(../images/section-request.jpg);
   background-position: center;
+}
+
+.section-final-step-cta {
+  background-color: #eefcf5;
+  max-width: 192px;
+  /* padding: 1px; */
+  padding-left: 16px;
+  margin: 0;
+  max-width: 192px;
+  padding: 4px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  /* padding-left: 16px; */
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 #section-request-quote > div > div.section-area-info > p:nth-child(2) {
