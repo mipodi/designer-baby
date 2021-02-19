@@ -1115,6 +1115,7 @@ fieldset {
 .hair-feature-radio-button input[type=radio]:checked + svg {
   stroke: #8cedc6;
   stroke-width: 12px;
+  border-radius: 0;
 }
 .hair-feature-radio-button input[type=radio]:checked + svg .primary {
   fill: #324d67;

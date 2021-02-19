@@ -1683,6 +1683,7 @@ fieldset {
 .hair-feature-radio-button input[type="radio"]:checked + svg {
   stroke: $primary-light-accent-color;
   stroke-width: 12px;
+  border-radius: 0;
 
   .primary {
     fill: hsl(209, 34%, 30%);
