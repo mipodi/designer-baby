@@ -1106,15 +1106,15 @@ fieldset {
   display: block;
 }
 
-.hair-feature-radio-button span.info {
-  color: #324d67;
-  font-weight: 400;
-  padding-top: 4px;
+.hair-feature-inside {
+  fill: transparent;
+  width: 96px;
+  height: 48px;
 }
 
 .hair-feature-radio-button input[type=radio]:checked + svg {
   stroke: #8cedc6;
-  stroke-width: 14px;
+  stroke-width: 12px;
 }
 .hair-feature-radio-button input[type=radio]:checked + svg .primary {
   fill: #324d67;

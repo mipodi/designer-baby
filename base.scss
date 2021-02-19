@@ -1664,18 +1664,25 @@ fieldset {
   // max-width: 112px;
   display: block;
   // width: 250px;
+  // padding: 16px;
 }
 
-.hair-feature-radio-button span.info {
-  color: hsl(209, 34%, 30%);
-  font-weight: 400;
-  padding-top: 4px;
+// .hair-feature-radio-button span.info {
+//   color: hsl(209, 34%, 30%);
+//   font-weight: 400;
+//   padding-top: 4px;
+// }
+
+.hair-feature-inside {
+  fill: transparent;
+  width: 96px;
+  height: 48px;
 }
 
 // style changes inside the svg when the checkbox is checked
 .hair-feature-radio-button input[type="radio"]:checked + svg {
   stroke: $primary-light-accent-color;
-  stroke-width: 14px;
+  stroke-width: 12px;
 
   .primary {
     fill: hsl(209, 34%, 30%);
