@@ -89,6 +89,17 @@ body {
   font-weight: 400;
 }
 
+nav [aria-current=page] {
+  background-color: #eefcf5;
+  padding: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  border-radius: 3px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .inner-wrap-footer {
   padding: 48px;
 }
