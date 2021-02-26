@@ -817,7 +817,7 @@ fieldset {
   // align-items: start;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 16px;
@@ -946,7 +946,7 @@ fieldset {
   // align-items: start;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 16px;
@@ -1100,7 +1100,7 @@ fieldset {
   // align-items: start;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 50%;
   // padding: 16px;
@@ -1301,7 +1301,7 @@ fieldset {
   // align-items: start;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 50%;
   // padding: 16px;
@@ -1472,7 +1472,7 @@ fieldset {
   // align-items: start;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   // padding: 16px;
@@ -1622,7 +1622,7 @@ fieldset {
   // align-items: start;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 16px;
@@ -1772,7 +1772,7 @@ fieldset {
   // align-items: start;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 16px;
@@ -1953,7 +1953,7 @@ fieldset {
   // align-items: start;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 32px;
@@ -2128,7 +2128,7 @@ fieldset {
   // align-items: start;
 
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.8rem;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 16px;
@@ -2259,6 +2259,26 @@ fieldset {
       stroke: highlight;
     }
   }
+}
+
+/* When the browser is at max 909px and above */
+
+@media screen and (max-width: 909px) {
+  p {
+    font-size: 18px;
+  }
+
+  // .basic-checkbox,
+  // .sex-choice-radio-button,
+  // .eye-colour-radio-button,
+  // .skin-colour-radio-button,
+  // .hair-colour-radio-button,
+  // .hair-feature-radio-button,
+  // .gestation-radio-button,
+  // .egg-package-radio-button,
+  // .extra-options-checkbox {
+  //   font-size: 13px;
+  // }
 }
 
 /* When the browser is at least 600px and above */
