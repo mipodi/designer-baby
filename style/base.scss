@@ -176,6 +176,7 @@ p {
   max-width: 20em;
   // font-size: 1rem;
   color: $blue-grey02;
+  margin-block-start: 0;
 }
 
 ul {
@@ -2279,6 +2280,10 @@ fieldset {
   // .extra-options-checkbox {
   //   font-size: 13px;
   // }
+
+  h2 {
+    font-size: 30px;
+  }
 
   .header-nav-list a {
     margin-left: 16px;

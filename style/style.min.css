@@ -130,6 +130,7 @@ h4 {
 p {
   max-width: 20em;
   color: #243a52;
+  margin-block-start: 0;
 }
 
 ul {
@@ -1548,6 +1549,10 @@ fieldset {
 @media screen and (max-width: 909px) {
   p {
     font-size: 18px;
+  }
+
+  h2 {
+    font-size: 30px;
   }
 
   .header-nav-list a {
