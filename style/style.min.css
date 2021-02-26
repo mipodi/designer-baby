@@ -201,7 +201,7 @@ a {
 /* jonathan-borba-V3huxxhsztI-unsplash copy 1 */
 .top-info-banner {
   max-width: 100%;
-  height: 32px;
+  min-height: 32px;
   display: flex;
   justify-content: center;
   background: #eefcf5;
@@ -209,13 +209,13 @@ a {
 }
 
 .top-info-banner p {
-  max-width: 80%;
+  max-width: 100%;
+  text-align: center;
   margin: 10px;
   letter-spacing: 0.03rem;
 }
 
 .top-info-banner-text {
-  position: absolute;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
@@ -1597,11 +1597,6 @@ fieldset {
     width: 300px;
     --outline-offset: 23px;
     margin-right: 0px;
-  }
-}
-@media screen and (max-width: 462px) {
-  .top-info-banner {
-    height: 76px;
   }
 }
 @media screen and (max-width: 1206px) {

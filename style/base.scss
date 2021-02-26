@@ -336,23 +336,27 @@ a:visited {
   // position: absolute;
   // width: 1440px;
   max-width: 100%;
-  height: 32px;
+  min-height: 32px;
   // left: 0px;
   // top: 0px;
   display: flex;
+  // display: inline-block;
   justify-content: center;
   background: $primary-light-background-color;
   max-width: 100%;
 }
 
 .top-info-banner p {
-  max-width: 80%;
+  // max-width: 80%;
+  max-width: 100%;
+  text-align: center;
   margin: 10px;
   letter-spacing: 0.03rem;
+  // padding: 16px;
 }
 
 .top-info-banner-text {
-  position: absolute;
+  // position: absolute;
   // width: 1440px;
   // height: 16px;
   // left: 0px;
@@ -366,6 +370,7 @@ a:visited {
   text-align: center;
 
   color: #102a43;
+  // padding: 16px;
 }
 
 .top-background {
@@ -2351,12 +2356,29 @@ fieldset {
   }
 }
 
-@media screen and (max-width: 462px) {
-  .top-info-banner {
-    // height: 48px;
-    height: 76px;
-  }
-}
+// @media screen and (max-width: 897px) {
+//   .top-info-banner {
+//     // height: 48px;
+//     // height: 76px;
+//   }
+//
+//   .top-info-banner p {
+//     max-width: 49%;
+//   }
+// }
+//
+// @media screen and (max-width: 736px) {
+//   .top-info-banner p {
+//     max-width: 80%;
+//   }
+// }
+//
+// @media screen and (max-width: 462px) {
+//   .top-info-banner {
+//     // height: 48px;
+//     // height: 76px;
+//   }
+// }
 
 @media screen and (max-width: 1206px) {
   .heading-section-intro {
