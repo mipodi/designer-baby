@@ -1525,6 +1525,26 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
+                        <filter
+                          id="inset-shadow"
+                          x="-50%"
+                          y="-50%"
+                          width="200%"
+                          height="200%"
+                        >
+                          <feComponentTransfer in="SourceAlpha">
+                            <feFuncA type="table" tableValues="1 0" />
+                          </feComponentTransfer>
+                          <feGaussianBlur stdDeviation="4" />
+                          <feOffset dx="0" dy="5" result="offsetblur" />
+                          <feFlood flood-color="rgb(0, 0, 0)" result="color" />
+                          <feComposite in2="offsetblur" operator="in" />
+                          <feComposite in2="SourceAlpha" operator="in" />
+                          <feMerge>
+                            <feMergeNode in="SourceGraphic" />
+                            <feMergeNode />
+                          </feMerge>
+                        </filter>
                         <circle cx="12" cy="12" r="48" class="eyeball" />
                         <circle
                           cx="12"
@@ -1717,7 +1737,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-291003" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-291003"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1747,7 +1773,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-362923" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-362923"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1777,7 +1809,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-553117" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-553117"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1807,7 +1845,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-874c2b" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-874c2b"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1842,7 +1886,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-ae5a18" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-ae5a18"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1877,7 +1927,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-dc8d54" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-dc8d54"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1912,7 +1968,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-bf8d50" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-bf8d50"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1947,7 +2009,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-dbb288" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-dbb288"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -2014,6 +2082,7 @@
                         height="100px"
                         rx="4"
                         class="dark-brown-hair-colour"
+                        filter="url(#inset-shadow)"
                       />
                     </svg>
                   </label>
@@ -2046,6 +2115,7 @@
                         height="100px"
                         rx="4"
                         class="light-brown-hair-colour"
+                        filter="url(#inset-shadow)"
                       />
                     </svg>
                   </label>
@@ -2093,6 +2163,7 @@
                         height="100px"
                         rx="4"
                         class="red-hair-colour"
+                        filter="url(#inset-shadow)"
                       />
                     </svg>
                   </label>
@@ -2125,6 +2196,7 @@
                         height="100px"
                         rx="4"
                         class="dark-blonde-hair-colour"
+                        filter="url(#inset-shadow)"
                       />
                     </svg>
                   </label>
@@ -2161,6 +2233,7 @@
                         height="100px"
                         rx="4"
                         class="light-blonde-hair-colour"
+                        filter="url(#inset-shadow)"
                       />
 
                       <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 100 100" class="w-8 mr-4 icon-check extra-options-checkbox-bg"><circle cx="12" cy="12" r="10" class="primary"/><path class="secondary" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/></svg> -->
