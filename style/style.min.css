@@ -1549,6 +1549,10 @@ fieldset {
   p {
     font-size: 18px;
   }
+
+  .header-nav-list a {
+    margin-left: 16px;
+  }
 }
 /* When the browser is at least 600px and above */
 @media screen and (min-width: 1205px) {
