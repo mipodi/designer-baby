@@ -44,8 +44,8 @@ body {
   width: 100vw;
   height: 100vh;
 
-  animation: bugfix infinite 1s;
-  -webkit-animation: bugfix infinite 1s;
+  // animation: bugfix infinite 1s;
+  // -webkit-animation: bugfix infinite 1s;
 }
 
 html,
@@ -2419,5 +2419,18 @@ fieldset {
 
     background-attachment: fixed;
     background-repeat: no-repeat;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .image-about-page {
+    background-attachment: unset;
+  }
+
+  .img-outro {
+    background-attachment: unset;
+  }
+  .animation {
+    animation-name: dissolve;
   }
 }
