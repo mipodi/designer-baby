@@ -178,11 +178,6 @@ a {
   font-weight: 600;
 }
 
-a:visited {
-  color: #102a42;
-  color: #243a52;
-}
-
 .continue-field {
   display: flex;
   flex-wrap: wrap;
@@ -501,6 +496,10 @@ div.control.hair-feature-area-inner {
 .about-page p {
   color: #102a42;
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.about-page p a:visited {
+  color: #42173a;
 }
 
 fieldset {
@@ -1262,7 +1261,6 @@ fieldset {
   color: #617d98;
   padding-top: 54px;
   padding-left: 78px;
-  color: #617d98;
   max-width: 120px;
 }
 
@@ -1395,7 +1393,7 @@ fieldset {
 
 .egg-package-radio-button span.eggs-fluid {
   padding-top: 80px;
-  color: #617d98;
+  color: #48647f;
 }
 
 .egg-package-radio-button span.eggs-short-expl {

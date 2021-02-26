@@ -13,6 +13,8 @@ $primary-light-background-color: hsl(152, 68%, 96%); /* #EFFCF6 */
 $primary-light-accent-color: hsl(156, 73%, 74%); /* #8EEDC7 */
 $primary-dark-accent-color: hsl(168, 80%, 23%); /* #0C6B58 */
 
+// $secondary-dark-accent-color: hsl(245, 86%, 40%); /* #1D0EBE */
+$purple-link-color: #42173a;
 // Greyscale
 
 $blue-grey01: hsl(209, 61%, 16%); /* #102A43 */
@@ -226,7 +228,7 @@ section {
 // Links
 
 a {
-  color: hsl(209, 61%, 16%);
+  color: $blue-grey01;
   font-weight: 600;
 }
 
@@ -239,8 +241,7 @@ a:active {
 }
 
 a:visited {
-  color: hsl(209, 61%, 16%);
-  color: $blue-grey02;
+  // color: $secondary-dark-accent-color;
 }
 
 @mixin text-underline-crop($background) {
@@ -780,6 +781,10 @@ div.control.hair-feature-area-inner {
   // font-weight: 600;
   color: $blue-grey01;
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+.about-page p a:visited {
+  color: $purple-link-color;
 }
 
 fieldset {
@@ -1874,10 +1879,9 @@ fieldset {
 }
 
 .gestation-radio-button span.eggs-fluid {
-  color: hsl(210, 22%, 49%);
+  color: $blue-grey05;
   padding-top: 54px;
   padding-left: 78px;
-  color: #617d98;
   max-width: 120px;
 }
 
@@ -2054,7 +2058,7 @@ fieldset {
 
 .egg-package-radio-button span.eggs-fluid {
   padding-top: 80px;
-  color: hsl(210, 22%, 49%);
+  color: $blue-grey04;
 }
 .egg-package-radio-button span.eggs-short-expl {
   padding-top: 112px;
