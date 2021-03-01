@@ -410,12 +410,12 @@ div.control.skin-area-inner {
 }
 
 .hair-colour-area {
-  margin-right: 64px;
-  width: 20rem;
+  width: 384px;
 }
 
 div.control.hair-colour-area-inner {
   max-width: 256px;
+  max-width: 384px;
 }
 
 div.control.hair-feature-area-inner {
@@ -966,11 +966,11 @@ fieldset {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 13px;
   font-weight: 600;
-  border-radius: 4px;
-  background-color: white;
+  border-radius: 50%;
   color: #243a52;
-  max-width: 48px;
+  width: 48px;
   height: 48px;
+  box-shadow: inset 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
   margin-bottom: 48px;
   --checked-state-bg-color: hsl(209, 28%, 39%);
@@ -1005,28 +1005,20 @@ fieldset {
   transition: all 0.1s linear;
 }
 
-.dark-brown-hair-colour {
-  fill: #8a6748;
+.black-hair-colour {
+  background-color: #464141;
 }
 
-.light-brown-hair-colour {
-  fill: #dc8d54;
-}
-
-.chestnut-hair-colour {
-  fill: #954535;
+.brown-hair-colour {
+  background-color: #be7851;
 }
 
 .red-hair-colour {
-  fill: #9e311e;
+  background-color: #fa8080;
 }
 
-.dark-blonde-hair-colour {
-  fill: #bf9f6a;
-}
-
-.light-blonde-hair-colour {
-  fill: #faf0be;
+.blonde-hair-colour {
+  background-color: #faf3bc;
 }
 
 .hair-colour-radio-button span {
