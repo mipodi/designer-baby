@@ -667,8 +667,8 @@ body > div.top-background > section > div > div > div > p {
 .eyes-area {
   display: flex;
   flex-direction: column;
-  margin-right: 64px;
-  width: 20rem;
+  // margin-right: 64px;
+  width: 384px;
 }
 
 div.control.eyes-area-inner {
@@ -1131,7 +1131,7 @@ fieldset {
 
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 48px;
   // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
@@ -1192,26 +1192,26 @@ fieldset {
 //     fill: #8A6748;
 // }
 
-.iris-dark-brown {
-  fill: #8a6748;
+.iris-brown {
+  // fill: #8a6748;
 
   // fill: #8A6748;
   // fill: #611A02 ;
+  fill: #be7851;
 }
 
-.iris-light-brown {
-  // fill: #AD6A2D;
-  fill: #dc8d54;
+.iris-blue {
+  fill: #a2a5fc;
 }
 
 .iris-green {
   // fill: hsl(162, 63%, 41%);
-  fill: #8eedc7;
+  // fill: #8eedc7;
+  fill: #82dbb5;
 }
 
-.iris-blue {
-  // fill: hsl(245, 79%, 52%);
-  fill: #a2a5fc;
+.iris-grey {
+  fill: #c4c4c4;
 }
 
 .iris-other {
@@ -1221,7 +1221,8 @@ fieldset {
 .pupil {
   // fill: #6f213f;
   // fill: hsl(209, 23%, 60%);
-  fill: #000;
+  // fill: #000;
+  fill: #464141;
 }
 
 .eye-colour-radio-button span {
@@ -1265,23 +1266,23 @@ fieldset {
     // fill: #8A6748;
     // fill: #611A02 ;
     // fill: #553117;
-    fill: #8a6748;
+    // fill: #8a6748;
   }
 
   .iris-light-brown {
-    fill: #ad6a2d;
+    // fill: #ad6a2d;
   }
 
   .iris-green {
-    fill: hsl(162, 63%, 41%);
+    // fill: hsl(162, 63%, 41%);
   }
 
   .iris-blue {
-    fill: hsl(245, 79%, 52%);
+    // fill: hsl(245, 79%, 52%);
   }
 
   .iris-other {
-    fill: #fff;
+    // fill: #fff;
   }
 }
 

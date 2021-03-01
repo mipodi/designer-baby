@@ -391,8 +391,7 @@ body > div.top-background > section > div > div > div > p {
 .eyes-area {
   display: flex;
   flex-direction: column;
-  margin-right: 64px;
-  width: 20rem;
+  width: 384px;
 }
 
 .skin-area {
@@ -734,7 +733,7 @@ fieldset {
   height: 48px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   margin-right: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 48px;
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
@@ -775,20 +774,20 @@ fieldset {
   stroke-width: 8px;
 }
 
-.iris-dark-brown {
-  fill: #8a6748;
-}
-
-.iris-light-brown {
-  fill: #dc8d54;
-}
-
-.iris-green {
-  fill: #8eedc7;
+.iris-brown {
+  fill: #be7851;
 }
 
 .iris-blue {
   fill: #a2a5fc;
+}
+
+.iris-green {
+  fill: #82dbb5;
+}
+
+.iris-grey {
+  fill: #c4c4c4;
 }
 
 .iris-other {
@@ -796,7 +795,7 @@ fieldset {
 }
 
 .pupil {
-  fill: #000;
+  fill: #464141;
 }
 
 .eye-colour-radio-button span {
@@ -823,22 +822,6 @@ fieldset {
 .eye-colour-radio-button input[type=radio]:checked + svg .secondary {
   fill: #f1f5f8;
 }
-.eye-colour-radio-button input[type=radio]:checked + svg .iris-dark-brown {
-  fill: #8a6748;
-}
-.eye-colour-radio-button input[type=radio]:checked + svg .iris-light-brown {
-  fill: #ad6a2d;
-}
-.eye-colour-radio-button input[type=radio]:checked + svg .iris-green {
-  fill: #27aa83;
-}
-.eye-colour-radio-button input[type=radio]:checked + svg .iris-blue {
-  fill: #3424e5;
-}
-.eye-colour-radio-button input[type=radio]:checked + svg .iris-other {
-  fill: #fff;
-}
-
 .eye-colour-radio-button input[type=radio]:focus + svg {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
