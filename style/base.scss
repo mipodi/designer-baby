@@ -1542,10 +1542,10 @@ fieldset {
   // height: 96px;
   max-width: 48px;
   height: 48px;
-  border-radius: 4px;
+  border-radius: 50%;
 
   color: #243b53;
-  // overflow: initial; //remved this for rectangle to work
+  overflow: initial; //remved this for rectangle to work
   position: relative;
   // top: -10px;
   top: 0px;
@@ -1581,6 +1581,12 @@ fieldset {
   background-color: #faf3bc;
 }
 
+.hairball {
+  // stroke: #fff;
+  // stroke-width: 8px;
+  fill: none;
+}
+
 .hair-colour-radio-button span {
   // color: #000;
   position: absolute;
@@ -1593,20 +1599,15 @@ fieldset {
 
 // style changes inside the svg when the checkbox is checked
 .hair-colour-radio-button input[type="radio"]:checked + svg {
-  stroke: $primary-light-accent-color;
-  stroke-width: 32px;
-  .primary {
-    fill: hsl(209, 34%, 30%);
-  }
-
-  .secondary {
-    fill: hsl(210, 36%, 96%);
+  .hairball {
+    stroke: $primary-light-accent-color;
+    stroke-width: 16px;
   }
 }
 
 .hair-colour-radio-button input[type="radio"]:focus + svg {
-  outline: 3px solid var(--outline-color);
-  outline-offset: var(--outline-offset);
+  // outline: 3px solid var(--outline-color);
+  // outline-offset: var(--outline-offset);
 }
 //
 // .hair-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
