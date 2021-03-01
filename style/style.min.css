@@ -842,6 +842,124 @@ fieldset {
     stroke: highlight;
   }
 }
+.skin-colour-range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #5f4c42, #fffad7);
+  height: 48px;
+  border-radius: 4px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #5f4c42, #fffad7);
+  height: 48px;
+  border-radius: 4px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  max-width: 80px;
+  position: relative;
+  top: -2px;
+  box-shadow: inset 0px 0px 2px 2px rgba(51, 51, 51, 0.1);
+  cursor: -webkit-grab;
+  background: radial-gradient(transparent 28px, white 2px);
+  -webkit-transition: border 1000ms ease;
+  transition: border 1000ms ease;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  max-width: 80px;
+  position: relative;
+  top: -2px;
+  box-shadow: inset 0px 0px 2px 2px rgba(51, 51, 51, 0.1);
+  background: radial-gradient(transparent 28px, white 2px);
+  cursor: -webkit-grab;
+  -webkit-transition: border 1000ms ease;
+  transition: border 1000ms ease;
+}
+
+.range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #ffe682, #ff9e00);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FFE682", endColorstr="#FF9E00", GradientType=1 );
+  height: 60px;
+  border-radius: 35px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  background: linear-gradient(to right, #ffe682, #ff9e00);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#FFE682", endColorstr="#FF9E00", GradientType=1 );
+  height: 60px;
+  border-radius: 35px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  max-width: 80px;
+  position: relative;
+  top: -2px;
+  box-shadow: inset 0px 0px 2px 2px rgba(51, 51, 51, 0.1);
+  /*   background: radial-gradient(transparent 28px, green 2px); */
+  cursor: -webkit-grab;
+  -webkit-transition: border 1000ms ease;
+  transition: border 1000ms ease;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  max-width: 80px;
+  position: relative;
+  top: -2px;
+  box-shadow: inset 0px 0px 2px 2px rgba(51, 51, 51, 0.1);
+  /*   background: radial-gradient(transparent 28px, green 2px); */
+  cursor: -webkit-grab;
+  -webkit-transition: border 1000ms ease;
+  transition: border 1000ms ease;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  cursor: -webkit-grabbing;
+}
+
+input[type=range]::-moz-range-thumb:active {
+  cursor: -moz-grabbing;
+}
+
 .skin-colour-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
