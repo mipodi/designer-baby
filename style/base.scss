@@ -1507,9 +1507,10 @@ fieldset {
   // max-width: 48px;
   width: 48px;
   height: 48px;
-  box-shadow: inset 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  // box-shadow: inset 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 
   // margin: 16px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   // margin-right: 16px;
   // margin-bottom: 16px;
@@ -1606,8 +1607,8 @@ fieldset {
 }
 
 .hair-colour-radio-button input[type="radio"]:focus + svg {
-  // outline: 3px solid var(--outline-color);
-  // outline-offset: var(--outline-offset);
+  outline: 3px solid var(--outline-color);
+  outline-offset: var(--outline-offset);
 }
 //
 // .hair-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
