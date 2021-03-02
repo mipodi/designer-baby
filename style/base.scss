@@ -1318,6 +1318,38 @@ fieldset {
   }
 }
 
+// .eye-colour-radio-button .coming-soon span {
+//   padding: 0;
+// }
+#section-physical-features
+  > div.section-area
+  > div.physical-features-area
+  > div.eyes-skin-area
+  > div.eyes-area
+  > div
+  > label:nth-child(5)
+  > span
+  > span {
+  padding: 0;
+}
+
+#section-physical-features
+  > div.section-area
+  > div.physical-features-area
+  > div.hair-area
+  > div.hair-colour-area
+  > div
+  > label:nth-child(5)
+  > span
+  > span {
+  padding: 0;
+}
+.coming-soon {
+  padding: 0;
+  font-style: italic;
+  font-weight: 400;
+}
+
 .skin-colour-range {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1326,7 +1358,9 @@ fieldset {
 }
 
 input[type="range"]:focus {
-  outline: none;
+  // outline: none;
+  outline-color: $blue-grey03;
+  // outline-width: 15px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
