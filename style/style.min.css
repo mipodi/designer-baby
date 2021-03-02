@@ -1226,7 +1226,7 @@ input[type=range]::-moz-range-thumb:active {
 
 .hair-feature-radio-button input[type=radio]:checked + svg {
   stroke: #8cedc6;
-  stroke-width: 12px;
+  stroke-width: 8px;
   border-radius: 0;
 }
 .hair-feature-radio-button input[type=radio]:checked + svg .primary {

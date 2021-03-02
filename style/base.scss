@@ -1892,7 +1892,7 @@ input[type="range"]::-moz-range-thumb:active {
 // style changes inside the svg when the checkbox is checked
 .hair-feature-radio-button input[type="radio"]:checked + svg {
   stroke: $primary-light-accent-color;
-  stroke-width: 12px;
+  stroke-width: 8px;
   border-radius: 0;
 
   .primary {
