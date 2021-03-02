@@ -2218,6 +2218,8 @@ input[type="range"]::-moz-range-thumb:active {
   font-weight: 400;
   // font-family: 'Varela Round', sans-serif;
   color: $blue-grey05;
+  /* letter-spacing: 0.05em; */
+  font-family: "Varela Round", sans-serif;
 }
 
 .egg-package-radio-button span.eggs-fluid {

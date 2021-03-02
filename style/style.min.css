@@ -1464,6 +1464,8 @@ input[type=range]::-moz-range-thumb:active {
   font-size: 48px;
   font-weight: 400;
   color: #617d98;
+  /* letter-spacing: 0.05em; */
+  font-family: "Varela Round", sans-serif;
 }
 
 .egg-package-radio-button span.eggs-fluid {
