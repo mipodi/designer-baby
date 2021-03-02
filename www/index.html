@@ -1499,14 +1499,14 @@
                   class="control eyes-area-inner"
                   aria-label="Type"
                 >
-                  <label for="dark-brown" class="eye-colour-radio-button">
+                  <label for="brown" class="eye-colour-radio-button">
                     <span>Brown </span>
 
                     <input
                       type="radio"
-                      id="dark-brown"
+                      id="brown"
                       name="eye-colour"
-                      value="dark-brown"
+                      value="brown"
                       checked
                     />
                     <svg
@@ -1525,13 +1525,28 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
+                        <filter
+                          id="inset-shadow"
+                          x="-50%"
+                          y="-50%"
+                          width="200%"
+                          height="200%"
+                        >
+                          <feComponentTransfer in="SourceAlpha">
+                            <feFuncA type="table" tableValues="1 0" />
+                          </feComponentTransfer>
+                          <feGaussianBlur stdDeviation="4" />
+                          <feOffset dx="0" dy="5" result="offsetblur" />
+                          <feFlood flood-color="rgb(0, 0, 0)" result="color" />
+                          <feComposite in2="offsetblur" operator="in" />
+                          <feComposite in2="SourceAlpha" operator="in" />
+                          <feMerge>
+                            <feMergeNode in="SourceGraphic" />
+                            <feMergeNode />
+                          </feMerge>
+                        </filter>
                         <circle cx="12" cy="12" r="48" class="eyeball" />
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="32"
-                          class="iris-dark-brown"
-                        />
+                        <circle cx="12" cy="12" r="32" class="iris-brown" />
                         <circle cx="12" cy="12" r="16" class="pupil" />
                         <!-- <circle cx="12" cy="12" r="10" class="primary"/>
                                         <path class="secondary" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/> -->
@@ -1609,14 +1624,14 @@
                     </svg>
                   </label>
 
-                  <label for="other" class="eye-colour-radio-button">
-                    <span>Other - coming soon </span>
+                  <label for="grey" class="eye-colour-radio-button">
+                    <span>Grey </span>
 
                     <input
                       type="radio"
-                      id="other"
+                      id="grey"
                       name="eye-colour"
-                      value="other"
+                      value="grey"
                     />
                     <svg
                       width="175"
@@ -1635,46 +1650,49 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="100%"
-                          height="100%"
-                        >
-                          <circle cx="12" cy="12" r="48" class="eyeball" />
-
-                          <defs>
-                            <pattern
-                              id="pattern_AgFN0"
-                              patternUnits="userSpaceOnUse"
-                              width="20"
-                              height="20"
-                              patternTransform="rotate(45)"
-                            >
-                              <line
-                                x1="0"
-                                y="0"
-                                x2="0"
-                                y2="20"
-                                stroke="#FF9B9B"
-                                stroke-width="20"
-                              />
-                            </pattern>
-                          </defs>
-                          <!-- <rect width="100%" height="100%" fill="url(#pattern_AgFN0)" :opacity="1" /> -->
-                        </svg>
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="32"
-                          fill="url(#pattern_AgFN0)"
-                          :opacity="1"
-                        />
-
+                        <circle cx="12" cy="12" r="48" class="eyeball" />
+                        <circle cx="12" cy="12" r="32" class="iris-grey" />
                         <circle cx="12" cy="12" r="16" class="pupil" />
-
                         <!-- <circle cx="12" cy="12" r="10" class="primary"/>
                                         <path class="secondary" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/> -->
                       </svg>
+                    </svg>
+                  </label>
+
+                  <label
+                    for="other"
+                    class="eye-colour-radio-button other-eye-colour"
+                  >
+                    <span
+                      >Other
+                      <span class="coming-soon">coming soon!</span>
+                    </span>
+
+                    <input
+                      type="radio"
+                      id="other"
+                      name="eye-colour"
+                      value="other"
+                    />
+                    <svg
+                      width="48"
+                      height="48"
+                      viewBox="0 0 100 100"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <!-- <circle cx="12" cy="12" r="48" class="hairball" /> -->
+
+                      <!-- <circle
+                          cx="12"
+                          cy="12"
+                          r="32"
+                        /> -->
+
+                      <!-- <circle cx="12" cy="12" r="16" class="pupil" /> -->
+
+                      <!-- <circle cx="12" cy="12" r="10" class="primary"/>
+                                        <path class="secondary" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/> -->
                     </svg>
                   </label>
                 </div>
@@ -1682,11 +1700,44 @@
 
               <div class="skin-area">
                 <h3>Skin Colour</h3>
-                <!-- <input type=range step=5 min=0 max=100 name=skin-colour> -->
+                <!-- <input
+                  type="range"
+                  min="100"
+                  max="0"
+                  value="100"
+                  class="skin-colour-range"
+                /> -->
 
+                <!-- create a visually hidden label explainer here-->
+                <input
+                  id="skin-colour-range-slider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  class="skin-colour-range"
+                />
+
+                <div class="skin-colour-slider-labels">
+                  <label for="skin-colour-range-slider" class="skin-colour-dark"
+                    >Dark</label
+                  >
+                  <label
+                    for="skin-colour-range-slider"
+                    class="skin-colour-light"
+                    >Light</label
+                  >
+                </div>
+                <!-- <input
+                  type="range"
+                  min="-100"
+                  max="0"
+                  value="0"
+                  class="range blue"
+                /> -->
                 <!-- <input type="range" min="-100" max="0" value="0" class="range"/> -->
                 <!-- <input type="range" max="100" value="0" class="range"/> -->
-                <div
+                <!-- <div
                   role="group"
                   class="control skin-area-inner"
                   aria-label="Type"
@@ -1717,7 +1768,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-291003" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-291003"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1747,7 +1804,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-362923" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-362923"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1777,7 +1840,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-553117" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-553117"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1807,7 +1876,13 @@
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-874c2b" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-874c2b"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1831,18 +1906,20 @@
                       viewBox="0 0 100 100"
                       aria-hidden="true"
                       focusable="false"
-                    >
-                      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="-84 30 100 100" class="w-8 mr-4 icon-security-check extra-options-checkbox-bg">
-                                        <path class="primary" d="M4 4l8-2 8 2v9.06a8 8 0 0 1-4.42 7.15L12 22l-3.58-1.79A8 8 0 0 1 4 13.06V4z"/>
-                                        <path class="secondary" d="M10.5 12.59l4.3-4.3a1 1 0 0 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42l1.3 1.3z"/>
-                                    </svg> -->
+                    > -->
 
-                      <svg
+                <!-- <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-ae5a18" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-ae5a18"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1866,18 +1943,20 @@
                       viewBox="0 0 100 100"
                       aria-hidden="true"
                       focusable="false"
-                    >
-                      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="-84 30 100 100" class="w-8 mr-4 icon-security-check extra-options-checkbox-bg">
-                                        <path class="primary" d="M4 4l8-2 8 2v9.06a8 8 0 0 1-4.42 7.15L12 22l-3.58-1.79A8 8 0 0 1 4 13.06V4z"/>
-                                        <path class="secondary" d="M10.5 12.59l4.3-4.3a1 1 0 0 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42l1.3 1.3z"/>
-                                    </svg> -->
-
+                    > -->
+                <!--
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-dc8d54" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-dc8d54"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1901,18 +1980,20 @@
                       viewBox="0 0 100 100"
                       aria-hidden="true"
                       focusable="false"
-                    >
-                      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="-84 30 100 100" class="w-8 mr-4 icon-security-check extra-options-checkbox-bg">
-                                        <path class="primary" d="M4 4l8-2 8 2v9.06a8 8 0 0 1-4.42 7.15L12 22l-3.58-1.79A8 8 0 0 1 4 13.06V4z"/>
-                                        <path class="secondary" d="M10.5 12.59l4.3-4.3a1 1 0 0 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42l1.3 1.3z"/>
-                                    </svg> -->
-
+                    > -->
+                <!--
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-bf8d50" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-bf8d50"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
@@ -1936,22 +2017,24 @@
                       viewBox="0 0 100 100"
                       aria-hidden="true"
                       focusable="false"
-                    >
-                      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="-84 30 100 100" class="w-8 mr-4 icon-security-check extra-options-checkbox-bg">
-                                        <path class="primary" d="M4 4l8-2 8 2v9.06a8 8 0 0 1-4.42 7.15L12 22l-3.58-1.79A8 8 0 0 1 4 13.06V4z"/>
-                                        <path class="secondary" d="M10.5 12.59l4.3-4.3a1 1 0 0 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42l1.3 1.3z"/>
-                                    </svg> -->
-
+                    > -->
+                <!--
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="-38 -38 100 100"
                         class="w-8 mr-4 icon-check extra-options-checkbox-bg"
                       >
-                        <circle cx="12" cy="12" r="46" class="hex-dbb288" />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="46"
+                          class="hex-dbb288"
+                          filter="url(#inset-shadow)"
+                        />
                       </svg>
                     </svg>
                   </label>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -1966,7 +2049,10 @@
                   class="control hair-colour-area-inner"
                   aria-label="Type"
                 >
-                  <label for="black-hair" class="hair-colour-radio-button">
+                  <label
+                    for="black-hair"
+                    class="hair-colour-radio-button black-hair-colour"
+                  >
                     <span> Black </span>
                     <input
                       type="radio"
@@ -1976,22 +2062,24 @@
                       checked
                     />
                     <svg
+                      width="175"
+                      height="40"
                       viewBox="0 0 100 100"
                       aria-hidden="true"
                       focusable="false"
                     >
-                      <rect
-                        width="100px"
-                        height="100px"
-                        rx="4"
-                        class="black-hair-colour"
-                      />
+                      <svg viewBox="-38 -38 100 100">
+                        <circle cx="12" cy="12" r="46" class="hairball" />
+                      </svg>
                     </svg>
                   </label>
 
-                  <label for="dark-brown-hair" class="hair-colour-radio-button">
+                  <label
+                    for="dark-brown-hair"
+                    class="hair-colour-radio-button brown-hair-colour"
+                  >
                     <span
-                      >Dark brown
+                      >Brown
 
                       <span class="egg"> </span>
                     </span>
@@ -2003,22 +2091,19 @@
                       value="dark-brown-hair"
                     />
                     <svg
-                      width="48"
-                      height="48"
+                      width="175"
+                      height="40"
                       viewBox="0 0 100 100"
                       aria-hidden="true"
                       focusable="false"
                     >
-                      <rect
-                        width="100px"
-                        height="100px"
-                        rx="4"
-                        class="dark-brown-hair-colour"
-                      />
+                      <svg viewBox="-38 -38 100 100">
+                        <circle cx="12" cy="12" r="48" class="hairball" />
+                      </svg>
                     </svg>
                   </label>
 
-                  <label
+                  <!-- <label
                     for="light-brown-hair"
                     class="hair-colour-radio-button"
                   >
@@ -2046,9 +2131,10 @@
                         height="100px"
                         rx="4"
                         class="light-brown-hair-colour"
+                        filter="url(#inset-shadow)"
                       />
                     </svg>
-                  </label>
+                  </label> -->
 
                   <!--
 
@@ -2068,7 +2154,10 @@
                                 </svg>
                             </label> -->
 
-                  <label for="pure-red-hair" class="hair-colour-radio-button">
+                  <label
+                    for="pure-red-hair"
+                    class="hair-colour-radio-button red-hair-colour"
+                  >
                     <span
                       >Red
 
@@ -2082,22 +2171,19 @@
                       value="pure-red-hair"
                     />
                     <svg
-                      width="48"
-                      height="48"
+                      width="175"
+                      height="40"
                       viewBox="0 0 100 100"
                       aria-hidden="true"
                       focusable="false"
                     >
-                      <rect
-                        width="100px"
-                        height="100px"
-                        rx="4"
-                        class="red-hair-colour"
-                      />
+                      <svg viewBox="-38 -38 100 100">
+                        <circle cx="12" cy="12" r="48" class="hairball" />
+                      </svg>
                     </svg>
                   </label>
 
-                  <label
+                  <!-- <label
                     for="dark-blonde-hair"
                     class="hair-colour-radio-button"
                   >
@@ -2125,19 +2211,16 @@
                         height="100px"
                         rx="4"
                         class="dark-blonde-hair-colour"
+                        filter="url(#inset-shadow)"
                       />
                     </svg>
-                  </label>
+                  </label> -->
 
                   <label
                     for="light-blonde-hair"
-                    class="hair-colour-radio-button"
+                    class="hair-colour-radio-button blonde-hair-colour"
                   >
-                    <span
-                      >Light blonde
-
-                      <span class="egg"> </span>
-                    </span>
+                    <span>Blonde</span>
 
                     <input
                       type="radio"
@@ -2146,32 +2229,37 @@
                       value="light-blonde-hair"
                     />
                     <svg
-                      width="48"
-                      height="48"
+                      width="175"
+                      height="40"
                       viewBox="0 0 100 100"
                       aria-hidden="true"
                       focusable="false"
                     >
-                      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="-84 30 100 100" class="w-8 mr-4 icon-security-check extra-options-checkbox-bg">
+                      <svg viewBox="-38 -38 100 100">
+                        <circle cx="12" cy="12" r="48" class="hairball" />
+
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="-84 30 100 100" class="w-8 mr-4 icon-security-check extra-options-checkbox-bg">
                                         <path class="primary" d="M4 4l8-2 8 2v9.06a8 8 0 0 1-4.42 7.15L12 22l-3.58-1.79A8 8 0 0 1 4 13.06V4z"/>
                                         <path class="secondary" d="M10.5 12.59l4.3-4.3a1 1 0 0 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42l1.3 1.3z"/>
                                     </svg> -->
-                      <rect
+                        <!-- <rect
                         width="100px"
                         height="100px"
                         rx="4"
                         class="light-blonde-hair-colour"
-                      />
+                        filter="url(#inset-shadow)"
+                      /> -->
 
-                      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 100 100" class="w-8 mr-4 icon-check extra-options-checkbox-bg"><circle cx="12" cy="12" r="10" class="primary"/><path class="secondary" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/></svg> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 100 100" class="w-8 mr-4 icon-check extra-options-checkbox-bg"><circle cx="12" cy="12" r="10" class="primary"/><path class="secondary" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/></svg> -->
+                      </svg>
                     </svg>
                   </label>
 
                   <label for="other-hair" class="hair-colour-radio-button">
                     <span
-                      >Other - coming soon
+                      >Other
 
-                      <span class="egg"> </span>
+                      <span class="coming-soon">coming soon!</span>
                     </span>
 
                     <input
@@ -2206,7 +2294,7 @@
                         </pattern>
                       </defs>
 
-                      <rect
+                      <circle
                         width="100px"
                         height="100px"
                         rx="4"
@@ -2221,7 +2309,7 @@
               </div>
 
               <div class="hair-feature-area">
-                <h3>Hair features</h3>
+                <h3>Hair Features</h3>
 
                 <div
                   role="group"
@@ -2243,7 +2331,7 @@
                       checked
                     />
                     <svg
-                      viewBox="40 16 16 18"
+                      viewBox="40 16 16 17"
                       aria-hidden="true"
                       focusable="false"
                     >
@@ -2265,7 +2353,7 @@
                       value="loose-curls"
                     />
                     <svg
-                      viewBox="40 16 16 18"
+                      viewBox="40 16 16 17"
                       aria-hidden="true"
                       focusable="false"
                     >
@@ -2287,7 +2375,7 @@
                       value="wavy-hair"
                     />
                     <svg
-                      viewBox="40 16 16 18"
+                      viewBox="40 16 16 17"
                       aria-hidden="true"
                       focusable="false"
                     >
@@ -2308,7 +2396,7 @@
                       value="straight-hair"
                     />
                     <svg
-                      viewBox="40 16 16 18"
+                      viewBox="40 16 16 17"
                       aria-hidden="true"
                       focusable="false"
                     >
@@ -2850,7 +2938,7 @@
             </div>
           </div>
           <div class="block site-footer">
-            <p>
+            <p class="site-footer">
               Created in 2021 • Torill Kornfeldt featuring Order Order Studio
             </p>
           </div>

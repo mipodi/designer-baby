@@ -2607,14 +2607,20 @@ input[type="range"]::-moz-range-thumb:active {
 @media screen and (max-width: 618px) {
   .top-background {
     background: url(../images/optimized/baby-top-background.jpg);
+    background-size: 100%;
+    width: 100%;
   }
 
   .section-unwanted-features {
     background: url(../images/optimized/section-features.jpg);
+    background-size: 100%;
+    width: 100%;
   }
 
   .section-request-quote {
     background: url(../images/optimized/section-request.jpg);
+    background-size: 100%;
+    width: 100%;
   }
 
   .img-outro {
@@ -2624,6 +2630,8 @@ input[type="range"]::-moz-range-thumb:active {
 
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
   }
 
   .image-about-page {
@@ -2633,6 +2641,8 @@ input[type="range"]::-moz-range-thumb:active {
 
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
   }
 }
 
