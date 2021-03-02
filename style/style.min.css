@@ -905,6 +905,20 @@ input[type=range]::-moz-range-thumb:active {
   cursor: -moz-grabbing;
 }
 
+.skin-colour-slider-labels {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 8px;
+}
+
+.skin-colour-light {
+  justify-content: flex-end;
+  display: inline-flex;
+  flex: auto;
+}
+
 .skin-colour-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
