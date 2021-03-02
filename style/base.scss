@@ -1321,6 +1321,7 @@ fieldset {
 .skin-colour-range {
   -webkit-appearance: none;
   -moz-appearance: none;
+  width: 304px;
 }
 
 input[type="range"]:focus {
@@ -1329,7 +1330,12 @@ input[type="range"]:focus {
 
 input[type="range"]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
-  background: linear-gradient(to right, #5f4c42, #fffad7);
+  background: linear-gradient(
+    to right,
+    #5f4c42 23.49%,
+    #be7851 45.56%,
+    #fffad7 88.93%
+  );
   // filter: progid:DXImageTransform.Microsoft.gradient(
   // startColorstr='#5f4c42', endColorStr='#fffad7', GradientType=1 );
   height: 48px;
@@ -1339,7 +1345,12 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 input[type="range"]::-moz-range-track {
   -webkit-appearance: none;
-  background: linear-gradient(to right, #5f4c42, #fffad7);
+  background: linear-gradient(
+    to right,
+    #5f4c42 23.49%,
+    #be7851 45.56%,
+    #fffad7 88.93%
+  );
   // filter: progid:DXImageTransform.Microsoft.gradient(
   // startColorstr='#5f4c42', endColorStr='#fffad7', GradientType=1 );
   height: 48px;
@@ -1395,6 +1406,7 @@ input[type="range"]::-moz-range-thumb:active {
   font-size: 13px;
   font-weight: 600;
   padding-top: 8px;
+  max-width: 304px;
   // height: 30px;
   // -moz-padding-top: 24px;
 }
