@@ -391,7 +391,7 @@ body > div.top-background > section > div > div > div > p {
 .eyes-area {
   display: flex;
   flex-direction: column;
-  width: 384px;
+  width: 416px;
 }
 
 .skin-area {
@@ -409,10 +409,6 @@ div.control.skin-area-inner {
   margin-bottom: 65px;
 }
 
-.hair-colour-area {
-  width: 384px;
-}
-
 div.control.hair-colour-area-inner {
   max-width: 256px;
   max-width: 384px;
@@ -426,7 +422,7 @@ div.control.hair-feature-area-inner {
 .hair-colour-area {
   display: flex;
   flex-direction: column;
-  max-width: 384px;
+  width: 416px;
 }
 
 .hair-feature-area {

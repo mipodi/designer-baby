@@ -668,7 +668,7 @@ body > div.top-background > section > div > div > div > p {
   display: flex;
   flex-direction: column;
   // margin-right: 64px;
-  width: 384px;
+  width: 416px;
 }
 
 div.control.eyes-area-inner {
@@ -692,12 +692,12 @@ div.control.skin-area-inner {
   // justify-content: center;
   margin-bottom: 65px;
 }
-
-.hair-colour-area {
-  // margin-right: 64px;
-  // width: 20rem;
-  width: 384px;
-}
+//
+// .hair-colour-area {
+//   // margin-right: 64px;
+//   // width: 20rem;
+//   width: 416px;
+// }
 
 div.control.hair-colour-area-inner {
   max-width: 256px;
@@ -713,7 +713,8 @@ div.control.hair-feature-area-inner {
   display: flex;
   flex-direction: column;
   // margin-right: 64px;
-  max-width: 384px;
+  // max-width: 384px;
+  width: 416px;
 }
 
 .hair-feature-area {
