@@ -1143,6 +1143,11 @@ fieldset {
   --outline-radius: 5px;
 }
 
+.other-eye-colour {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+}
+
 // hide the checkbox accessibly
 .eye-colour-radio-button input[type="radio"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
