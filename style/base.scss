@@ -214,6 +214,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding-right: 16px;
 }
 
 summary {
@@ -303,6 +304,82 @@ a:visited {
 // a {
 //   @include link-underline(#fff, #333, #0BF);
 // }
+
+.wrapper-progress-bar {
+  order: 2;
+  width: 320px;
+  display: flex;
+  /* align-content: end; */
+  justify-content: flex-end;
+}
+
+.progress-bar {
+  border-radius: 50%;
+  // // position: absolute;
+  // position: relative;
+  width: 48px;
+  height: 48px;
+  //
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // order: 2;
+}
+
+.progress-track {
+  border-radius: 50%;
+  // // position: relative;
+  // position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: $blue-grey10;
+  box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%);
+  // position: absolute;
+  // top: 50%;
+  // margin-top: -24px;
+  // background: linear-gradient(0deg, #ffffff, #ffffff);
+  // box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.progress-step {
+  position: absolute;
+  // width: 48px;
+  // height: 48px;
+  // border-radius: 50%;
+  //
+  // background: #627d98;
+  // // border-radius: 5px;
+  // transform: rotate(-97.63deg);
+}
+
+.progress-step-icon {
+  position: relative;
+  top: -16px;
+  right: -8px;
+}
+
+.progress-label {
+  // position: absolute;
+  width: 41px;
+  height: 13px;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 8px;
+  /* or 67% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.065em;
+
+  color: #627d98;
+  position: absolute;
+}
 
 .continue-field {
   display: flex;
@@ -551,6 +628,7 @@ body > div.top-background > section > div > div > div > p {
 
 .section-sex {
   background-color: $blue-grey10;
+  display: flex;
 }
 
 .section-area {
