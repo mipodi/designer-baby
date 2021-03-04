@@ -150,6 +150,11 @@ nav [aria-current="page"] {
   letter-spacing: 0.03rem;
   font-weight: 600;
   font-size: 12px;
+  width: none;
+}
+
+.site-footer p {
+  width: none;
 }
 
 h1,
@@ -939,7 +944,7 @@ div.control.hair-feature-area-inner {
   max-width: none;
   // font-weight: 600;
   color: $blue-grey01;
-  width: 348px;
+  // width: 348px;
   // text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
