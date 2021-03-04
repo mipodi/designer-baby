@@ -1805,6 +1805,32 @@ input[type=range]::-moz-range-thumb:active {
     margin-bottom: 64px;
   }
 }
+@media screen and (max-width: 574px) {
+  .eyes-area {
+    margin-bottom: 16px;
+  }
+
+  .section-area-info.physical-features {
+    margin-bottom: 16px;
+  }
+
+  .hair-colour-area {
+    width: 319px;
+    margin-bottom: 16px;
+  }
+
+  .eyes-area-inner {
+    max-width: 319px;
+  }
+
+  .skin-colour-range {
+    width: 240px;
+  }
+
+  .skin-colour-slider-labels {
+    width: 240px;
+  }
+}
 @media screen and (max-width: 618px) {
   .top-background {
     background: url(../images/optimized/baby-top-background.jpg);
