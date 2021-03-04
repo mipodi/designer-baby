@@ -420,16 +420,22 @@ body > div.top-background > section > div > div > div > p {
 
 .section-eggs {
   background-color: #eefcf5;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-disease {
   background-color: #f1f5f8;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-unwanted-features {
   background: url(../images/section-features.jpg);
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: space-between;
 }
 
 #section-unwanted-features > div.section-area > div.section-area-info > p:nth-child(2) {
@@ -439,6 +445,8 @@ body > div.top-background > section > div > div > div > p {
 
 .section-physical-features {
   background-color: #eefcf5;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-physical-features h3 {
@@ -503,12 +511,16 @@ div.control.hair-feature-area-inner {
 
 .section-extra-options {
   background-color: #f1f5f8;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-final-step {
   background: url(../images/section-request.jpg);
   background-position: center;
   color: #243a52;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-final-step-cta {
