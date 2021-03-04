@@ -17,6 +17,8 @@
 html {
   font-size: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: subpixel-antialiased;
   color: #243a52;
   background-color: #eefcf5;
   overflow-x: hidden;
@@ -557,14 +559,41 @@ div.control.hair-feature-area-inner {
   background-size: cover;
 }
 
-.section-outro h1 {
-  max-width: 20rem;
+.section-outro-heading {
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  width: 563px;
+  height: 120px;
+  left: 420px;
+  top: 228px;
+  font-family: Source Sans Pro;
+  font-style: normal;
   font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  color: #486581;
+}
+
+.section-outro-text-area {
+  position: absolute;
+  width: 348px;
+  height: 197px;
+  left: 562px;
+  top: 376px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #102a42;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section-outro p {
+  -webkit-font-smoothing: antialiased;
+  max-width: none;
   color: #102a42;
-  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  width: 348px;
 }
 
 .image-about-page {
