@@ -189,7 +189,6 @@ a {
 
 .wrapper-progress-bar {
   order: 2;
-  width: 320px;
   display: flex;
   /* align-content: end; */
   justify-content: flex-end;
