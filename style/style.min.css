@@ -225,8 +225,6 @@ a {
 }
 
 .progress-label {
-  width: 41px;
-  height: 13px;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: bold;
@@ -239,6 +237,23 @@ a {
   letter-spacing: -0.065em;
   color: #324d67;
   position: absolute;
+  /* width: 41px; */
+  height: 13px;
+  font-family: "Varela Round";
+  /* font-style: normal; */
+  /* font-weight: bold; */
+  font-size: 14px;
+  /* line-height: 10px; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* letter-spacing: -0.07em; */
+  color: #324d67;
+  position: absolute;
+  /* max-width: 26px; */
+  /* letter-spacing: 0.05em; */
+  font-weight: 600;
+  font-family: "Varela Round", sans-serif;
 }
 
 .continue-field {
