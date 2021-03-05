@@ -1824,6 +1824,13 @@ input[type=range]::-moz-range-thumb:active {
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
   }
 }
+@media screen and (max-width: 1256px) {
+  .egg-progress-bar {
+    position: relative;
+    right: 52px;
+    top: 4px;
+  }
+}
 @media screen and (max-width: 400px) {
   .heading-section-intro {
     font-family: Source Sans Pro;
