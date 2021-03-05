@@ -350,6 +350,10 @@ a:visited {
   // box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.progress-track-green {
+  background-color: $primary-light-background-color;
+}
+
 .progress-step {
   position: absolute;
   // width: 48px;
