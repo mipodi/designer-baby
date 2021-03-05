@@ -452,7 +452,6 @@ body > div.top-background > section > div > div > div > p {
 
 .section-physical-features {
   background-color: #eefcf5;
-  display: flex;
   justify-content: space-between;
 }
 
