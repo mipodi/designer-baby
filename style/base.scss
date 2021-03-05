@@ -365,10 +365,42 @@ a:visited {
   // transform: rotate(-97.63deg);
 }
 
-.progress-step-icon {
+.progress-step-icon-1 {
   position: relative;
   top: -16px;
   right: -8px;
+}
+
+.progress-step-icon-2 {
+  position: relative;
+  left: 11px;
+  top: -7px;
+}
+
+.progress-step-icon-3 {
+  position: relative;
+  left: 12px;
+}
+
+.progress-step-icon-4 {
+  position: relative;
+  left: 4px;
+  top: 1px;
+}
+
+.progress-step-icon-5 {
+  position: relative;
+  top: 1px;
+}
+
+.progress-step-icon-6 {
+  position: relative;
+  top: 1px;
+}
+
+.progress-step-icon-7 {
+  position: relative;
+  top: 1px;
 }
 
 .progress-label {
