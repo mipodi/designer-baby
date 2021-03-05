@@ -1849,12 +1849,32 @@ input[type=range]::-moz-range-thumb:active {
 @media screen and (max-width: 662px) {
   .section-about-heading {
     font-size: 36px;
-    width: 257px;
+    max-width: 257px;
     line-height: 36px;
   }
 
   .section-about-text-area {
-    width: none;
+    width: inherit;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+}
+@media screen and (max-width: 1117px) {
+  .section-outro-heading {
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    height: inherit;
+    width: inherit;
+    max-width: 296px;
+    line-height: 36px;
+    position: relative;
+  }
+
+  .section-outro-text-area {
+    height: inherit;
+    width: inherit;
     top: 0;
     left: 0;
     position: relative;
