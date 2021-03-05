@@ -617,11 +617,19 @@ div.control.hair-feature-area-inner {
   color: #486581;
 }
 
+.section-about-text-area {
+  width: 348px;
+  top: 6px;
+  left: 116px;
+  position: relative;
+}
+
 .about-page h1 {
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .about-page p {
+  max-width: none;
   color: #102a42;
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
