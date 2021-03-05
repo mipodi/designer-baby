@@ -1846,6 +1846,20 @@ input[type=range]::-moz-range-thumb:active {
     padding-bottom: 16px;
   }
 }
+@media screen and (max-width: 662px) {
+  .section-about-heading {
+    font-size: 36px;
+    width: 257px;
+    line-height: 36px;
+  }
+
+  .section-about-text-area {
+    width: none;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+}
 @media screen and (max-width: 574px) {
   .eyes-skin-area {
     flex-direction: column;
