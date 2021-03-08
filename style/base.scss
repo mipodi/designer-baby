@@ -1067,6 +1067,9 @@ fieldset {
   max-width: 600px;
 }
 
+.control-final-step {
+  margin-bottom: 16px;
+}
 .basic-checkbox {
   cursor: pointer;
 
@@ -2348,6 +2351,187 @@ input[type="range"]::-moz-range-thumb:active {
     }
   }
 }
+
+.final-step-checkbox-outer-wrapper {
+  margin-bottom: 16px;
+  // font-weight: 600;
+}
+.final-step-checkbox-inner-wrapper {
+  margin-bottom: 8px;
+  // font-weight: 600;
+}
+
+.final-step-checkbox {
+  cursor: pointer;
+
+  display: flex;
+  align-items: start;
+
+  // --checked-state-bg-color: hsl(350, 95%, 58%);
+  // --checked-state-check-color: #fff;
+  // --outline-color: var(--checked-state-bg-color);
+  // --outline-offset: 2px;
+}
+
+// hide the checkbox accessibly
+.final-step-checkbox input[type="checkbox"] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0.00001;
+}
+
+// basic styles for the svg
+.final-step-checkbox svg {
+  /* set SVG dimensions in ems; i.e. relative to the font size so that it scales with the size of the font. */
+  // fill: #fff;
+  width: 1em;
+  height: 1em;
+
+  margin-right: 0.5em;
+  margin-top: 0.1em;
+
+  /* apply a transition to the elements inside the svg */
+  * {
+    transition: all 0.1s linear;
+  }
+}
+
+// style changes inside the svg when the checkbox is checked
+.final-step-checkbox input[type="checkbox"]:checked + svg {
+  .checkbox-bg {
+    fill: hsl(156, 73%, 74%);
+    // stroke: var(--checked-state-bg-color);
+  }
+
+  .checkbox-cm {
+    stroke: hsl(168, 80%, 23%);
+  }
+}
+
+.final-step-checkbox input[type="checkbox"]:focus + svg {
+  outline: 2px solid $blue-grey04;
+  // outline: 3px solid var(--outline-color);
+  // outline-offset: var(--outline-offset);
+}
+
+.final-step-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
+  outline: none;
+}
+
+/* WHCM styles */
+.final-step-checkbox svg {
+  @media screen and (-ms-high-contrast: active) {
+    rect {
+      stroke: windowText;
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .final-step-checkbox input[type="checkbox"]:checked ~ svg {
+    rect {
+      fill: windowText;
+    }
+
+    polyline {
+      stroke: highlight;
+    }
+  }
+}
+
+// .final-step-checkbox {
+//   cursor: pointer;
+//
+//   display: flex;
+//   align-items: start;
+//
+//   // --checked-state-bg-color: hsl(156, 73%, 74%);
+//   // --checked-state-check-color: hsl(168, 80%, 23%);
+//   // //det får bara vara en ju och den har redan deklarerats ovan nånstans:
+//   // --outline-color: hsl(211, 39%, 23%);
+//   // --outline-offset: 2px;
+// }
+//
+// // hide the checkbox accessibly
+// .final-step-checkbox input[type="checkbox"] {
+//   /* remove the checkbox from the page flow, positioning it on top of the SVG */
+//   position: absolute;
+//   /* set same dimensions as the SVG */
+//   width: 1em;
+//   height: 1em;
+//   /* hide it */
+//   opacity: 0.00001;
+// }
+//
+// // basic styles for the svg
+// .final-step-checkbox svg {
+//   /* set SVG dimensions in ems; i.e. relative to the font size so that it scales with the size of the font. */
+//   width: 1em;
+//   height: 1em;
+//
+//   margin-right: 0.5em;
+//   margin-top: 0.1em;
+//
+//   /* apply a transition to the elements inside the svg */
+//   * {
+//     transition: all 0.1s linear;
+//   }
+// }
+//
+// .final-step-checkbox input[type="checkbox"] + svg {
+//   .checkbox-bg {
+//     fill: #fff;
+//
+//     // stroke: var(--checked-state-bg-color);
+//   }
+// }
+//
+// // style changes inside the svg when the checkbox is checked
+// .final-step-checkbox input[type="checkbox"]:checked + svg {
+//   .checkbox-bg {
+//     fill: hsl(156, 73%, 74%);
+//     // stroke: var(--checked-state-bg-color);
+//   }
+//
+//   .checkbox-cm {
+//     stroke: hsl(168, 80%, 23%);
+//   }
+// }
+//
+// .final-step-checkbox input[type="checkbox"]:focus + svg {
+//   // outline: none;
+//   outline: 3px solid hsl(211, 39%, 23%);
+//   // outline-offset: 2px;
+// }
+//
+// .final-step-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
+//   outline: none;
+// }
+//
+// /* WHCM styles */
+// .final-step-checkbox svg {
+//   @media screen and (-ms-high-contrast: active) {
+//     rect {
+//       stroke: windowText;
+//     }
+//   }
+// }
+//
+// @media screen and (-ms-high-contrast: active) {
+//   .final-step-checkbox input[type="checkbox"]:checked ~ svg {
+//     rect {
+//       fill: windowText;
+//     }
+//
+//     polyline {
+//       stroke: highlight;
+//     }
+//   }
+// }
 
 .egg-package-radio-button {
   cursor: pointer;

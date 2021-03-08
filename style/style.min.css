@@ -699,6 +699,10 @@ fieldset {
   max-width: 600px;
 }
 
+.control-final-step {
+  margin-bottom: 16px;
+}
+
 .basic-checkbox {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -1558,6 +1562,72 @@ input[type=range]::-moz-range-thumb:active {
     fill: windowText;
   }
   .gestation-radio-button input[type=radio]:checked ~ svg polyline {
+    stroke: highlight;
+  }
+}
+.final-step-checkbox-outer-wrapper {
+  margin-bottom: 16px;
+}
+
+.final-step-checkbox-inner-wrapper {
+  margin-bottom: 8px;
+}
+
+.final-step-checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: start;
+}
+
+.final-step-checkbox input[type=checkbox] {
+  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  position: absolute;
+  /* set same dimensions as the SVG */
+  width: 1em;
+  height: 1em;
+  /* hide it */
+  opacity: 0.00001;
+}
+
+.final-step-checkbox svg {
+  /* set SVG dimensions in ems; i.e. relative to the font size so that it scales with the size of the font. */
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  margin-top: 0.1em;
+  /* apply a transition to the elements inside the svg */
+}
+.final-step-checkbox svg * {
+  transition: all 0.1s linear;
+}
+
+.final-step-checkbox input[type=checkbox]:checked + svg .checkbox-bg {
+  fill: #8cedc6;
+}
+.final-step-checkbox input[type=checkbox]:checked + svg .checkbox-cm {
+  stroke: #0c6a57;
+}
+
+.final-step-checkbox input[type=checkbox]:focus + svg {
+  outline: 2px solid #48647f;
+}
+
+.final-step-checkbox input[type=checkbox]:focus:not(:focus-visible) + svg {
+  outline: none;
+}
+
+/* WHCM styles */
+@media screen and (-ms-high-contrast: active) {
+  .final-step-checkbox svg rect {
+    stroke: windowText;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .final-step-checkbox input[type=checkbox]:checked ~ svg rect {
+    fill: windowText;
+  }
+  .final-step-checkbox input[type=checkbox]:checked ~ svg polyline {
     stroke: highlight;
   }
 }
