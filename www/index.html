@@ -2851,7 +2851,11 @@
           </div>
 
           <div class="section-area-choice">
-            <div role="group" class="control" aria-label="Type">
+            <div
+              role="group"
+              class="control control-final-step"
+              aria-label="Type"
+            >
               <label for="in-body" class="gestation-radio-button">
                 <span
                   >In vivo / body
@@ -2967,8 +2971,45 @@
                             <input type="checkbox" id="freeze-fetuses" name="freeze-fetuses">
                             <label for="freeze-fetuses"> I want the option to freeze fetuses</label>
                             </div> -->
+            <div class="final-step-checkbox-outer-wrapper">
+              <div class="final-step-checkbox-inner-wrapper">
+                <label for="understand-cloning" class="final-step-checkbox">
+                  <input
+                    type="checkbox"
+                    id="understand-cloning"
+                    name="understand-cloning"
+                  />
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="-4 -4 39 39"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <!-- The background -->
+                    <rect
+                      class="checkbox-bg"
+                      width="35"
+                      height="35"
+                      x="-2"
+                      y="-2"
+                      fill="white"
+                      rx="6"
+                      ry="6"
+                    ></rect>
+                    <!-- The checkmark-->
+                    <polyline
+                      class="checkbox-cm"
+                      points="4,14 12,23 28,5"
+                      stroke="transparent"
+                      stroke-width="4"
+                      fill="none"
+                    ></polyline>
+                  </svg>
 
-            <div>
+                  <span>I understand cloning is inadvisable</span>
+                </label>
+                <!--
               <input
                 type="checkbox"
                 id="understand-cloning"
@@ -2976,18 +3017,52 @@
               />
               <label for="understand-cloning">
                 I understand cloning is unadvisable</label
-              >
-            </div>
+              > -->
+              </div>
 
-            <div>
-              <input
-                type="checkbox"
-                id="understand-adverse-effects"
-                name="understand-adverse-effects"
-              />
-              <label for="understand-adverse-effects">
-                I have read the adverse effects information fields</label
-              >
+              <div class="final-step-checkbox-container">
+                <label
+                  for="understand-adverse-effects"
+                  class="final-step-checkbox"
+                >
+                  <input
+                    type="checkbox"
+                    id="understand-adverse-effects"
+                    name="understand-adverse-effects"
+                  />
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="-4 -4 39 39"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <!-- The background -->
+                    <rect
+                      class="checkbox-bg"
+                      width="35"
+                      height="35"
+                      x="-2"
+                      y="-2"
+                      fill="white"
+                      rx="6"
+                      ry="6"
+                    ></rect>
+                    <!-- The checkmark-->
+                    <polyline
+                      class="checkbox-cm"
+                      points="4,14 12,23 28,5"
+                      stroke="transparent"
+                      stroke-width="4"
+                      fill="none"
+                    ></polyline>
+                  </svg>
+
+                  <span
+                    >I have read the adverse effects information fields</span
+                  >
+                </label>
+              </div>
             </div>
 
             <p>
