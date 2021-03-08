@@ -474,7 +474,7 @@ body > div.top-background > section > div > div > div > p {
 }
 
 .section-unwanted-features {
-  background: url(../images/section-features.jpg);
+  background-image: url(../images/section-features.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -558,7 +558,7 @@ div.control.hair-feature-area-inner {
 }
 
 .section-final-step {
-  background: url(../images/section-request.jpg);
+  background-image: url(../images/section-request.jpg);
   background-position: center;
   color: #243a52;
   display: flex;
@@ -591,7 +591,7 @@ div.control.hair-feature-area-inner {
 }
 
 .img-outro {
-  background: url(../images/section-outro.jpg);
+  background-image: url(../images/section-outro.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -636,7 +636,7 @@ div.control.hair-feature-area-inner {
 }
 
 .image-about-page {
-  background: url(../images/about.jpg);
+  background-image: url(../images/about.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -1971,19 +1971,19 @@ input[type=range]::-moz-range-thumb:active {
 }
 @media screen and (max-width: 618px) {
   .top-background {
-    background: url(../images/optimized/baby-top-background.jpg);
+    background-image: url(../images/optimized/baby-top-background.jpg);
   }
 
   .section-unwanted-features {
-    background: url(../images/optimized/section-features.jpg);
+    background-image: url(../images/optimized/section-features.jpg);
   }
 
   .section-request-quote {
-    background: url(../images/optimized/section-request.jpg);
+    background-image: url(../images/optimized/section-request.jpg);
   }
 
   .img-outro {
-    background: url(../images/optimized/section-outro.jpg);
+    background-image: url(../images/optimized/section-outro.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -1991,7 +1991,7 @@ input[type=range]::-moz-range-thumb:active {
   }
 
   .image-about-page {
-    background: url(../images/optimized/about.jpg);
+    background-image: url(../images/optimized/about.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
