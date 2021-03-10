@@ -1593,6 +1593,7 @@ input[type=range]::-moz-range-thumb:active {
   /* set SVG dimensions in ems; i.e. relative to the font size so that it scales with the size of the font. */
   width: 1em;
   height: 1em;
+  min-width: 24px;
   margin-right: 0.5em;
   margin-top: 0.1em;
   /* apply a transition to the elements inside the svg */

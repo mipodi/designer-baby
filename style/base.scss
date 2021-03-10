@@ -2390,6 +2390,7 @@ input[type="range"]::-moz-range-thumb:active {
   // fill: #fff;
   width: 1em;
   height: 1em;
+  min-width: 24px;
 
   margin-right: 0.5em;
   margin-top: 0.1em;
