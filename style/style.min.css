@@ -1868,12 +1868,23 @@ input[type=range]::-moz-range-thumb:active {
     font-size: 18px;
   }
 
+  label {
+    font-size: 18px;
+  }
+
   h2 {
     font-size: 30px;
   }
 
   .header-nav-list a {
     margin-left: 16px;
+  }
+
+  .section-final-step-cta {
+    max-width: 256px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   }
 }
 /* When the browser is at least 600px and above */

@@ -2865,6 +2865,9 @@ input[type="range"]::-moz-range-thumb:active {
   p {
     font-size: 18px;
   }
+  label {
+    font-size: 18px;
+  }
 
   // .basic-checkbox,
   // .sex-choice-radio-button,
@@ -2884,6 +2887,12 @@ input[type="range"]::-moz-range-thumb:active {
 
   .header-nav-list a {
     margin-left: 16px;
+  }
+  .section-final-step-cta {
+    max-width: 256px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%);
   }
 }
 
