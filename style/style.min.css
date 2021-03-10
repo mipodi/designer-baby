@@ -1827,6 +1827,7 @@ input[type=range]::-moz-range-thumb:active {
   position: absolute;
   max-width: 112px;
   display: block;
+  width: 112px;
 }
 
 .extra-options-checkbox span.info {
