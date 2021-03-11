@@ -644,32 +644,47 @@ div.control.hair-feature-area-inner {
   color: #102a42;
 }
 
+#section-about {
+  display: flex;
+  justify-content: center;
+}
+
+.section-about-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .section-about-heading {
-  position: absolute;
   width: 563px;
-  height: 120px;
-  left: 456px;
-  top: 228px;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 60px;
+  color: #243b53;
+  margin-bottom: 48px;
   color: #102a42;
+  text-align: center;
+}
+
+.section-about-text-area-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .section-about-text-area {
-  position: absolute;
   width: 348px;
-  height: 197px;
-  left: 562px;
-  top: 392px;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: #102a42;
+}
+
+.about-page p {
+  max-width: none;
 }
 
 .about-page p a:visited {
