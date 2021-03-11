@@ -213,6 +213,18 @@ a {
   max-width: 20em;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  // background-color: #45a1ff;
+  // color: #fff;
+
+  letter-spacing: 0.03rem;
+  font-weight: 600;
+  font-size: 12px;
+}
+
 #site-title {
   text-decoration: none;
 }
@@ -926,13 +938,13 @@ div.control.hair-feature-area-inner {
 }
 
 .img-outro {
-  background-image: url(../images/section-outro.jpg);
-  background-position: center;
-  background-size: cover;
-
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url(../images/section-outro.jpg);
+  // background-position: center;
+  // background-size: cover;
+  //
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   // background-position: center center;
 }
 
@@ -954,37 +966,49 @@ div.control.hair-feature-area-inner {
 //   // color: #486581;
 // }
 
-.section-outro-heading {
-  position: absolute;
-  width: 563px;
-  height: 120px;
-  left: 420px;
-  top: 228px;
+#section-outro {
+  display: flex;
+  justify-content: center;
+}
 
+.section-outro-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-outro-heading {
+  // position: absolute;
+  width: 563px;
+  // height: 120px;
+  // left: 456px;
+  // top: 228px;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 60px;
+  color: #243b53;
+  margin-bottom: 48px;
+}
 
-  color: #486581;
+.section-outro-text-area-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .section-outro-text-area {
-  position: absolute;
+  // position: absolute;
   width: 348px;
-  height: 197px;
-  left: 562px;
-  top: 376px;
-
+  // height: 197px;
+  // left: 562px;
+  // top: 392px;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-
   color: #102a42;
-
   // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -998,53 +1022,51 @@ div.control.hair-feature-area-inner {
 }
 
 .image-about-page {
-  background-image: url(../images/about.jpg);
-  background-position: center;
-  background-size: cover;
-
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  // background-image: url(../images/about.jpg);
+  // background-position: center;
+  // background-size: cover;
+  //
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
 }
 
 .section-about-heading {
+  position: absolute;
   width: 563px;
+  height: 120px;
+  left: 456px;
+  top: 228px;
+  font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 60px;
-  color: #486581;
+  color: $blue-grey01;
 }
 //
 .section-about-text-area {
-  // position: absolute;
+  position: absolute;
   width: 348px;
-  top: 6px;
-  left: 116px;
-  position: relative;
-  //   // height: 197px;
-  //   left: 175px;
-  //   top: 256px;
-  //
-  //   font-family: Source Sans Pro;
-  //   font-style: normal;
-  //   font-weight: normal;
-  //   font-size: 16px;
-  //   line-height: 20px;
-  //
-  // color: #102a42;
-  //
-  //   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 197px;
+  left: 562px;
+  top: 392px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $blue-grey01;
 }
 
 .about-page h1 {
-  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  // text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .about-page p {
-  max-width: none;
+  // max-width: none;
   // font-weight: 600;
-  color: $blue-grey01;
-  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  // color: $blue-grey01;
+  // text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .about-page p a:visited {
@@ -3152,31 +3174,31 @@ input[type="range"]::-moz-range-thumb:active {
   }
 
   .img-outro {
-    background-image: url(../images/optimized/section-outro.jpg);
-    background-position: center;
-    background-size: cover;
-
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    // background-image: url(../images/optimized/section-outro.jpg);
+    // background-position: center;
+    // background-size: cover;
+    //
+    // background-attachment: fixed;
+    // background-repeat: no-repeat;
   }
 
   .image-about-page {
-    background-image: url(../images/optimized/about.jpg);
-    background-position: center;
-    background-size: cover;
-
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    // background-image: url(../images/optimized/about.jpg);
+    // background-position: center;
+    // background-size: cover;
+    //
+    // background-attachment: fixed;
+    // background-repeat: no-repeat;
   }
 }
 
 @media (prefers-reduced-motion) {
   .image-about-page {
-    background-attachment: unset;
+    // background-attachment: unset;
   }
 
   .img-outro {
-    background-attachment: unset;
+    // background-attachment: unset;
   }
   .animation {
     animation-name: dissolve;
