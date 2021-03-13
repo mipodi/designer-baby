@@ -566,12 +566,12 @@ div.control.hair-feature-area-inner {
   background-color: #f1f5f8;
   display: flex;
   justify-content: space-between;
+  background-image: url(../images/section-extra-options.jpg);
+  background-position: center;
+  color: #243a52;
 }
 
 .section-final-step {
-  background-image: url(../images/section-request.jpg);
-  background-position: center;
-  color: #243a52;
   display: flex;
   justify-content: space-between;
 }

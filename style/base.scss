@@ -901,13 +901,16 @@ div.control.hair-feature-area-inner {
   background-color: $blue-grey10;
   display: flex;
   justify-content: space-between;
+  background-image: url(../images/section-extra-options.jpg);
+  background-position: center;
+  color: $blue-grey02;
 }
 
 .section-final-step {
   // background-color: #EFFCF6;
-  background-image: url(../images/section-request.jpg);
-  background-position: center;
-  color: $blue-grey02;
+  // background-image: url(../images/section-request.jpg);
+  // background-position: center;
+  // color: $blue-grey02;
   display: flex;
   justify-content: space-between;
 }
