@@ -554,7 +554,7 @@ a:visited {
   // top: 0px;
   border-radius: 0px;
   background: url(../images/baby-top-background.jpg);
-  background-position: center;
+  background-position: right;
   background-size: cover;
   // color: #000;
   //        background-position: center;
@@ -562,6 +562,14 @@ a:visited {
   // background-size: cover;
 
   // min-height: 840px;
+  background-image: linear-gradient(
+      295.18deg,
+      rgba(239, 252, 246, 0.78) 26.63%,
+      rgba(239, 252, 246, 0.72) 49.94%,
+      rgba(239, 252, 246, 0) 96.81%
+    ),
+    url(../images/baby-top-background.jpg);
+  /* background-blend-mode: multiply; */
 }
 
 .section-intro-area {
@@ -589,7 +597,7 @@ a:visited {
   color: #ffffff;
   color: $blue-grey02;
 
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .paragraph-section-intro {
@@ -597,8 +605,8 @@ a:visited {
   color: #fff;
   color: $blue-grey02;
 
-  text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
+  // text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
+  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   // z-index: 3;
 
   //     position: absolute;
@@ -626,29 +634,30 @@ a:visited {
   // font-weight: 600;
   font-size: 16px;
   // line-height: 20px;
-  text-decoration: none;
+  // text-decoration: none;
   // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   // color: #FFFFFF;
   font-weight: 600;
 }
 
 .section-intro-area-cta {
-  background-color: $primary-light-background-color;
+  // background-color: $primary-light-background-color;
   // max-width: 256px;
-  max-width: 192px;
-  /* padding: 1px; */
-  padding-left: 16px;
-  margin: 0;
 
   max-width: 192px;
-  padding: 4px;
-  padding-top: 6px;
-  padding-bottom: 8px;
+  /* padding: 1px; */
+  /* padding-left: 16px; */
+  margin: 0;
+  /* max-width: 192px; */
+  /* padding: 4px; */
+  /* padding-top: 6px; */
+  /* padding-bottom: 8px; */
   /* padding-left: 16px; */
   margin: 0;
   margin-top: 8px;
   margin-bottom: 16px;
-  text-align: center;
+  /* text-align: center; */
+  text-underline-offset: 3px;
   border-radius: 4px;
 }
 
@@ -904,6 +913,8 @@ div.control.hair-feature-area-inner {
   justify-content: space-between;
   background-image: url(../images/section-extra-options.jpg);
   background-position: center;
+  background-size: cover;
+
   color: $blue-grey02;
 }
 
@@ -3204,6 +3215,11 @@ input[type="range"]::-moz-range-thumb:active {
 
   .section-unwanted-features {
     background-image: url(../images/optimized/section-features.jpg);
+    background-position: right;
+  }
+
+  .section-extra-options {
+    background-position: left;
   }
 
   // .section-request-quote {

@@ -360,8 +360,10 @@ a {
 .top-background {
   border-radius: 0px;
   background: url(../images/baby-top-background.jpg);
-  background-position: center;
+  background-position: right;
   background-size: cover;
+  background-image: linear-gradient(295.18deg, rgba(239, 252, 246, 0.78) 26.63%, rgba(239, 252, 246, 0.72) 49.94%, rgba(239, 252, 246, 0) 96.81%), url(../images/baby-top-background.jpg);
+  /* background-blend-mode: multiply; */
 }
 
 .section-intro-area {
@@ -378,14 +380,11 @@ a {
   /* identical to box height, or 100% */
   color: #ffffff;
   color: #243a52;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .paragraph-section-intro {
   color: #fff;
   color: #243a52;
-  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
@@ -397,25 +396,24 @@ a {
   font-family: Source Sans Pro;
   font-style: normal;
   font-size: 16px;
-  text-decoration: none;
   font-weight: 600;
 }
 
 .section-intro-area-cta {
-  background-color: #eefcf5;
   max-width: 192px;
   /* padding: 1px; */
-  padding-left: 16px;
+  /* padding-left: 16px; */
   margin: 0;
-  max-width: 192px;
-  padding: 4px;
-  padding-top: 6px;
-  padding-bottom: 8px;
+  /* max-width: 192px; */
+  /* padding: 4px; */
+  /* padding-top: 6px; */
+  /* padding-bottom: 8px; */
   /* padding-left: 16px; */
   margin: 0;
   margin-top: 8px;
   margin-bottom: 16px;
-  text-align: center;
+  /* text-align: center; */
+  text-underline-offset: 3px;
   border-radius: 4px;
 }
 
@@ -570,6 +568,7 @@ div.control.hair-feature-area-inner {
   justify-content: space-between;
   background-image: url(../images/section-extra-options.jpg);
   background-position: center;
+  background-size: cover;
   color: #243a52;
 }
 
@@ -2096,6 +2095,11 @@ input[type=range]::-moz-range-thumb:active {
 
   .section-unwanted-features {
     background-image: url(../images/optimized/section-features.jpg);
+    background-position: right;
+  }
+
+  .section-extra-options {
+    background-position: left;
   }
 }
 @media (prefers-reduced-motion) {
