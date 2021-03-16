@@ -799,11 +799,18 @@ body > div.top-background > section > div > div > div > p {
 
 .section-unwanted-features {
   // background-color: #EFFCF6;
-  background-image: url(../images/section-features.jpg);
+  // background-image: url(../images/section-features.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: space-between;
+  background-image: linear-gradient(
+      95deg,
+      rgba(239, 252, 246, 0.78) 26.63%,
+      rgba(239, 252, 246, 0.72) 49.94%,
+      rgba(239, 252, 246, 0) 96.81%
+    ),
+    url(../images/section-features.jpg);
 }
 
 #section-unwanted-features
@@ -911,11 +918,18 @@ div.control.hair-feature-area-inner {
   background-color: $blue-grey10;
   display: flex;
   justify-content: space-between;
-  background-image: url(../images/section-extra-options.jpg);
+  // background-image: url(../images/section-extra-options.jpg);
   background-position: center;
   background-size: cover;
 
   color: $blue-grey02;
+  background-image: linear-gradient(
+      95deg,
+      rgba(239, 252, 246, 0.78) 26.63%,
+      rgba(239, 252, 246, 0.72) 49.94%,
+      rgba(239, 252, 246, 0) 96.81%
+    ),
+    url(../images/section-extra-options.jpg);
 }
 
 .section-final-step {
