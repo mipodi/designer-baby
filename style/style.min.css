@@ -1761,6 +1761,7 @@ input[type=range]::-moz-range-thumb:active {
 .egg-package-radio-button span.eggs-bullet-2::before,
 .egg-package-radio-button span.eggs-bullet-3::before {
   content: "•";
+  margin-right: 4px;
 }
 
 .egg-package-radio-button span.eggs-bullet-2 {

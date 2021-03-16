@@ -2761,6 +2761,7 @@ input[type="range"]::-moz-range-thumb:active {
 .egg-package-radio-button span.eggs-bullet-3::before {
   // display: inline-block;
   content: "•";
+  margin-right: 4px;
   // -webkit-border-radius: 0.375rem;
   // border-radius: 0.375rem;
   // height: 0.75rem;
