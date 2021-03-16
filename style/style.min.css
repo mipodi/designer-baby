@@ -146,6 +146,7 @@ p {
   max-width: 20em;
   color: #243a52;
   margin-block-start: 0;
+  line-height: 1.4rem;
 }
 
 ul {
