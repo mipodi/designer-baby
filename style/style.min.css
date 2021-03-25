@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import "normalize.min.css";
 /*!
  * Stylesheet for the entire web application as of now.
@@ -341,6 +343,33 @@ section {
   overflow-x: hidden;
 }
 
+.section-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-area-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 96px;
+  display: inline-flex;
+}
+
+.section-area-choice {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.continue-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 16px;
+  text-underline-offset: 3px;
+  margin-bottom: 2.4rem;
+}
+
 /* ==========================================================================
     Intro, section-specific layout and settings
     ========================================================================= */
@@ -387,18 +416,10 @@ section {
 
 .section-intro-area-cta {
   max-width: 192px;
-  /* padding: 1px; */
-  /* padding-left: 16px; */
   margin: 0;
-  /* max-width: 192px; */
-  /* padding: 4px; */
-  /* padding-top: 6px; */
-  /* padding-bottom: 8px; */
-  /* padding-left: 16px; */
   margin: 0;
   margin-top: 8px;
   margin-bottom: 16px;
-  /* text-align: center; */
   text-underline-offset: 3px;
   border-radius: 4px;
 }
@@ -429,28 +450,13 @@ body > div.top-background > section > div > div > div > p {
   font-size: 12px;
 }
 
+/* ==========================================================================
+    Sex, section-specific layout and settings
+    ========================================================================= */
 .section-sex {
   background-color: #f1f5f8;
   display: flex;
   justify-content: space-between;
-}
-
-.section-area {
-  display: flex;
-  flex-direction: column;
-}
-
-.section-area-info {
-  display: flex;
-  flex-direction: column;
-  padding-right: 96px;
-  display: inline-flex;
-}
-
-.section-area-choice {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .section-area-choice-sex {
@@ -585,15 +591,6 @@ div.control.hair-feature-area-inner {
 #section-request-quote > div > div.section-area-info > p:nth-child(2) {
   color: #102a42;
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-}
-
-.continue-field {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  padding-right: 16px;
-  text-underline-offset: 3px;
-  margin-bottom: 2.4rem;
 }
 
 #section-outro {
