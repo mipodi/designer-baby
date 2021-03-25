@@ -361,6 +361,17 @@ section {
   flex-wrap: wrap;
 }
 
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 768px;
+  margin-bottom: 2rem;
+}
+
+.control-choice {
+  max-width: 600px;
+}
+
 .continue-field {
   display: flex;
   flex-wrap: wrap;
@@ -463,18 +474,27 @@ body > div.top-background > section > div > div > div > p {
   padding-top: 48px;
 }
 
+/* ==========================================================================
+    Eggs, section-specific layout and settings
+    ========================================================================= */
 .section-eggs {
   background-color: #eefcf5;
   display: flex;
   justify-content: space-between;
 }
 
+/* ==========================================================================
+    Disease, section-specific layout and settings
+    ========================================================================= */
 .section-disease {
   background-color: #f1f5f8;
   display: flex;
   justify-content: space-between;
 }
 
+/* ==========================================================================
+    Unwanted features, section-specific layout and settings
+    ========================================================================= */
 .section-unwanted-features {
   background-position: center;
   background-size: cover;
@@ -488,6 +508,9 @@ body > div.top-background > section > div > div > div > p {
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
+/* ==========================================================================
+    Physical features, section-specific layout and settings
+    ========================================================================= */
 .section-physical-features {
   background-color: #eefcf5;
   justify-content: space-between;
@@ -495,15 +518,6 @@ body > div.top-background > section > div > div > div > p {
 
 .section-physical-features h3 {
   margin-bottom: 2rem;
-}
-
-.section-container {
-  display: flex;
-}
-
-.paragraph-disease {
-  flex-basis: 70%;
-  margin-right: 64px;
 }
 
 .eyes-skin-area {
@@ -553,6 +567,9 @@ div.control.hair-feature-area-inner {
   flex-direction: column;
 }
 
+/* ==========================================================================
+    Extra options, section-specific layout and settings
+    ========================================================================= */
 .section-extra-options {
   background-color: #f1f5f8;
   display: flex;
@@ -563,6 +580,9 @@ div.control.hair-feature-area-inner {
   background-image: linear-gradient(95deg, rgba(239, 252, 246, 0.78) 26.63%, rgba(239, 252, 246, 0.72) 49.94%, rgba(239, 252, 246, 0) 96.81%), url(../images/section-extra-options.jpg);
 }
 
+/* ==========================================================================
+    Section gestation, section-specific layout and settings
+    ========================================================================= */
 .section-final-step {
   display: flex;
   justify-content: space-between;
@@ -588,11 +608,13 @@ div.control.hair-feature-area-inner {
   width: 160px;
 }
 
-#section-request-quote > div > div.section-area-info > p:nth-child(2) {
-  color: #102a42;
-  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+.control-final-step {
+  margin-bottom: 16px;
 }
 
+/* ==========================================================================
+    Page & Section outro, section-specific layout and settings
+    ========================================================================= */
 #section-outro {
   display: flex;
   justify-content: center;
@@ -636,6 +658,9 @@ div.control.hair-feature-area-inner {
   color: #102a42;
 }
 
+/* ==========================================================================
+    Page & Section about, section-specific layout and settings
+    ========================================================================= */
 #section-about {
   display: flex;
   justify-content: center;
@@ -691,36 +716,9 @@ div.control.hair-feature-area-inner {
   margin-bottom: 48px;
 }
 
-fieldset {
-  display: block;
-  margin-left: 2px;
-  margin-right: 2px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  border: 2px groove internal value;
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-}
-
-.control {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 768px;
-  margin-bottom: 2rem;
-}
-
-.control-choice {
-  max-width: 600px;
-}
-
-.control-final-step {
-  margin-bottom: 16px;
-}
-
+/* ==========================================================================
+    Custom checkboxes and radio buttons.
+    ========================================================================= */
 .basic-checkbox {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -1013,6 +1011,7 @@ fieldset {
 .eye-colour-radio-button input[type=radio]:checked + svg .secondary {
   fill: #f1f5f8;
 }
+
 .eye-colour-radio-button input[type=radio]:focus + svg {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
@@ -1887,6 +1886,9 @@ input[type=range]::-moz-range-thumb:active {
     stroke: highlight;
   }
 }
+/* ==========================================================================
+    Responsive adjustments
+    ========================================================================= */
 /* When the browser is at max 909px and above */
 @media screen and (max-width: 909px) {
   p {
@@ -2093,6 +2095,9 @@ input[type=range]::-moz-range-thumb:active {
     background-position: left;
   }
 }
+/* ==========================================================================
+    Accessibility
+    ========================================================================= */
 @media (prefers-reduced-motion) {
   .animation {
     animation-name: dissolve;
