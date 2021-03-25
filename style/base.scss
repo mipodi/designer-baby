@@ -1,21 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import "normalize.min.css";
 
-// Troubleshoot
+/*!
+ * Stylesheet for the entire web application as of now.
+ */
 
-// * {
-//     outline: 1px solid red;
-// }
-
-// Main colors
+/* ==========================================================================
+    Variables
+    ========================================================================= */
 $primary-light-background-color: hsl(152, 68%, 96%); /* #EFFCF6 */
 $primary-light-accent-color: hsl(156, 73%, 74%); /* #8EEDC7 */
 $primary-dark-accent-color: hsl(168, 80%, 23%); /* #0C6B58 */
 
-// $secondary-dark-accent-color: hsl(245, 86%, 40%); /* #1D0EBE */
 $purple-link-color: #42173a;
-// Greyscale
 
 $blue-grey01: hsl(209, 61%, 16%); /* #102A43 */
 $blue-grey02: hsl(211, 39%, 23%); /* #243B53 */
@@ -28,47 +24,28 @@ $blue-grey08: hsl(210, 31%, 80%); /* #BCCCDC */
 $blue-grey09: hsl(212, 33%, 89%); /* #D9E2EC */
 $blue-grey10: hsl(210, 36%, 96%); /* #F0F4F8 */
 
+$primary-font-family: "Source Sans Pro", sans-serif;
+$secondary-font-family: "Varela Round", sans-serif;
+
+/* ==========================================================================
+    Basic layout and settings
+    ========================================================================= */
 html {
-  font-size: 100%;
-  font-family: "Source Sans Pro", sans-serif;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: subpixel-antialiased;
-  color: hsl(211, 39%, 23%);
   background-color: $primary-light-background-color;
   overflow-x: hidden;
-}
-
-body {
-  // overflow-x: hidden;
-  // overflow: hidden;
-  // overflow-x: hidden;
-  // line-height: 1.4;
-  margin: 0;
-  // font-family: arial;
-  width: 100vw;
-  height: 100vh;
-
-  // animation: bugfix infinite 1s;
-  // -webkit-animation: bugfix infinite 1s;
-}
-
-html,
-body {
   width: 100%;
   height: 100%;
-  // overflow-x:hidden;
+  font-size: 100%;
+  font-family: $primary-font-family;
+  color: $blue-grey02;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
-header {
-  //     display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // text-align: center;
-}
-
-main {
-  // padding: 1.4rem 0.6rem;
-  // max-width: 1000px;
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 *,
@@ -77,97 +54,19 @@ main {
   box-sizing: border-box;
 }
 
-.header-title-nav-wrapper {
-  padding: 24px;
-  padding-top: 24px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.header-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-  color: $blue-grey02;
-  // text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.header-title p {
-  margin-top: 0px;
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-.header-nav-list {
-  display: inline-block;
-}
-
-.header-nav-list a {
-  // color: #fff;
-  text-decoration: none;
-  // text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: 600;
-  margin-left: 32px;
-}
-
-.header-nav-list ul {
-  list-style: none;
-}
-
-.header-nav-list li {
-  display: inline;
-}
-
-.header-nav-list a:visited {
-  // color: #fff;
-  text-decoration: none;
-  text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-weight: 400;
-}
-
-nav [aria-current="page"] {
-  background-color: $primary-light-background-color;
-  padding: 2px;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-bottom: 6px;
-  border-radius: 3px;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.inner-wrap-footer {
-  padding: 48px;
-}
-
-.site-footer {
-  text-align: center;
-  max-width: unset;
-  letter-spacing: 0.03rem;
-  font-weight: 600;
-  font-size: 12px;
-  width: none;
-}
-
-.site-footer p {
-  width: none;
-}
-
+/* ==========================================================================
+    Typography
+    ========================================================================= */
 h1,
 h2,
 h3,
 h4 {
   margin-top: 0;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-weight: 400;
 }
 
 h1 {
-  // font-size: 2.4rem;
   margin-bottom: 2.8rem;
   margin-bottom: 1.4rem;
   font-weight: 400;
@@ -175,86 +74,26 @@ h1 {
 }
 
 h2 {
-  // font-size: 2rem;
   margin-bottom: 1.4rem;
-  // margin-bottom: 2.8rem;
   font-weight: 400;
 }
 
 h4 {
-  // font-size: 1.4rem;
   margin-bottom: 0;
 }
 
 p {
-  // margin-top: 0;
-  // font-family: 'Source Sans Pro', sans-serif;
-  // margin-bottom: 1.4rem;
   max-width: 20em;
-  // font-size: 1rem;
   color: $blue-grey02;
   margin-block-start: 0;
   line-height: 1.4rem;
 }
 
 ul {
-  // margin-top: 0;
-  // font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 1.4rem;
   max-width: 20em;
-  // font-size: 1rem;
-  color: hsl(209, 34%, 30%);
   color: $blue-grey02;
 }
-
-details,
-button,
-a {
-  margin-bottom: 2.4rem;
-  max-width: 20em;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 24px;
-  // background-color: #45a1ff;
-  // color: #fff;
-
-  letter-spacing: 0.03rem;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-#site-title {
-  text-decoration: none;
-}
-
-.details-summary {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  padding-right: 16px;
-}
-
-summary {
-  color: $blue-grey03;
-}
-
-details {
-  color: $blue-grey03;
-}
-
-section {
-  min-height: 100vh;
-  margin-right: auto;
-  margin-left: auto;
-  // padding: 64px;
-  padding: 24px;
-  overflow-x: hidden;
-}
-
-// Links
 
 a {
   color: $blue-grey01;
@@ -262,15 +101,12 @@ a {
 }
 
 a:hover {
-  // text-decoration: underline;
 }
 
 a:active {
-  // color: black;
 }
 
 a:visited {
-  // color: $secondary-dark-accent-color;
 }
 
 @mixin text-underline-crop($background) {
@@ -320,47 +156,170 @@ a:visited {
   }
 }
 
-// /* Example usage */
-// a {
-//   @include link-underline(#fff, #333, #0BF);
-// }
+/* ==========================================================================
+    Top info banner
+    ========================================================================= */
+.top-info-banner {
+  max-width: 100%;
+  min-height: 32px;
+  display: flex;
+  justify-content: center;
+  background: $primary-light-background-color;
+  max-width: 100%;
+}
 
+.top-info-banner p {
+  max-width: 100%;
+  text-align: center;
+  margin: 10px;
+  letter-spacing: 0.03rem;
+}
+
+.top-info-banner-text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ==========================================================================
+    Header
+    ========================================================================= */
+#site-title {
+  text-decoration: none;
+}
+
+.header-title-nav-wrapper {
+  padding: 24px;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: $blue-grey02;
+}
+
+.header-title p {
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.header-nav-list {
+  display: inline-block;
+}
+
+.header-nav-list a {
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 32px;
+}
+
+.header-nav-list ul {
+  list-style: none;
+}
+
+.header-nav-list li {
+  display: inline;
+}
+
+.header-nav-list a:visited {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+nav [aria-current="page"] {
+  background-color: $primary-light-background-color;
+  padding: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  border-radius: 3px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ==========================================================================
+    Footer
+    ========================================================================= */
+
+.inner-wrap-footer {
+  padding: 48px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  letter-spacing: 0.03rem;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.site-footer {
+  text-align: center;
+  max-width: unset;
+  letter-spacing: 0.03rem;
+  font-weight: 600;
+  font-size: 12px;
+  width: none;
+}
+
+.site-footer p {
+  width: none;
+}
+
+/* ==========================================================================
+    Summary and details
+    ========================================================================= */
+
+.details-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 16px;
+}
+
+summary {
+  color: $blue-grey03;
+}
+
+details {
+  color: $blue-grey03;
+}
+
+/* ==========================================================================
+    Progress bar
+    ========================================================================= */
 .wrapper-progress-bar {
   order: 2;
-  // width: 320px;
   display: flex;
-  /* align-content: end; */
   justify-content: flex-end;
 }
 
 .progress-bar {
   border-radius: 50%;
-  // // position: absolute;
-  // position: relative;
   width: 48px;
   height: 48px;
-  //
   background: linear-gradient(0deg, #ffffff, #ffffff);
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  // order: 2;
 }
 
 .progress-track {
   border-radius: 50%;
-  // // position: relative;
-  // position: absolute;
   width: 36px;
   height: 36px;
   background-color: $blue-grey10;
   box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%);
-  // position: absolute;
-  // top: 50%;
-  // margin-top: -24px;
-  // background: linear-gradient(0deg, #ffffff, #ffffff);
-  // box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .progress-track-green {
@@ -369,13 +328,6 @@ a:visited {
 
 .progress-step {
   position: absolute;
-  // width: 48px;
-  // height: 48px;
-  // border-radius: 50%;
-  //
-  // background: #627d98;
-  // // border-radius: 5px;
-  // transform: rotate(-97.63deg);
 }
 
 .progress-step-icon-1 {
@@ -431,137 +383,39 @@ a:visited {
 }
 
 .progress-label {
-  // position: absolute;
-  // width: 41px;
-  // height: 13px;
-
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
   line-height: 8px;
-  /* or 67% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: -0.065em;
-
   color: $blue-grey03;
-  position: absolute;
-
-  /* width: 41px; */
   height: 13px;
-  font-family: "Varela Round";
-  /* font-style: normal; */
-  /* font-weight: bold; */
   font-size: 14px;
-  /* line-height: 10px; */
   display: flex;
   align-items: center;
   text-align: center;
-  /* letter-spacing: -0.07em; */
-  color: #324d67;
   position: absolute;
-  /* max-width: 26px; */
-  /* letter-spacing: 0.05em; */
   font-weight: 600;
-  font-family: "Varela Round", sans-serif;
+  font-family: $secondary-font-family;
 }
 
-.continue-field {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  padding-right: 16px;
-  text-underline-offset: 3px;
+/* ==========================================================================
+    Sections shared layout and settings
+    ========================================================================= */
+
+section {
+  min-height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 24px;
+  overflow-x: hidden;
 }
 
-.continue-field-diseases {
-  // padding-right: 96px;
-}
-
-.continue-field-unwanted-features {
-  // padding-right: 96px;
-}
-
-.continue-field-extra-options {
-  // padding-right: 96px;
-}
-
-.container {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-}
-
-// .continue-field a {
-//     @include link-underline(#fff, #333, #0BF);
-// }
-
-/* jonathan-borba-V3huxxhsztI-unsplash copy 1 */
-
-.section-intro {
-  // background-color: #FFF;
-}
-
-.top-info-banner {
-  // position: absolute;
-  // width: 1440px;
-  max-width: 100%;
-  min-height: 32px;
-  // left: 0px;
-  // top: 0px;
-  display: flex;
-  // display: inline-block;
-  justify-content: center;
-  background: $primary-light-background-color;
-  max-width: 100%;
-}
-
-.top-info-banner p {
-  // max-width: 80%;
-  max-width: 100%;
-  text-align: center;
-  margin: 10px;
-  letter-spacing: 0.03rem;
-  // padding: 16px;
-}
-
-.top-info-banner-text {
-  // position: absolute;
-  // width: 1440px;
-  // height: 16px;
-  // left: 0px;
-  // top: 8px;
-
-  font-family: Source Sans Pro;
-  font-style: normal;
-
-  font-weight: 600;
-  font-size: 12px;
-  // line-height: 15px;
-  text-align: center;
-
-  color: #102a43;
-  // padding: 16px;
-}
-
+/* ==========================================================================
+    Intro, section-specific layout and settings
+    ========================================================================= */
 .top-background {
-  // height: 1024px;
-  // max-width: 1440px;
-  // left: 0px;
-  // top: 0px;
   border-radius: 0px;
   background: url(../images/baby-top-background.jpg);
   background-position: right;
   background-size: cover;
-  // color: #000;
-  //        background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-
-  // min-height: 840px;
   background-image: linear-gradient(
       295.18deg,
       rgba(239, 252, 246, 0.78) 26.63%,
@@ -573,48 +427,23 @@ a:visited {
 }
 
 .section-intro-area {
-  // position: absolute;
   max-width: 389px;
   height: 48px;
-  // left: 812px;
-  // top: 362px;
 }
 
 .heading-section-intro {
-  // position: absolute;
-  // width: 389px;
-  // height: 48px;
-  // left: 812px;
-  // top: 533px;
-
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
   line-height: 1;
-  /* identical to box height, or 100% */
-
   color: #ffffff;
   color: $blue-grey02;
-
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .paragraph-section-intro {
-  // position: relative;
   color: #fff;
   color: $blue-grey02;
-
-  // text-shadow: 0 0 50px hsla(0, 0%, 0%, 0.4);
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
-  // z-index: 3;
-
-  //     position: absolute;
-  // width: 348px;
-  // height: 197px;
-  // left: 812px;
-  // top: 650px;
-
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
@@ -623,27 +452,13 @@ a:visited {
 }
 
 .cta-section-intro {
-  //     position: absolute;
-  // width: 302px;
-  // height: 24px;
-  // left: 812px;
-  // top: 876px;
-
   font-family: Source Sans Pro;
   font-style: normal;
-  // font-weight: 600;
   font-size: 16px;
-  // line-height: 20px;
-  // text-decoration: none;
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  // color: #FFFFFF;
   font-weight: 600;
 }
 
 .section-intro-area-cta {
-  // background-color: $primary-light-background-color;
-  // max-width: 256px;
-
   max-width: 192px;
   /* padding: 1px; */
   /* padding-left: 16px; */
@@ -666,62 +481,35 @@ body > div.top-background > section > div > div > div > p {
 }
 
 .section-intro-area p a:visited {
-  // color: #fff;
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cta-section-intro p {
-  // color: #fff;
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
 }
 
-// body > div.top-background > section > div > div > p:nth-child(3) > a
 .cta-section-intro p a:visited {
-  // color: #fff;
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cta-section-intro a:visited {
-  // color: #fff;
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section-intro-area details {
-  //     position: absolute;
-  // width: 302px;
-  // height: 29px;
-  // left: 812px;
-  // top: 906px;
   color: #fff;
   color: $blue-grey01;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
 }
 
 .section-intro-area details p {
-  //     position: absolute;
-  // width: 302px;
-  // height: 29px;
-  // left: 812px;
-  // top: 906px;
   color: #fff;
   color: $blue-grey01;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
 }
 
 .section-intro-area summary {
-  //     position: absolute;
-  // width: 302px;
-  // height: 29px;
-  // left: 812px;
-  // top: 906px;
   color: #fff;
   color: $blue-grey01;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   font-size: 12px;
 }
-
-// body > div.top-background > section > div > div > details
 
 .section-sex {
   background-color: $blue-grey10;
@@ -732,32 +520,22 @@ body > div.top-background > section > div > div > div > p {
 .section-area {
   display: flex;
   flex-direction: column;
-  // flex-wrap: wrap;
 }
 
 .section-area-info {
   display: flex;
   flex-direction: column;
   padding-right: 96px;
-  // width: 320px;
-  // flex: 320px;
   display: inline-flex;
 }
-
-// #section-disease > div.section-area > div.section-area-info > p:nth-child(2) {
-//     width: 384px;
-// }
 
 .section-area-choice {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  // padding-right: 96px;
 }
 
 .section-area-choice-sex {
-  // display: flex;
-  // flex-direction: column;
   padding-top: 48px;
 }
 
@@ -767,30 +545,6 @@ body > div.top-background > section > div > div > div > p {
   justify-content: space-between;
 }
 
-// #section-eggs > div.section-area > div.section-area-info > h2
-
-// .section-area-info h2 {
-//     max-width: 192px;
-// }
-//
-// #section-eggs > div.section-area > div.section-area-info > h2 {
-//     max-width: 192px;
-// }
-
-// #section-eggs > div.section-area > div.section-area-info > h2 .section-eggs-heading {
-//     max-width: 192px;
-// }
-//
-//
-// h2 .section-eggs-heading {
-//     max-width: 192px;
-// }
-
-// .section-area-info h2 .section-eggs-heading {
-//     max-width: 192px;
-//
-// }
-
 .section-disease {
   background-color: hsl(210, 36%, 96%);
   display: flex;
@@ -798,8 +552,6 @@ body > div.top-background > section > div > div > div > p {
 }
 
 .section-unwanted-features {
-  // background-color: #EFFCF6;
-  // background-image: url(../images/section-features.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -823,7 +575,6 @@ body > div.top-background > section > div > div > div > p {
 
 .section-physical-features {
   background-color: $primary-light-background-color;
-  // display: flex;
   justify-content: space-between;
 }
 
@@ -841,29 +592,20 @@ body > div.top-background > section > div > div > div > p {
 }
 
 .physical-features-area {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // margin-bottom: 65px;
-  // padding-left: 256px;
 }
 
 .eyes-skin-area {
   display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
   margin-bottom: 65px;
 }
 
 .eyes-area {
   display: flex;
   flex-direction: column;
-  // margin-right: 64px;
   width: 416px;
 }
 
 div.control.eyes-area-inner {
-  // width: 20rem;
 }
 
 .skin-area {
@@ -873,22 +615,13 @@ div.control.eyes-area-inner {
 }
 
 div.control.skin-area-inner {
-  // width: 20rem;
   max-width: 256px;
 }
 
 .hair-area {
   display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
   margin-bottom: 65px;
 }
-//
-// .hair-colour-area {
-//   // margin-right: 64px;
-//   // width: 20rem;
-//   width: 416px;
-// }
 
 div.control.hair-colour-area-inner {
   max-width: 256px;
@@ -903,22 +636,18 @@ div.control.hair-feature-area-inner {
 .hair-colour-area {
   display: flex;
   flex-direction: column;
-  // margin-right: 64px;
-  // max-width: 384px;
   width: 416px;
 }
 
 .hair-feature-area {
   display: flex;
   flex-direction: column;
-  // max-width: 256px;
 }
 
 .section-extra-options {
   background-color: $blue-grey10;
   display: flex;
   justify-content: space-between;
-  // background-image: url(../images/section-extra-options.jpg);
   background-position: center;
   background-size: cover;
 
@@ -933,21 +662,14 @@ div.control.hair-feature-area-inner {
 }
 
 .section-final-step {
-  // background-color: #EFFCF6;
-  // background-image: url(../images/section-request.jpg);
-  // background-position: center;
-  // color: $blue-grey02;
   display: flex;
   justify-content: space-between;
 }
 
 .section-final-step-cta {
   background-color: #fff;
-  // max-width: 192px;
   /* padding: 1px; */
-  // padding-left: 16px;
   margin: 0;
-  // max-width: 192px;
   padding: 4px;
   padding-top: 6px;
   padding-bottom: 8px;
@@ -969,34 +691,17 @@ div.control.hair-feature-area-inner {
   text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
-.img-outro {
-  // background-image: url(../images/section-outro.jpg);
-  // background-position: center;
-  // background-size: cover;
-  //
-  // background-attachment: fixed;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center center;
+.continue-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 16px;
+  text-underline-offset: 3px;
+  margin-bottom: 2.4rem;
 }
 
-// .section-outro h1 {
-//   max-width: 20rem;
-//   font-weight: 600;
-//   // position: absolute;
-//   // width: 563px;
-//   // height: 120px;
-//   // left: 420px;
-//   // top: 228px;
-//   //
-//   // font-family: Source Sans Pro;
-//   // font-style: normal;
-//   // font-weight: 600;
-//   // font-size: 48px;
-//   // line-height: 60px;
-//   //
-//   // color: #486581;
-// }
+.img-outro {
+}
 
 #section-outro {
   display: flex;
@@ -1010,11 +715,7 @@ div.control.hair-feature-area-inner {
 }
 
 .section-outro-heading {
-  // position: absolute;
   width: 563px;
-  // height: 120px;
-  // left: 456px;
-  // top: 228px;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
@@ -1030,36 +731,22 @@ div.control.hair-feature-area-inner {
 }
 
 .section-outro-text-area {
-  // position: absolute;
   width: 348px;
-  // height: 197px;
-  // left: 562px;
-  // top: 392px;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: #102a42;
-  // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .section-outro p {
   -webkit-font-smoothing: antialiased;
   max-width: none;
-  // font-weight: 600;
   color: $blue-grey01;
-  // width: 348px;
-  // text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .image-about-page {
-  // background-image: url(../images/about.jpg);
-  // background-position: center;
-  // background-size: cover;
-  //
-  // background-attachment: fixed;
-  // background-repeat: no-repeat;
 }
 
 #section-about {
@@ -1102,16 +789,10 @@ div.control.hair-feature-area-inner {
 }
 
 .about-page h1 {
-  // text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .about-page p {
   max-width: none;
-
-  // max-width: none;
-  // font-weight: 600;
-  // color: $blue-grey01;
-  // text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
 
 .about-page p a:visited {
@@ -1144,9 +825,6 @@ fieldset {
 .control {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
-  // max-width: 768px;
-  // padding-top: 256px;
   max-width: 768px;
   margin-bottom: 2rem;
 }
@@ -1161,26 +839,18 @@ fieldset {
 .basic-checkbox {
   cursor: pointer;
 
-  // display: flex;
-  // align-items: start;
-
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 16px;
   background-color: white;
   color: $blue-grey02;
-  // max-width: 175px;
-  // max-width: 128px;
   max-width: 192px;
-  // height: 40px;
-  // height: 32px;
   height: 64px;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
-  // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
@@ -1189,7 +859,6 @@ fieldset {
   --outline-radius: 5px;
 }
 
-// hide the checkbox accessibly
 .basic-checkbox input[type="checkbox"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -1200,27 +869,18 @@ fieldset {
   opacity: 0;
 }
 
-// basic styles for the svg
 .basic-checkbox svg {
   width: 128px;
   height: 32px;
-  // border-radius: 0;
-  // padding: 10px;
-  // padding: 0px;
 
   color: #243b53;
   overflow: initial;
   position: relative;
-  // top: -10px;
   top: 0px;
 
-  // left: -118px;
   left: 0px;
 
   background-color: transparent;
-
-  // margin-right: 0.5em;
-  // margin-top: .1em;
 
   /* apply a transition to the elements inside the svg */
   * {
@@ -1234,25 +894,20 @@ fieldset {
 }
 
 .secondary {
-  // fill: #6f213f;
   fill: hsl(209, 23%, 60%);
 }
 
 .basic-checkbox span {
-  // color: #000;
   position: absolute;
   max-width: 96px;
 }
 
-// style changes inside the svg when the checkbox is checked
 .basic-checkbox input[type="checkbox"]:checked + svg {
   .primary {
-    // fill: hsl(209, 34%, 30%);
     fill: $primary-light-accent-color;
   }
 
   .secondary {
-    // fill: hsl(210, 36%, 96%);
     fill: $primary-dark-accent-color;
   }
 }
@@ -1261,10 +916,6 @@ fieldset {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
 }
-//
-// .basic-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
 
 /* WHCM styles */
 .basic-checkbox svg {
@@ -1290,15 +941,11 @@ fieldset {
 .sex-choice-radio-button {
   cursor: pointer;
 
-  // display: flex;
-  // align-items: start;
-
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 16px;
-  // padding-right: 0px;
   background-color: white;
   color: $blue-grey02;
   max-width: 192px;
@@ -1307,7 +954,6 @@ fieldset {
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
-  // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
@@ -1316,7 +962,6 @@ fieldset {
   --outline-radius: 5px;
 }
 
-// hide the checkbox accessibly
 .sex-choice-radio-button input[type="radio"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -1327,28 +972,19 @@ fieldset {
   opacity: 0;
 }
 
-// basic styles for the svg
 .sex-choice-radio-button svg {
   width: 128px;
   height: 96px;
-  // border-radius: 0;
 
   color: #243b53;
   overflow: initial;
-  // overflow: visible;
   position: relative;
-  // top: -10px;
   top: 0px;
 
-  // left: -118px;
   left: 0px;
 
   background-color: transparent;
 
-  // margin-right: 0.5em;
-  // margin-top: .1em;
-
-  // display: none; // REMOVE THIS LATER
   /* apply a transition to the elements inside the svg */
   * {
     transition: all 0.1s linear;
@@ -1356,20 +992,15 @@ fieldset {
 }
 
 .primary {
-  // fill: hsl(209, 23%, 60%);
   fill: $blue-grey10;
 }
 
 .secondary {
-  // fill: #6f213f;
-  // fill: hsl(209, 23%, 60%);
   fill: $blue-grey10;
 }
 
 .sex-choice-radio-button span {
-  // color: #000;
   position: absolute;
-  // max-width: 112px;
   display: block;
   width: 250px;
 }
@@ -1380,21 +1011,17 @@ fieldset {
   font-weight: 400;
   color: hsl(210, 22%, 49%);
   letter-spacing: 0.05em;
-  font-family: "Varela Round", sans-serif;
+  font-family: $secondary-font-family;
 }
 
-// style changes inside the svg when the checkbox is checked
 .sex-choice-radio-button input[type="radio"]:checked + svg {
   align-self: flex-end;
 
   .primary {
-    // fill: hsl(209, 34%, 30%);
     fill: $primary-light-accent-color;
-    // overflow: visible;
   }
 
   .secondary {
-    // fill: hsl(210, 36%, 96%);
     fill: $primary-dark-accent-color;
   }
 }
@@ -1403,10 +1030,6 @@ fieldset {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
 }
-//
-// .sex-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
 
 /* WHCM styles */
 .sex-choice-radio-button svg {
@@ -1430,28 +1053,15 @@ fieldset {
 }
 
 #section-physical-features > div > div > div:nth-child(4) {
-  // width: 384px;
-  // height: 96px;
-  // // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-  // border-radius: 4px;
-  // padding: 16px;
-  // // padding-bottom: 192px;
-  // justify-content: space-evenly;
-  // margin-bottom: 48px;
-  // text-align: center;
 }
 
 .eye-colour-radio-button {
   cursor: pointer;
 
-  // display: flex;
-  // align-items: start;
-
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
   border-radius: 50%;
-  // padding: 16px;
   background-color: white;
   color: $blue-grey02;
   width: 48px;
@@ -1460,7 +1070,6 @@ fieldset {
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
   margin-bottom: 48px;
-  // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
@@ -1474,7 +1083,6 @@ fieldset {
   background-color: transparent;
 }
 
-// hide the checkbox accessibly
 .eye-colour-radio-button input[type="radio"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -1485,10 +1093,7 @@ fieldset {
   opacity: 0;
 }
 
-// basic styles for the svg
 .eye-colour-radio-button svg {
-  // width: 128px;
-  // height: 96px;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -1497,18 +1102,12 @@ fieldset {
   color: #243b53;
   overflow: initial;
   position: relative;
-  // top: -10px;
   top: 0px;
 
-  // left: -118px;
   left: 0px;
 
   background-color: transparent;
 
-  // margin-right: 0.5em;
-  // margin-top: .1em;
-
-  // display: none; // REMOVE THIS LATER
   /* apply a transition to the elements inside the svg */
   * {
     transition: all 0.1s linear;
@@ -1521,15 +1120,7 @@ fieldset {
   stroke-width: 8px;
 }
 
-// .iris {
-//     fill: #8A6748;
-// }
-
 .iris-brown {
-  // fill: #8a6748;
-
-  // fill: #8A6748;
-  // fill: #611A02 ;
   fill: #be7851;
 }
 
@@ -1538,8 +1129,6 @@ fieldset {
 }
 
 .iris-green {
-  // fill: hsl(162, 63%, 41%);
-  // fill: #8eedc7;
   fill: #82dbb5;
 }
 
@@ -1552,21 +1141,13 @@ fieldset {
 }
 
 .pupil {
-  // fill: #6f213f;
-  // fill: hsl(209, 23%, 60%);
-  // fill: #000;
   fill: #464141;
 }
 
 .eye-colour-radio-button span {
-  // color: #000;
   position: absolute;
-  // max-width: 112px;
   display: block;
-  // width: 250px;
-  // opacity: 0;
   padding-top: 64px;
-  // padding-top: 64px;
   width: 48px;
   max-width: 48px;
 
@@ -1576,7 +1157,6 @@ fieldset {
   text-align: center;
   padding-top: 56px;
 }
-// style changes inside the svg when the checkbox is checked
 .eye-colour-radio-button input[type="radio"]:checked + svg {
   .eyeball {
     stroke: hsl(209, 34%, 30%);
@@ -1591,31 +1171,19 @@ fieldset {
     fill: hsl(210, 36%, 96%);
   }
 
-  // .iris {
-  //     fill: #8A6748;
-  // }
-
   .iris-dark-brown {
-    // fill: #8A6748;
-    // fill: #611A02 ;
-    // fill: #553117;
-    // fill: #8a6748;
   }
 
   .iris-light-brown {
-    // fill: #ad6a2d;
   }
 
   .iris-green {
-    // fill: hsl(162, 63%, 41%);
   }
 
   .iris-blue {
-    // fill: hsl(245, 79%, 52%);
   }
 
   .iris-other {
-    // fill: #fff;
   }
 }
 
@@ -1623,10 +1191,6 @@ fieldset {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
 }
-//
-// .eye-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
 
 /* WHCM styles */
 .eye-colour-radio-button svg {
@@ -1649,9 +1213,6 @@ fieldset {
   }
 }
 
-// .eye-colour-radio-button .coming-soon span {
-//   padding: 0;
-// }
 #section-physical-features
   > div.section-area
   > div.physical-features-area
@@ -1689,9 +1250,7 @@ fieldset {
 }
 
 input[type="range"]:focus {
-  // outline: none;
   outline-color: $blue-grey03;
-  // outline-width: 15px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
@@ -1702,8 +1261,6 @@ input[type="range"]::-webkit-slider-runnable-track {
     #be7851 45.56%,
     #fffad7 88.93%
   );
-  // filter: progid:DXImageTransform.Microsoft.gradient(
-  // startColorstr='#5f4c42', endColorStr='#fffad7', GradientType=1 );
   height: 48px;
   border-radius: 4px;
   box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
@@ -1717,8 +1274,6 @@ input[type="range"]::-moz-range-track {
     #be7851 45.56%,
     #fffad7 88.93%
   );
-  // filter: progid:DXImageTransform.Microsoft.gradient(
-  // startColorstr='#5f4c42', endColorStr='#fffad7', GradientType=1 );
   height: 48px;
   border-radius: 4px;
   box-shadow: inset 0px 4px 4px rgb(0 0 0 / 25%);
@@ -1732,7 +1287,6 @@ input[type="range"]::-webkit-slider-thumb {
   width: 48px;
   max-width: 80px;
   position: relative;
-  // top: -2px;
   box-shadow: inset 0px 0px 2px 2px rgba(51, 51, 51, 0.1);
   cursor: -webkit-grab;
   background: radial-gradient(transparent 28px, #8cedc6 2px);
@@ -1743,13 +1297,11 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
   -webkit-appearance: none;
   border: 8px solid #8cedc6;
-  // border: 2px solid #fff;
   border-radius: 50%;
   height: 48px;
   width: 48px;
   max-width: 80px;
   position: relative;
-  // top: -2px;
   box-shadow: inset 0px 0px 2px 2px rgba(51, 51, 51, 0.1);
   background: radial-gradient(transparent 28px, #8cedc6 2px);
   cursor: -webkit-grab;
@@ -1773,8 +1325,6 @@ input[type="range"]::-moz-range-thumb:active {
   font-weight: 600;
   padding-top: 8px;
   max-width: 304px;
-  // height: 30px;
-  // -moz-padding-top: 24px;
 }
 
 .skin-colour-light {
@@ -1783,39 +1333,20 @@ input[type="range"]::-moz-range-thumb:active {
   flex: auto;
 }
 
-// @mixin track() { /* common styles */ }
-//
-// input {
-//   &::-webkit-slider-runnable-track { @include track }
-//   &::-moz-range-track { @include track }
-//   &::-ms-track { @include track }
-// }
-
 .skin-colour-radio-button {
   cursor: pointer;
 
-  // display: flex;
-  // align-items: start;
-
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
   border-radius: 50%;
-  // padding: 16px;
-  // background-color: white;
   color: $blue-grey02;
 
   width: 48px;
   height: 48px;
 
   margin-right: 16px;
-  // margin-bottom: 32px;
   margin-bottom: 48px;
-
-  // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-  // margin-right: 16px;
-  // margin-bottom: 16px;
-  // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
@@ -1824,7 +1355,6 @@ input[type="range"]::-moz-range-thumb:active {
   --outline-radius: 8px;
 }
 
-// hide the checkbox accessibly
 .skin-colour-radio-button input[type="radio"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -1835,7 +1365,6 @@ input[type="range"]::-moz-range-thumb:active {
   opacity: 0;
 }
 
-// basic styles for the svg
 .skin-colour-radio-button svg {
   width: 128px;
   height: 96px;
@@ -1847,29 +1376,16 @@ input[type="range"]::-moz-range-thumb:active {
   color: #243b53;
   overflow: initial;
   position: relative;
-  // top: -10px;
   top: 0px;
 
-  // left: -118px;
   left: 0px;
   background-color: transparent;
 
-  // background-color: brown;
-  // box-shadow: inset 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-
-  // margin-right: 0.5em;
-  // margin-top: .1em;
-
-  // display: none; // REMOVE THIS LATER
   /* apply a transition to the elements inside the svg */
   * {
     transition: all 0.1s linear;
   }
 }
-
-// #291003 {
-//     background-color: #291003;
-// }
 
 .hex-291003 {
   fill: #291003;
@@ -1904,19 +1420,13 @@ input[type="range"]::-moz-range-thumb:active {
 }
 
 .skin-colour-radio-button span {
-  // color: #000;
   position: absolute;
-  // max-width: 112px;
   display: block;
   width: 48px;
-  // opacity: 0;
-  // padding-top: 48px;
   padding-top: 54px;
   text-align: center;
 }
-// style changes inside the svg when the checkbox is checked
 .skin-colour-radio-button input[type="radio"]:checked + svg {
-  // border: 10px black;
   stroke: #324d67;
   stroke: $primary-light-accent-color;
   stroke-width: 16px;
@@ -1932,14 +1442,7 @@ input[type="range"]::-moz-range-thumb:active {
 .skin-colour-radio-button input[type="radio"]:focus + svg {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
-  // outline-offset: 4px;
-  // outline-style: inset;
-  // outline-style: ridge;
 }
-//
-// .skin-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
 
 /* WHCM styles */
 .skin-colour-radio-button svg {
@@ -1964,33 +1467,17 @@ input[type="range"]::-moz-range-thumb:active {
 
 .hair-colour-radio-button {
   cursor: pointer;
-  // background-color: #464141;
 
-  // display: flex;
-  // align-items: start;
-
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
   border-radius: 50%;
-  // padding: 16px;
-  // background-color: white;
   color: $blue-grey02;
-  // max-width: 128px;
-  // height: 96px;
-  // max-width: 48px;
   width: 48px;
   height: 48px;
-  // box-shadow: inset 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 
-  // margin: 16px;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  // box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-  // margin-right: 16px;
-  // margin-bottom: 16px;
-  // text-transform: uppercase;
   margin-right: 16px;
-  // margin-bottom: 32px;
   margin-bottom: 48px;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
@@ -2000,7 +1487,6 @@ input[type="range"]::-moz-range-thumb:active {
   --outline-radius: 5px;
 }
 
-// hide the checkbox accessibly
 .hair-colour-radio-button input[type="radio"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -2011,29 +1497,19 @@ input[type="range"]::-moz-range-thumb:active {
   opacity: 0;
 }
 
-// basic styles for the svg
 .hair-colour-radio-button svg {
-  // width: 128px;
-  // height: 96px;
   max-width: 48px;
   height: 48px;
   border-radius: 50%;
 
   color: #243b53;
-  overflow: initial; //remved this for rectangle to work
   position: relative;
-  // top: -10px;
   top: 0px;
 
-  // left: -118px;
   left: 0px;
 
   background-color: transparent;
 
-  // margin-right: 0.5em;
-  // margin-top: .1em;
-
-  // display: none; // REMOVE THIS LATER
   /* apply a transition to the elements inside the svg */
   * {
     transition: all 0.1s linear;
@@ -2057,22 +1533,17 @@ input[type="range"]::-moz-range-thumb:active {
 }
 
 .hairball {
-  // stroke: #fff;
-  // stroke-width: 8px;
   fill: none;
 }
 
 .hair-colour-radio-button span {
-  // color: #000;
   position: absolute;
   display: block;
   width: 48px;
-  // padding-top: 48px;
   padding-top: 54px;
   text-align: center;
 }
 
-// style changes inside the svg when the checkbox is checked
 .hair-colour-radio-button input[type="radio"]:checked + svg {
   .hairball {
     stroke: $primary-light-accent-color;
@@ -2084,10 +1555,6 @@ input[type="range"]::-moz-range-thumb:active {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
 }
-//
-// .hair-colour-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
 
 /* WHCM styles */
 .hair-colour-radio-button svg {
@@ -2113,10 +1580,7 @@ input[type="range"]::-moz-range-thumb:active {
 .hair-feature-radio-button {
   cursor: pointer;
 
-  // display: flex;
-  // align-items: start;
-
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
@@ -2129,7 +1593,6 @@ input[type="range"]::-moz-range-thumb:active {
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
-  // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
@@ -2138,7 +1601,6 @@ input[type="range"]::-moz-range-thumb:active {
   --outline-radius: 5px;
 }
 
-// hide the checkbox accessibly
 .hair-feature-radio-button input[type="radio"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -2149,17 +1611,7 @@ input[type="range"]::-moz-range-thumb:active {
   opacity: 0;
 }
 
-// .hair-feature-radio-button input[type="radio"]:checked {
-//
-// stroke-width: 14px;
-// }
-
-// basic styles for the svg
 .hair-feature-radio-button svg {
-  // width: 128px;
-  // height: 96px;
-  // width: 96px;
-  // height: 48px;
   width: 64px;
   height: 16px;
   border-radius: 4px;
@@ -2167,18 +1619,12 @@ input[type="range"]::-moz-range-thumb:active {
   color: #243b53;
   overflow: initial;
   position: relative;
-  // top: -10px;
   top: 0px;
 
-  // left: -118px;
   left: 0px;
 
   background-color: transparent;
 
-  // margin-right: 0.5em;
-  // margin-top: .1em;
-
-  // display: none; // REMOVE THIS LATER
   /* apply a transition to the elements inside the svg */
   * {
     transition: all 0.1s linear;
@@ -2190,24 +1636,13 @@ input[type="range"]::-moz-range-thumb:active {
 }
 
 .secondary {
-  // fill: #6f213f;
   fill: hsl(209, 23%, 60%);
 }
 
 .hair-feature-radio-button span {
-  // color: #000;
   position: absolute;
-  // max-width: 112px;
   display: block;
-  // width: 250px;
-  // padding: 16px;
 }
-
-// .hair-feature-radio-button span.info {
-//   color: hsl(209, 34%, 30%);
-//   font-weight: 400;
-//   padding-top: 4px;
-// }
 
 .hair-feature-inside {
   fill: transparent;
@@ -2215,7 +1650,6 @@ input[type="range"]::-moz-range-thumb:active {
   height: 48px;
 }
 
-// style changes inside the svg when the checkbox is checked
 .hair-feature-radio-button input[type="radio"]:checked + svg {
   stroke: $primary-light-accent-color;
   stroke-width: 8px;
@@ -2234,10 +1668,6 @@ input[type="range"]::-moz-range-thumb:active {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
 }
-//
-// .hair-feature-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
 
 /* WHCM styles */
 .hair-feature-radio-button svg {
@@ -2263,10 +1693,7 @@ input[type="range"]::-moz-range-thumb:active {
 .gestation-radio-button {
   cursor: pointer;
 
-  // display: flex;
-  // align-items: start;
-
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
@@ -2279,7 +1706,6 @@ input[type="range"]::-moz-range-thumb:active {
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
-  // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
@@ -2288,7 +1714,6 @@ input[type="range"]::-moz-range-thumb:active {
   --outline-radius: 5px;
 }
 
-// hide the checkbox accessibly
 .gestation-radio-button input[type="radio"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -2299,27 +1724,19 @@ input[type="range"]::-moz-range-thumb:active {
   opacity: 0;
 }
 
-// basic styles for the svg
 .gestation-radio-button svg {
   width: 128px;
   height: 96px;
-  // border-radius: 4px;
 
   color: #243b53;
   overflow: initial;
   position: relative;
-  // top: -10px;
   top: 0px;
 
-  // left: -118px;
   left: 0px;
 
   background-color: transparent;
 
-  // margin-right: 0.5em;
-  // margin-top: .1em;
-
-  // display: none; // REMOVE THIS LATER
   /* apply a transition to the elements inside the svg */
   * {
     transition: all 0.1s linear;
@@ -2331,14 +1748,11 @@ input[type="range"]::-moz-range-thumb:active {
 }
 
 .secondary {
-  // fill: #6f213f;
   fill: hsl(209, 23%, 60%);
 }
 
 .gestation-radio-button span {
-  // color: #000;
   position: absolute;
-  // max-width: 112px;
   display: block;
   width: 250px;
 }
@@ -2352,19 +1766,15 @@ input[type="range"]::-moz-range-thumb:active {
 .gestation-icon {
   position: absolute;
   height: 96px;
-  // width: 128px;
 }
 
 .gestation-radio-button span.egg {
-  // padding-top: 16px;
-  // font-size: 48px;
-  // font-weight: 400;
   padding-top: 16px;
   font-size: 64px;
   font-weight: 400;
   color: hsl(210, 22%, 49%);
   letter-spacing: 0.05em;
-  font-family: "Varela Round", sans-serif;
+  font-family: $secondary-font-family;
 }
 
 .gestation-radio-button span.eggs-fluid {
@@ -2397,15 +1807,12 @@ input[type="range"]::-moz-range-thumb:active {
   color: hsl(210, 22%, 49%);
 }
 
-// style changes inside the svg when the checkbox is checked
 .gestation-radio-button input[type="radio"]:checked + svg {
   .primary {
-    // fill: hsl(209, 34%, 30%);
     fill: $primary-light-accent-color;
   }
 
   .secondary {
-    // fill: hsl(210, 36%, 96%);
     fill: $primary-dark-accent-color;
   }
 }
@@ -2414,10 +1821,6 @@ input[type="range"]::-moz-range-thumb:active {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
 }
-//
-// .gestation-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
 
 /* WHCM styles */
 .gestation-radio-button svg {
@@ -2442,11 +1845,9 @@ input[type="range"]::-moz-range-thumb:active {
 
 .final-step-checkbox-outer-wrapper {
   margin-bottom: 16px;
-  // font-weight: 600;
 }
 .final-step-checkbox-inner-wrapper {
   margin-bottom: 8px;
-  // font-weight: 600;
 }
 
 .final-step-checkbox {
@@ -2454,14 +1855,8 @@ input[type="range"]::-moz-range-thumb:active {
 
   display: flex;
   align-items: start;
-
-  // --checked-state-bg-color: hsl(350, 95%, 58%);
-  // --checked-state-check-color: #fff;
-  // --outline-color: var(--checked-state-bg-color);
-  // --outline-offset: 2px;
 }
 
-// hide the checkbox accessibly
 .final-step-checkbox input[type="checkbox"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -2472,21 +1867,14 @@ input[type="range"]::-moz-range-thumb:active {
   opacity: 0.00001;
 }
 
-// basic styles for the svg
 .final-step-checkbox svg {
   /* set SVG dimensions in ems; i.e. relative to the font size so that it scales with the size of the font. */
-  // fill: #fff;
   width: 1em;
   height: 1em;
   min-width: 16px;
-  // box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%);
   border-radius: 3px;
-  // -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
   -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.3));
-  // drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14));
-  // filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.3));
-  // drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14));
 
   margin-right: 0.5em;
   margin-top: 0.1em;
@@ -2497,11 +1885,9 @@ input[type="range"]::-moz-range-thumb:active {
   }
 }
 
-// style changes inside the svg when the checkbox is checked
 .final-step-checkbox input[type="checkbox"]:checked + svg {
   .checkbox-bg {
     fill: hsl(156, 73%, 74%);
-    // stroke: var(--checked-state-bg-color);
   }
 
   .checkbox-cm {
@@ -2511,8 +1897,6 @@ input[type="range"]::-moz-range-thumb:active {
 
 .final-step-checkbox input[type="checkbox"]:focus + svg {
   outline: 2px solid $blue-grey04;
-  // outline: 3px solid var(--outline-color);
-  // outline-offset: var(--outline-offset);
 }
 
 .final-step-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
@@ -2540,119 +1924,21 @@ input[type="range"]::-moz-range-thumb:active {
   }
 }
 
-// .final-step-checkbox {
-//   cursor: pointer;
-//
-//   display: flex;
-//   align-items: start;
-//
-//   // --checked-state-bg-color: hsl(156, 73%, 74%);
-//   // --checked-state-check-color: hsl(168, 80%, 23%);
-//   // //det får bara vara en ju och den har redan deklarerats ovan nånstans:
-//   // --outline-color: hsl(211, 39%, 23%);
-//   // --outline-offset: 2px;
-// }
-//
-// // hide the checkbox accessibly
-// .final-step-checkbox input[type="checkbox"] {
-//   /* remove the checkbox from the page flow, positioning it on top of the SVG */
-//   position: absolute;
-//   /* set same dimensions as the SVG */
-//   width: 1em;
-//   height: 1em;
-//   /* hide it */
-//   opacity: 0.00001;
-// }
-//
-// // basic styles for the svg
-// .final-step-checkbox svg {
-//   /* set SVG dimensions in ems; i.e. relative to the font size so that it scales with the size of the font. */
-//   width: 1em;
-//   height: 1em;
-//
-//   margin-right: 0.5em;
-//   margin-top: 0.1em;
-//
-//   /* apply a transition to the elements inside the svg */
-//   * {
-//     transition: all 0.1s linear;
-//   }
-// }
-//
-// .final-step-checkbox input[type="checkbox"] + svg {
-//   .checkbox-bg {
-//     fill: #fff;
-//
-//     // stroke: var(--checked-state-bg-color);
-//   }
-// }
-//
-// // style changes inside the svg when the checkbox is checked
-// .final-step-checkbox input[type="checkbox"]:checked + svg {
-//   .checkbox-bg {
-//     fill: hsl(156, 73%, 74%);
-//     // stroke: var(--checked-state-bg-color);
-//   }
-//
-//   .checkbox-cm {
-//     stroke: hsl(168, 80%, 23%);
-//   }
-// }
-//
-// .final-step-checkbox input[type="checkbox"]:focus + svg {
-//   // outline: none;
-//   outline: 3px solid hsl(211, 39%, 23%);
-//   // outline-offset: 2px;
-// }
-//
-// .final-step-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
-//
-// /* WHCM styles */
-// .final-step-checkbox svg {
-//   @media screen and (-ms-high-contrast: active) {
-//     rect {
-//       stroke: windowText;
-//     }
-//   }
-// }
-//
-// @media screen and (-ms-high-contrast: active) {
-//   .final-step-checkbox input[type="checkbox"]:checked ~ svg {
-//     rect {
-//       fill: windowText;
-//     }
-//
-//     polyline {
-//       stroke: highlight;
-//     }
-//   }
-// }
-
 .egg-package-radio-button {
   cursor: pointer;
 
-  // display: flex;
-  // align-items: start;
-
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 32px;
   background-color: white;
   color: $blue-grey02;
-  // max-width: 175px;
-  // max-width: 512px;
-  // height: 40px;
-  // height: 256px;
   height: 448px;
   width: 320px;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
-  // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
@@ -2661,7 +1947,6 @@ input[type="range"]::-moz-range-thumb:active {
   --outline-radius: 5px;
 }
 
-// hide the checkbox accessibly
 .egg-package-radio-button input[type="radio"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -2672,32 +1957,19 @@ input[type="range"]::-moz-range-thumb:active {
   opacity: 0;
 }
 
-// basic styles for the svg
 .egg-package-radio-button svg {
-  // width: 128px;
-  // height: 96px;
   height: 384px;
   width: 256px;
-  // border-radius: 0;
-  // padding: 10px;
-  // padding: 0px;
-  // padding: 32px;
 
   color: #243b53;
   overflow: initial;
   position: relative;
-  // top: -10px;
   top: 0px;
 
-  // left: -118px;
   left: 0px;
 
   background-color: transparent;
 
-  // margin-right: 0.5em;
-  // margin-top: .1em;
-
-  // display: none; // REMOVE THIS LATER
   /* apply a transition to the elements inside the svg */
   * {
     transition: all 0.1s linear;
@@ -2709,14 +1981,11 @@ input[type="range"]::-moz-range-thumb:active {
 }
 
 .secondary {
-  // fill: #6f213f;
   fill: hsl(209, 23%, 60%);
 }
 
 .egg-package-radio-button span {
-  // color: #000;
   position: absolute;
-  // max-width: 112px;
   display: block;
   width: 250px;
 }
@@ -2731,10 +2000,9 @@ input[type="range"]::-moz-range-thumb:active {
   padding-top: 16px;
   font-size: 48px;
   font-weight: 400;
-  // font-family: 'Varela Round', sans-serif;
   color: $blue-grey05;
   /* letter-spacing: 0.05em; */
-  font-family: "Varela Round", sans-serif;
+  font-family: $secondary-font-family;
 }
 
 .egg-package-radio-button span.eggs-fluid {
@@ -2759,15 +2027,8 @@ input[type="range"]::-moz-range-thumb:active {
 .egg-package-radio-button span.eggs-bullet-1::before,
 .egg-package-radio-button span.eggs-bullet-2::before,
 .egg-package-radio-button span.eggs-bullet-3::before {
-  // display: inline-block;
   content: "•";
   margin-right: 4px;
-  // -webkit-border-radius: 0.375rem;
-  // border-radius: 0.375rem;
-  // height: 0.75rem;
-  // width: 0.75rem;
-  // margin-right: 0.5rem;
-  // background-color: #bdbdbd;
 }
 
 .egg-package-radio-button span.eggs-bullet-2 {
@@ -2779,15 +2040,12 @@ input[type="range"]::-moz-range-thumb:active {
   color: hsl(210, 22%, 49%);
 }
 
-// style changes inside the svg when the checkbox is checked
 .egg-package-radio-button input[type="radio"]:checked + svg {
   .primary {
-    // fill: hsl(209, 34%, 30%);
     fill: $primary-light-accent-color;
   }
 
   .secondary {
-    // fill: hsl(210, 36%, 96%);
     fill: $primary-dark-accent-color;
   }
 }
@@ -2796,10 +2054,6 @@ input[type="range"]::-moz-range-thumb:active {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
 }
-//
-// .egg-package-radio-button input[type="radio"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
 
 /* WHCM styles */
 .egg-package-radio-button svg {
@@ -2825,26 +2079,18 @@ input[type="range"]::-moz-range-thumb:active {
 .extra-options-checkbox {
   cursor: pointer;
 
-  // display: flex;
-  // align-items: start;
-
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
   border-radius: 4px;
   padding: 16px;
   background-color: white;
   color: $blue-grey02;
-  // max-width: 175px;
-  // max-width: 128px;
-  // height: 40px;
-  // height: 96px;
   width: 192px;
   height: 128px;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
-  // text-transform: uppercase;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
@@ -2853,7 +2099,6 @@ input[type="range"]::-moz-range-thumb:active {
   --outline-radius: 5px;
 }
 
-// hide the checkbox accessibly
 .extra-options-checkbox input[type="checkbox"] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
@@ -2864,30 +2109,18 @@ input[type="range"]::-moz-range-thumb:active {
   opacity: 0;
 }
 
-// basic styles for the svg
 .extra-options-checkbox svg {
   width: 160px;
   height: 96px;
-  // border-radius: 0;
-  // padding: 10px;
-  // padding: 0px;
 
   color: #243b53;
   overflow: initial;
   position: relative;
-  // top: -10px;
   top: 0px;
 
-  // left: -118px;
   left: 0px;
 
-  // top: -16px;
-  // left: -16px;
-
   background-color: transparent;
-
-  // margin-right: 0.5em;
-  // margin-top: .1em;
 
   /* apply a transition to the elements inside the svg */
   * {
@@ -2900,15 +2133,10 @@ input[type="range"]::-moz-range-thumb:active {
 }
 
 .secondary {
-  // fill: #6f213f;
   fill: hsl(209, 23%, 60%);
-
-  // fill: $blue-grey04;
-  // fill: white;
 }
 
 .extra-options-checkbox span {
-  // color: #000;
   position: absolute;
   max-width: 112px;
   display: block;
@@ -2917,21 +2145,16 @@ input[type="range"]::-moz-range-thumb:active {
 
 .extra-options-checkbox span.info {
   color: hsl(209, 34%, 30%);
-  // position: absolute;
-  // max-width: 112px;
   font-weight: 400;
   padding-top: 4px;
 }
 
-// style changes inside the svg when the checkbox is checked
 .extra-options-checkbox input[type="checkbox"]:checked + svg {
   .primary {
-    // fill: hsl(209, 34%, 30%);
     fill: $primary-light-accent-color;
   }
 
   .secondary {
-    // fill: hsl(210, 36%, 96%);
     fill: $primary-dark-accent-color;
   }
 }
@@ -2940,10 +2163,6 @@ input[type="range"]::-moz-range-thumb:active {
   outline: 3px solid var(--outline-color);
   outline-offset: var(--outline-offset);
 }
-//
-// .extra-options-checkbox input[type="checkbox"]:focus:not(:focus-visible) + svg {
-//   outline: none;
-// }
 
 /* WHCM styles */
 .extra-options-checkbox svg {
@@ -2976,18 +2195,6 @@ input[type="range"]::-moz-range-thumb:active {
     font-size: 18px;
   }
 
-  // .basic-checkbox,
-  // .sex-choice-radio-button,
-  // .eye-colour-radio-button,
-  // .skin-colour-radio-button,
-  // .hair-colour-radio-button,
-  // .hair-feature-radio-button,
-  // .gestation-radio-button,
-  // .egg-package-radio-button,
-  // .extra-options-checkbox {
-  //   font-size: 13px;
-  // }
-
   h2 {
     font-size: 30px;
   }
@@ -3007,10 +2214,7 @@ input[type="range"]::-moz-range-thumb:active {
 @media screen and (min-width: 1205px) {
   .section-intro-area {
     position: absolute;
-    // width: 389px;
-    // height: 48px;
     left: 812px;
-    // top: 362px;
   }
 }
 
@@ -3042,15 +2246,6 @@ input[type="range"]::-moz-range-thumb:active {
     padding-right: 0px;
   }
 
-  // .section-area-info h2 {
-  //     padding-left: 24px;
-  //     padding-right: 24px;
-  // }
-
-  // .section-area-choice {
-  //     padding-left: 10px;
-  //     padding-right: 10px;
-  // }
   .egg-package-radio-button {
     padding: 22px;
     height: 428px;
@@ -3060,30 +2255,6 @@ input[type="range"]::-moz-range-thumb:active {
   }
 }
 
-// @media screen and (max-width: 897px) {
-//   .top-info-banner {
-//     // height: 48px;
-//     // height: 76px;
-//   }
-//
-//   .top-info-banner p {
-//     max-width: 49%;
-//   }
-// }
-//
-// @media screen and (max-width: 736px) {
-//   .top-info-banner p {
-//     max-width: 80%;
-//   }
-// }
-//
-// @media screen and (max-width: 462px) {
-//   .top-info-banner {
-//     // height: 48px;
-//     // height: 76px;
-//   }
-// }
-
 @media screen and (max-width: 1206px) {
   .heading-section-intro {
     font-family: Source Sans Pro;
@@ -3092,14 +2263,12 @@ input[type="range"]::-moz-range-thumb:active {
     font-size: 36px;
     color: $blue-grey02;
     max-width: 325px;
-    // line-height: 36px;
   }
 
   .paragraph-section-intro {
     font-size: 16px;
     color: $blue-grey01;
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-    // line-height: 1.5rem;
   }
 }
 
@@ -3117,14 +2286,12 @@ input[type="range"]::-moz-range-thumb:active {
     font-weight: normal;
     font-size: 36px;
     color: $blue-grey02;
-    // line-height: 36px;
   }
 
   .paragraph-section-intro {
     font-size: 16px;
     color: $blue-grey01;
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-    // line-height: 1.5rem;
   }
 
   .section-intro-area-cta {
@@ -3141,18 +2308,15 @@ input[type="range"]::-moz-range-thumb:active {
     line-height: 36px;
   }
   .section-about-text-area {
-    // position: absolute;
     width: inherit;
     top: 0;
     left: 0;
     position: relative;
-    //
   }
 }
 
 @media screen and (max-width: 1117px) {
   .section-outro-heading {
-    // position: unset;
     top: 0;
     left: 0;
     font-size: 36px;
@@ -3163,14 +2327,11 @@ input[type="range"]::-moz-range-thumb:active {
     position: relative;
   }
   .section-outro-text-area {
-    // position: absolute;
-    // width: none;
     height: inherit;
     width: inherit;
     top: 0;
     left: 0;
     position: relative;
-    //
   }
 }
 
@@ -3237,37 +2398,14 @@ input[type="range"]::-moz-range-thumb:active {
     background-position: left;
   }
 
-  // .section-request-quote {
-  //   background-image: url(../images/optimized/section-request.jpg);
-  // }
-
   .img-outro {
-    // background-image: url(../images/optimized/section-outro.jpg);
-    // background-position: center;
-    // background-size: cover;
-    //
-    // background-attachment: fixed;
-    // background-repeat: no-repeat;
   }
 
   .image-about-page {
-    // background-image: url(../images/optimized/about.jpg);
-    // background-position: center;
-    // background-size: cover;
-    //
-    // background-attachment: fixed;
-    // background-repeat: no-repeat;
   }
 }
 
 @media (prefers-reduced-motion) {
-  .image-about-page {
-    // background-attachment: unset;
-  }
-
-  .img-outro {
-    // background-attachment: unset;
-  }
   .animation {
     animation-name: dissolve;
   }
