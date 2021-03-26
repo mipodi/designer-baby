@@ -114,7 +114,7 @@ a {
 }
 
 .top-info-banner-text {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -399,7 +399,7 @@ section {
 }
 
 .heading-section-intro {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -411,7 +411,7 @@ section {
 .paragraph-section-intro {
   color: #fff;
   color: #243a52;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -419,7 +419,7 @@ section {
 }
 
 .cta-section-intro {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 600;
@@ -628,7 +628,7 @@ div.control.hair-feature-area-inner {
 
 .section-outro-heading {
   width: 563px;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -644,7 +644,7 @@ div.control.hair-feature-area-inner {
 
 .section-outro-text-area {
   width: 348px;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -674,7 +674,7 @@ div.control.hair-feature-area-inner {
 
 .section-about-heading {
   width: 563px;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -692,7 +692,7 @@ div.control.hair-feature-area-inner {
 
 .section-about-text-area {
   width: 348px;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -717,7 +717,7 @@ div.control.hair-feature-area-inner {
 }
 
 /* ==========================================================================
-    Custom checkboxes and radio buttons.
+    Custom checkboxes and radio buttons
     ========================================================================= */
 .basic-checkbox {
   cursor: pointer;
@@ -1958,7 +1958,7 @@ input[type=range]::-moz-range-thumb:active {
 }
 @media screen and (max-width: 1206px) {
   .heading-section-intro {
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -1981,7 +1981,7 @@ input[type=range]::-moz-range-thumb:active {
 }
 @media screen and (max-width: 400px) {
   .heading-section-intro {
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
