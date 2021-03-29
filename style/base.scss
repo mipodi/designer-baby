@@ -15,8 +15,6 @@ $primary-dark-accent-color: hsl(168, 80%, 23%); /* #0C6B58 */
 
 $purple-link-color: #42173a;
 
-$focus-color: red;
-
 $blue-grey01: hsl(209, 61%, 16%); /* #102A43 */
 $blue-grey02: hsl(211, 39%, 23%); /* #243B53 */
 $blue-grey03: hsl(209, 34%, 30%); /* #334E68 */
@@ -27,6 +25,8 @@ $blue-grey07: hsl(211, 27%, 70%); /* #9FB3C8 */
 $blue-grey08: hsl(210, 31%, 80%); /* #BCCCDC */
 $blue-grey09: hsl(212, 33%, 89%); /* #D9E2EC */
 $blue-grey10: hsl(210, 36%, 96%); /* #F0F4F8 */
+
+$focus-color: $blue-grey03;
 
 $primary-font-family: "Source Sans Pro", sans-serif;
 $secondary-font-family: "Varela Round", sans-serif;
@@ -59,6 +59,14 @@ body {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline-color: $focus-color;
+  -webkit-border: 2px dotted red;
+}
+
+*:active {
+  outline-color: $focus-color;
+}
 /* ==========================================================================
     Typography
     ========================================================================= */
@@ -838,6 +846,8 @@ div.control.hair-feature-area-inner {
   margin-right: 16px;
   margin-bottom: 16px;
 
+  line-height: 1.2;
+
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
   --outline-color: var(--checked-state-bg-color);
@@ -1207,7 +1217,10 @@ div.control.hair-feature-area-inner {
 .coming-soon {
   padding: 0;
   font-style: italic;
-  font-weight: 400;
+  // font-weight: 400;
+  color: $blue-grey04;
+  line-height: 1.2;
+  font-style: italic;
 }
 
 .skin-colour-range {
@@ -1746,33 +1759,12 @@ input[type="range"]::-moz-range-thumb:active {
 }
 
 .gestation-radio-button span.eggs-fluid {
-  color: $blue-grey05;
+  color: $blue-grey04;
+  line-height: 1.2;
+  font-style: italic;
   padding-top: 54px;
   padding-left: 78px;
   max-width: 120px;
-}
-
-.gestation-radio-button span.eggs-short-expl {
-  padding-top: 112px;
-  font-size: 16px;
-  font-weight: 400;
-}
-.gestation-radio-button span.eggs-why {
-  padding-top: 176px;
-  font-weight: 400;
-  font-size: 16px;
-}
-.gestation-radio-button span.eggs-bullet-1 {
-  padding-top: 304px;
-  color: hsl(210, 22%, 49%);
-}
-.gestation-radio-button span.eggs-bullet-2 {
-  padding-top: 320px;
-  color: hsl(210, 22%, 49%);
-}
-.gestation-radio-button span.eggs-bullet-3 {
-  padding-top: 336px;
-  color: hsl(210, 22%, 49%);
 }
 
 .gestation-radio-button input[type="radio"]:checked + svg {
@@ -2059,6 +2051,7 @@ input[type="range"]::-moz-range-thumb:active {
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
+  line-height: 1.2;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
   --checked-state-check-color: #fff;
