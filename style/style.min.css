@@ -391,7 +391,7 @@ section {
   background: url(../images/baby-top-background.jpg);
   background-position: right;
   background-size: cover;
-  background-image: linear-gradient(295.18deg, rgba(239, 252, 246, 0.78) 26.63%, rgba(239, 252, 246, 0.72) 49.94%, rgba(239, 252, 246, 0) 96.81%), url(../images/baby-top-background.jpg);
+  background-image: linear-gradient(295.18deg, rgba(239, 252, 246, 0.95) 26.63%, rgba(239, 252, 246, 0.72) 49.94%, rgba(239, 252, 246, 0) 96.81%), url(../images/baby-top-background.jpg);
   /* background-blend-mode: multiply; */
 }
 
