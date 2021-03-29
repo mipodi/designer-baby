@@ -1889,7 +1889,7 @@ input[type=range]::-moz-range-thumb:active {
     font-size: 12px;
   }
 }
-/* When the browser is at least 600px and above */
+/* When the browser is at least 1205px and above */
 @media screen and (min-width: 1205px) {
   .section-intro-area {
     position: absolute;
@@ -1943,8 +1943,10 @@ input[type=range]::-moz-range-thumb:active {
 
   .paragraph-section-intro {
     font-size: 16px;
-    color: #102a42;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  }
+
+  .top-background {
+    background-image: linear-gradient(59.5deg, rgba(239, 252, 246, 0.95) 26.63%, rgba(239, 252, 246, 0.72) 49.94%, rgba(239, 252, 246, 0) 96.81%), url(../images/baby-top-background.jpg);
   }
 }
 @media screen and (max-width: 1256px) {
@@ -2062,11 +2064,11 @@ input[type=range]::-moz-range-thumb:active {
 }
 @media screen and (max-width: 618px) {
   .top-background {
-    background-image: url(../images/optimized/baby-top-background.jpg);
+    background-image: linear-gradient(59.5deg, rgba(239, 252, 246, 0.95) 26.63%, rgba(239, 252, 246, 0.72) 49.94%, rgba(239, 252, 246, 0) 96.81%), url(../images/optimized/baby-top-background.jpg);
   }
 
   .section-unwanted-features {
-    background-image: url(../images/optimized/section-features.jpg);
+    background-image: linear-gradient(95deg, rgba(239, 252, 246, 0.78) 26.63%, rgba(239, 252, 246, 0.72) 49.94%, rgba(239, 252, 246, 0) 96.81%), url(../images/optimized/section-features.jpg);
     background-position: right;
   }
 
