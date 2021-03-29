@@ -212,7 +212,7 @@ footer {
 .site-footer {
   text-align: center;
   max-width: unset;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.07rem;
   font-weight: 600;
   font-size: 12px;
   width: none;
@@ -1884,6 +1884,10 @@ input[type=range]::-moz-range-thumb:active {
     padding-bottom: 16px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   }
+
+  .site-footer p {
+    font-size: 12px;
+  }
 }
 /* When the browser is at least 600px and above */
 @media screen and (min-width: 1205px) {
@@ -1976,6 +1980,8 @@ input[type=range]::-moz-range-thumb:active {
     font-size: 36px;
     max-width: 257px;
     line-height: 36px;
+    text-align: left;
+    margin-bottom: 24px;
   }
 
   .section-about-text-area {
@@ -1983,6 +1989,7 @@ input[type=range]::-moz-range-thumb:active {
     top: 0;
     left: 0;
     position: relative;
+    max-width: 20em;
   }
 }
 @media screen and (max-width: 1117px) {
@@ -2003,6 +2010,7 @@ input[type=range]::-moz-range-thumb:active {
     top: 0;
     left: 0;
     position: relative;
+    max-width: 20em;
   }
 }
 @media screen and (max-width: 574px) {

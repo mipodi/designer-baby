@@ -278,7 +278,7 @@ footer {
 .site-footer {
   text-align: center;
   max-width: unset;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.07rem;
   font-weight: 600;
   font-size: 12px;
   width: none;
@@ -2168,11 +2168,16 @@ input[type="range"]::-moz-range-thumb:active {
   .header-nav-list a {
     margin-left: 16px;
   }
+
   .section-final-step-cta {
     max-width: 256px;
     padding-top: 12px;
     padding-bottom: 16px;
     box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%);
+  }
+
+  .site-footer p {
+    font-size: 12px;
   }
 }
 
@@ -2272,12 +2277,15 @@ input[type="range"]::-moz-range-thumb:active {
     font-size: 36px;
     max-width: 257px;
     line-height: 36px;
+    text-align: left;
+    margin-bottom: 24px;
   }
   .section-about-text-area {
     width: inherit;
     top: 0;
     left: 0;
     position: relative;
+    max-width: 20em;
   }
 }
 
@@ -2298,6 +2306,7 @@ input[type="range"]::-moz-range-thumb:active {
     top: 0;
     left: 0;
     position: relative;
+    max-width: 20em;
   }
 }
 
