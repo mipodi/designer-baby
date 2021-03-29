@@ -15,6 +15,8 @@ $primary-dark-accent-color: hsl(168, 80%, 23%); /* #0C6B58 */
 
 $purple-link-color: #42173a;
 
+$focus-color: red;
+
 $blue-grey01: hsl(209, 61%, 16%); /* #102A43 */
 $blue-grey02: hsl(211, 39%, 23%); /* #243B53 */
 $blue-grey03: hsl(209, 34%, 30%); /* #334E68 */
@@ -290,12 +292,12 @@ footer {
 }
 
 summary {
-  color: $blue-grey03;
+  // color: $blue-grey03;
 }
 
 details {
-  color: $blue-grey03;
-  line-height: auto;
+  // color: $blue-grey03;
+  // line-height: auto;
 }
 
 /* ==========================================================================
