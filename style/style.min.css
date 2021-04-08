@@ -198,7 +198,7 @@ nav [aria-current=page] {
     ========================================================================= */
 .site-footer {
   text-align: center;
-  letter-spacing: 0.07rem;
+  letter-spacing: 0.02rem;
   font-weight: 600;
   font-size: 12px;
   display: flex;
