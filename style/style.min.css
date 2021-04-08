@@ -196,30 +196,21 @@ nav [aria-current=page] {
 /* ==========================================================================
     Footer
     ========================================================================= */
-.inner-wrap-footer {
-  padding: 48px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 24px;
-  letter-spacing: 0.03rem;
-  font-weight: 600;
-  font-size: 12px;
-}
-
 .site-footer {
   text-align: center;
-  max-width: unset;
   letter-spacing: 0.07rem;
   font-weight: 600;
   font-size: 12px;
-  width: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
 }
 
 .site-footer p {
   width: none;
+  max-width: 36em;
 }
 
 /* ==========================================================================
@@ -646,7 +637,7 @@ div.control.hair-feature-area-inner {
 
 .section-outro p {
   -webkit-font-smoothing: antialiased;
-  max-width: none;
+  width: 348px;
   color: #102a42;
 }
 
