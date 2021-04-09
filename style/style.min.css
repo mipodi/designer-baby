@@ -1883,6 +1883,10 @@ input[type=range]::-moz-range-thumb:active {
   .site-footer p {
     font-size: 12px;
   }
+
+  label {
+    font-size: 13px;
+  }
 }
 /* When the browser is at least 1205px and above */
 @media screen and (min-width: 1205px) {
@@ -2055,6 +2059,7 @@ input[type=range]::-moz-range-thumb:active {
 
   .skin-colour-slider-labels {
     width: 240px;
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 618px) {

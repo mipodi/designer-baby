@@ -2187,6 +2187,10 @@ input[type="range"]::-moz-range-thumb:active {
   .site-footer p {
     font-size: 12px;
   }
+
+  label {
+    font-size: 13px;
+  }
 }
 
 /* When the browser is at least 1205px and above */
@@ -2374,6 +2378,7 @@ input[type="range"]::-moz-range-thumb:active {
 
   .skin-colour-slider-labels {
     width: 240px;
+    font-size: 13px;
   }
 }
 
