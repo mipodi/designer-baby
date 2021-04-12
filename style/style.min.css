@@ -1890,6 +1890,7 @@ input[type=range]::-moz-range-thumb:active {
 
   .final-step-checkbox {
     font-size: 18px;
+    max-width: 288px;
   }
 }
 /* When the browser is at least 1205px and above */
