@@ -2069,11 +2069,10 @@ input[type=range]::-moz-range-thumb:active {
 
   .section-unwanted-features {
     background-image: linear-gradient(95deg, rgba(239, 252, 246, 0.78) 26.63%, rgba(239, 252, 246, 0.72) 49.94%, rgba(239, 252, 246, 0) 96.81%), url(../images/optimized/section-features.jpg);
-    background-position: right;
   }
 
   .section-extra-options {
-    background-position: left;
+    background-image: none;
   }
 }
 /* ==========================================================================

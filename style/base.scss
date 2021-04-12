@@ -2404,11 +2404,20 @@ input[type="range"]::-moz-range-thumb:active {
         rgba(239, 252, 246, 0) 96.81%
       ),
       url(../images/optimized/section-features.jpg);
-    background-position: right;
+    // background-position: right;
   }
 
   .section-extra-options {
-    background-position: left;
+    // background-image: url(../images/optimized/section-features.jpg);
+    background-image: none;
+    // background-image: linear-gradient(
+    //     95deg,
+    //     rgba(239, 252, 246, 0.78) 26.63%,
+    //     rgba(239, 252, 246, 0.72) 49.94%,
+    //     rgba(239, 252, 246, 0) 96.81%
+    //   ),
+    //   url(../images/optimized/section-extra-options.jpg);
+    // background-position: right;
   }
 
   .img-outro {
