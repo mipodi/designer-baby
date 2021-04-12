@@ -2223,6 +2223,16 @@ input[type="range"]::-moz-range-thumb:active {
   }
 }
 
+@media screen and (max-width: 1215px) {
+  .section-area-physical-features {
+    flex-direction: column;
+  }
+
+  .section-area-info {
+    margin-bottom: 24px;
+  }
+}
+
 @media screen and (max-width: 340px) {
   #section-eggs {
     padding-left: 10px;
@@ -2349,10 +2359,6 @@ input[type="range"]::-moz-range-thumb:active {
     margin-bottom: 64px;
   }
 
-  .section-area-info.physical-features {
-    margin-bottom: 48px;
-  }
-
   .hair-colour-area {
     margin-bottom: 64px;
   }
@@ -2363,9 +2369,9 @@ input[type="range"]::-moz-range-thumb:active {
     margin-bottom: 16px;
   }
 
-  .section-area-info.physical-features {
-    margin-bottom: 16px;
-  }
+  // .section-area-info.physical-features {
+  //   margin-bottom: 16px;
+  // }
 
   .hair-colour-area {
     width: 319px;

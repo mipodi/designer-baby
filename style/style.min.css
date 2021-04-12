@@ -1916,6 +1916,15 @@ input[type=range]::-moz-range-thumb:active {
     padding: 48px;
   }
 }
+@media screen and (max-width: 1215px) {
+  .section-area-physical-features {
+    flex-direction: column;
+  }
+
+  .section-area-info {
+    margin-bottom: 24px;
+  }
+}
 @media screen and (max-width: 340px) {
   #section-eggs {
     padding-left: 10px;
@@ -2031,20 +2040,12 @@ input[type=range]::-moz-range-thumb:active {
     margin-bottom: 64px;
   }
 
-  .section-area-info.physical-features {
-    margin-bottom: 48px;
-  }
-
   .hair-colour-area {
     margin-bottom: 64px;
   }
 }
 @media screen and (max-width: 574px) {
   .eyes-area {
-    margin-bottom: 16px;
-  }
-
-  .section-area-info.physical-features {
     margin-bottom: 16px;
   }
 
