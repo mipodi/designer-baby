@@ -1887,6 +1887,10 @@ input[type=range]::-moz-range-thumb:active {
   label {
     font-size: 13px;
   }
+
+  .final-step-checkbox {
+    font-size: 18px;
+  }
 }
 /* When the browser is at least 1205px and above */
 @media screen and (min-width: 1205px) {
