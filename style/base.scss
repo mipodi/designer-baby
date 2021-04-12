@@ -2286,6 +2286,13 @@ input[type="range"]::-moz-range-thumb:active {
     top: 4px;
   }
 }
+
+@media screen and (max-width: 797px) {
+  .top-info-banner p {
+    max-width: 307px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .heading-section-intro {
     font-family: $primary-font-family;
