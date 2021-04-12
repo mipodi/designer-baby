@@ -223,6 +223,10 @@ nav [aria-current=page] {
   padding-right: 16px;
 }
 
+summary {
+  margin-bottom: 18px;
+}
+
 details {
   max-width: 19.5em;
 }
