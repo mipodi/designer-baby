@@ -35,6 +35,7 @@ html {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: subpixel-antialiased;
   line-height: normal;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -2143,6 +2144,14 @@ input[type=range]::-moz-range-thumb:active {
 @media (prefers-reduced-motion) {
   .animation {
     animation-name: dissolve;
+  }
+}
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
