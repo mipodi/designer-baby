@@ -270,6 +270,16 @@ details {
   max-width: 19.5em;
 }
 
+@keyframes details-show {
+  from {
+    opacity: 0;
+    transform: var(--details-translate, translateY(-0.5em));
+  }
+}
+details[open] > *:not(summary) {
+  animation: details-show 150ms ease-in-out;
+}
+
 /* ==========================================================================
     Progress bar
     ========================================================================= */
@@ -2152,6 +2162,10 @@ input[type=range]::-moz-range-thumb:active {
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  details[open] > *:not(summary) {
+    animation: none;
   }
 }
 
