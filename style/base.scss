@@ -173,7 +173,7 @@ a:visited {
 a {
   color: $blue-grey01;
   font-weight: 600;
-  text-underline-offset: 1.2px;
+  // text-underline-offset: 1.2px;
   // text-underline-offset: 2px;
   // @include link-underline(
   //   $primary-light-background-color,
@@ -181,6 +181,7 @@ a {
   //   $primary-light-accent-color
   // );
 }
+
 /* ==========================================================================
     Animations & effects
     ========================================================================= */
@@ -514,22 +515,68 @@ section {
   max-width: 600px;
 }
 
+/* ==========================================================================
+    Sections shared layout and settings, continue field and animation
+    ========================================================================= */
 .continue-field {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   padding-right: 16px;
-  text-underline-offset: 1.2px;
   margin-bottom: 2.4rem;
 }
 
-// .continue-field a {
-//   @include link-underline(
-//     $primary-light-background-color,
-//     $blue-grey01,
-//     $primary-light-accent-color
-//   );
-// }
+/* Removes underline and uses padding to position the replacement */
+.continue-field a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+/* The deault underline */
+.continue-field a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $blue-grey01;
+  opacity: 1;
+}
+
+/* The underline to slide in, now out of view */
+.continue-field a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $blue-grey01;
+  opacity: 0;
+  transition: opacity 1000ms, transform 1000ms;
+}
+
+/* The default underline disappearing to make way */
+.continue-field a:hover::before,
+a:focus::before {
+  opacity: 0;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+/* The animated underline sliding in */
+.continue-field a::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.continue-field a:hover::after,
+.continue-field a:focus::after {
+  transform: translate3d(0, 0, 0);
+}
 
 /* ==========================================================================
     Intro, section-specific layout and settings
@@ -2486,6 +2533,44 @@ input[type="range"]::-moz-range-thumb:active {
     width: 240px;
     font-size: 13px;
   }
+
+  /* Uses built-in underline */
+  .continue-field a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    text-decoration: underline;
+    // color: pink;
+    // text-decoration: none;
+    text-underline-offset: 1.2px;
+    // overflow: hidden;
+  }
+
+  /* Removes all extra animation below */
+  .continue-field a::before {
+    display: none;
+  }
+
+  /* The underline to slide in, now out of view */
+  .continue-field a::after {
+    display: none;
+  }
+
+  /* The default underline disappearing to make way */
+  .continue-field a:hover::before,
+  a:focus::before {
+    display: none;
+  }
+
+  /* The animated underline sliding in */
+  .continue-field a::after {
+    display: none;
+  }
+
+  .continue-field a:hover::after,
+  .continue-field a:focus::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 618px) {
@@ -2553,5 +2638,42 @@ input[type="range"]::-moz-range-thumb:active {
 
   details[open] > *:not(summary) {
     animation: none;
+  }
+
+  /* Uses built-in underline */
+  .continue-field a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    text-decoration: underline;
+    // text-decoration: none;
+    text-underline-offset: 1.2px;
+    // overflow: hidden;
+  }
+
+  /* Removes all extra animation below */
+  .continue-field a::before {
+    display: none;
+  }
+
+  /* The underline to slide in, now out of view */
+  .continue-field a::after {
+    display: none;
+  }
+
+  /* The default underline disappearing to make way */
+  .continue-field a:hover::before,
+  a:focus::before {
+    display: none;
+  }
+
+  /* The animated underline sliding in */
+  .continue-field a::after {
+    display: none;
+  }
+
+  .continue-field a:hover::after,
+  .continue-field a:focus::after {
+    display: none;
   }
 }
