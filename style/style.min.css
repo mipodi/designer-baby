@@ -533,20 +533,14 @@ a:focus::before {
 .section-intro-area-cta {
   max-width: 192px;
   margin: 0;
-  margin: 0;
   margin-top: 8px;
   margin-bottom: 16px;
-  text-underline-offset: 1.2px;
   border-radius: 4px;
   justify-content: unset;
 }
 
 body > div.top-background > section > div > div > div > p {
   margin: 0px;
-}
-
-.cta-section-intro p {
-  margin: 0;
 }
 
 .section-intro-area summary {
