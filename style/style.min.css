@@ -427,7 +427,7 @@ section {
   flex-wrap: wrap;
   justify-content: flex-end;
   padding-right: 16px;
-  text-underline-offset: 3px;
+  text-underline-offset: 1.2px;
   margin-bottom: 2.4rem;
 }
 

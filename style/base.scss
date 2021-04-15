@@ -112,11 +112,6 @@ ul {
   color: $blue-grey02;
 }
 
-a {
-  color: $blue-grey01;
-  font-weight: 600;
-}
-
 a:hover {
 }
 
@@ -143,11 +138,13 @@ a:visited {
 @mixin text-selection($selection) {
   &::selection {
     @include text-underline-crop($selection);
+
     background: $selection;
   }
 
   &::-moz-selection {
     @include text-underline-crop($selection);
+
     background: $selection;
   }
 }
@@ -171,6 +168,17 @@ a:visited {
   &:visited {
     color: $text;
   }
+}
+
+a {
+  color: $blue-grey01;
+  font-weight: 600;
+  // text-underline-offset: 2px;
+  // @include link-underline(
+  //   $primary-light-background-color,
+  //   $blue-grey01,
+  //   $primary-light-accent-color
+  // );
 }
 /* ==========================================================================
     Animations & effects
@@ -510,9 +518,17 @@ section {
   flex-wrap: wrap;
   justify-content: flex-end;
   padding-right: 16px;
-  text-underline-offset: 3px;
+  text-underline-offset: 1.2px;
   margin-bottom: 2.4rem;
 }
+
+// .continue-field a {
+//   @include link-underline(
+//     $primary-light-background-color,
+//     $blue-grey01,
+//     $primary-light-accent-color
+//   );
+// }
 
 /* ==========================================================================
     Intro, section-specific layout and settings
