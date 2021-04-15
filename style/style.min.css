@@ -103,6 +103,7 @@ ul {
 a {
   color: #102a42;
   font-weight: 600;
+  text-underline-offset: 1.2px;
 }
 
 /* ==========================================================================
@@ -482,7 +483,7 @@ section {
   margin: 0;
   margin-top: 8px;
   margin-bottom: 16px;
-  text-underline-offset: 3px;
+  text-underline-offset: 1.2px;
   border-radius: 4px;
 }
 
