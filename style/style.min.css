@@ -676,6 +676,7 @@ div.control.hair-feature-area-inner {
 
 .section-final-step-cta {
   background-color: #fff;
+  background-color: #617d98;
   /* padding: 1px; */
   margin: 0;
   padding: 4px;
@@ -689,9 +690,20 @@ div.control.hair-feature-area-inner {
   border-radius: 4px;
   font-weight: 600;
   color: #324d67;
+  color: #eefcf5;
   text-decoration: none;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   width: 160px;
+}
+
+.section-final-step-cta:hover {
+  color: #102a42;
+}
+
+.section-final-step-cta:active {
+  box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  color: #8cedc6;
 }
 
 .control-final-step {
