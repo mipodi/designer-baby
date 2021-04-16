@@ -848,6 +848,53 @@ div.control.hair-feature-area-inner {
   margin-bottom: 16px;
 }
 
+/* Magic push button a la Josh Comeau
+    Had to make it a link because did not want the form
+    to post anything.
+*/
+
+.front {
+  will-change: transform;
+  transition: transform 250ms;
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+.pushable {
+  background: hsl(340deg 100% 32%);
+  background: $primary-dark-accent-color;
+  border: none;
+  border-radius: 12px;
+  border-radius: 4px;
+
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 4px;
+  // font-size: 1.25rem;
+  background: $primary-light-accent-color;
+  color: $blue-grey02;
+  // color: $primary-light-accent-color;
+  transform: translateY(-4px);
+  text-decoration: none;
+  text-align: center;
+}
+
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* ==========================================================================
     Page & Section outro, section-specific layout and settings
     ========================================================================= */
