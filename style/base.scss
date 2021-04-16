@@ -322,6 +322,7 @@ footer {
 }
 
 .site-footer {
+  content-visibility: auto;
   text-align: center;
   letter-spacing: 0.02rem;
   font-weight: 600;
@@ -660,6 +661,7 @@ body > div.top-background > section > div > div > div > p {
     ========================================================================= */
 
 .section-sex {
+  content-visibility: auto;
   background-color: $blue-grey10;
   display: flex;
   justify-content: space-between;
@@ -673,6 +675,7 @@ body > div.top-background > section > div > div > div > p {
     Eggs, section-specific layout and settings
     ========================================================================= */
 .section-eggs {
+  content-visibility: auto;
   background-color: $primary-light-background-color;
   display: flex;
   justify-content: space-between;
@@ -682,6 +685,7 @@ body > div.top-background > section > div > div > div > p {
     Disease, section-specific layout and settings
     ========================================================================= */
 .section-disease {
+  content-visibility: auto;
   background-color: hsl(210, 36%, 96%);
   display: flex;
   justify-content: space-between;
@@ -691,6 +695,7 @@ body > div.top-background > section > div > div > div > p {
     Unwanted features, section-specific layout and settings
     ========================================================================= */
 .section-unwanted-features {
+  content-visibility: auto;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -716,6 +721,7 @@ body > div.top-background > section > div > div > div > p {
     Physical features, section-specific layout and settings
     ========================================================================= */
 .section-physical-features {
+  content-visibility: auto;
   background-color: $primary-light-background-color;
   justify-content: space-between;
 }
@@ -775,6 +781,7 @@ div.control.hair-feature-area-inner {
     Extra options, section-specific layout and settings
     ========================================================================= */
 .section-extra-options {
+  content-visibility: auto;
   background-color: $blue-grey10;
   display: flex;
   justify-content: space-between;
@@ -795,6 +802,7 @@ div.control.hair-feature-area-inner {
     Section gestation, section-specific layout and settings
     ========================================================================= */
 .section-final-step {
+  content-visibility: auto;
   display: flex;
   justify-content: space-between;
 }
