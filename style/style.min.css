@@ -698,12 +698,13 @@ div.control.hair-feature-area-inner {
 
 .section-final-step-cta:hover {
   color: #102a42;
+  color: #eefcf5;
+  color: #fff;
 }
 
 .section-final-step-cta:active {
   box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.15);
-  box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-  color: #8cedc6;
+  box-shadow: #324d67 3px 3px 6px 0px inset, rgba(72, 100, 127, 0.5) -3px -3px 6px 1px inset;
 }
 
 .control-final-step {
