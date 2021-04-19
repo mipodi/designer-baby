@@ -959,21 +959,6 @@ div.control.hair-feature-area-inner {
   outline-offset: var(--outline-offset);
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .basic-checkbox svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .basic-checkbox input[type=checkbox]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .basic-checkbox input[type=checkbox]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 .sex-choice-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -1058,21 +1043,6 @@ div.control.hair-feature-area-inner {
   outline-offset: var(--outline-offset);
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .sex-choice-radio-button svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .sex-choice-radio-button input[type=radio]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .sex-choice-radio-button input[type=radio]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 .eye-colour-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -1185,21 +1155,6 @@ div.control.hair-feature-area-inner {
   outline-offset: var(--outline-offset);
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .eye-colour-radio-button svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .eye-colour-radio-button input[type=radio]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .eye-colour-radio-button input[type=radio]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 #section-physical-features > div.section-area > div.physical-features-area > div.eyes-skin-area > div.eyes-area > div > label:nth-child(5) > span > span {
   padding: 0;
 }
@@ -1405,21 +1360,6 @@ input[type=range]::-moz-range-thumb:active {
   outline-offset: var(--outline-offset);
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .skin-colour-radio-button svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .skin-colour-radio-button input[type=radio]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .skin-colour-radio-button input[type=radio]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 .hair-colour-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -1502,21 +1442,6 @@ input[type=range]::-moz-range-thumb:active {
   outline-offset: var(--outline-offset);
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .hair-colour-radio-button svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .hair-colour-radio-button input[type=radio]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .hair-colour-radio-button input[type=radio]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 .hair-feature-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -1600,21 +1525,6 @@ input[type=range]::-moz-range-thumb:active {
   outline-offset: var(--outline-offset);
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .hair-feature-radio-button svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .hair-feature-radio-button input[type=radio]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .hair-feature-radio-button input[type=radio]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 .gestation-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -1716,21 +1626,6 @@ input[type=range]::-moz-range-thumb:active {
   outline-offset: var(--outline-offset);
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .gestation-radio-button svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .gestation-radio-button input[type=radio]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .gestation-radio-button input[type=radio]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 .final-step-checkbox-outer-wrapper {
   margin-bottom: 16px;
 }
@@ -1786,21 +1681,6 @@ input[type=range]::-moz-range-thumb:active {
   outline: none;
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .final-step-checkbox svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .final-step-checkbox input[type=checkbox]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .final-step-checkbox input[type=checkbox]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 .egg-package-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -1927,21 +1807,6 @@ input[type=range]::-moz-range-thumb:active {
   outline-offset: var(--outline-offset);
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .egg-package-radio-button svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .egg-package-radio-button input[type=radio]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .egg-package-radio-button input[type=radio]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 .extra-options-checkbox {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -2022,21 +1887,6 @@ input[type=range]::-moz-range-thumb:active {
   outline-offset: var(--outline-offset);
 }
 
-/* WHCM styles */
-@media screen and (-ms-high-contrast: active) {
-  .extra-options-checkbox svg rect {
-    stroke: windowText;
-  }
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .extra-options-checkbox input[type=checkbox]:checked ~ svg rect {
-    fill: windowText;
-  }
-  .extra-options-checkbox input[type=checkbox]:checked ~ svg polyline {
-    stroke: highlight;
-  }
-}
 /* ==========================================================================
     Responsive adjustments
     ========================================================================= */
