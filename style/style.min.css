@@ -681,39 +681,6 @@ div.control.hair-feature-area-inner {
   justify-content: space-between;
 }
 
-.section-final-step-cta {
-  background-color: #fff;
-  background-color: #617d98;
-  /* padding: 1px; */
-  margin: 0;
-  padding: 4px;
-  padding-top: 6px;
-  padding-bottom: 8px;
-  /* padding-left: 16px; */
-  margin: 0;
-  margin-top: 8px;
-  margin-bottom: 16px;
-  text-align: center;
-  border-radius: 4px;
-  font-weight: 600;
-  color: #324d67;
-  color: #eefcf5;
-  text-decoration: none;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-  width: 160px;
-}
-
-.section-final-step-cta:hover {
-  color: #102a42;
-  color: #eefcf5;
-  color: #fff;
-}
-
-.section-final-step-cta:active {
-  box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.15);
-  box-shadow: #324d67 3px 3px 6px 0px inset, rgba(72, 100, 127, 0.5) -3px -3px 6px 1px inset;
-}
-
 .control-final-step {
   margin-bottom: 16px;
 }
@@ -721,30 +688,72 @@ div.control.hair-feature-area-inner {
 /* Magic push button a la Josh Comeau
     Had to make it a link because did not want the form
     to post anything.
+    https://www.joshwcomeau.com/animation/3d-button/
 */
-.front {
-  will-change: transform;
-  transition: transform 250ms;
-}
-
-.pushable:hover .front {
-  transform: translateY(-6px);
-}
-
-.pushable:active .front {
-  transform: translateY(-2px);
-}
-
 .pushable {
-  background: #a30036;
-  background: #0c6a57;
+  position: relative;
+  background: transparent;
   border: none;
-  border-radius: 12px;
-  border-radius: 4px;
   padding: 0;
   cursor: pointer;
   margin-bottom: 16px;
   margin-top: 16px;
+  transition: filter 250ms;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  filter: blur(4px);
+  will-change: transform;
+  transform: translateY(2px);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #0c6a57;
+  background: #00a383;
+}
+
+.front {
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.pushable:hover {
+  transition: filter 250ms;
+  filter: brightness(110%);
+}
+
+.pushable:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.pushable:active .shadow {
+  transform: translateY(1px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
 .front {
@@ -753,13 +762,9 @@ div.control.hair-feature-area-inner {
   border-radius: 4px;
   background: #8cedc6;
   color: #243a52;
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   text-decoration: none;
   text-align: center;
-}
-
-.pushable:focus:not(:focus-visible) {
-  outline: none;
 }
 
 /* ==========================================================================
