@@ -1216,6 +1216,11 @@ div.control.hair-feature-area-inner {
   font-style: italic;
 }
 
+.skin-colour-range-slider-visual-explainer {
+  position: absolute;
+  opacity: 0;
+}
+
 .skin-colour-range {
   -webkit-appearance: none;
   -moz-appearance: none;

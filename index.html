@@ -1845,7 +1845,12 @@
                   class="skin-colour-range"
                 /> -->
 
-                <!-- create a visually hidden label explainer here-->
+                <label
+                  class="skin-colour-range-slider-visual-explainer"
+                  for="skin-colour-range-slider"
+                  >From dark 1 to light 100. The higher the number the lighter
+                  the skin.
+                </label>
                 <input
                   id="skin-colour-range-slider"
                   type="range"
@@ -1856,13 +1861,21 @@
                 />
 
                 <div class="skin-colour-slider-labels">
-                  <label for="skin-colour-range-slider" class="skin-colour-dark"
-                    >Dark</label
+                  <label
+                    for="skin-colour-range-slider"
+                    class="skin-colour-dark"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    Dark</label
                   >
                   <label
                     for="skin-colour-range-slider"
                     class="skin-colour-light"
-                    >Light</label
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    Light</label
                   >
                 </div>
                 <!-- <input
