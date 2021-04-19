@@ -917,21 +917,21 @@ div.control.hair-feature-area-inner {
 
 // Hover but only on hover-friendly devices, not touchscreens
 
-// @media (hover: hover) {
-.pushable:hover {
-  filter: brightness(110%);
-}
+@media (hover: hover) {
+  .pushable:hover {
+    filter: brightness(110%);
+  }
 
-.pushable:hover .front {
-  transform: translateY(-6px);
-  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-}
+  .pushable:hover .front {
+    transform: translateY(-6px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
 
-.pushable:hover .shadow {
-  transform: translateY(4px);
-  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  .pushable:hover .shadow {
+    transform: translateY(4px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
 }
-// }
 
 // Active
 .pushable:active .front {
@@ -945,15 +945,15 @@ div.control.hair-feature-area-inner {
 }
 
 // Active
-.pushable:target .front {
+.front:target {
   transform: translateY(-2px);
   transition: transform 34ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
-.pushable:target .shadow {
-  transform: translateY(1px);
-  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-}
+// .pushable:active .shadow {
+//   transform: translateY(1px);
+//   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+// }
 
 // .pushable:focus:not(:focus-visible) {
 //   outline: none;
