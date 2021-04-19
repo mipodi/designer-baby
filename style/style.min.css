@@ -911,9 +911,8 @@ div.control.hair-feature-area-inner {
 .basic-checkbox input[type=checkbox] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
+  width: 96px;
+  height: 34px;
   /* hide it */
   opacity: 0;
 }
@@ -983,9 +982,8 @@ div.control.hair-feature-area-inner {
 .sex-choice-radio-button input[type=radio] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
+  width: 124px;
+  height: 96px;
   /* hide it */
   opacity: 0;
 }
@@ -1071,9 +1069,8 @@ div.control.hair-feature-area-inner {
 .eye-colour-radio-button input[type=radio] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
+  width: 42px;
+  height: 42px;
   /* hide it */
   opacity: 0;
 }
@@ -1256,110 +1253,6 @@ input[type=range]::-moz-range-thumb:active {
   flex: auto;
 }
 
-.skin-colour-radio-button {
-  cursor: pointer;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  border-radius: 50%;
-  color: #243a52;
-  width: 48px;
-  height: 48px;
-  margin-right: 16px;
-  margin-bottom: 48px;
-  --checked-state-bg-color: hsl(209, 28%, 39%);
-  --checked-state-check-color: #fff;
-  --outline-color: var(--checked-state-bg-color);
-  --outline-offset: 0px;
-  --outline-radius: 8px;
-}
-
-.skin-colour-radio-button input[type=radio] {
-  /* remove the checkbox from the page flow, positioning it on top of the SVG */
-  position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
-  /* hide it */
-  opacity: 0;
-}
-
-.skin-colour-radio-button svg {
-  width: 128px;
-  height: 96px;
-  border-radius: 4px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  color: #243b53;
-  overflow: initial;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  background-color: transparent;
-  /* apply a transition to the elements inside the svg */
-}
-.skin-colour-radio-button svg * {
-  transition: all 0.1s linear;
-}
-
-.hex-291003 {
-  fill: #291003;
-}
-
-.hex-362923 {
-  fill: #362923;
-}
-
-.hex-553117 {
-  fill: #553117;
-}
-
-.hex-874c2b {
-  fill: #874c2b;
-}
-
-.hex-ae5a18 {
-  fill: #ae5a18;
-}
-
-.hex-dc8d54 {
-  fill: #dc8d54;
-}
-
-.hex-bf8d50 {
-  fill: #bf8d50;
-}
-
-.hex-dbb288 {
-  fill: #dbb288;
-}
-
-.skin-colour-radio-button span {
-  position: absolute;
-  display: block;
-  width: 48px;
-  padding-top: 54px;
-  text-align: center;
-}
-
-.skin-colour-radio-button input[type=radio]:checked + svg {
-  stroke: #324d67;
-  stroke: #8cedc6;
-  stroke-width: 16px;
-}
-.skin-colour-radio-button input[type=radio]:checked + svg .primary {
-  stroke: #324d67;
-}
-.skin-colour-radio-button input[type=radio]:checked + svg .secondary {
-  fill: #f1f5f8;
-}
-
-.skin-colour-radio-button input[type=radio]:focus + svg {
-  outline: 3px solid var(--outline-color);
-  outline-offset: var(--outline-offset);
-}
-
 .hair-colour-radio-button {
   cursor: pointer;
   font-family: "Source Sans Pro", sans-serif;
@@ -1382,9 +1275,8 @@ input[type=range]::-moz-range-thumb:active {
 .hair-colour-radio-button input[type=radio] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
+  width: 42px;
+  height: 42px;
   /* hide it */
   opacity: 0;
 }
@@ -1466,9 +1358,8 @@ input[type=range]::-moz-range-thumb:active {
 .hair-feature-radio-button input[type=radio] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
+  width: 62px;
+  height: 28px;
   /* hide it */
   opacity: 0;
 }
@@ -1549,9 +1440,8 @@ input[type=range]::-moz-range-thumb:active {
 .gestation-radio-button input[type=radio] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
+  width: 124px;
+  height: 96px;
   /* hide it */
   opacity: 0;
 }
@@ -1641,12 +1531,12 @@ input[type=range]::-moz-range-thumb:active {
 }
 
 .final-step-checkbox input[type=checkbox] {
-  /* remove the checkbox from the page flow, positioning it on top of the SVG */
+  /* removes the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
-  /* set same dimensions as the SVG */
+  /* sets same dimensions as the SVG */
   width: 1em;
   height: 1em;
-  /* hide it */
+  /* hides it */
   opacity: 0.00001;
 }
 
@@ -1705,9 +1595,8 @@ input[type=range]::-moz-range-thumb:active {
 .egg-package-radio-button input[type=radio] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
+  height: 384px;
+  width: 256px;
   /* hide it */
   opacity: 0;
 }
@@ -1832,9 +1721,8 @@ input[type=range]::-moz-range-thumb:active {
 .extra-options-checkbox input[type=checkbox] {
   /* remove the checkbox from the page flow, positioning it on top of the SVG */
   position: absolute;
-  /* set same dimensions as the SVG CHANGE THIS TO BIGGER */
-  width: 1em;
-  height: 1em;
+  width: 124px;
+  height: 96px;
   /* hide it */
   opacity: 0;
 }
