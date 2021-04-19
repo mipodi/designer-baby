@@ -699,7 +699,6 @@ div.control.hair-feature-area-inner {
   margin-bottom: 16px;
   margin-top: 16px;
   transition: filter 250ms;
-  -webkit-tap-highlight-color: transparent;
   user-select: none;
 }
 
