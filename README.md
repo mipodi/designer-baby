@@ -15,7 +15,7 @@ studio Order Order.
 ## Stack
 
 The Designer Baby Project application is coded in HTML and CSS with the
-help of SASS, Webpack, Prettier and then deployed on Netlify. No JavaScript
+help of SASS, Prettier and then deployed on Netlify. No JavaScript
 framework was harmed in the process. Jokes aside, I wanted to see the
 limitations of HTML and CSS anno 2021 and not fall back to creating a div with
 JavaScript all the time. With this project I set myself up for using native
