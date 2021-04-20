@@ -730,6 +730,7 @@ div.control.hair-feature-area-inner {
   color: $blue-grey02;
   will-change: transform;
   transform: translateY(-3px);
+  font-weight: 600;
   text-decoration: none;
   text-align: center;
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
