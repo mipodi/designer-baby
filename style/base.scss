@@ -114,14 +114,6 @@ a:visited {
 
 a {
   color: $blue-grey01;
-  font-weight: 600;
-  // text-underline-offset: 1.2px;
-  // text-underline-offset: 2px;
-  // @include link-underline(
-  //   $primary-light-background-color,
-  //   $blue-grey01,
-  //   $primary-light-accent-color
-  // );
 }
 
 /* ==========================================================================
@@ -435,6 +427,7 @@ section {
   padding: 0.2em 0;
   text-decoration: none;
   overflow: hidden;
+  font-weight: 600;
 }
 
 /* The deault underline */

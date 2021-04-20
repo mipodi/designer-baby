@@ -95,7 +95,6 @@ ul {
 
 a {
   color: #102a42;
-  font-weight: 600;
 }
 
 /* ==========================================================================
@@ -408,6 +407,7 @@ section {
   padding: 0.2em 0;
   text-decoration: none;
   overflow: hidden;
+  font-weight: 600;
 }
 
 /* The deault underline */
