@@ -61,7 +61,6 @@ body {
 
 *:focus {
   outline-color: $focus-color;
-  -webkit-border: 2px dotted red;
 }
 
 *:active {
@@ -73,12 +72,10 @@ body {
     ========================================================================= */
 h1,
 h2,
-h3,
-h4 {
+h3 {
   margin-top: 0;
   font-family: $primary-font-family;
   font-weight: 400;
-  // animation: fade-text-anim 2s ease;
 }
 
 h1 {
@@ -93,16 +90,11 @@ h2 {
   font-weight: 400;
 }
 
-h4 {
-  margin-bottom: 0;
-}
-
 p {
   max-width: 20em;
   color: $blue-grey02;
   margin-block-start: 0;
   line-height: 1.4rem;
-  // animation: fade-text-anim 2s ease;
 }
 
 ul {
@@ -133,35 +125,8 @@ a {
 }
 
 /* ==========================================================================
-    Animations & effects
+    Global animations & effects
     ========================================================================= */
-@keyframes fade-text-anim {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 30px, 0);
-    -moz-transform: translate3d(0, 30px, 0);
-    -ms-transform: translate3d(0, 30px, 0);
-    -o-transform: translate3d(0, 30px, 0);
-    transform: translate3d(0, 30px, 0);
-  }
-  25% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 30px, 0);
-    -moz-transform: translate3d(0, 30px, 0);
-    -ms-transform: translate3d(0, 30px, 0);
-    -o-transform: translate3d(0, 30px, 0);
-    transform: translate3d(0, 30px, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -175,7 +140,6 @@ a {
     ========================================================================= */
 .top-info-banner {
   animation: fade-in 1000ms cubic-bezier(0.33, 0, 0.2, 1);
-
   max-width: 100%;
   min-height: 42px;
   display: flex;
@@ -264,14 +228,6 @@ nav [aria-current="page"] {
 /* ==========================================================================
     Footer
     ========================================================================= */
-
-// .inner-wrap-footer {
-//   padding: 48px;
-// }
-
-footer {
-}
-
 .site-footer {
   content-visibility: auto;
   text-align: center;
@@ -293,7 +249,6 @@ footer {
 /* ==========================================================================
     Summary and details
     ========================================================================= */
-
 .details-summary {
   display: flex;
   flex-wrap: wrap;
@@ -302,14 +257,11 @@ footer {
 }
 
 summary {
-  // color: $blue-grey03;
   margin-bottom: 18px;
 }
 
 details {
   max-width: 19.5em;
-  // color: $blue-grey03;
-  // line-height: auto;
 }
 
 @keyframes details-show {
@@ -426,9 +378,8 @@ details[open] > *:not(summary) {
 }
 
 /* ==========================================================================
-    Sections shared layout and settings
+    Sections shared overall layout and settings
     ========================================================================= */
-
 section {
   min-height: 100vh;
   margin-right: auto;
@@ -467,7 +418,7 @@ section {
 }
 
 /* ==========================================================================
-    Sections shared layout and settings, continue field and animation
+    Sections shared continue field
     ========================================================================= */
 .continue-field {
   display: flex;
@@ -534,13 +485,6 @@ a:focus::before {
     ========================================================================= */
 .top-background {
   animation: fade-in 1000ms cubic-bezier(0.33, 0, 0.2, 1);
-  // opacity: 0;
-  // -webkit-transition: opacity 1000ms cubic-bezier(0.33, 0, 0.2, 1);
-  // -moz-transition: opacity 1000ms cubic-bezier(0.33, 0, 0.2, 1);
-  // -ms-transition: opacity 1000ms cubic-bezier(0.33, 0, 0.2, 1);
-  // -o-transition: opacity 1000ms cubic-bezier(0.33, 0, 0.2, 1);
-  // transition: opacity 1000ms cubic-bezier(0.33, 0, 0.2, 1);
-
   border-radius: 0px;
   background: url(../images/baby-top-background.jpg);
   background-position: right;
@@ -552,7 +496,6 @@ a:focus::before {
       rgba(239, 252, 246, 0) 96.81%
     ),
     url(../images/baby-top-background.jpg);
-  /* background-blend-mode: multiply; */
 }
 
 .section-intro-area {
@@ -580,13 +523,6 @@ a:focus::before {
   line-height: 20px;
 }
 
-.cta-section-intro {
-  font-family: $primary-font-family;
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 600;
-}
-
 .section-intro-area-cta {
   max-width: 192px;
   margin: 0;
@@ -596,21 +532,13 @@ a:focus::before {
   justify-content: unset;
 }
 
-body > div.top-background > section > div > div > div > p {
-  margin: 0px;
-}
-
-.section-intro-area p a:visited {
-}
-
 .section-intro-area summary {
-  font-size: 12px;
+  font-size: 12px; //Smaller here because indulging the feeling of fineprint
 }
 
 /* ==========================================================================
     Sex, section-specific layout and settings
     ========================================================================= */
-
 .section-sex {
   content-visibility: auto;
   background-color: $blue-grey10;
@@ -660,14 +588,6 @@ body > div.top-background > section > div > div > div > p {
     url(../images/section-features.jpg);
 }
 
-#section-unwanted-features
-  > div.section-area
-  > div.section-area-info
-  > p:nth-child(2) {
-  color: $blue-grey01;
-  text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-}
-
 /* ==========================================================================
     Physical features, section-specific layout and settings
     ========================================================================= */
@@ -696,10 +616,6 @@ body > div.top-background > section > div > div > div > p {
   display: flex;
   flex-direction: column;
   max-width: 384px;
-}
-
-div.control.skin-area-inner {
-  max-width: 256px;
 }
 
 .hair-area {
@@ -758,43 +674,6 @@ div.control.hair-feature-area-inner {
   justify-content: space-between;
 }
 
-// .section-final-step-cta {
-//   background-color: #fff;
-//   background-color: $blue-grey05;
-//   /* padding: 1px; */
-//   margin: 0;
-//   padding: 4px;
-//   padding-top: 6px;
-//   padding-bottom: 8px;
-//   /* padding-left: 16px; */
-//   margin: 0;
-//   margin-top: 8px;
-//   margin-bottom: 16px;
-//   text-align: center;
-//   border-radius: 4px;
-//   font-weight: 600;
-//   color: $blue-grey03;
-//   color: $primary-light-background-color;
-//   // color: #fff;
-//   text-decoration: none;
-//   box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%);
-//   width: 160px;
-// }
-//
-// .section-final-step-cta:hover {
-//   // background-color: $primary-light-background-color;
-//   color: $blue-grey01;
-//   color: $primary-light-background-color;
-//   color: #fff;
-// }
-//
-// .section-final-step-cta:active {
-//   box-shadow: inset 1px 3px 3px rgba(0, 0, 0, 0.15);
-//   box-shadow: $blue-grey03 3px 3px 6px 0px inset,
-//     rgba($blue-grey04, 0.5) -3px -3px 6px 1px inset;
-//   // color: $primary-light-accent-color;
-// }
-
 .control-final-step {
   margin-bottom: 16px;
 }
@@ -811,7 +690,6 @@ div.control.hair-feature-area-inner {
   border: none;
   padding: 0;
   cursor: pointer;
-  // outline-offset: 24px;
   margin-bottom: 16px;
   margin-top: 16px;
   transition: filter 250ms;
@@ -840,15 +718,14 @@ div.control.hair-feature-area-inner {
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  // background: $primary-dark-accent-color;
-  background: hsl(168, 100%, 32%);
+  background: hsl(168, 100%, 32%); // Chose lighter than primary more spunge
   // background: linear-gradient(
   //   to left,
   //   hsl(168, 100%, 25%) 0%,
   //   hsl(168, 100%, 32%) 8%,
   //   hsl(168, 100%, 32%) 92%,
   //   hsl(168, 100%, 20%) 100%
-  // );
+  // ); // Skipped the gradients because more 3D feel than would fit here
 }
 
 .front {
@@ -858,7 +735,6 @@ div.control.hair-feature-area-inner {
   border-radius: 4px;
   background: $primary-light-accent-color;
   color: $blue-grey02;
-  // transform: translateY(-4px);
   will-change: transform;
   transform: translateY(-3px);
   text-decoration: none;
@@ -867,7 +743,6 @@ div.control.hair-feature-area-inner {
 }
 
 // Hover but only on hover-friendly devices, not touchscreens
-
 @media (hover: hover) {
   .pushable:hover {
     filter: brightness(110%);
@@ -894,10 +769,6 @@ div.control.hair-feature-area-inner {
   transform: translateY(1px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
-
-// .pushable:focus:not(:focus-visible) {
-//   outline: none;
-// }
 
 /* ==========================================================================
     Page & Section outro, section-specific layout and settings
@@ -949,10 +820,7 @@ div.control.hair-feature-area-inner {
 }
 
 .section-outro p {
-  -webkit-font-smoothing: antialiased;
   max-width: none;
-  // width: 348px;
-
   color: $blue-grey01;
 }
 
@@ -1003,9 +871,6 @@ div.control.hair-feature-area-inner {
   text-underline-offset: 2px;
 }
 
-.about-page h1 {
-}
-
 .about-page p {
   max-width: none;
 }
@@ -1022,16 +887,11 @@ div.control.hair-feature-area-inner {
   margin-bottom: 48px;
 }
 
-// #section-about > p:last-child {
-//   margin-bottom: 48px;
-// }
-
 /* ==========================================================================
     Custom checkboxes and radio buttons
     ========================================================================= */
 .basic-checkbox {
   cursor: pointer;
-
   font-family: $primary-font-family;
   font-size: 13px;
   font-weight: 600;
@@ -1044,7 +904,6 @@ div.control.hair-feature-area-inner {
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-right: 16px;
   margin-bottom: 16px;
-
   line-height: 1.2;
 
   --checked-state-bg-color: hsl(209, 28%, 39%);
@@ -1055,25 +914,20 @@ div.control.hair-feature-area-inner {
 }
 
 .basic-checkbox input[type="checkbox"] {
-  /* remove the checkbox from the page flow, positioning it on top of the SVG */
-  position: absolute;
-  width: 96px;
-  height: 34px;
-  /* hide it */
-  opacity: 0;
+  position: absolute; // Removes checkbox from page flow, position on top of SVG
+  width: 96px; // Similar width as checkbox for haptic feedback users
+  height: 34px; // Similar height as checkbox for haptic feedback users
+  opacity: 0; // Hides it
 }
 
 .basic-checkbox svg {
   width: 128px;
   height: 32px;
-
   color: #243b53;
   overflow: initial;
   position: relative;
   top: 0px;
-
   left: 0px;
-
   background-color: transparent;
 
   /* apply a transition to the elements inside the svg */
@@ -1083,7 +937,6 @@ div.control.hair-feature-area-inner {
 }
 
 .primary {
-  fill: hsl(209, 23%, 60%);
   fill: $blue-grey10;
 }
 
@@ -1350,7 +1203,6 @@ div.control.hair-feature-area-inner {
 .coming-soon {
   padding: 0;
   font-style: italic;
-  // font-weight: 400;
   color: $blue-grey04;
   line-height: 1.2;
   font-style: italic;
@@ -1699,27 +1551,12 @@ input[type="range"]::-moz-range-thumb:active {
   width: 250px;
 }
 
-.gestation-radio-button span.info {
-  color: hsl(209, 34%, 30%);
-  font-weight: 400;
-  padding-top: 4px;
-}
-
 .gestation-icon {
   position: absolute;
   height: 96px;
 }
 
-.gestation-radio-button span.egg {
-  padding-top: 16px;
-  font-size: 64px;
-  font-weight: 400;
-  color: hsl(210, 22%, 49%);
-  letter-spacing: 0.05em;
-  font-family: $secondary-font-family;
-}
-
-.gestation-radio-button span.eggs-fluid {
+.gestation-radio-button span.available-date {
   color: $blue-grey04;
   line-height: 1.2;
   font-style: italic;
@@ -1868,18 +1705,11 @@ input[type="range"]::-moz-range-thumb:active {
   width: 250px;
 }
 
-.egg-package-radio-button span.info {
-  color: hsl(209, 34%, 30%);
-  font-weight: 400;
-  padding-top: 4px;
-}
-
 .egg-package-radio-button span.egg {
   padding-top: 16px;
   font-size: 48px;
   font-weight: 400;
   color: $blue-grey05;
-  /* letter-spacing: 0.05em; */
   font-family: $secondary-font-family;
 }
 
