@@ -1810,7 +1810,98 @@ input[type="range"]::-moz-range-thumb:active {
     Responsive adjustments
     ========================================================================= */
 
-/* When the browser is at max 909px and above */
+/* When the browser is at least that size and above */
+
+@media screen and (min-width: 1205px) {
+  .section-intro-area {
+    position: absolute;
+    left: 812px;
+  }
+}
+
+@media screen and (min-width: 909px) {
+  .section-area {
+    flex-direction: row;
+  }
+
+  .section-area-choice-sex {
+    padding-top: 256px;
+  }
+
+  section {
+    padding: 64px;
+  }
+
+  .header-title-nav-wrapper {
+    padding: 48px;
+  }
+}
+
+/* When the browser is at most that size and below */
+
+@media screen and (max-width: 1256px) {
+  .egg-progress-bar {
+    position: relative;
+    right: 52px;
+    top: 4px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .section-area-physical-features {
+    flex-direction: column;
+  }
+
+  .section-area-info {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 1206px) {
+  .heading-section-intro {
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: $blue-grey02;
+    max-width: 325px;
+  }
+
+  .paragraph-section-intro {
+    font-size: 16px;
+  }
+
+  .top-background {
+    background-image: linear-gradient(
+        59.5deg,
+        rgba(239, 252, 246, 0.95) 26.63%,
+        rgba(239, 252, 246, 0.72) 49.94%,
+        rgba(239, 252, 246, 0) 96.81%
+      ),
+      url(../images/baby-top-background.jpg);
+  }
+}
+
+@media screen and (max-width: 1117px) {
+  .section-outro-heading {
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    height: inherit;
+    width: inherit;
+    max-width: 296px;
+    line-height: 36px;
+    position: relative;
+  }
+  .section-outro-text-area {
+    height: inherit;
+    width: inherit;
+    top: 0;
+    left: 0;
+    position: relative;
+    max-width: 20em;
+  }
+}
 
 @media screen and (max-width: 909px) {
   p {
@@ -1849,121 +1940,9 @@ input[type="range"]::-moz-range-thumb:active {
   }
 }
 
-/* When the browser is at least 1205px and above */
-@media screen and (min-width: 1205px) {
-  .section-intro-area {
-    position: absolute;
-    left: 812px;
-  }
-}
-
-@media screen and (min-width: 909px) {
-  .section-area {
-    flex-direction: row;
-  }
-
-  .section-area-choice-sex {
-    padding-top: 256px;
-  }
-
-  section {
-    padding: 64px;
-  }
-
-  .header-title-nav-wrapper {
-    padding: 48px;
-  }
-}
-
-@media screen and (max-width: 1215px) {
-  .section-area-physical-features {
-    flex-direction: column;
-  }
-
-  .section-area-info {
-    margin-bottom: 24px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  #section-eggs {
-    padding-left: 10px;
-    padding-right: 0px;
-  }
-
-  .section-area-info {
-    padding-right: 0px;
-  }
-
-  .egg-package-radio-button {
-    padding: 22px;
-    height: 428px;
-    width: 300px;
-    --outline-offset: 23px;
-    margin-right: 0px;
-  }
-}
-
-@media screen and (max-width: 1206px) {
-  .heading-section-intro {
-    font-family: $primary-font-family;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    color: $blue-grey02;
-    max-width: 325px;
-  }
-
-  .paragraph-section-intro {
-    font-size: 16px;
-    // color: $blue-grey01;
-    // text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-  }
-
-  .top-background {
-    background-image: linear-gradient(
-        59.5deg,
-        rgba(239, 252, 246, 0.95) 26.63%,
-        rgba(239, 252, 246, 0.72) 49.94%,
-        rgba(239, 252, 246, 0) 96.81%
-      ),
-      url(../images/baby-top-background.jpg);
-  }
-}
-
-@media screen and (max-width: 1256px) {
-  .egg-progress-bar {
-    position: relative;
-    right: 52px;
-    top: 4px;
-  }
-}
-
 @media screen and (max-width: 797px) {
   .top-info-banner p {
     max-width: 307px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .heading-section-intro {
-    font-family: $primary-font-family;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    color: $blue-grey02;
-  }
-
-  .paragraph-section-intro {
-    font-size: 16px;
-    color: $blue-grey01;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-  }
-
-  .section-intro-area-cta {
-    max-width: 256px;
-    padding-top: 12px;
-    padding-bottom: 16px;
   }
 }
 
@@ -1984,24 +1963,37 @@ input[type="range"]::-moz-range-thumb:active {
   }
 }
 
-@media screen and (max-width: 1117px) {
-  .section-outro-heading {
-    top: 0;
-    left: 0;
-    font-size: 36px;
-    height: inherit;
-    width: inherit;
-    max-width: 296px;
-    line-height: 36px;
-    position: relative;
+@media screen and (max-width: 618px) {
+  .top-background {
+    background-image: linear-gradient(
+        59.5deg,
+        rgba(239, 252, 246, 0.95) 26.63%,
+        rgba(239, 252, 246, 0.72) 49.94%,
+        rgba(239, 252, 246, 0) 96.81%
+      ),
+      url(../images/optimized/baby-top-background.jpg);
   }
-  .section-outro-text-area {
-    height: inherit;
-    width: inherit;
-    top: 0;
-    left: 0;
-    position: relative;
-    max-width: 20em;
+
+  .section-unwanted-features {
+    background-image: linear-gradient(
+        95deg,
+        rgba(239, 252, 246, 0.78) 26.63%,
+        rgba(239, 252, 246, 0.72) 49.94%,
+        rgba(239, 252, 246, 0) 96.81%
+      ),
+      url(../images/optimized/section-features.jpg);
+  }
+
+  .section-extra-options {
+    background-image: none;
+    // background-image: linear-gradient(
+    //     95deg,
+    //     rgba(239, 252, 246, 0.78) 26.63%,
+    //     rgba(239, 252, 246, 0.72) 49.94%,
+    //     rgba(239, 252, 246, 0) 96.81%
+    //   ),
+    //   url(../images/optimized/section-extra-options.jpg);
+    // background-position: right;
   }
 }
 
@@ -2021,16 +2013,10 @@ input[type="range"]::-moz-range-thumb:active {
   .hair-colour-area {
     margin-bottom: 64px;
   }
-}
 
-@media screen and (max-width: 574px) {
   .eyes-area {
     margin-bottom: 16px;
   }
-
-  // .section-area-info.physical-features {
-  //   margin-bottom: 16px;
-  // }
 
   .hair-colour-area {
     width: 319px;
@@ -2056,8 +2042,6 @@ input[type="range"]::-moz-range-thumb:active {
     position: relative;
     padding: 0.2em 0;
     text-decoration: underline;
-    // color: pink;
-    // text-decoration: none;
     text-underline-offset: 1.2px;
     // overflow: hidden;
   }
@@ -2089,48 +2073,44 @@ input[type="range"]::-moz-range-thumb:active {
   }
 }
 
-@media screen and (max-width: 618px) {
-  .top-background {
-    // background-image: url(../images/optimized/baby-top-background.jpg);
-    background-image: linear-gradient(
-        59.5deg,
-        rgba(239, 252, 246, 0.95) 26.63%,
-        rgba(239, 252, 246, 0.72) 49.94%,
-        rgba(239, 252, 246, 0) 96.81%
-      ),
-      url(../images/optimized/baby-top-background.jpg);
+@media screen and (max-width: 400px) {
+  .heading-section-intro {
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: $blue-grey02;
   }
 
-  .section-unwanted-features {
-    // background-image: url(../images/optimized/section-features.jpg);
-
-    background-image: linear-gradient(
-        95deg,
-        rgba(239, 252, 246, 0.78) 26.63%,
-        rgba(239, 252, 246, 0.72) 49.94%,
-        rgba(239, 252, 246, 0) 96.81%
-      ),
-      url(../images/optimized/section-features.jpg);
-    // background-position: right;
+  .paragraph-section-intro {
+    font-size: 16px;
+    color: $blue-grey01;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
   }
 
-  .section-extra-options {
-    // background-image: url(../images/optimized/section-features.jpg);
-    background-image: none;
-    // background-image: linear-gradient(
-    //     95deg,
-    //     rgba(239, 252, 246, 0.78) 26.63%,
-    //     rgba(239, 252, 246, 0.72) 49.94%,
-    //     rgba(239, 252, 246, 0) 96.81%
-    //   ),
-    //   url(../images/optimized/section-extra-options.jpg);
-    // background-position: right;
+  .section-intro-area-cta {
+    max-width: 256px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #section-eggs {
+    padding-left: 10px;
+    padding-right: 0px;
   }
 
-  .img-outro {
+  .section-area-info {
+    padding-right: 0px;
   }
 
-  .image-about-page {
+  .egg-package-radio-button {
+    padding: 22px;
+    height: 428px;
+    width: 300px;
+    --outline-offset: 23px;
+    margin-right: 0px;
   }
 }
 
@@ -2138,18 +2118,9 @@ input[type="range"]::-moz-range-thumb:active {
     Accessibility
     ========================================================================= */
 
-@media (prefers-reduced-motion) {
-  .animation {
-    animation-name: dissolve;
-  }
-}
-
-/**
- * Disable smooth scrolling when users have prefers-reduced-motion enabled
- */
 @media screen and (prefers-reduced-motion: reduce) {
   html {
-    scroll-behavior: auto;
+    scroll-behavior: auto; // Disables smooth scrolling
   }
 
   details[open] > *:not(summary) {
@@ -2162,9 +2133,7 @@ input[type="range"]::-moz-range-thumb:active {
     position: relative;
     padding: 0.2em 0;
     text-decoration: underline;
-    // text-decoration: none;
     text-underline-offset: 1.2px;
-    // overflow: hidden;
   }
 
   /* Removes all extra animation below */
