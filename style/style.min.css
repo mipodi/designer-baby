@@ -323,7 +323,7 @@ details[open] > *:not(summary) {
 
 .progress-step-icon-6 {
   position: relative;
-  top: 1px;
+  top: 2px;
   height: auto;
   width: 100%;
 }
