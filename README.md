@@ -24,7 +24,6 @@ is in the analytics script. I did get some problems with Netlify and the build
 process. Eventually I solved it by having copies in the www folder and when I
 minify the css and html to there and pushes, it goes live.
 
-## How to use
 
 ## Credits and Extras
 
@@ -46,8 +45,3 @@ Small icons in all checkboxes are by Refactoring UI.
 
 The 3D button feel and animation is based on Josh Comeaus work
 [Building a Magical 3D Button](https://www.joshwcomeau.com/animation/3d-button/)
-
-## Credits and Extras
-
-To do before github public: Add license
-How to use
