@@ -9,8 +9,7 @@ specialises in babies. It lets you try what it could be like to order a baby
 with technology that is likely to be available soon.
 
 The Designer Baby Project is an exploratory endeavour by science journalist and
-writer Torill Kornfeldt and web developer Julia Johansson of the visualization
-studio Order Order.
+writer Torill Kornfeldt and web developer Julia Johansson of moss lab.
 
 ## Stack
 
